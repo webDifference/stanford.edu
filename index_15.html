@@ -1,3339 +1,519 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html >
-
-
-
-
-
-
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-    <!-- include all the meta tags that need to be on all pages here -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="icon" type="image/gif" href="/etc/clientlibs/shc/main/img/favicon.gif"/>
-    
+  <title>Stanford News</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Stanford University" />
 
 
+  <!--
+    _____ _               __              _
+   / ____| |             / _|            | |
+  | (___ | |_ __ _ _ __ | |_ ___  _ __ __| |
+   \___ \| __/ _` | '_ \|  _/ _ \| '__/ _` |
+   ____) | || (_| | | | | || (_) | | | (_| |
+  |_____/ \__\__,_|_| |_|_| \___/|_|  \__,_|
 
-    <link rel="stylesheet" href="/etc/clientlibs/shc/aem-optimized.min.d41d8cd98f00b204e9800998ecf8427e.css" type="text/css"/>
-<link rel="stylesheet" href="/etc/clientlibs/shc/all.min.324acbe9f0d91dbb6a4b80f118a98116.css" type="text/css"/>
+  Curious about our code? We're curious about you! The Web Communications team is hiring a
+  Front-end Architect. Learn more and apply online at
+  https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=76250
+
+  Note: mentioning this comment block in your cover letter will definitely get our attention. ;)
+  -->
 
 
-    
+  <!-- CSS -->
+  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/base.min.css?v=1.1.13" type="text/css" />
+    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/home.min.css?v=1.1.13" type="text/css" />
+    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/style.css?v=1.1.13" type="text/css"/>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if IE 8]>
+  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie8.css?v=1.1.13" />
+  <![endif]-->
+  <!--[if IE 7]>
+  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie7.css?v=1.1.13" />
+  <![endif]-->
 
-    
+  <!-- JS and jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/modernizr.custom.17475.js"></script>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/bootstrap.min.js"></script>
 
-    
-        <meta name="sp_keywords" content="stanford medical center, Stanford Hospital & Clinics, Stanford Health Care, Health Care in Palo Alto, Stanford Health Care Silicon Valley, Stanford Health Care Bay Area" >
-    
+  <!--[if lt IE 9]>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/respond.js"></script>
+  <![endif]-->
 
-    
-    
+  <!-- custom JS -->
+  <script src="//news.stanford.edu/wp-content/themes/news/js/base.js?v=1.1.13"></script>
 
-    <meta name="sp_specialties" content="" > 
-    <meta name="sp_pageName" content="Home">
-    <meta name="Language" content="en"/>
-    <meta name="Location" content="us"/>
+  <!-- Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1860414-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-    <!-- Disable native phone number recognition in iOS devices //-->
-    <meta name="format-detection" content="telephone=no" />
-    
+  <!-- wp_head(); -->
+  
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Latest news from and about Stanford University."/>
+<meta name="news_keywords" content="" />
+<link rel="original-source" href="https://news.stanford.edu/" />
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://news.stanford.edu/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Stanford News" />
+<meta property="og:description" content="Latest news from and about Stanford University." />
+<meta property="og:url" content="https://news.stanford.edu/" />
+<meta property="og:site_name" content="Stanford News" />
+<meta property="og:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Latest news from and about Stanford University." />
+<meta name="twitter:title" content="Stanford News" />
+<meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
+<meta property="DC.date.issued" content="2016-03-28T16:44:42-08:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/news.stanford.edu\/","name":"Stanford News","potentialAction":{"@type":"SearchAction","target":"https:\/\/news.stanford.edu\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/news.stanford.edu\/","sameAs":[],"name":"Stanford University News Service","logo":""}</script>
+<!-- / Yoast SEO Premium plugin. -->
 
-    <!-- perform all standard logic that needs to be on all pages here -->
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-
-    
-
-    
-    
-        
-        
-                                         
-    
-
-    <!-- Override the finalTitle with authored pageTitle property, when populated -->
-    
-        
-    
-
-    <!-- Override finalTitle with SEO search results title, if populated -->
-    
-
-    
-        
-        
-            
-                
-                
-                
-                    <title>Stanford Health Care (SHC) - Stanford Medical Center | Stanford Health Care</title>
-                
-            
-        
-    
-
-    
-
-<script type="text/javascript">
-/*
-The Data Layer...
-Created by Nicholaus Chipping & Devin Doxey
-October 1st, 2014
-Version 1.0
-*/
-var	dl=
-{
-	attributes:
-	{
-		country		:'US',
-		language	:'en'
-	},
-	campaigns:
-	[
-		{
-			ecid	:'',
-			medium	:'',
-			source	:'',
-			site	:'',
-			size	:''
-		}
-	],
-	content:
-	{
-		author				:'jgates',
-		tags				:'',
-		type				:'',
-		keywords			:'stanford medical center, Stanford Hospital &amp; Clinics, Stanford Health Care, Health Care in Palo Alto, Stanford Health Care Silicon Valley, Stanford Health Care Bay Area',
-		publishDate			:'',
-		internalSearchTerms	:'',
-		fileDownloads		:'',
-		errorPageReferrer	:'',
-		errorPageUrl		:'',
-		previousPage		:''
-	},
-	page:
-	{
-		id			:'',
-		name		:'',
-		hierarchy	:'',
-		siteSection	:'',
-		title		:'Stanford Health Care (SHC) – (formerly Stanford Hospital &amp; Clinics)',
-		url			:''
-	},
-	methods:
-	{
-		//methods for getting & setting the proper page name anywhere
-		escapeRegExp: function(string) {
-			return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\$1");
-		},
-
-		replaceAll: function(string, find, replace) {
-		  return string.replace(new RegExp(dl.methods.escapeRegExp(find), 'g'), replace);
-		},
-
-		isErrorPage: function() {
-			var page404 = jQuery('#shc-search-title').attr('data-page-template');
-			if (page404 === "/apps/shc/templates/404") {
-				return true;
-			}
-			return false;
-		},
-
-		setPageName: function() {
-			//set s.pageName
-			if (typeof s !== "undefined") {
-				s.pageName = s.eVar31 = this.getPageName();
-			}
-		},
-
-		getPageName: function(optionalPath) {
-			if (typeof _satellite !== "undefined") {
-				return _satellite.getVar("Page Name");
-			}
-			var path = window.location.pathname;
-			var hash = window.location.hash;
-			if (typeof optionalPath !== "undefined") {
-				path = optionalPath;
-			}
-			if (hash && hash !== "#/" && hash !== "/") {
-				dl.page.name = "stanfordhealthcare";
-				if (hash.indexOf("#/") > -1) {
-					dl.page.name += ":" + dl.methods.replaceAll(hash, "#/","");
-				}
-			} else if (path.indexOf("presentation-mode") > -1) {
-				if (path.indexOf("presentation-mode") > -1) {
-					dl.page.name = path.substr(path.indexOf("presentation-mode") + 18, path.length);
-				}
-			} else if (path.indexOf("stanfordhealthcare") > -1 && hash.length > 0) {
-				dl.page.name = "stanfordhealthcare";
-			} else if (path.length > 1 && !dl.methods.isErrorPage()) {
-				dl.page.name = path.substr(0, path.length);
-			} else {
-				if (hash.length === 0) {
-					if (dl.methods.isErrorPage()) {
-						dl.page.name = "";
-					} else {
-						dl.page.name="Home";
-					}
-				}
-			}
-			if (dl.page.name.indexOf("content/shc/en") > -1) {
-				dl.page.name = dl.page.name.replace("content/shc/en","");
-			}
-			if (dl.page.name.indexOf("en/") > -1 && dl.page.name.indexOf("en/") < 2) {
-				dl.page.name = dl.page.name.replace("en/","");
-			}
-			if (dl.page.name.indexOf("/") > -1) {
-				if (dl.page.name.indexOf("/") === 0) {
-					dl.page.name = dl.page.name.replace("/","");
-				}
-				dl.page.name = dl.methods.replaceAll(dl.page.name, "/", ":");
-			}
-			if (dl.page.name.indexOf("?") > -1) {
-				dl.page.name = dl.page.name.substr(0, dl.page.name.indexOf("?"));
-			}
-			if (dl.page.name.indexOf(".html") > -1) {
-				dl.page.name = dl.page.name.substr(0, dl.page.name.indexOf(".html"));
-			}
-
-			return dl.page.name;
-		}
-	}
-};
-
-var dataLayer = [];
-dataLayer.push({
-	'attributes': dl.attributes,
-	'content': dl.content,
-	'page': dl.page,
-	'sp': {}
-});
-
-function setPageName() {
-	dl.methods.setPageName();
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/news.stanford.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
-</script>
-    <!-- include all page specific meta tags in customheadlogic.jsp scripts -->
-    <!-- perform all page specific logic in customheadlogic.jsp scripts -->
-    
-
-
-<meta name="google-site-verification" content="google93dbbe62297c93ba.html" />
-<meta name="msvalidate.01" content="00830224FB8F909B55FC999D14DD3EB2" />
-    
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more.">
-    
-
-
-<script type="text/javascript">s_preLoad = (new Date()).getTime();</script>
-
-
-
-
-
-
-
+</style>
+<link rel='stylesheet' id='sunews-panels-css-css'  href='https://news.stanford.edu/wp-content/themes/news/css/panels.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='awesome-weather-css'  href='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/awesome-weather.css?ver=4.8.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/wp-retina-2x/js/picturefill.min.js?ver=3.0.2'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/themes/news/js/home.js?ver=1.1.13'></script>
+<link rel='https://api.w.org/' href='https://news.stanford.edu/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://news.stanford.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://news.stanford.edu/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://stanford.io/26bPoAh' />
+<link rel="alternate" type="application/json+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F&#038;format=xml" />
 <script type="text/javascript">
-    var SHC = SHC || {};
-    var GLOBAL_SPURL_OBJECT = "//sp1004f3b2.guided.ss-omtrdc.net";
-    var HOME_PAGE_PATH = "/content/shc/en";
-    var GLOBAL_MICROSITE_SRC = "";
-    var GLOBAL_SEARCH_RESULTS_TEMPLATE = "/apps/shc/templates/searchresults";
-    var DOCTOR_DIRECTORY_PATH = "/content/shc/en/search-results.doctors.html";
-    var DOCTOR_DIRECTORY_PAGE = "search-results.doctors.html";
-    var CLINIC_DIRECTORY_PATH = "/content/shc/en/search-results.clinics.html";
-    var CLINIC_DIRECTORY_PAGE = "search-results.clinics.html";
-    var TRIAL_DIRECTORY_PATH = "/content/shc/en/search-results.trials.html";
-    var TRIAL_DIRECTORY_PAGE = "search-results.trials.html";
-    var CONDITION_DIRECTORY_PATH = "/content/shc/en/search-results.conditions.html";
-    var CONDITION_DIRECTORY_PAGE = "search-results.conditions.html";
+	window._se_plugin_version = '8.1.9';
 </script>
 
-
-
-<script src="//assets.adobedtm.com/78cb508f5cf73aae9f2fe03247c7b77240a88a0b/satelliteLib-b7ed4568546d9bd6ce2b05b772cb152a44e19f76.js"></script>
-
-
-<!--[if lt IE 9]>
-<link rel="stylesheet" type="text/css" href="/etc/clientlibs/shc/main/css/ie8.css" />
-<![endif]-->
-<!--[if IE 9 ]>
-<link rel="stylesheet" type="text/css" href="/etc/clientlibs/shc/main/css/ie9.css" />
-<![endif]-->
-<!--[if lte IE 9]>
-<script>
-// if presentation mode in IE9 or less, redirect to presentation mode's path
-function checkForRequestedPresentation(url) {
-    var urlSplit =  url.split('.html');
-    if (urlSplit.length <= 1 || urlSplit[1].length <= 0) {
-        return;
-    }
-    urlSplit = urlSplit[1].split('/presentation-mode');
-    if (urlSplit.length <= 1 || urlSplit[1].length <= 0) {
-        return;
-    }
-    var path = urlSplit[1] + '.html';
-    window.location.replace = path;
-}
-var presentationRawUrl = window.location.href;
-checkForRequestedPresentation(presentationRawUrl);
-</script>
-<![endif]-->
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-        
-    
-
-<meta name="mail_title" content="Stanford Health Care (SHC) – (formerly Stanford Hospital &amp; Clinics)"/>
-<meta name="mail_description" content="Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more."/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-<meta property="og:url" content="https://stanfordhealthcare.org/"/>
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="Stanford Health Care (SHC) – (formerly Stanford Hospital &amp; Clinics)"/>
-<meta property="og:description" content="Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more."/>
-
-
-
-
-<meta property="twitter:domain" content="Stanford Health Care"/><meta name="twitter:card" value="summary"/>
-<meta name="twitter:site" value="@StanfordHealth"/><meta name="twitter:title" content="Stanford Health Care (SHC) – (formerly Stanford Hospital &amp; Clinics)"/>
-<meta name="twitter:description" content="Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more."/>
-<meta name="twitter:url" content="https://stanfordhealthcare.org/"/>
-
-
-
-
-
-        
-        <link rel="canonical" href="https://stanfordhealthcare.org/"/>
-
-
-
-<script type="text/javascript">
-    // Global var for embedded share component
-          var o = 'Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more.';
-    var META_DESCRIPTION = encodeURIComponent(o);
-</script>
-    
-
-
-    
-    
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "WebSite",
-                "name": "Stanford Health Care",
-                "url": "https://stanfordhealthcare.org",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://stanfordhealthcare.org/search-results.html/{search_term_string}",
-                    "query-input": "required name=search_term_string"
-                },
-                "sameAs": [
-                    "http://facebook.com/stanfordhealthcare",
-                    "http://twitter.com/stanfordhealth",
-                    "https://www.youtube.com/user/StanfordHospital"
-                ]
-            }
-        </script>
-    
 </head>
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-13 zzz-not-edit-news-page">
+<div id="su-wrap"> <!-- used to force footer to bottom of short pages -->
+  <div id="su-content"> <!-- used to force footer to bottom of short pages -->
 
+    <!--=== Top ===-->
+    <div id="top" class="hidden-print nocontent" data-ga-category="header">
+      <div class="container">
+        <!--=== Skip links ===-->
+        <div id="skip"> <a href="#content" onClick="$('#content').focus()" data-ga-action="skip-link" data-ga-label="content">Skip to content</a> </div>
+        <!-- /Skip links -->
+      </div>
+    </div>
+    <!--/top-->
 
+    <!--=== Header ===-->
+    <div id="header" class="clearfix" role="banner" data-ga-category="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- Logo -->
+            <div id="logo" class="clearfix"> <a href="http://www.stanford.edu/" data-ga-action="logo"><img class="img-responsive" src="//news.stanford.edu/wp-content/themes/news/images/stanford-white@2x.png" alt="Stanford University" /></a> </div>
+            <!-- /logo -->
+            <div id="signature">
+              <div id="site-name">
+                <a href="/" data-ga-action="site-name"><span id="site-name-1">News</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Menu -->
+    <div id="mainmenu" class="clearfix hidden-print nocontent" role="navigation" data-ga-category="header" data-ga-action="nav">
+      <div class="container">
+        <div class="navbar navbar-default">
 
+          <!-- main navigation -->
+          <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">Menu</button>
+          <!-- /nav-collapse -->
 
+          <div id="nav-search" role="search">
+  <form action="/search" method="get" id="search-form" accept-charset="UTF-8">
+    <h2 class="hidden">Search form</h2>
+    <input type="hidden" name="cx"  value="010498062362927390610:dlcoultwj8i">
+    <input type="hidden" name="cof" value="FORID:9">
+    <input type="hidden" name="ie"  value="UTF-8">
+    <label class="hidden" for="search-field">Search term</label>
+    <input type="text" id="search-field" name="q" title="Search string" class="input-medium" placeholder="Search Stanford news&hellip;" value="" size="15" maxlength="128" />
+    <button id="search-btn" type="submit" name="submit" aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
+  </form>
+</div>
 
-<body>
+          <div class="navbar-collapse collapse">
+            <div  role="navigation">
+              <div id="primary-nav" class="menu-top-nav-container"><ul id="menu-top-nav" class="nav navbar-nav" aria-label="primary navigation"><li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-32"><a data-ga-label="Home" href="https://news.stanford.edu/">Home</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a data-ga-label="Find Stories" href="https://news.stanford.edu/find-stories/">Find Stories</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a data-ga-label="For Journalists" href="https://news.stanford.edu/for-journalists/">For Journalists</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a data-ga-label="Contact" href="https://news.stanford.edu/contact/">Contact</a></li>
+</ul></div>            </div>
+          </div>
+          <!-- /nav-collapse -->
+        </div>
+        <!-- /navbar -->
+
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /mainmenu -->
+
+    <!-- main content -->
+<section id="section-top-stories" role="main" tabindex="0" data-ga-category="top-stories">
+  <div class="container" id="content">
+    <h1 class="sr-only">Top Stories</h1>
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6">
+        <article class="card full" id="top-story-1">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-705x470.jpg" class="attachment-card-lg size-card-lg wp-post-image" alt="Inside view of an active volcano with lava flow at Hawaii Volcanoes National Park." srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ.jpg 1500w" sizes="(max-width: 705px) 100vw, 705px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/"  data-ga-action="position-1">Puzzling patches in Earth’s interior billions of years in the making</a></h3>
+    <p class="teaser">Mysterious patches on the planet’s core that dampen seismic waves could be the result of ancient seawater chemically reacting with iron under extreme conditions.</p>
+  </div>        </article>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-2">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Fei-Fei Li" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Fei-Fei Li" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/social-sciences/">Social Sciences</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/"  data-ga-action="position-2">A neighborhood’s cars indicate its politics</a></h3>
+    <p class="teaser">Stanford researchers led by Fei-Fei Li use computer algorithms to analyze millions of publicly available images on Google Street View.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-3">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/27/striking-look-turbulent-motion/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/27/striking-look-turbulent-motion/"  data-ga-action="position-3">A striking look at turbulent motion</a></h3>
+    <p class="teaser">A new way of plotting turbulent air movement illustrates the beauty in fluid dynamics.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-4">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/17/winds-change-vertical-axis-turbines/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="vertical axis wind turbing in Alaska" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="vertical axis wind turbing in Alaska" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/17/winds-change-vertical-axis-turbines/"  data-ga-action="position-4">Winds of change for vertical axis turbines?</a></h3>
+    <p class="teaser">New research suggests vertical axis turbines, which may have fewer impacts on birds and the environment, could increase public support for new wind energy installations.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-5">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-5"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Eroded soil" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Eroded soil" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/"  data-ga-action="position-5">Disrupting sensitive soils could worsen climate change</a></h3>
+    <p class="teaser">Global warming and land use practices, such as farming, could change the environment for microbes living in the soil and alter the amount of greenhouse gases they release into the atmosphere.</p>
+  </div>        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-spotlight" data-ga-category="spotlight">
+  <div class="container">
+    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/section/spotlight/' data-ga-action='section-head'>In the Spotlight</a></h2>
+    <div class="row padding-top">
+
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="Samira Borgozi" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/arts-creativity/">Arts &amp; Creativity</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/"  data-ga-action="position-1">New exhibition marks centenary of 1917 Russian Revolution</a></h3>
+    <p class="teaser">A joint exhibition at the Hoover Institution Library &amp; Archives and the Cantor Arts Center highlights Stanford’s rich collections of materials on the history of late imperial and early Soviet Russia.  <em> </em></p>
+  </div>      </article>
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="historic image of pressman at work at Stanford University Press" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/humanities/">Humanities</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/"  data-ga-action="position-2">Stanford University Press celebrates 125th anniversary</a></h3>
+    <p class="teaser">Since its inception in 1892, Stanford University Press has published thousands of books and other research works authored by faculty at Stanford and across the world.</p>
+  </div>      </article>
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-795x531.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-960x641.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/"  data-ga-action="position-3">New techniques for removing carbon from the atmosphere</a></h3>
+    <p class="teaser">As the world continues to burn 100 million barrels of oil a day – a rate that is expected to continue for the next 50 years – Stanford Earth researchers are developing greener ways of extracting the oil and mitigating the resulting greenhouse gases.</p>
+  </div>      </article>
+    </div>
+  </div>
+</section>
+
+<section id="section-more-stories">
+  <div class="container">
+    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/all-stories/' data-ga-action='section-head'>More Stories</a></h2>
+    <div class="row padding-top">
+
+      <div class="col-md-8">
+                <div class="row" id="card-flow">
+          <div class="col-sm-6" data-ga-category="more-stories-left">
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/28/charles-kruger-former-vice-provost-dean-research-stanford-dies/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/27150843/kruger_960514B-11-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Charles Kruger" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/obituaries/">Obituaries</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/28/charles-kruger-former-vice-provost-dean-research-stanford-dies/"  data-ga-action="position-1">Charles Kruger, former vice provost and dean of research at Stanford, dies</a></h3>
+    <p class="teaser">A mechanical engineer with expertise in gas and plasma, as an administrator Kruger increased Stanford’s research funding and helped lead the university toward more interdisciplinary research efforts.</p>
+  </div>            </article>
+            <article class="card large">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/15/algorithm-outperforms-radiologists-diagnosing-pneumonia/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Matt Lungren, Jeremy Irvin and Pranav Rajpurkar" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Matt Lungren, Jeremy Irvin and Pranav Rajpurkar" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/15/algorithm-outperforms-radiologists-diagnosing-pneumonia/"  data-ga-action="position-2">Algorithm outperforms radiologists at diagnosing pneumonia</a></h3>
+    <p class="teaser">Stanford researchers have developed a deep learning algorithm that evaluates chest X-rays for signs of disease. In just over a month of development, their algorithm outperformed expert radiologists at diagnosing pneumonia.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="http://med.stanford.edu/news/all-news/2017/11/dolphin-mouths-house-dark-matter-of-the-biological-world.html" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16114323/dolphin-swab-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="researcher swabs open mouth of dolphin" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="http://med.stanford.edu/news/all-news/2017/11/dolphin-mouths-house-dark-matter-of-the-biological-world.html"  data-ga-action="position-3">Dolphin mouths house ‘dark matter of the biological world’</a></h3>
+    <p class="teaser">Researchers have discovered poorly understood bacterial lineages in the mouths of dolphins.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/immigration-issues/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/12/16085349/sandstone_placeholder_icon_09951-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Sandstone columns and arches" /></a>
+  </div>  <div class="card-content">
     
+    <h3><a href="https://news.stanford.edu/immigration-issues/"  data-ga-action="position-4">Stanford principles regarding immigration</a></h3>
+    <p class="teaser">As events continue to unfold regarding federal immigration policy, a website has been created where Stanford leaders summarize the principles of the university’s support for international and undocumented community members. Also found on the site are links to resources for the Stanford community.</p>
+  </div>            </article>
+          </div>
 
+          <div class="col-sm-6" data-ga-category="more-stories-right">
+            <article class="card large">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/16/stanford-programs-help-students-make-healthy-choices-around-alcohol/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Students at Giants game." srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-375x250.jpg 375w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Students at Giants game." /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/campus-life/">Campus Life</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/16/stanford-programs-help-students-make-healthy-choices-around-alcohol/"  data-ga-action="position-1">Stanford programs help students make healthy choices around alcohol</a></h3>
+    <p class="teaser">At Stanford, the Office of Alcohol Policy and Education is dedicated to enhancing the health and safety of students by empowering them to make healthy choices around alcohol consumption. This year, the office is studying ways to expand programs.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/19/four-stanford-named-rhodes-scholars/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/19171741/oxford-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="front of Balliol College at Oxford University." /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/teaching-students/">Teaching &amp; Students</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/19/four-stanford-named-rhodes-scholars/"  data-ga-action="position-2">Four from Stanford named Rhodes Scholars</a></h3>
+    <p class="teaser">Three Stanford seniors and one alumnus will pursue studies at Oxford University beginning October 2018 as Rhodes Scholars.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/08/28162139/arches-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="arches" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
+    <h3><a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/"  data-ga-action="position-3">Stanford University statement on White House plans for DACA</a></h3>
+    <p class="teaser">Stanford University vigorously and adamantly opposes the shameful decision to rescind the Deferred Action for Childhood Arrivals program.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/04/25185104/frontentrance_790-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Stanford&#039;s main quad" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
+    <h3><a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/"  data-ga-action="position-4">Report details universities&#8217; efforts on sexual assault</a></h3>
+    <p class="teaser">Stanford is among the U.S. universities included in a new report by the Association of American Universities summarizing campus initiatives to combat sexual violence. The report presents an opportunity to learn from others, Provost Persis Drell says.</p>
+  </div>            </article>
+          </div>
+        </div>
+      </div>
 
-<script type="text/javascript" src="/etc/clientlibs/shc/aem-optimized.min.69733ed4adacd1c16c7c51cd60134fb2.js"></script>
+      <aside class="col-md-4">
+        <div class="row sidebar-margin">
+          <div class="col-sm-6 col-md-12">
+            <div class="sidebar-section" id="around-the-farm" data-ga-category="sidebar-around-the-farm">
+  <h2><a class="see-all-link" href="/around-the-farm/" data-ga-action='section-head'>Around the Farm</a></h2>
+    <p class="side-byline">Stanford Humanities Center</p>
+    <p><a href="http://shc.stanford.edu/news/qa/reetika_khera"  data-ga-action="position-1">Can biometrics improve welfare services in India?</a></p>
+    <p class="side-byline">Stanford Law</p>
+    <p><a href="https://law.stanford.edu/stanford-lawyer/articles/the-run-for-office-jds-in-politics/?utm_source=highlights&utm_medium=masonry&utm_campaign=homepage&utm_content=stanfordlawyer-cta-readmore"  data-ga-action="position-1">The run for office: JDs in politics</a></p>
+    <p class="side-byline">Graduate School of Business</p>
+    <p><a href="https://www.gsb.stanford.edu/insights/100-trillion-dollar-question"  data-ga-action="position-1">The 100-trillion-dollar question</a></p>
+    <p class="side-byline">SLAC and Stanford School of Earth, Energy & Environmental Sciences</p>
+    <p><a href="https://earth.stanford.edu/news/scientists-make-first-observations-how-meteor-shock-turns-silica-glass"  data-ga-action="position-1">Scientists make first observations of how a meteor-like shock turns silica into glass</a></p>
+    <p class="side-byline">Stanford Medicine</p>
+    <p><a href="http://scopeblog.stanford.edu/2017/11/27/worry-unlike-anxiety-improves-memory-skills-in-elderly-stanford-study-finds/"  data-ga-action="position-1">Worry, unlike anxiety, improves memory skills in elderly, Stanford study finds</a></p>
+</div>
+<div class="sidebar-section" id="the-dish" data-ga-category="rss-the-dish">
+  <h2><a class="see-all-link" href="http://news.stanford.edu/thedish/">The Dish</a></h2>
+      <div id="rss-feed-item">
+    <a href="https://news.stanford.edu/thedish/2017/11/28/education-professor-john-willinsky-rocks-free-sharing-in-music-and-scholarship/" data-ga-action="position-1" aria-hidden="true"><img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/sites/2/2017/11/28120829/mayfield.jpg" /></a>    <p><a href="https://news.stanford.edu/thedish/2017/11/28/education-professor-john-willinsky-rocks-free-sharing-in-music-and-scholarship/" data-ga-action="position-1">Education Professor John Willinsky rocks free sharing in music and scholarship</a></p>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-6 col-md-12">
+            <div class="sidebar-section" id="faculty-staff-news" data-ga-category="sidebar-faculty-staff-news">
+  <h2><a class="see-all-link" href="/section/faculty-staff/" data-ga-action='section-head'>Faculty &amp; Staff News</a></h2>
+    <p><a href="https://news.stanford.edu/2017/11/20/two-elected-members-aaas/"  data-ga-action="position-1">Two Stanford faculty elected members of AAAS</a></p>
+    <p><a href="https://news.stanford.edu/2017/11/15/stanford-alumni-association-honors-abbas-milani-great-stanford-ambassador-2017-lyman-award/"  data-ga-action="position-1">Stanford Alumni Association honors Abbas Milani with 2017 Lyman Award</a></p>
+</div>
+<div class="sidebar-section" id="in-the-news" data-ga-category="sidebar-in-the-news">
+  <h2><a class="see-all-link" href="http://news.stanford.edu/in-the-news/" data-ga-action='section-head'>In the News</a></h2>
+    <p class="side-byline">Quartz</p>
+    <p><a href="https://qz.com/1103806/a-pioneering-economics-class-is-tackling-social-justice-issues-with-big-data-and-women-and-minorities-are-enrolling-in-droves/"  data-ga-action="position-1">An innovative introductory economics course at Stanford is now free online</a></p>
+    <p class="side-byline">Live Science</p>
+    <p><a href="https://www.livescience.com/61036-mysterious-blobs-beneath-earth.html"  data-ga-action="position-1">Oddly behaving blobs beneath earth&#8217;s surface finally explained </a></p>
+    <p class="side-byline">Seeker</p>
+    <p><a href="https://www.seeker.com/videos/how-is-fear-studied-in-the-brain"  data-ga-action="position-1">This neurobiologist swims with great white sharks to study fear</a></p>
+    <p class="side-byline">Newsweek</p>
+    <p><a href="http://www.newsweek.com/2017/12/01/what-happens-world-without-water-jordan-crisis-717365.html"  data-ga-action="position-1">What will happen if the world no longer has water?</a></p>
+    <p class="side-byline">LinkedIn</p>
+    <p><a href="https://www.linkedin.com/pulse/shifting-mindset-from-high-cost-health-care-high-value-lloyd-minor/?published=t"  data-ga-action="position-1">Shifting the mindset from high-cost health care to high-value</a></p>
+</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
 
+	</div><!-- #su-content -->
+</div><!-- #su-wrap -->
 
-    
+<!-- BEGIN footer -->
+<div id="footer" class="clearfix footer hidden-print nocontent" role="contentinfo">
 
+	  <!-- Fat footer start -->
+  <div class="container">
+    <div id="footer-content" class="row" data-ga-category="footer">
+      <div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">Stanford Report</h3>
+			<div class="textwidget"><div id="mc_embed_signup">
+  <form action="//stanford.us5.list-manage.com/subscribe/post?u=a8e6569da943904e9ac369cde&amp;id=29ce9f751e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <label for="mce-EMAIL">Receive daily Stanford news.</label><br/>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" size="30" placeholder="your email address" required>
+    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default" style="margin-top: -3px; padding: 6px;">
+  </form>
+</div>
+<p><a href="/stanford-report/">More about <em>Stanford Report</em></a></p></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">For Journalists</h3>
+			<div class="textwidget"><ul>
+  <li><a href="/press-releases/">Press Releases</a></li>
+  <li><a href="/contact/media-contacts/">Media Contacts</a></li>
+  <li><a href="/experts/">Stanford Experts</i></a></li>
+</ul></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">See Also</h3>
+			<div class="textwidget"><ul>
+  <li><a href="/contact/">Contact Stanford News</a></li>
+  <li><a href="http://ucomm.stanford.edu/facstaff/" target="_blank">Faculty / Staff Resources <i class="fa fa-external-link"></i></a></li>
+</ul></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+			<div class="textwidget"><div id="weather" class="col-xs-6">
 
-    <script type="text/javascript" src="/etc/clientlibs/shc/all.min.d5124b04656873644ade66e9aad3aa0e.js"></script>
+  <h3>Weather</h3>
+<div id="awesome-weather-widget">
 
-    
+  
+  
+    <div class="awesome-weather-current-temp">
+      <i class="wi wi-yahoo-32" aria-label="Sunny" title="Sunny"></i>      62<sup>&deg;</sup>
+    </div><!-- /.awesome-weather-current-temp -->
+    <div class="awesome-weather-more-weather-link" data-ga-category="footer"><a data-ga-action="weather" href="http://www.weather.com/weather/tenday/l/Stanford+CA+94305:4:US" target="_blank">Stanford forecast</a></div></div><!-- /.awesome-weather-wrap: custom --> 
 
-
-<!-- === base/bodylibs === -->
-
-    <div class="modal-window" id="modal">
-
-
-
-
-<div id="modal-container" aria-hidden="true">
-
-	<div id="modal-close" class="close-modal">
-		<a href="#"></a>
+</div>
+<div id="events" class="col-xs-6">
+  <h3>Events</h3>
+  <a href="http://events.stanford.edu/">
+    <i class="fa fa-calendar fa-3x"></i><span class="sr-only">Events calendar</span>
+  </a>
+</div></div>
+		</div>
+			<div id="site-credit" class="col-xs-12">
+				<p>Stanford News is a publication of <a href="https://ucomm.stanford.edu">Stanford University Communications</a></p>
+			</div>
+    </div>
+  </div>
+  <!-- Fat footer end -->
+      
+	<!-- Global footer snippet start -->
+	<div id="global-footer">
+		<div class="container">
+			<div class="row">
+				<div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="https://news.stanford.edu/wp-content/themes/news/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
+				<!-- #bottom-logo end -->
+				<div id="bottom-text" class="col-xs-6 col-sm-10">
+					<ul>
+						<li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+						<li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
+						<li class="search-stanford"><a href="http://stanford.edu/search/">Search Stanford</a></li>
+						<li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+						<li class="emergency-info"><a href="http://emergency.stanford.edu/" class="su-link" data-ua-label="global-footer">Emergency Info</a></li>
+					</ul>
+				</div>
+				<!-- .bottom-text end -->
+				<div class="clear"></div>
+				<p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="http://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
+			</div>
+			<!-- .row end -->
+		</div>
+		<!-- .container end -->
 	</div>
-	<div id="modal-content" data-show-links="false"></div>
+	<!-- Global footer snippet end -->
 
 </div>
+<!-- END footer -->
 
-<div id="overlay" class="close-modal">
-    <div class="spinner-container modal-spinner" style="display: none">
-        <div class="floatingBarsG">
-            <div class="blockG rotateG_01"></div>
-            <div class="blockG rotateG_02"></div>
-            <div class="blockG rotateG_03"></div>
-            <div class="blockG rotateG_04"></div>
-            <div class="blockG rotateG_05"></div>
-            <div class="blockG rotateG_06"></div>
-            <div class="blockG rotateG_07"></div>
-            <div class="blockG rotateG_08"></div>
-        </div>
-    </div>
-</div></div>
-
-    
-        
-        
-            
-
-
-
-
-
-<div class="livePersonWrapper">
-    <div id="lpButtonDiv"></div>
-</div>
-
-
-            
-                <div class="share">
-
-
-
-
-
-    
-    
-        
-    
-
-
-
-
-<div class="share-wrapper no-print noindex">
-    <div class="container">
-        <div class="share-component">
-            <div id="social_actions">
-                <div id="icon_close" class="icon">
-                    <a href="#">Close</a>
-                </div>
-                <div id="icon_open" class="icon hidden">
-                    <a href="#">Open</a>
-                 </div>
-            </div>
-            <div id="social_icons">   
-                <div id="icon_facebook" class="icon">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://stanfordhealthcare.org/">Share on Facebook</a>
-                </div>
-                <div id="icon_twitter" class="icon">
-                    <a href="https://twitter.com/share?text=Stanford%20Health%20Care%20(SHC)%20–%20(formerly%20Stanford%20Hospital%20&%20Clinics)%20https://stanfordhealthcare.org/via=StanfordHealth">Twitter</a>
-                </div>
-                <div id="icon_google_plus" class="icon">
-                    <a href="https://plus.google.com/share?url=https://stanfordhealthcare.org/">Google+</a>
-                </div>
-                <div id="icon_email" class="icon">
-                    <a href="mailto:?subject=Stanford Health Care (SHC) – (formerly Stanford Hospital & Clinics)&body=Stanford Health Care (SHC) – (formerly Stanford Hospital & Clinics)%0DStanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more. - https://stanfordhealthcare.org/">Email</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-            
-        
-    
-    <div id="main" aria-hidden="false" class="row-offcanvas row-offcanvas-left">
-        
-
-
-
-<div id="header" class="noindex">
-    
-    <div class="masthead">
-
-
-
-
-
-
-<div class="masthead-affixed hidden-xs affix">
-    <div class="masthead-wrapper">
-        <div class="hamburger-menu-button">
-            <a class="menu-toggle static-menu-toggle" data-toggle="offcanvas" href="#" data-aa-sidebar-links="menu"><span
-                    class="hamburger-icon"></span><span class="hidden-xs">Menu</span></a>
-        </div>
-        <a id="shc-logo" href="https://stanfordhealthcare.org/" style="transform: translateY(8.5px);"/></a>
-        <div class="search-button">
-            <a class="search-toggle" href="#"><span class="hidden-xs">Search</span><span class="icon"></span></a>
-        </div>
-    </div>
-    <div class="leading-shadow"></div>
-</div>
-<div class="masthead-affixed mobile visible-xs">
-    <div class="hamburger-menu-button">
-        <a class="menu-toggle static-menu-toggle" data-toggle="offcanvas" href="#" data-aa-sidebar-links="menu"><span
-                class="hamburger-icon"></span><span class="hidden-xs">Menu</span></a>
-    </div>
-    <a id="shc-logo" href="https://stanfordhealthcare.org/"></a>
-    <div class="search-button">
-        <a class="search-toggle" href="#"><span class="hidden-xs">Search</span><span class="icon"></span></a>
-    </div>
-</div>
-<div id="masthead-wrapper">
-    <div id="masthead" class="hidden-xs">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <ul id="masthead-nav" class="hidden-xs">
-                        <li>
-                            <a href="https://stanfordhealthcare.org/search-results.doctors.html" class="directory-link" data-aa-masthead-links="doctors">Doctors</a>
-                        </li>
-                        <li>
-                            <a href="https://stanfordhealthcare.org/search-results.clinics.html" class="directory-link" data-aa-masthead-links="clinics & locations">Clinics &amp; Locations</a>
-                        </li>
-                        <li>
-                            <a href="https://stanfordhealthcare.org/search-results.conditions.html" data-aa-masthead-links="conditions & treatments">Conditions &amp; Treatments</a>
-                        </li>
-                        <li class="masthead-dropdown">
-                            <a data-toggle="1" href="#" data-aa-masthead-links="patients & visitors">Patients &amp; Visitors<span class="carat"></span></a>
-                            <span class="carat-gray"></span>
-                        </li>
-                        <li class="masthead-dropdown">
-                            <a data-toggle="2" href="#" data-aa-masthead-links="myhealth login">MyHealth Login<span class="carat"></span></a>
-                            <span class="carat-gray my-health-carat-gray"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="drawers" class="masthead large-only">
-
-    <div class="drawer standard-drawer" id="pv-drawer" data-drawer="1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-7 border">
-                    <div class="drawer2-top parsys">
-</div>
-
-
-                    <div class="row">
-                        <div class="col-sm-6 leftside">
-                            <div class="drawer2-leftside parsys"><div class="masthead_link_list parbase section">
-
-
-
-
-
-    
-        <ul class="link-list first">
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/billing.html" data-aa-masthead-links="billing">Billing</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/health-insurance-plans.html" data-aa-masthead-links="insurance">Insurance</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/your-hospital-stay/medical-records.html" data-aa-masthead-links="medical records">Medical Records</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/support-groups.html" data-aa-masthead-links="support groups">Support Groups</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/financial-assistance.html" data-aa-masthead-links="financial assistance">Financial Assistance</a>
-                </li>
-            
-        </ul>
-    
-    
-</div>
-
-</div>
-
-                        </div>
-                        <div class="col-sm-6 rightside">
-                            <div class="drawer2-rightside parsys"><div class="masthead_link_list parbase section">
-
-
-
-
-
-    
-        <ul class="link-list first">
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/locations-and-parking.html" data-aa-masthead-links="locations and parking">Locations and Parking</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/visiting-hours.html" data-aa-masthead-links="visiting hours">Visiting Hours</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/your-hospital-stay.html" data-aa-masthead-links="your hospital stay">Your Hospital Stay</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/for-patients-visitors/international-services.html" data-aa-masthead-links="international patients">International Patients</a>
-                </li>
-            
-                
-                <li>
-                    <a href="https://stanfordhealthcare.org/about-us/contact.html" data-aa-masthead-links="contact us">Contact Us</a>
-                </li>
-            
-        </ul>
-    
-    
-</div>
-
-</div>
-
-                        </div>
-                    </div>
-
-                    <div class="drawer2-bottom parsys"><div class="masthead_menu_link parbase section">
-
-
-
-
-
-
-
-    
-
-
-    
-    
-        
-    
-
-
-
-
-<a href="https://stanfordhealthcare.org/for-patients-visitors.html" class="mastheadMenuBold mastheadMenuNoUnderline" data-aa-masthead-links="view all information for patients & visitors">View All Information for Patients & Visitors »</a></div>
-
-</div>
-
-                </div>
-                <div class="col-md-4 col-sm-5">
-                    <div class="drawer2-right parsys"><div class="masthead_contact parbase section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="masthead-contact-container">
-
-    <div class="masthead-contact-title">We are available to assist you 24/7.</div>
-
-    <div class="masthead-contact-phone">
-        <div class="masthead-contact-phone-icon"></div>
-        <div class="masthead-contact-phone-text" data-aa-masthead-links="650-498-3333">650-498-3333</div>
-    </div>
-
-    <div class="masthead-contact-email">
-        <div class="masthead-contact-email-icon"></div>
-        <a class="masthead-contact-email-text" href="mailto:GuestServices@stanfordhealthcare.org" data-aa-masthead-links="guestservices@stanfordhealthcare.org">GuestServices@stanfordhealthcare.org</a>
-    </div>
-</div></div>
-<div class="liveperson parbase section">
-
-
-
-
-
-
-<div id="lpchathead"></div>
-</div>
-
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="drawer" id="my-health-drawer" data-drawer="2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-7">
-                    <div class="drawer1-top parsys"><div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <h2>New to MyHealth?</h2>
-<p><b>Manage Your Care From Anywhere.</b></p>
-<p>Access your health information from any device with MyHealth.  You can message your clinic, view lab results, schedule an appointment, and pay your bill.</p>
-
-    </div>
-
-
-
-</div>
-<div class="myhealth_links parbase section">
-
-
-
-
-<p><a href="https://myhealth.stanfordhealthcare.org/Activation/Lookup" id="my-health-activate" data-aa-masthead-links="activate your account">Activate Your Account</a>
-with an access code or <a href="https://myhealth.stanfordhealthcare.org/Signup/Online" id="my-health-sign-up" data-aa-masthead-links="create a new account">Create a New Account</a></p>
-</div>
-
-</div>
-
-                    <hr/>
-                    <div class="drawer1-bottom parsys"><div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <h2>MyHealth for Mobile</h2>
-<p>The MyHealth mobile app puts all your health information at your fingertips and makes managing your health care simple and quick.  Available for <a href="https://itunes.apple.com/us/app/stanford-health-care-myhealth/id922978966?mt=8">iPhone</a> and <a href="https://play.google.com/store/apps/details?id=org.stanfordhealthcare.myhealth">Android</a>.</p>
-
-    </div>
-
-
-
-</div>
-
-</div>
-
-                </div>
-                <div class="col-md-4 col-sm-5">
-                    <div class="drawer1-right parsys"><div class="myhealth_login parbase section">
-
-
-
-
-
-<div id="my-health-login">
-    <div class="clearfix">
-        <h4>
-            WELCOME BACK
-        </h4>
-        <span class="lock-icon"></span>
-    </div>
-    <form method="POST" action="https://myhealth.stanfordhealthcare.org/">
-        <input type="text" name="id" placeholder="MyHealth ID" />
-        <input type="password" name="password" placeholder="Password" />
-        <input type="submit" value="Sign In" data-aa-masthead-links="sign in"/>
-    </form>
-    <div class="forgot-links">
-        <a href="https://myhealth.stanfordhealthcare.org/Credentials/ForgotUsername" data-aa-masthead-links="forgot id">Forgot ID</a> or <a href="https://myhealth.stanfordhealthcare.org/Credentials/ForgotPassword" data-aa-masthead-links="forgot password">Forgot Password?</a>
-    </div>
-    
-        <a href="https://myhealth.stanfordhealthcare.org/ContactHelpDesk" data-aa-masthead-links="need help?">Need Help?</a>
-    
-</div>
-</div>
-
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-    <div id="search-inpagenav-wrapper"  >
-        <div id="search-inpagenav">
-            <div class="megasearch parbase">
-
-
-
-<div id="search-container" class="container homepage-search">
-    
-
-    <div id="search-row" class="row ">
-        
-        <div class="search-right-side">
-            <span id="search-magnifying-glass"></span>
-            <h1 id="shc-search-title"
-                data-page-path="https://stanfordhealthcare.org/"
-                data-page-template="/apps/shc/templates/home">
-            </h1>
-            <div id="search-input-container" style="display:none">
-                <form role="form" id="search-form" autocomplete="off" action="https://stanfordhealthcare.org/search-results.html">
-                    <div id="search-input-wrapper">
-                        <span class="searchbar-magnifying-glass"></span>
-                        <input type="text" disabled="disabled" id="prediction">
-                        <input type="text" id="search-term">
-                        <div id="search-clear"><a href="#"><span class="visible"></span></a><span>Clear</span></div>
-                    </div>
-                    
-                        <div id="search-pulldown" >
-                            <div id="dropdown-tabbar"></div>
-                            <div id="dropdown-filter"></div>
-                            <div id="dropdown-predict"></div>
-                        </div>
-                    
-                </form>
-            </div>
-        </div>
-        
-    </div>
-    <div class="search-container-shadow">
-    </div>
-    <div id="click-screen" style="opacity:0;display:none;" class="modal-backdrop fade in"></div>
-    
-    
-        <h1 class="shc-page-title hidden">
-            
-                
-                Stanford Health Care (SHC) – (formerly Stanford Hospital & Clinics)
-            
-        </h1>
-    
-</div>
-</div>
-
-        </div>
-    </div>
-    
-        
-        
-        
-        
-            <div class="hidden-xs">
-                <div class="inpagenav in_page_nav parbase">
-
-
-
-
-<nav id="in-page-nav-wrapper">
-    <div id="in-page-nav" class="container" style="display:none">
-        <div class="row">
-            <div class="col-sm-12" id="in-page-nav-list-wrapper">
-                <ul class="nav">
-                    
-                    <li class="active">
-                        <a href="#about" class="nav-button">
-                            
-                                
-                                
-                                    About
-                                
-                            
-                        </a>
-                        <a href="#" class="drop-down-button">
-                            <span></span>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="in-page-nav-shadow"></div>
-                </div>
-            </div>
-            <div id="drop-nav-wrapper" class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="drop-nav">
-                             
-                            <li class="active">
-                                <a href="#about">
-                                    
-                                        
-                                        
-                                            About
-                                        
-                                    
-                                </a>
-                            </li>
-                             
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="in-page-nav-shadow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav></div>
-
-            </div>
-        
-    
-    
-</div>
-<div id="about_" style="height: 0;"></div>
-        <div id="main-container">
-            
-
-<div class="home-top-parsys parsys"><div class="dynamic_container parbase section"><div id="dynamic-container">
-    <div class="edit-mode-message hidden">
-        <b>AUTHOR MODE: Dynamic Container</b> - Selected view modes: desktop  
-    </div>
-
-    <div class="dynamic-container-parsys
-                
-                desktop-size-container
-                
-                ">
-
-    
-    
-    
-    <div class="bannerdisplay parbase">
-<div class="banner-display">
-    <div class="container  ">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="items full-image clearfix">
-                    <div class="banner-display-image-panels"><div class="banner-asset-panel parbase section"><div id="banner-asset-panel">
-    
-
-    <div id="banner-iframe-container">
-        <iframe class="banner-asset-iframe" src="/content/shc/en/campaign-banner/9-20-dna/9-20-dna.html?wcmmode=disabled" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-    <a class="banner-frame-click" href="https://stanfordhealthcare.org/campaigns/innovations.html" data-aa-banner-display="banner not set"></a>
-
-    
-
-</div></div>
-
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div>
-
-
-</div>
-</div>
-</div>
-<div class="dynamic_container parbase section"><div id="dynamic-container">
-    <div class="edit-mode-message hidden">
-        <b>AUTHOR MODE: Dynamic Container</b> - Selected view modes:  tablet 
-    </div>
-
-    <div class="dynamic-container-parsys
-                
-                
-                tablet-size-container
-                ">
-
-    
-    
-    
-    <div class="bannerdisplay parbase">
-<div class="banner-display">
-    <div class="container  ">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="items full-image clearfix">
-                    <div class="banner-display-image-panels"><div class="bannerdisplaypanel parbase section">
-    
-        <a class="panel-image-link" href="https://stanfordhealthcare.org/campaigns/innovations.html">
-            <img class="panel-image temp-hidden" src="/content/dam/SHC/brandcampaign/fin-desktop.jpg" data-displayduration="3"/>
-        </a>
-    
-
-</div>
-<div class="bannerdisplaypanel parbase section">
-    
-        <a class="panel-image-link" href="https://stanfordhealthcare.org/campaigns/innovations.html">
-            <img class="panel-image temp-hidden" src="/content/dam/SHC/brandcampaign/fin-desktop2.jpg" data-displayduration="3"/>
-        </a>
-    
-
-</div>
-<div class="bannerdisplaypanel parbase section">
-    
-        <a class="panel-image-link" href="https://stanfordhealthcare.org/campaigns/innovations.html">
-            <img class="panel-image temp-hidden" src="/content/dam/SHC/brandcampaign/fin-desktop2.jpg" data-displayduration="3"/>
-        </a>
-    
-
-</div>
-
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div>
-
-
-</div>
-</div>
-</div>
-<div class="dynamic_container parbase section"><div id="dynamic-container">
-    <div class="edit-mode-message hidden">
-        <b>AUTHOR MODE: Dynamic Container</b> - Selected view modes:   mobile
-    </div>
-
-    <div class="dynamic-container-parsys
-                
-                
-                
-                mobile-size-container">
-
-    
-    
-    
-    <div class="bannerdisplay parbase">
-<div class="banner-display">
-    <div class="container  ">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="items full-image clearfix">
-                    <div class="banner-display-image-panels"><div class="bannerdisplaypanel parbase section">
-    
-        <a class="panel-image-link" href="https://stanfordhealthcare.org/campaigns/innovations.html">
-            <img class="panel-image temp-hidden" src="/content/dam/SHC/brandcampaign/fin-mobile.jpg" data-displayduration="3"/>
-        </a>
-    
-
-</div>
-
-</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div>
-
-
-</div>
-</div>
-</div>
-<div class="general_container parbase section">
-
-
-
-
-
-
-  
-
-
-<div class="default">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="content_box parbase section">    
-
-        
-
-
-    
-
-        
-         
-        
-            
-            
-                 <div class="row content-hh3fhl91ej textOnly">
-                
-        
-        <span class='content-box-component' uniqueId='hh3fhl91ej'>
-            <div class="content-hh3fhl91ej">
-
-                
-                
-                    
-                    
-                        <div class="content_box_title">
-                            <span class="title-container title-image">
-                                <a>
-                                    Make an appointment
-                                </a>
-                            </span>
-                        </div>
-                    
-
-                
-
-
-                <div class= "col-sm-12 " id="content_box_container" >
-
-                    <table class="table1" width="100%">
-                        <tr>
-
-                            <td align="center">
-                                <div class="content-wrapper-box">
-                                    <div class="tile-board-parsys parsys"><div class="reference parbase section"><div class="cq-dd-paragraph"><div class="text_548525874 text parbase">
-
-
-    <div class ="rte-has-anchor-link">
-        <p style="text-align: center;">Request an appointment directly with <a href="https://stanfordhealthcare.org/search-results.clinics.html" adhocenable="false">your clinic</a>, <a href="https://stanfordhealthcare.org/search-results.doctors.html" adhocenable="false">your doctor</a>,</p>
-<p style="text-align: center;">or call 650-498-3333.</p>
-
-    </div>
-
-
-
-</div>
-</div>
-</div>
-
-</div>
-
-
-                                    
-
-                                </div>
-                            </td>
-
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </span>
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-</div>
-
-<div class="home-thematic-panel thematic_panel parbase">
-
-<div id="thematic-panel_" class="embedded-anchor"></div>
-<div class="thematic-panel-height">
-    <div class="thematic-panel-component">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="thematic-panel-wrapper">
-                        
-                                    
-                                    
-                                    
-                                    
-                                    
-                                        
-                                        
-                                            
-                                            
-                                        
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div class="thematic-panel panel-rail-right first">
-                                        <div class="panel-main">
-                                            <div class="img-wrapper">
-                                                
-                                                    
-                                                    
-                                                        <a href="https://stanfordhealthcare.org/stanford-health-now/2017/car-t-therapy.html" class="presentation " data-presentation-container=".article-presentation">
-                                                    
-                                                
-
-                                                    <span class="image-floater"><img alt="" class="" title="car-t-721x444-miklos-patient.jpg" src="/content/shc/en/stanford-health-now/2017/car-t-therapy/_jcr_content/articleImage.transform/721x444/q82/image.jpg"/></span>
-                                                    <span class="img-treatment"></span>
-                                                </a>
-                                            </div>
-                                            
-                                                
-                                                
-                                                    <div class="sidecar ">
-                                                
-                                                    
-                                                        
-                                                        
-                                                            <a href="https://stanfordhealthcare.org/stanford-health-now/2017/car-t-therapy.html" class="sidecar-content presentation" data-presentation-container=".article-presentation">
-                                                        
-                                                    
-                                                        
-                                                        <span class="title">New Immunotherapy Advances Care for Resistant Lymphoma</span>
-                                                        <span class="description">Stanford Health Care is one of 16 sites across the country, and the only one in Northern California to offer this new CAR-T cell therapy for lymphoma, a type of blood cancer.</span>
-                                                        
-                                                        
-                                                        <span class="cta custom">
-                                                            Learn more »
-                                                        </span>
-                                                        
-                                                        
-                                                    </a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="panel-rail">
-                                                
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-asset ">
-    <div class="image-wrapper">
-        
-            
-            
-                <span class="image-floater"><img src="/content/dam/SHC/clinics/locations/900blakewilburdr-stanford.jpg.transform/221x221/q82/image.jpg" alt="Blood and Marrow Transplant Program"/></span>
-            
-        
-    </div>
-    <div class="tile-overlay"></div>
-    <div class="tile-content clinic-tile-content">
-        <a href="https://stanfordhealthcare.org/medical-clinics/blood-bone-marrow-transplant-program.html">Blood and Marrow Transplant Program</a>
-    </div>
-</div>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                
-                                                
-                                                    
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-color red">
-    <div class="tile-content">
-        <a href="https://stanfordhealthcare.org/stanford-health-now/2017/car-t-therapy-q-a.html">CAR-T Therapy Q&A</a>
-    </div>
-</div>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                
-                                            </div>
-                                            <div class="overlay"></div>
-                                        </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                   
-                            
-                                    
-                            
-                                    
-                            
-                                    
-                                    
-                                    
-                                    
-                                    
-                                        
-                                            
-                                        
-                                        
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div class="thematic-panel panel-rail-left">
-                                        <div class="panel-main">
-                                            <div class="img-wrapper">
-                                                
-                                                    
-                                                        <a href="https://stanfordhealthcare.org/campaigns/stanford-primary-care.html">
-                                                    
-                                                    
-                                                
-
-                                                    <span class="image-floater"><img alt="" id="" class="" src="/content/dam/SHC/Campaign/Stanford-Primary-Care/images/721x444-primary-care.jpg.transform/721x444/q82/image.jpg"/></span>
-                                                    <span class="img-treatment"></span>
-                                                </a>
-                                            </div>
-                                            
-                                                
-                                                
-                                                    <div class="sidecar right">
-                                                
-                                                    
-                                                        
-                                                            <a href="https://stanfordhealthcare.org/campaigns/stanford-primary-care.html" class="sidecar-content">
-                                                        
-                                                        
-                                                    
-                                                        
-                                                        <span class="title">Stanford Primary Care</span>
-                                                        <span class="description">Stanford Health Care offers primary care at convenient locations near your work or home. Gain access to exceptional primary care doctors, as well as adults and pediatric specialists within Stanford Health Care's network of affiliated doctors across the Bay Area.</span>
-                                                        
-                                                        
-                                                        <span class="cta custom">
-                                                            Find a location near you »
-                                                        </span>
-                                                        
-                                                        
-                                                    </a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="panel-rail">
-                                                
-                                                    
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-color red">
-    <div class="tile-content">
-        <a href="https://stanfordhealthcare.org/search-results.doctors.html#x1=sp_prim_care_phy&q1=true">Find a Primary Care Doctor</a>
-    </div>
-</div>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                
-                                                
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-asset ">
-    <div class="image-wrapper">
-        
-            
-            
-                <span class="image-floater"><img src="/content/dam/SHC/clinics/express-care/images/express-care-440x440.jpg.transform/221x221/q82/image.jpg" alt="Express Care"/></span>
-            
-        
-    </div>
-    <div class="tile-overlay"></div>
-    <div class="tile-content clinic-tile-content">
-        <a href="https://stanfordhealthcare.org/medical-clinics/express-care.html">Express Care</a>
-    </div>
-</div>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                
-                                            </div>
-                                            <div class="overlay"></div>
-                                        </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                   
-                            
-                                    
-                            
-                                    
-                            
-                                    
-                                    
-                                    
-                                    
-                                    
-                                        
-                                        
-                                            
-                                            
-                                        
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <div class="thematic-panel panel-rail-right">
-                                        <div class="panel-main">
-                                            <div class="img-wrapper">
-                                                
-                                                    
-                                                    
-                                                        <a href="https://stanfordhealthcare.org/stanford-health-now/videos/gynecologic-cancer-program.html" class="presentation left" data-presentation-container=".article-presentation">
-                                                    
-                                                
-
-                                                    <span class="image-floater"><img alt="" class="" src="https://img.youtube.com/vi/U8v1zhroCv8/maxresdefault.jpg"/></span>
-                                                    <span class="img-treatment"></span>
-                                                </a>
-                                            </div>
-                                            
-                                                
-                                                
-                                                    <div class="sidecar ">
-                                                
-                                                    
-                                                        
-                                                        
-                                                            <a href="https://stanfordhealthcare.org/stanford-health-now/videos/gynecologic-cancer-program.html" class="sidecar-content presentation" data-presentation-container=".article-presentation">
-                                                        
-                                                    
-                                                        
-                                                        <span class="title">Stanford Gynecologic Cancer Program</span>
-                                                        <span class="description">At Stanford, we offer you the most advanced diagnosis and treatment options for gynecologic cancers, no matter how common or complex.</span>
-                                                        
-                                                        <span class="cta video">
-                                                            <i></i>
-                                                            Watch Video
-                                                        </span>
-                                                        
-                                                        
-                                                        
-                                                    </a>
-                                                </div>
-                                                
-                                            </div>
-                                            <div class="panel-rail">
-                                                
-                                                    
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-color red">
-    <div class="tile-content">
-        <a href="https://stanfordhealthcare.org/medical-clinics/gynecologic-cancer-program.html">Gynecologic Cancer Program</a>
-    </div>
-</div>
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                
-                                                
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                    
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-
-
-<div class="shc-tile shc-tile-article shc-tile-video ">
-    <div class="image-wrapper  center ">
-        
-            
-                <span class="image-floater"><img src="https://img.youtube.com/vi/6klhwmNq_Ng/maxresdefault.jpg" alt="Latest Advances in Cervical Cancer Screening and Treatment"/></span>
-            
-            
-        
-    </div>
-    <div class="tile-overlay-hover"></div>
-    <div class="tile-overlay-gradient"></div>
-    <div class="tile-content">
-            
-        
-                
-        
-
-            
-        
-
-        <a target="_blank" href="https://stanfordhealthcare.org/stanford-health-now/videos/advances-cervical-cancer-screening-treatment.html" onclick="ga(gaName + '.send', 'event', 'button', 'click', 'Modal - Spotlight');" class="presentation" data-presentation-container=".article-presentation">
-            <div class="tile-overlay">
-                <div class="tile-lower-content">
-                    <span class="description">Latest Advances in Cervical Cancer Screening and Treatment</span>
-                    <span class="icon"></span>
-                    <span class="duration">Play Video | 1:01:49
-                    </span>
-                </div>
-            </div>
-        </a>
-    </div>
-</div>
-
-                                                    
-                                                
-                                            </div>
-                                            <div class="overlay"></div>
-                                        </div>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                   
-                            
-                                    
-                            
-                                    
-                            
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="controls">
-                        <div class="paddles">
-                            <a href="#" class="paddle-left"></a>
-                            <a href="#" class="paddle-right"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
-</div>
-
-<div class="home-main-parsys parsys"><div class="quad_tile parbase section">
-
-
-
-
-<div class="quad-tile visible-xs">
-    <div class="quad-wrapper">
-        <div class="top-two row">
-            <a href="https://stanfordhealthcare.org/search-results.doctors.html" class="col-xs-6">
-                <div class="tile tile-one " >
-                    <div class="text-wrapper">
-                        
-                            
-                            
-                                <div alt="" id="" class="background quad-tile-mobile" style="background-image: url(/content/dam/SHC/doctor-img-quad-tile-wide.jpg.transform/original/q82/image.jpg);"></div>
-                                <div class="overlay"></div>
-                                <div class="text">Doctors</div>
-                            
-                            
-                        
-                    </div>
-                </div>
-            </a>
-            <a href="https://stanfordhealthcare.org/search-results.conditions.html" class="col-xs-6">
-                <div class="tile tile-two blue">
-                    <div class="text-wrapper">
-                        
-                            
-                            
-                            
-                                <div class="text">Conditions & Treatments</div>
-                            
-                        
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="bottom-two row">
-            <a href="https://stanfordhealthcare.org/search-results.clinics.html" class="col-xs-6">
-                <div class="tile tile-three gray" >
-                    <div class="text-wrapper">
-                        
-                            
-                            
-                            
-                                <div class="text">Clinics & Locations</div>
-                            
-                        
-                    </div>
-                </div>
-            </a>
-            <a href="https://myhealth.stanfordmedicine.org/myhealth/default.asp" class="col-xs-6">
-                <div class="tile tile-four red" >
-                    <div class="text-wrapper">
-                        
-                            
-                            
-                            
-                                <div class="text">MyHealth Login</div>
-                            
-                        
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div></div>
-<div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <p>   </p>
-
-    </div>
-
-
-
-</div>
-<div class="general_container parbase section">
-
-
-
-
-
-
-  
-
-
-<div class="default">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="columns parbase section">
-
-
-
-
-<div class="container">
-    <div class="row">
-        
-
-            
-
-            
-                <div class="col-sm-6">
-                    <div class="parsysleft parsys"><div class="general_container parbase section">
-
-
-
-
-
-
-
-<div class="bodywidth-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="reference parbase section"><div class="cq-dd-paragraph"><div class="general_container_2625985 general_container parbase">
-
-
-
-
-
-
-
-<div class="bodywidth-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <h3>Why Choose Stanford Health Care?</h3>
-<p>At Stanford Health Care, we not only deliver care for everyday needs and complex cases, we <i>develop it.</i> Learn more about the unique advantages we provide for you as a leading academic medical center.</p>
-
-    </div>
-
-
-
-</div>
-<div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <p><a href="https://stanfordhealthcare.org/for-patients-visitors/why-choose-shc.html"><b>Learn More »</b></a></p>
-
-    </div>
-
-
-
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <p>   </p>
-
-    </div>
-
-
-
-</div>
-
-</div>
-
-                </div>
-                <div class="col-sm-6">
-                    <div class="parsyscenter parsys"><div class="general_container parbase section">
-
-
-
-
-
-
-
-<div class="bodywidth-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="reference parbase section"><div class="cq-dd-paragraph"><div class="general_container_1481266494 general_container parbase">
-
-
-
-
-
-
-
-<div class="bodywidth-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <h3>How to Become a Patient</h3>
-<p>Becoming a patient at Stanford Health Care is easy. Learn more about our appointment process and how we can connect you with the right Stanford doctor or clinic for your needs. </p>
-
-    </div>
-
-
-
-</div>
-<div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <p><a href="https://stanfordhealthcare.org/for-patients-visitors/how-to-become-a-patient.html"><b>Learn More »</b></a></p>
-
-    </div>
-
-
-
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="text parbase section">
-
-
-    <div class ="rte-has-anchor-link">
-        <p>   </p>
-
-    </div>
-
-
-
-</div>
-
-</div>
-
-                </div>
-            
-
-            
-
-            
-
-            
-
-        
-    </div>
-</div></div>
-<div class="general_container parbase section">
-
-
-
-
-
-
-
-<div class="bodywidth-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="parsyscontainer parsys"><div class="columns parbase section">
-
-
-
-
-<div class="container">
-    <div class="row">
-        
-
-            
-
-            
-                <div class="col-sm-6">
-                    <div class="parsysleft parsys"><div class="reference parbase section"><div class="cq-dd-paragraph"><div class="text_1899412849 text parbase">
-
-
-    <div class ="rte-has-anchor-link">
-        <h3>Care Where and When You Need It</h3>
-<p>With Stanford Health Care, you have access to primary care doctors and specialists from Stanford Medicine and its affiliated network, across 60+ locations in the Bay Area.</p>
-<p><b><a href="https://stanfordhealthcare.org/search-results.doctors.html" adhocenable="false">Find a Doctor »</a></b></p>
-<p><b><a href="https://stanfordhealthcare.org/search-results.clinics.html" adhocenable="false">Find a Clinic »</a></b></p>
-
-    </div>
-
-
-
-</div>
-</div>
-</div>
-
-</div>
-
-                </div>
-                <div class="col-sm-6">
-                    <div class="parsyscenter parsys"><div class="imagewithcaption parbase section">
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-    
-    
-        
-        <script>
-            $(function(){
-                $(".image-with-caption.width_not_set img").one("load",function() {
-                    $( ".image-with-caption img").each(function() {
-                        var num = this.naturalWidth;
-                        $(this).closest('.image-with-caption.width_not_set').css('max-width',num);
-                    });
-                }).each(function() {
-                    if(this.complete) $(this).load();
-                });
-            });
-        </script>
-    
-
-<div class="image-with-caption width_not_set " style="min-width: 100px;">
-    <div class="row source-row">
-        <div class="image-source col-sm-12">
-            
-        </div>
-    </div>
-    <div class="row images-row">
-        <div class="image-row-buffer">
-            <div  class="image-col col-sm-12 no-border" style="padding: 0px; ">
-                
-                
-                    
-                    
-                        <div class="image adaptiveimage parbase">
-
-<div data-picture data-alt=''>
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.320.low.jpg/1505200122750.jpg'       data-media="(min-width: 1px)"></div>  
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.320.medium.jpg/1505200122750.jpg'    data-media="(min-width: 320px)"></div>  
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.480.medium.jpg/1505200122750.jpg'    data-media="(min-width: 321px)"></div>  
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.476.high.jpg/1505200122750.jpg'      data-media="(min-width: 481px)"></div>   
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.620.high.jpg/1505200122750.jpg'      data-media="(min-width: 769px)"></div>  
-    <div data-src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.full.high.jpg/1505200122750.jpg'     data-media="(min-width: 1025px)"></div> 
-
-    
-    <noscript>
-        <img src='/content/shc/en/_jcr_content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.full.high.jpg/1505200122750.jpg' alt=''>
-    </noscript>
-    <div>
-        <span></span>
-    </div>
-</div>
-<!--[if lt IE 9]>
-    <img src='/content/shc/en/jcr:content/home-main-parsys/general_container/parsyscontainer/general_container/parsyscontainer/columns/parsyscenter/imagewithcaption/image.img.full.high.jpg/1505200122750.jpg' />
-<![endif]-->
-
-</div>
-
-                    
-                
-            </div>
-        </div>
-    </div>
-    
-</div></div>
-
-</div>
-
-                </div>
-            
-
-            
-
-            
-
-            
-
-        
-    </div>
-</div></div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-</div>
-
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="now_pulse parbase section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-    
-    
-    
-    
-    
-    
-
-<div id="stanford-health-now-pulse_" class="embedded-anchor"></div>
-<div class="stanford-now-pulse">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <a href="https://stanfordhealthcare.org/stanford-health-now.html"><h4>Stanford Health Now</h4></a>
-            </div>
-            <article class="col-md-8">
-                 
-                    
-                    
-                    
-                     
-                    
-                                        
-                    
-                        <a href="https://stanfordhealthcare.org/stanford-health-now.html/features.html"><h5>Features</h5></a>
-                    
-                              
-                                       
-                    
-                    
-                    <div class="row story-image-and-content"> 
-                        <div class="image-wrapper rectangleThumbnail ">
-                            
-                            
-                            <span>
-                                <img alt="" class="hidden-xs" title="yablonka-eric.jpg" src="/content/shc/en/stanford-health-now/2017/qa-new-stanford-health-care-cio-eric-yablonka/_jcr_content/articleImage.transform/100x100/q82/image.jpg"/>
-                            </span>
-                            <a href="https://stanfordhealthcare.org/stanford-health-now/2017/qa-new-stanford-health-care-cio-eric-yablonka.html" class="presentation" data-presentation-container=".article-presentation">                              
-                                
-                            </a>                                                                                   
-                        </div>
-                        <div class="col-sm-10 story-content">
-                            <h2><a href="https://stanfordhealthcare.org/stanford-health-now/2017/qa-new-stanford-health-care-cio-eric-yablonka.html" class="presentation" data-presentation-container=".article-presentation">Q&A with New Stanford Health Care CIO Eric Yablonka</a></h2>
-                            <p>Eric Yablonka joined Stanford Health Care as Chief Information Officer from the University of Chicago, where he had served in the role for more than 16 years.</p>                    
-                        </div>
-                    </div>
-                
-            </article>
-            <article class="col-md-4">
-                
-                    
-                    
-                                         
-                    
-                    
-                    
-                                         
-                                      
-                    	<a href="https://stanfordhealthcare.org/stanford-health-now.html/features.html"><h5>Features</h5></a>
-                    
-                    <h2><a href="https://stanfordhealthcare.org/stanford-health-now/2017/car-t-therapy.html" class="presentation" data-presentation-container=".article-presentation">New Immunotherapy Advances Care for Lymphoma</a></h2>
-                    <p>Stanford Health Care is one of 16 sites across the country, and the only one in Northern California that offers this new CAR-T cell therapy for lymphoma, a type of blood cancer.</p>
-                
-            </article>
-        </div>
-    </div>
-</div></div>
-<div class="mvp_promotion parbase section">
-
-
-
-
-<div class="container">
-    <div class="mvp-promotion-wrapper">
-        <div class="row">
-            <div class="col-sm-12 mvp-promo-component clearfix promo0">
-                <div class="image-wrapper ">
-                        <div class="image-aligner">
-                        
-                        <img alt="" class="" title="myhealth-promo8.jpg" src="/content/shc/en/_jcr_content/home-main-parsys/mvp_promotion/desktopImage.transform/300x260/q82/image.jpg"/>
-                    </div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="content">
-                        
-                            <h2>Quick and easy access to all your personal health information, at home or on the go with our new mobile app</h2>
-                        
-                        
-                            <p><a href="https://itunes.apple.com/us/app/stanford-health-care-myhealth/id922978966?mt=8" target="_blank">Download MyHealth mobile app for iPhone »</a></p>
-                        
-                        <a href="https://play.google.com/store/apps/details?id=org.stanfordhealthcare.myhealth" target="_blank">
-                            Download MyHealth mobile app for Android &raquo;
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-sm-12 mvp-promo-component clearfix promo1">
-                <div class="image-wrapper ">
-                    <div class="image-aligner">
-                        
-                        <img alt="" class="" title="stanford-primary-care-tv-commercial-2014.jpg" src="/content/shc/en/_jcr_content/home-main-parsys/mvp_promotion/desktopImage2.transform/300x260/q82/image.jpg"/>
-                    </div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="content">
-                        
-                            <h2>Primary Care Doctors Are There For You</h2>
-                        
-                        
-                            <p>Stanford Health Care now offers primary care at convenient locations near your work or home. Gain access to exceptional primary care doctors as well as adult and pediatric specialists within Stanford Health Care’s network of affiliated doctors across the Bay Area.</p>
-                        
-                        <a href="https://stanfordhealthcare.org/medical-clinics/primary-care.html" target="_blank">
-                            Find a location near you&raquo;
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            
-        </div>
-    </div>
-    <div class="container">
-        <div class="paddles">
-            <a href="#" class="paddle-left"></a>
-            <a href="#" class="paddle-right"></a>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="controls"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-</div>
-
-            
-
-
-<footer class="no-print">
-    <div class="noindex">
-        
-        <div class="fatfooter">
-
-
-
-
-
-
-
-<div id="checkBootStrapXS" class="hidden-xs"></div>
-<div id="checkBootStrapMD" class="hidden-md"></div>
-<div id="placemat" class="container">
-
-    <div class="row">
-        <div class="placemat-main-links col-md-3 col-sm-12 col-xs-12">
-            <div class="footerpar1 parsys"><div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/search-results.doctors.html" data-aa-footer-links="find a doctor">Find a Doctor</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/search-results.conditions.html" data-aa-footer-links="find conditions & treatments">Find Conditions & Treatments</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/search-results.clinics.html" data-aa-footer-links="find a stanford clinic">Find a Stanford clinic</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-
-</div>
-
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="footerpar2 parsys"><div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/for-patients-visitors.html" data-aa-footer-links="for patients & visitors">For Patients & Visitors</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/for-patients-visitors/billing.html" data-aa-footer-links="billing">Billing</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/for-patients-visitors/health-insurance-plans.html" data-aa-footer-links="insurance">Insurance</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/for-patients-visitors/your-hospital-stay.html" data-aa-footer-links="your hospital stay">Your Hospital Stay</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/about-us/contact.html" data-aa-footer-links="contact us">Contact Us</a>
-                        
-                    
-
-                </li>
-            
-        
-        
-            
-                <li><div id='lpLink'></div></li>
-            
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="http://medicalgiving.stanford.edu/" data-aa-footer-links="make a gift">Make a Gift</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/about-us.html" data-aa-footer-links="about us">About Us</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/stanford-health-now.html" data-aa-footer-links="stanford health now">Stanford Health Now</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-
-</div>
-
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="footerpar3 parsys"><div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/health-care-professionals.html" data-aa-footer-links="for healthcare professionals">For Healthcare Professionals</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/health-care-professionals/referring-physicians.html" data-aa-footer-links="referring physicians">Referring Physicians</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/health-care-professionals/nursing.html" data-aa-footer-links="nursing">Nursing</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/health-care-professionals/allied-healthcare.html" data-aa-footer-links="allied healthcare professionals">Allied Healthcare Professionals</a>
-                        
-                    
-
-                </li>
-            
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/newsroom.html" data-aa-footer-links="newsroom">Newsroom</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="http://www.stanfordhospitalcareers.com/" data-aa-footer-links="careers">Careers</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="https://stanfordhealthcare.org/for-patients-visitors/volunteering.html" data-aa-footer-links="volunteering">Volunteering</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-
-</div>
-
-        </div>
-
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="footerpar4 parsys"><div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    
-                        
-                        
-                            <a href="http://universityhealthcarealliance.org/" data-aa-footer-links="university healthcare alliance">University HealthCare Alliance</a>
-                        
-                    
-
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-                <li class="footer-list-header">
-                    <a href="http://www.valleycare.com/" data-aa-footer-links="stanford health care – valleycare">Stanford Health Care – ValleyCare</a>
-                </li>
-            
-            
-        
-        
-        
-    </ul>
-</div></div>
-<div class="horizontal_rule parbase section">
-
-
-
-
-
-<div class="horizontal-rule "></div></div>
-<div class="footer-list section">
-
-
-
-
-
-
-
-
-
-
-
-<div class="bucket">
-    <ul>
-        
-            
-            
-                
-            
-        
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="http://med.stanford.edu/" data-aa-footer-links="stanford medicine">Stanford Medicine</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="http://www.stanfordchildrens.org/" data-aa-footer-links="stanford children's health">Stanford Children's Health</a>
-                        
-                    
-
-                </li>
-            
-        
-            
-            
-            
-                
-
-                <li>
-                    
-                        
-                        
-                            <a href="http://www.stanford.edu/" data-aa-footer-links="stanford university">Stanford University</a>
-                        
-                    
-
-                </li>
-            
-        
-        
-    </ul>
-</div></div>
-
-</div>
-
-            <div id="social" class="clearfix">
-                <a class="facebook" href="http://facebook.com/stanfordhealthcare" data-aa-footer-links="facebook"></a>
-                <a class="twitter" href="http://twitter.com/stanfordhealth" data-aa-footer-links="twitter"></a>
-                <a class="youtube" href="https://www.youtube.com/user/StanfordHospital" data-aa-footer-links="youtube"></a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">           
-            <div id="copyright" class="clearfix">
-                <div class="logo-wrapper">
-                    <a class="stanford-med-logo" href="http://med.stanford.edu/" data-aa-footer-links="stanford medicine - logo"></a>
-                </div>
-                <ul class="clearfix">
-                    <li>
-                        
-                        <a href="https://stanfordhealthcare.org/about-us/legal-disclaimer.html" data-aa-footer-links="legal">Legal</a>
-                    </li>
-                    <li>
-                        
-                        <a href="https://stanfordhealthcare.org/for-patients-visitors/your-hospital-stay/patient-privacy.html" data-aa-footer-links="privacy">Privacy</a>
-                    </li>
-                    <li>
-                        
-                        <a href="https://stanfordhealthcare.org/about-us/conduct.html" data-aa-footer-links="code of conduct">Code of Conduct</a>
-                    </li>
-                    
-                    <li class="last">
-                         <a href="https://stanfordhealthcare.org/about-us/notice-of-nondiscrimination.html" style="margin-left: -10px !important;" data-aa-footer-links="notice of nondiscrimination">|&nbsp;&nbsp;&nbsp;Notice of Nondiscrimination</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;©2017 Stanford Health Care. All Rights Reserved
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="feedbackmodal parbase">
-
-
-<script type="text/javascript">
-<!--
-$(function () {
-    var initObject = {
-        "thankYouText": "Thank you for submitting your feedback.",
-        "serverDownText": "Sorry. The feedback system is not available at this time. Please send feedback to us directly at <a href='mailto:shcinternal@med.stanford.edu'>shcinternal@med.stanford.edu</a>.",
-        "submitFailedText": "We're experiencing trouble in submitting your feedback. Please send feedback to us directly at <a href='mailto:shcinternal@med.stanford.edu'>shcinternal@med.stanford.edu</a>.",
-        "mainHeader": "Provide Feedback",
-        "modalHeader": "QUESTIONS OR COMMENTS?",
-        "modalBody": "Do you have feedback about a specific page? Please use this form to submit the feedback that you may have."
-    };
-    var feedbackModal = new SHC.ui.FeedbackModal(".open-handlebar-modal", initObject);
-});
-//-->
-</script>
-</div>
-</div>
-
-        
-    </div>
-</footer>
-
-
-    
-
-
-<script type="text/javascript">
-    var GLOBAL_SPURL_OBJECT = "//sp1004f3b2.guided.ss-omtrdc.net";
-</script>
-        </div>
-        <div class="sidebar-offcanvas col-xs-12" id="sidebar" role="navigation">
-        
-        <div class="masthead_menu parbase">
-
-
-
-<div class="container">
-    <div class="row">
-        <div id="menu" class="static-menu">
-            <div class="menu-content">
-                <div class="home-icon-container clearfix">
-                    <a id="menu-home-link" href="https://stanfordhealthcare.org/" data-aa-sidebar-links="home">
-                        <span class="home-icon"></span>
-                        <span class="home-icon-label">Home</span>
-                    </a>
-                </div>
-                <a href="#" class="close-menu">Close</a>
-
-                <div id="menu-main-nav">
-                    
-                        
-                        
-                            
-                                <div class="masthead_menu_link parbase">
-                                    <a href="https://stanfordhealthcare.org/search-results.doctors.html" data-aa-sidebar-links="doctors">Doctors</a>
-                                </div>
-                            
-                            
-                        
-                    
-                        
-                        
-                            
-                                <div class="masthead_menu_link parbase">
-                                    <a href="https://stanfordhealthcare.org/search-results.clinics.html" data-aa-sidebar-links="clinics & locations">Clinics & Locations</a>
-                                </div>
-                            
-                            
-                        
-                    
-                        
-                        
-                            
-                                <div class="masthead_menu_link parbase">
-                                    <a href="https://stanfordhealthcare.org/search-results.conditions.html" data-aa-sidebar-links="conditions & treatments">Conditions & Treatments</a>
-                                </div>
-                            
-                            
-                        
-                    
-                        
-                        
-                            
-                                <div class="masthead_menu_link parbase">
-                                    <a href="https://stanfordhealthcare.org/search-results.trials.html" data-aa-sidebar-links="clinical trials"> Clinical Trials</a>
-                                </div>
-                            
-                            
-                        
-                    
-                        
-                        
-                            
-                            
-                                <div class="masthead_menu_link parbase">
-                                    <a href="https://myhealth.stanfordhealthcare.org/" class="secondary-link" data-aa-sidebar-links="myhealth login">MyHealth Login</a>
-                                </div>
-                            
-                        
-                    
-                    
-                </div>
-                <div class="sidebar-shadow">
-                    <hr>
-                </div>
-                <div id="menu-secondary-nav">
-                    <div>
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/for-patients-visitors.html" data-aa-sidebar-links="patients & visitors">Patients & Visitors</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/for-patients-visitors/billing.html" data-aa-sidebar-links="billing">Billing</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/for-patients-visitors/health-insurance-plans.html" data-aa-sidebar-links="insurance">Insurance</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/for-patients-visitors/financial-assistance.html" data-aa-sidebar-links="financial assistance">Financial Assistance</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/for-patients-visitors/your-hospital-stay/medical-records.html" data-aa-sidebar-links="medical records">Medical Records</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/about-us/contact.html" data-aa-sidebar-links="contact us">Contact Us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/health-care-professionals.html" data-aa-sidebar-links="healthcare professionals">Healthcare Professionals</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/health-care-professionals/referring-physicians.html" data-aa-sidebar-links="referring physicians">Referring Physicians</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/health-care-professionals/nursing.html" data-aa-sidebar-links="nursing">Nursing</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox masthead_menu_sub_link">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/health-care-professionals/allied-healthcare.html" data-aa-sidebar-links="allied healthcare">Allied Healthcare</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/about-us.html" data-aa-sidebar-links="about us">About Us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="http://www.stanfordhospitalcareers.com/" data-aa-sidebar-links="careers">Careers</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/newsroom.html" data-aa-sidebar-links="newsroom">Newsroom</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="http://medicalgiving.stanford.edu/" data-aa-sidebar-links="make a donation">Make a Donation</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                            
-                            
-                                
-                                
-                                    <div class="parbase menu-my-health masthead_menu_revealbox">
-                                        <div class="masthead-menu-revealbox">
-                                            <div class="masthead-menu-revealTitleBar">
-                                                <a href="https://stanfordhealthcare.org/stanford-health-now.html" data-aa-sidebar-links="stanford health now">Stanford Health Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                            
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar-bottom"></div>
-        </div>
-    </div>
-</div></div>
-
-        
-        </div>
-    </div>
-    <div id="presentation-mode" aria-hidden="true">
-        <div class="header">
-            <div class="close-container">
-                <div class="close" tabindex="0">Close</div>
-            </div>
-        </div>
-
-        <div class="presentation-content-wrapper">
-            <div class="presentation-content"></div>
-            <div class="presentation-footer"></div>
-        </div>
-    </div>
-    
-
-
-
-
-
-<!-- Google Tag Manager for Production -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PND43V"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PND43V');</script>
-<!-- End Google Tag Manager for Production -->
-
-    <script type="text/javascript">if (typeof _satellite !== 'undefined') { _satellite.pageBottom(); }</script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/awesome-weather-widget-frontend.js?ver=1.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/js-cookie.js?ver=1.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/wp-embed.min.js?ver=4.8.3'></script>
 </body>
 </html>
