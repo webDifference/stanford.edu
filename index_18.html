@@ -1,2495 +1,1217 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8 "> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9 "> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js "> <!--<![endif]-->
-  
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="Stanford Medicine integrates a premier medical school with world-class hospitals to advance human health. ">
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <![endif]-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-6274115-3", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="Discover academic freedom | Stanford Humanities and Sciences" />
+<link rel="shortlink" href="https://humsci.stanford.edu/" />
+<link rel="canonical" href="https://humsci.stanford.edu/" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/stanford_hs/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/home" />
+<link rel="shortlink" href="/node/40" />
+<link rel="revision" href="/home" />
 
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,200italic,300italic,400italic,700italic|Fjord+One' rel='stylesheet' type='text/css'>
-    
-    
-
-
-
-
-
-
-    
-    
-		
-    
-
-
+    <title>Discover academic freedom | Stanford Humanities and Sciences</title>
+    <style id="prevent-fouc">
+      body {
+        opacity: 0;
+        transition: opacity .2s ease-out;
+      }
+    </style>
+    <link rel="stylesheet" href="/sites/default/files/css/css_iyoJn0Nn2f1MaQCWDTlDKg4SLT9u9HN4LU55b46bIeA.css?p0979m" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Source+Sans+Pro:300,300i,400,400i,700,700i,900,900i" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_txuAb1lZrGco-8FpRC8HSxa_QIKs1E5YHntJuQzTU7E.css?p0979m" media="all" />
 
     
-
-
-
-    
-    
-    
-
-
-
-
-
-
-
-
-
-    
-      
-    
-    
-
-
-
-
-
-
-
-
-    
-       
-        
-            
-        
-     
-
-
-
-<script type="text/javascript">var dataLayer = {"specVersion": "1.0.0","site": {"name": "Stanford Medicine","url": "http://sgec.stanford.edu/#","platform": "AEM","locale": "en","google": {"analytics": ""}},"page": {"id": "content-sm","title": "Stanford Medicine","navTitle": "Stanford Medicine","url": "http://sgec.stanford.edu.html","description": "Stanford Medicine integrates a premier medical school with world-class hospitals to advance human health.","keywords": [],"template": "Olympus Design","publishedDate": "2017-11-28T09:05:42.901-08:00","modifiedDate": "2017-11-28T09:05:42.901-08:00","content": {"title": "Explore Stanford Medicine","author": {"name": "","email": "","phone": ""}}}}</script>
-    
-    
-
-<script>(function(w){w.init={a:[],add:function(s,c,r,i,p,t){c=this;r=1;p=c.a;for(i=0,t=p.length;i<t;i++)if(""+p[i]===""+s)r=0;if(r)c.a.push(s)}};w.SM={components:{}};}(window));</script>
-<script src="//assets.adobedtm.com/2b02a6b36f7b0182d4b9286f1307f16aa7d507a3/satelliteLib-31367a551e48d2f5c09eef9ae33fbefa973adbbb.js"></script>
-
-
-<script type="text/javascript">CQURLInfo={"requestPath":"/content/sm","extension":"html","selectors":[],"systemId":"02e435de-69e3-4bfe-9250-da2816f306e4","runModes":"prod,crx3,nosamplecontent,publish,pub01,crx3tar"};</script>
-<link rel="stylesheet" href="/etc/clientlibs/sm/rte/collapse_text.eec1c350dcf273de9d109b12a13a9f5a.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/base/navigation.2feb661b991ba1e5bc46f3d7f6433ff1.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/base/mobile-navigation-panel.5a8b39fdb014218b71f6a2521bb9cfcf.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/vendor/bootstrap.e9f69e87613122f9bbbe2f2a09f1be1f.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/vendor/fontawesome.9bbdd5ed6f8a279c892e5b0d8bf6d326.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/vendor/jquery.royalslider.c1fe93bbfa950c6b160fbc4c1cca1592.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/vendor/magnific-popup.5204575709689d82cb68a40b7cfbaded.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/vendor/selectize.cfac217b743abcf296b6f4c25341029f.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/base.83f9c7dbb8510e363c4b4b761eb2ec31.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/base/components.0d0ae182c1738c6682d12944013e27fe.css" type="text/css">
-<link rel="stylesheet" href="/etc/clientlibs/sm/olympus.99dcd1d316970aa7d3a92bdd024f75cc.css" type="text/css">
-<script type="text/javascript" src="/etc/clientlibs/sm/rte/collapse_text.5a522e8bb25cfee191fc1b5164b5bff5.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/jquery.d311399a202bbfe8f6b94a4546a2a025.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/lodash.cc0e77ea4b5cff53737689007687320c.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/utils.202868df0e21b76e7e0c0efc6792cc04.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/resize-end.ef87d86dc0938cf55dc2d0972956ae9e.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/accessibility.111317412af58be4f545f67de3aee113.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/navigation.4f8466902ca8e46b9108729dbd8ec0ab.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/mobile-navigation-panel.7fdccb375d578f79a5a24bebe8e6f0af.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/bootstrap.0f80cc9c041a0edb918f852a948e1422.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/modernizr.b0bf3cb95f7afab821ac26b29ae5493a.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/utils.960d4a24cc6fa3b473b4ae2018d5c364.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.1cd927e8b915fa4931c6c086a8cfda10.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.04c02883bbd8d131b579412d156fbd96.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/jquery.royalslider.2e281f890e2740344f4b7dba8ea1f4e6.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/holderjs.82791be67835b3cea68b279494b0511b.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/jquery.touchSwipe.0cc92c6123cee62e2db015fb06c5fd3c.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/jquery.zrssfeed.858b292ef2e72f5221ee9fa35e1a8881.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/magnific-popup.9fbebd26b0e584d643216a372bd53266.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/readmore.ba90b5b4bd1a7e093ad3ad90320a66c7.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/vendor/selectize.8711dffafb2f2aa3b97a8c756ce39005.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base.3898e7bc5affc89c7b6ae2728ff1add2.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/base/components.37c69e81f6da06eef2edb8700df77204.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/sm/olympus.f5493790ccb9e25888a4d24762d70948.js"></script>
-
-
-
-
-
-    
-    
-
-    <link rel="apple-touch-icon" sizes="152x152" href="/etc/clientlibs/sm/images/SM-Shield-152x152.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/etc/clientlibs/sm/images/SM-Shield-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/etc/clientlibs/sm/images/SM-Shield-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/etc/clientlibs/sm/images/SM-Shield-76x76.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/etc/clientlibs/sm/images/SM-Shield-72x72.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/etc/clientlibs/sm/images/SM-Shield-60x60.png">
-    <link rel="apple-touch-icon" href="/etc/clientlibs/sm/images/SM-Shield-57x57.png">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/clientlibs/sm/images/favicon.ico">
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/clientlibs/sm/images/favicon.ico">
-    
-    
-    
-    
-    
-
-    
-        
-    
-
-    
-    
-        
-        
-            
-        
-    
-    
-    
-        
-    
-    <title>Home | Stanford Medicine</title>
-    <!--[if lte IE 8]><script type="text/javascript" src="/etc/clientlibs/sm/vendor/respond.js"></script>
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
-    
 
+    <link href="https://www.stanford.edu/su-identity/css/su-identity.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie8.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie7.css" />
+    <![endif]-->
+  </head>
+  <body class="user-logged-out path-frontpage page-node-type-page path-home">
+    <div id="su-wrap"> <!-- #su-wrap start -->
+      <div id="su-content"> <!-- #su-content start -->
+        <a href="#main-content" class="visually-hidden focusable skip-to-content">
+          Skip to main content
+        </a>
+        <!-- Brandbar snippet start -->
+        <div id="brandbar">
+          <div class="container">
+            <a href="http://www.stanford.edu">
+              <img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
+            </a>
+          </div> <!-- .container end -->
+        </div> <!-- #brandbar end -->
+        <!-- Brandbar snippet end -->
+        
+        <div class="layout-container">
 
-
-
-
-
-
-
-	<meta property="og:image" content="http://med.stanford.edu/content/dam/sm/sm-news/images/2016/10/feldman-brian.jpg">
-
-
-    
-</head>
-
+  <header class="header">
+    <div class="navigation">
+	
+<div id="block-stanford-hs-branding" data-block-plugin-id="system_branding_block">
   
-
-
-<body class="olympus-home">
-  
-
-
-  
-
-
-
-
-
-  
-  <div id="outerContainer">
     
-
-
-
-
-
-<header role="banner" class="header-local header-global-offset">
-
-
-<div class="container">
-
-
-
-
-
-<span class="skip-to-links">
-    <a href="#mainContent" class="sr-only">Skip to Content</a>
-    <a href="#navigationLocal" class="sr-only">Skip to Local Navigation</a>
-    <a href="#navigationGlobal" class="sr-only">Skip to Global Navigation</a>
-</span>
-<div class="brand">
-  <div class="brand-monument">
-    <a class="brand-logo" href="/">Stanford Medicine</a>
-  </div>
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <button type="button" class="navbar-toggle">
-    <span class="sr-only">Site Nav</span>
-    <span class="fa fa-bars"></span>
-  </button>
-</div>
-</div>
-</header>
-
-
-
-
-<header class="header-global">
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <nav class="navbar navbar-global navbar-dropdown container" id="navigationGlobal" role="navigation" aria-label="Secondary Navigation" tabindex="0">
-
-        <ul class="nav navbar-nav pull-right">
-            <li class="nav-item health">
-                <a href="#">Health Care</a>
-                
-                <div class="nav-item-panel">
-                    <section>
-                        <ul class="menu">
-                            <li><a href="#" tabindex="-1"><h3>Find a doctor</h3></a></li>
-                            <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.doctors.html">Adult-care doctor</a></li>
-                            <li><a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors">Pediatrician or pediatric specialist</a></li>
-                            <li><a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors&amp;search-term=Obstetrics">Obstetrician</a></li>
-                            <li><a href="#" tabindex="-1"><h3>Clinics &amp; Services</h3></a></li>
-                            <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.clinics.html">Adult care</a></li>
-                            <li><a href="http://www.stanfordchildrens.org/en/service/index?">Pediatric care</a></li>
-                            <li><a href="http://www.stanfordchildrens.org/en/service/index?">Obstetrics</a></li>
-                            <li><a href="//med.stanford.edu/clinicaltrials/">Clinical trials</a></li>
-                        </ul>
-
-                        <aside class="menu-box">
-                            <ul class="menu">
-                                <li><a href="#" tabindex="-1"><h3>Locations</h3></a></li>
-                                <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.clinics.html">Stanford Health Care</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/locations-directions">Stanford Children's Health</a></li>
-                                <li><a href="http://stanfordhealthcare.org/medical-clinics/emergency-department.html">Emergency Department</a></li>
-                                <li><em>Dial 911 in the event of a medical emergency</em></li>
-                            </ul>
-                        </aside>
-
-                        <aside class="menu-box menu-box-explore bg-icon-user-md ">
-                            <a href="//med.stanford.edu/health-care.html">
-                                <h3>Explore Health Care</h3>
-                                <p>Learn how we are healing patients through science &amp; compassion <i class="fa fa-arrow-right"></i></p>
-                            </a>
-                        </aside>
-
-                        <a href="#" class="back"><i class="fa fa-angle-left"></i> Back</a>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item research ">
-                <a href="#">Research</a>
-                <div class="nav-item-panel">
-                    <section>
-                        <ul class="menu">
-                            <li><a href="//med.stanford.edu/school/directory/basic-science-departments.html">Basic science departments</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/clinical-science-departments.html">Clinical science departments</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/stanford-medicine-institutes.html">Institutes</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/research-centers-and-programs.html">Research centers</a></li>
-                            <li><a href="//med.stanford.edu/school/directory.html">See full directory</a></li>
-                            <li><a href="#" tabindex="-1"><h3>Research Resources</h3></a></li>
-                            <li><a href="//med.stanford.edu/school/directory/research-administration.html">Research administration</a></li>
-                            <li><a href="//med.stanford.edu/profiles/">Academic profiles</a></li>
-                            <li><a href="//med.stanford.edu/clinicaltrials/">Clinical trials</a></li>
-                            <li><a href="//med.stanford.edu/rmg/funding/">Funding opportunities</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/researcher-resources.html">See all</a></li>
-                            <li><a href="#" tabindex="-1"><h3>Professional Training</h3></a></li>
-                            <li><a href="//postdocs.stanford.edu">Postdoctoral scholars</a></li>
-                            <li><a href="//gme.stanford.edu">Clinical research fellows</a></li>
-                        </ul>
-
-                        
-                            
-                                <aside class="menu-box menu-box-news">
-                                    <a href="//med.stanford.edu/content/sm/news/all-news/2017/11/clinical-trial-finds-blood-plasma-infusions-for-alzheimers-safe.html">
-                                        <h3>Research News</h3>
-                                        <img src="//med.stanford.edu/news/all-news/2017/11/clinical-trial-finds-blood-plasma-infusions-for-alzheimers-safe/jcr:content.thumbnail.140.100.jpg" alt="Clinical trial finds blood-plasma infusions for Alzheimer’s safe, promising"/>
-                                        <p>Clinical trial finds blood-plasma infusions for Alzheimer’s safe, promising <i class="fa fa-arrow-right"></i></p>
-                                    </a>
-                                </aside>
-                            
-                        
-
-                        <aside class="menu-box menu-box-explore bg-icon-book">
-                            <a href="//med.stanford.edu/research.html">
-                                <h3>Explore Research</h3>
-                                <p>Learn how we are fueling innovation <i class="fa fa-arrow-right"></i></p>
-                            </a>
-                        </aside>
-
-                        <a href="#" class="back"><i class="fa fa-angle-left"></i> Back</a>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item education position-right">
-                <a href="#">Education</a>
-                <div class="nav-item-panel">
-                    <section>
-                        <ul class="menu">
-                            <li><a href="//med.stanford.edu/md.html">MD program</a></li>
-                             <li><a href="//med.stanford.edu/pa.html">PA Programs</a></li>
-                            <li><a href="//med.stanford.edu/education/phd-programs.html">PhD programs</a></li>
-                            <li><a href="//med.stanford.edu/education/masters-programs.html">Masters programs</a></li>
-                            <li><a href="//med.stanford.edu/cme/">Continuing Medical Education</a></li>
-                            <li><a href="//postdocs.stanford.edu">Postdoctoral scholars</a></li>
-                            <li><a href="//gme.stanford.edu">Residencies &amp; fellowships</a></li>
-                            <li><a href="//med.stanford.edu/education/summer-outreach.html">Summer &amp; youth programs</a></li>
-                            <li><a href="//med.stanford.edu/education.html">See all</a></li>
-                            <li><a href="#" tabindex="-1"><h3>Education Resources</h3></a></li>
-                            <li><a href="//med.stanford.edu/profiles/">Academic profiles</a></li>
-                            <li><a href="//med.stanford.edu/school/deans-office.html">School Administration</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/basic-science-departments.html">Basic science departments</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/clinical-science-departments.html">Clinical science departments</a></li>
-                            <li><a href="//med.stanford.edu/alumni/">Alumni services</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/academic-resources.html">Faculty resources</a></li>
-                            <li><a href="//med.stanford.edu/about/diversity.html">Diversity programs</a></li>
-                            <li><a href="http://lane.stanford.edu/index.html">Lane Library</a></li>
-                            <li><a href="//med.stanford.edu/school/directory/academic-resources.html">Student resources</a></li>
-                        </ul>
-
-                        
-                            
-                                <aside class="menu-box menu-box-news">
-                                    <a href="//med.stanford.edu/content/sm/news/all-news/2017/10/diversity-center-for-med-school-opens-in-lane-library.html">
-                                        <h3>Education News</h3>
-                                        <img src="//med.stanford.edu/news/all-news/2017/10/diversity-center-for-med-school-opens-in-lane-library/jcr:content.thumbnail.140.100.jpg" alt="Diversity center for med school opens in Lane Library"/>
-                                        <p>Diversity center for med school opens in Lane Library <i class="fa fa-arrow-right"></i></p>
-                                    </a>
-                                </aside>
-                            
-                        
-
-                        <aside class="menu-box menu-box-explore bg-icon-money">
-                            <a href="//med.stanford.edu/education">
-                                <h3>Explore Education</h3>
-                                <p>Learn how we empower tomorrow's leaders <i class="fa fa-arrow-right"></i></p>
-                            </a>
-                        </aside>
-
-                        <a href="#" class="back"><i class="fa fa-angle-left"></i> Back</a>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item give position-right">
-                <a href="#">Give</a>
-                <div class="nav-item-panel">
-                    <section>
-                        <aside class="menu-box-special first-special-box">
-                            <a href="//medicalgiving.stanford.edu">
-                                <h3>Support Stanford Medicine</h3>
-                            </a>
-                        </aside>
-
-                        <ul class="menu">
-                            <li><p><a href="//medicalgiving.stanford.edu" class="link-w-arrow">Support teaching, research, and patient care.</a> </p></li>
-                            <li><a href="//medicalgiving.stanford.edu/ways-to-give.html">Ways to give</a></li>
-                            <li><a href="//medicalgiving.stanford.edu/why-giving-matters.html">Why giving matters</a></li>
-                            <li><a href="http://pgnet.stanford.edu/goto/medgift">Make a gift online</a></li>
-                        </ul>
-
-                        <aside class="menu-box-special second-special-box">
-                            <a href="//www.supportlpch.org/">
-                                <h3>Support Children's Health</h3>
-                            </a>
-                        </aside>
-
-                        <aside class="menu-box">
-                            <ul class="menu">
-                                <li><p><a href="//www.supportlpch.org" class="link-w-arrow">Support Lucile Packard Children's Hospital Stanford and child and maternal health</a></p></li>
-                                <li><a href="http://www.supportlpch.org/Waystogive">Ways to give</a></li>
-                                <li><a href="http://www.supportlpch.org/page.aspx?pid=358">How your gift helps</a></li>
-                                <li><a href="https://secure3.convio.net/lpch/site/Donation2;jsessionid=A50D057ABD64FD211C381265846095B8.app334a?2200.donation=form1&amp;df_id=2200">Make an online gift</a></li>
-                            </ul>
-                        </aside>
-                        
-                        <a href="#" class="back"><i class="fa fa-angle-left"></i> Back</a>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item about position-right">
-                <a href="#">About</a>
-                <div class="nav-item-panel">
-                    <section>
-                        <ul class="menu">
-                            <li><a href="//med.stanford.edu/about.html">About us</a></li>
-                            <li><a href="//med.stanford.edu/news.html">News</a></li>
-                            <li><a href="//med.stanford.edu/about/contacts.html">Contacts</a></li>
-                            <li><a href="//med.stanford.edu/about/contacts/maps-directions.html">Maps &amp; directions</a></li>
-                            <li><a href="//med.stanford.edu/about.html">Leadership</a></li>
-                            <li><a href="//med.stanford.edu/about/vision.html">Vision</a></li>
-                            <li><a href="//med.stanford.edu/about/diversity.html">Diversity</a></li>
-                            <li><a href="//globalhealth.stanford.edu">Global health</a></li>
-                            <li><a href="//med.stanford.edu/about/community-engagement.html">Community engagement</a></li>
-                            <li><a href="//med.stanford.edu/about/events.html">Events</a></li>
-                            <li><a href="//med.stanford.edu/about/how-to-help.html">How you can help</a></li>
-                        </ul>
-
-                        <aside class="menu-box">
-                            <p><a class="logo-stanford-school-of-medicine" href="//med.stanford.edu/school.html">Stanford School of Medicine</a></p>
-                            <p><a class="logo-stanford-hospital-clinics" href="http://stanfordhealthcare.org">Stanford Health Care</a></p>
-                            <p><a class="logo-stanford-childrens-health" href="http://www.stanfordchildrens.org">Stanford Children's Health</a></p>
-                        </aside>
-
-                        <a href="#" class="back"><i class="fa fa-angle-left"></i> Back</a>
-                    </section>
-                </div>
-            </li>
-
-
-            
-            
-            
-            
-
-            <li class="nav-item search position-right">
-                <a class="search-button" href="#"><span class="sr-only">Site Search</span></a>
-                <div class="nav-item-panel nav-item-search-panel ">
-
-                    
-
-
-    
-      
-        
-        
-          
-        
-        
-        
-      
-    
-    
-
-
-  <form class="search-form" action="https://med.stanford.edu/search-results/sm.html" role="search">
-    <label class="sr-only" for="search-Mon Dec 04 00:16:05 PST 2017">Search by name or topic...</label>
-    <div class="input-group">
-      <input id="search-Mon Dec 04 00:16:05 PST 2017" name="q" type="text" value="" placeholder="Search by name or topic..." class="form-control" tabindex="0" maxlength="2048"/>
-      <input id="siteUrl" name="site" type="hidden" value="" />
-                    
-                
-                
-                
-                    
-                        
-                            <input id="siteBrand" name="siteBrand" type="hidden" value="Stanford Medicine" />
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="submit"><span class="sr-only">Submit Search Query</span></button>
-      </span>
+      <div class="stanford-hs-branding__inner">
+      <a href="/"><img src="/themes/custom/stanford_hs/logo.svg" alt="Home" />
+</a>
     </div>
-  </form>
-                    
-                    <!-- Hack to fix bug CQ-1230 -->
-                    <a href="#" tabindex="-1" style="display: none;"></a>
-                </div>
-            </li>
-        </ul>
-    </nav></header>
-
-
-
-
-<section class="hero-container">
-  <div class="hero hero-banner parbase">
-
-
-
+  </div>
 
   
+<div id="block-stanfordsearchblock" data-block-plugin-id="stanford_search_block" class="block block-stanford-search block-stanford_search_block">
+  <div class="block-inner">
     
-    
-    
-    
-    
-    
+        
+          <div class="site-search"><h2 tabindex="0">Search</h2><form class="stanford-search-form site-search--search-form" data-drupal-selector="stanford-search-form" action="/" method="post" id="stanford-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item">
+      <label for="edit-keys" class="visually-hidden form-item__label">Search</label>
+        <input data-drupal-selector="edit-keys" size="22" placeholder="Search..." type="search" id="edit-keys" name="keys" value="" maxlength="128" class="form-search form-item__search" placeholder="Enter your keywords" />
+
+        </div>
+<input data-drupal-selector="form-77fbeieg5opzp7tgx5mwgyuzgu8gnnxb6m-xouevzlu" type="hidden" name="form_build_id" value="form-77fbEiEg5opZP7tgX5MwGYuzGU8gNnXB6m_XOUevzLU" class="form-item__hidden" />
+<input data-drupal-selector="edit-stanford-search-form" type="hidden" name="form_id" value="stanford_search_form" class="form-item__hidden" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit form-item__submit" />
+</div>
+
+</form>
+</div>
+
+      </div>
+</div>
+<nav role="navigation" class="main-menu" aria-labelledby="block-stanford-hs-main-menu-menu" id="block-stanford-hs-main-menu" data-block-plugin-id="system_menu_block:main">
+  
+  <!-- Mobile menu toggle button (hamburger/x icon) -->
+  <input id="main-menu-state" type="checkbox" />
+  <label class="main-menu-btn" for="main-menu-state">
+    <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+  </label>
+  
+            
+  <h2 class="visually-hidden" id="block-stanford-hs-main-menu-menu">Main navigation</h2>
+  
+
+        
+
+                  <ul class="menu sm">
+                            
+      <li class="menu__item">
+        <a href="/prospective-students" class="menu__link_prospective-students menu__link" target="" data-drupal-link-system-path="node/58">Prospective Students</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school" class="menu__link_preparing-for-graduate-school menu__link" data-drupal-link-system-path="node/242">Preparing for Graduate School</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/gre-preparation" class="menu__link_gre-preparation menu__link" data-drupal-link-system-path="node/244">GRE Preparation</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/graduate-school-prep-timeline" class="menu__link_graduate-school-prep-timeline menu__link" data-drupal-link-system-path="node/243">Graduate School Prep Timeline</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/conducting-research-graduate-school" class="menu__link_conducting-research-before-graduate-school menu__link" data-drupal-link-system-path="node/245">Conducting Research Before Graduate School</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/conducting-research-graduate-school/hs-summer" class="menu__link_hs-summer-research-programs menu__link" data-drupal-link-system-path="node/247">H&amp;S Summer Research Programs</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/paying-graduate-school" class="menu__link_paying-for-graduate-school menu__link" data-drupal-link-system-path="node/249">Paying for Graduate School </a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students" class="menu__link_current-students menu__link" target="" data-drupal-link-system-path="node/59">Current Students</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/current-students/diversity-resources-and-programs" class="menu__link_diversity-resources-and-programs menu__link" data-drupal-link-system-path="node/250">Diversity Resources and Programs</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/current-students/diversity-resources-and-programs/humsci-201" class="menu__link_humsci-201 menu__link" data-drupal-link-system-path="node/251">HumSci 201</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/fellowships-and-funding" class="menu__link_fellowships-and-funding menu__link" data-drupal-link-system-path="node/233">Fellowships and Funding</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/sterling-award-undergraduates" class="menu__link_sterling-award-for-undergraduates menu__link" data-drupal-link-system-path="node/252">Sterling Award for Undergraduates</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/academic-and-community-resources" class="menu__link_academic-and-community-resources menu__link" data-drupal-link-system-path="node/253">Academic and Community Resources</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/academics-and-research" class="menu__link_academics-and-research menu__link" data-drupal-link-system-path="node/60">Academics and Research</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/academics-and-research/centers-institutes-and-affiliates" class="menu__link_centers-institutes-and-affiliates menu__link" data-drupal-link-system-path="node/364">Centers, Institutes, and Affiliates</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/news" class="menu__link_news menu__link" data-drupal-link-system-path="node/304">News</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about" class="menu__link_about menu__link" target="" data-drupal-link-system-path="node/62">About</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/hs-dean" class="menu__link_hs-dean menu__link" data-drupal-link-system-path="node/254">H&amp;S Dean</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/diversity-and-inclusion" class="menu__link_diversity-and-inclusion menu__link" data-drupal-link-system-path="node/269">Diversity and Inclusion</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/hs-council" class="menu__link_hs-council menu__link" data-drupal-link-system-path="node/256">H&amp;S Council</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/senior-associate-deans" class="menu__link_senior-associate-deans menu__link" data-drupal-link-system-path="node/255">Senior Associate Deans</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads" class="menu__link_administrative-leads menu__link" data-drupal-link-system-path="node/257">Administrative Leads</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/administrative-leads/planning" class="menu__link_planning menu__link" data-drupal-link-system-path="node/363">Planning</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/research-administration-and-compliance" class="menu__link_research-administration-and-compliance menu__link" data-drupal-link-system-path="node/362">Research Administration and Compliance</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/staff" class="menu__link_staff menu__link" target="" data-drupal-link-system-path="node/210">Staff</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards" class="menu__link_national-awards menu__link" data-drupal-link-system-path="node/258">National Awards</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/national-awards/american-academy-arts-and-sciences" class="menu__link_american-academy-of-arts-and-sciences menu__link" data-drupal-link-system-path="node/270">American Academy of Arts and Sciences</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/macarthur-fellowship" class="menu__link_macarthur-fellowship menu__link" data-drupal-link-system-path="node/271">MacArthur Fellowship</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-academy-sciences" class="menu__link_national-academy-of-sciences menu__link" data-drupal-link-system-path="node/272">National Academy of Sciences</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-humanities-medal" class="menu__link_national-humanities-medal menu__link" data-drupal-link-system-path="node/273">National Humanities Medal</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-medal-science" class="menu__link_national-medal-of-science menu__link" data-drupal-link-system-path="node/274">National Medal of Science</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/nobel-prize" class="menu__link_nobel-prize menu__link" data-drupal-link-system-path="node/275">Nobel Prize</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/pulitzer-prize" class="menu__link_pulitzer-prize menu__link" data-drupal-link-system-path="node/276">Pulitzer Prize</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/hs-history" class="menu__link_hs-history menu__link" data-drupal-link-system-path="node/259">H&amp;S History</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/hs-history/hs-past-deans" class="menu__link_hs-past-deans menu__link" data-drupal-link-system-path="node/309">H&amp;S Past Deans</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving" class="menu__link_giving menu__link" data-drupal-link-system-path="node/291">Giving</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/giving/ways-give" class="menu__link_ways-to-give menu__link" data-drupal-link-system-path="node/261">Ways to Give</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/annual-giving-graduate-education" class="menu__link_annual-giving-to-graduate-education menu__link" data-drupal-link-system-path="node/264">Annual Giving to Graduate Education</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/support-world-class-faculty" class="menu__link_support-world-class-faculty menu__link" data-drupal-link-system-path="node/262">Support World-Class Faculty</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/strengthen-graduate-scholarship" class="menu__link_strengthen-graduate-scholarship menu__link" data-drupal-link-system-path="node/263">Strengthen Graduate Scholarship</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/enhance-arts" class="menu__link_enhance-the-arts menu__link" data-drupal-link-system-path="node/265">Enhance the Arts</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/globalize-curriculum" class="menu__link_globalize-the-curriculum menu__link" data-drupal-link-system-path="node/266">Globalize the Curriculum</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/transform-science-education-and-research" class="menu__link_transform-science-education-and-research menu__link" data-drupal-link-system-path="node/267">Transform Science Education and Research</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/expand-our-understanding-universe" class="menu__link_expand-our-understanding-of-the-universe menu__link" data-drupal-link-system-path="node/268">Expand Our Understanding of the Universe</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+</div>
+  </header>
+
+  <main role="main" class="main">
+
+    <a id="main-content" tabindex="-1"></a>
+    <div class="main-admin">
+        <div>
     
 
-    
-    
-    
-    
+  </div>
 
+    </div>
     
     
-
-    <div class="hero-banner-container  " data-container-background-color="#8C1515" data-hatched-style="" data-layout="default" data-node-id="hero">
-      <div class="royalSlider rsDefault banner-loading" autoPlayEnabled="">
+    
+    <div class="main-content">
+        <div>
+    
+  
+<div id="block-stanford-hs-page-title" data-block-plugin-id="page_title_block" class="block block-core block-page_title_block">
+  <div class="block-inner">
+    
         
           
-            
-            
-              
-              
 
 
 
-          
-            <div class="rsContent" id="hero_content_1" aria-labeledby="hero_control_1">
+      </div>
+</div>
 
-              
-                <div class="image " data-picture data-alt='Man sitting in front of a computer screen displaying a scientific image'data-group=""><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.full.low.jpg' data-media="(min-width: 1025px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.full.medium.jpg' data-media="(min-width: 1025px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.full.high.jpg' data-media="(min-width: 1025px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.620.high.jpg' alt='Man sitting in front of a computer screen displaying a scientific image'></noscript></div><!--[if lt IE 8]><img alt="Man sitting in front of a computer screen displaying a scientific image" src='//med.stanford.edu/_jcr_content/hero/images/imageSlide139.img.620.high.jpg' /><![endif]-->
-
-              
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 main-content">
-                    <div class="hero-banner-infobox-container">
-                      <div class="hero-banner-infobox-inner">
-                        
-                        
-
-                        <div class="hero-banner-infobox hero-banner-position-rt rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                          <div class="infobox-heading-wrapper">
-                          
-
-                            
-                            <a class="hero-banner-link" href="/news/all-news/2017/11/stem-cells-that-generate-fat-tissue-have-circadian-clock.html">
-                            
-
-                              <h2>Stem cells for fat <br>have circadian clock
-                                
-                                  <div class="hero-banner-more-link">
-                                    <span>Learn more <i class="fa fa-arrow-right"></i></span>
-                                  </div>
-                                
-                              </h2>
-
-                            
-                            </a>
-                            
-                            
-                          
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div><!-- end .col- -->
-                </div><!-- end .row -->
-              </div><!-- end .container -->
-            </div><!-- end .rsContent -->
-          
-            <div class="rsContent" id="hero_content_2" aria-labeledby="hero_control_2">
-
-              
-                <div class="image " data-picture data-alt='Drawing of kids in a hospital'data-group=""><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.full.low.jpg' data-media="(min-width: 846px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.full.medium.jpg' data-media="(min-width: 846px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.full.high.jpg' data-media="(min-width: 846px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.620.high.jpg' alt='Drawing of kids in a hospital'></noscript></div><!--[if lt IE 8]><img alt="Drawing of kids in a hospital" src='//med.stanford.edu/_jcr_content/hero/images/imageSlide138.img.620.high.jpg' /><![endif]-->
-
-              
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 main-content">
-                    <div class="hero-banner-infobox-container">
-                      <div class="hero-banner-infobox-inner">
-                        
-                        
-
-                        <div class="hero-banner-infobox hero-banner-position-rt rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                          <div class="infobox-heading-wrapper">
-                          
-
-                            
-                            <a class="hero-banner-link" href="/news/all-news/2017/11/stanford-medicine-magazine-showcases-pediatric-care.html">
-                            
-
-                              <h2>Stanford Medicine magazine<br>focuses on kids
-                                
-                                  <div class="hero-banner-more-link">
-                                    <span>Learn more <i class="fa fa-arrow-right"></i></span>
-                                  </div>
-                                
-                              </h2>
-
-                            
-                            </a>
-                            
-                            
-                          
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div><!-- end .col- -->
-                </div><!-- end .row -->
-              </div><!-- end .container -->
-            </div><!-- end .rsContent -->
-          
-            <div class="rsContent" id="hero_content_3" aria-labeledby="hero_control_3">
-
-              
-                <div class="image " data-picture data-alt='Nobel winners'data-group=""><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1200.low.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1200.medium.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.1200.high.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.full.low.jpg' data-media="(min-width: 1201px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.full.medium.jpg' data-media="(min-width: 1201px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.full.high.jpg' data-media="(min-width: 1201px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.620.high.jpg' alt='Nobel winners'></noscript></div><!--[if lt IE 8]><img alt="Nobel winners" src='//med.stanford.edu/_jcr_content/hero/images/imageSlide3.img.620.high.jpg' /><![endif]-->
-
-              
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 main-content">
-                    <div class="hero-banner-infobox-container">
-                      <div class="hero-banner-infobox-inner">
-                        
-                        
-
-                        <div class="hero-banner-infobox hero-banner-position-lt rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                          <div class="infobox-heading-wrapper">
-                          
-
-                            
-                            <a class="hero-banner-link" href="/school/facts.html">
-                            
-
-                              <h2>Home to seven living Nobel laureates 
-                                
-                                  <div class="hero-banner-more-link">
-                                    <span>Learn more <i class="fa fa-arrow-right"></i></span>
-                                  </div>
-                                
-                              </h2>
-
-                            
-                            </a>
-                            
-                            
-                          
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div><!-- end .col- -->
-                </div><!-- end .row -->
-              </div><!-- end .container -->
-            </div><!-- end .rsContent -->
-          
-            <div class="rsContent" id="hero_content_4" aria-labeledby="hero_control_4">
-
-              
-                <div class="image " data-picture data-alt='Women physicians'data-group=""><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1200.low.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1200.medium.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.1200.high.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.full.low.jpg' data-media="(min-width: 1201px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.full.medium.jpg' data-media="(min-width: 1201px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.full.high.jpg' data-media="(min-width: 1201px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.620.high.jpg' alt='Women physicians'></noscript></div><!--[if lt IE 8]><img alt="Women physicians" src='//med.stanford.edu/_jcr_content/hero/images/imageSlide5.img.620.high.jpg' /><![endif]-->
-
-              
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12 main-content">
-                    <div class="hero-banner-infobox-container">
-                      <div class="hero-banner-infobox-inner">
-                        
-                        
-                          
-                        
-
-                        <div class="hero-banner-infobox hero-banner-position-lt rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-                          <div class="infobox-heading-wrapper">
-                          
-
-                            
-                            <a class="hero-banner-link" href="/news/all-news/2016/08/new-issue-of-stanford-medicine-magazine-examines-well-being.html">
-                            
-
-                              <h2>Integrating clinical care,<br>research and education 
-                                
-                                  <div class="hero-banner-more-link">
-                                    <span>Learn more about Stanford Medicine <i class="fa fa-arrow-right"></i></span>
-                                  </div>
-                                
-                              </h2>
-
-                            
-                            </a>
-                            
-                            
-                          
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div><!-- end .col- -->
-                </div><!-- end .row -->
-              </div><!-- end .container -->
-            </div><!-- end .rsContent -->
-          
-            
-          
+  
+<div id="block-stanford-hs-content" data-block-plugin-id="system_main_block" class="block block-system block-system_main_block">
+  <div class="block-inner">
+    
         
+          <article class="node node--type-page node--view-mode-full clearfix">
+  
+    
+
+  <div>
+      <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      <div class="block-region-content">
+
+
+
+
+    
+
+  <div data-block-plugin-id="block_content:0da5a584-fa85-4624-91e0-3f9069a0a32c" class="block block-block-content hero-title is-bg-color block-block_content block-0da5a584-fa85-4624-91e0-3f9069a0a32c">
+      <div class="hero-title__image">
+      
+
+
+            <div class="field field--name-field-hero-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/stanford-hero.jpg?itok=wPBV3ZOg 1x, /sites/default/files/styles/hero_1170x560_xlarge_2x/public/stanford-hero.jpg?itok=hRM1gn4D 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_large_1x/public/stanford-hero.jpg?itok=BJUh5ZxL 1x, /sites/default/files/styles/hero_1170x560_large_2x/public/stanford-hero.jpg?itok=wxzRwlLB 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_medium_1x/public/stanford-hero.jpg?itok=6UvJ0ESj 1x, /sites/default/files/styles/hero_1170x560_medium_2x/public/stanford-hero.jpg?itok=Fv6NWukg 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_small_1x/public/stanford-hero.jpg?itok=_soeUnxp 1x, /sites/default/files/styles/hero_1170x560_small_2x/public/stanford-hero.jpg?itok=y9ruAD0L 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/stanford-hero.jpg?itok=wPBV3ZOg&amp;h=9ac7a2a6" alt="Stanford Quad by Tamer Shabani" />
+
+  </picture>
+
+</div>
+      
+    </div>
+  
+  <div class="hero-title__inner">
+    <div class="hero__text contextual-region">
+      <div class="hero__text-inner">
+        
+        <h1>Discover academic freedom</h1>
+        
+                  
+                <a href="" class="down-button button">Skip to main content</a>
       </div>
     </div>
-  
-  
-
-
-<script>
-  (function(w){
-    w.init.add(function(){
-    
-    });
-  }(window));
-</script></div>
-
-</section>
-
-
-
-<div class="panel-nav parsys"><div class="htmlinclude parbase section">
-
-
-
-<section class="navigation-container">
-    <nav class="navbar navbar-local container" id="navigationLocal" role="navigation" aria-label="Primary Navigation">
-
-        <ul class="nav navbar-nav unstyled">
-            <li class="nav-item health">
-                <div class="popover-click-target"></div>
-                <a href="/health-care.html">
-                    <h3>Health Care</h3>
-                    <p>Healing through compassion and world-class science</p>
-                </a>
-                <div class="nav-item-panel">
-                    <section>
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3 class="icon-"><i class="fa fa-user-md"></i>Find a Doctor</h3></li>
-                                <li><p>I'm looking for a/an&hellip;</p></li>
-                                <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.doctors.html">Adult-care doctor</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors">Pediatrician or pediatric specialist</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors&search-term=Obstetrics">Obstetrician</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3 class="icon-"><i class="fa fa-hospital-o"></i>Clinics &amp; Services</h3></li>
-                                <li><p>I want information about&hellip;</p></li>
-                                <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.clinics.html">Adult care</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/service/index?">Pediatric care</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/service/index?">Obstetrics</a></li>
-                                <li><a href="//med.stanford.edu/clinicaltrials/">Clinical trials</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="menu-column">
-
-                            <ul class="menu unstyled">
-                                <li><h3 class="icon-"><i class="fa fa-map-marker"></i>Locations</h3></li>
-                                <li><p>I need directions to a service or clinic at&hellip;</p></li>
-                                <li><a href="http://stanfordhealthcare.org/content/shc/en/search-results.clinics.html">Stanford Health Care</a></li>
-                                <li><a href="http://www.stanfordchildrens.org/en/locations-directions">Stanford Children's Health</a></li>
-                                <li><a href="http://stanfordhealthcare.org/medical-clinics/emergency-department.html">Emergency Department</a></li>
-                                <li><p>If you have a medical emergency call 911</p></li>
-                            </ul>
-
-                            <aside class="menu-box menu-box-explore bg-icon-user-md ">
-                                <a href="/health-care.html">
-                                    <p>Learn about our vision for</p>
-                                    <h3>Health Care <i class="fa fa-arrow-right"></i></h3>
-                                </a>
-                            </aside>
-                        </div>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item research ">
-                <div class="popover-click-target"></div>
-                <a href="/research.html">
-                    <h3>Research</h3>
-                    <p>Fueling discovery and innovation to advance human health</p>
-                </a>
-                <div class="nav-item-panel">
-                    <section>
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3>Departments &amp; Institutes</h3></li>
-                                <li><a href="/school/directory/basic-science-departments.html">Basic science departments</a></li>
-                                <li><a href="/school/directory/clinical-science-departments.html">Clinical science departments</a></li>
-                                <li><a href="/school/directory/stanford-medicine-institutes.html">Institutes</a></li>
-                                <li><a href="/school/directory/research-centers-and-programs.html">Research Centers</a></li>
-                                <li><a href="/school/directory.html">See full directory</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Academic Profiles</h3></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capFaculty">Faculty</a></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capPostdoc">Postdoctoral scholars</a></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capMsStudent">Master's students</a></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capMdStudent">MD students</a></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capPhdStudent">PhD students</a></li>
-                                <li><a href="https://med.stanford.edu/profiles/browse?affiliations=capStaff">Staff</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3>Clinical Trials</h3></li>
-                                <li><a href="//med.stanford.edu/clinicaltrials/">Search open trials</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Researcher Resources</h3></li>
-                                <li><a href="//med.stanford.edu/rmg/funding/">Funding opportunities</a></li>
-                                <li><a href="//med.stanford.edu/seminars/">Biomedical seminars</a></li>
-                                <li><a href="/school/directory/researcher-resources.html">See all</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Researcher Administration</h3></li>
-                                <li><a href="//med.stanford.edu/rmg/">Research Management Group</a></li>
-                                <li><a href="//med.stanford.edu/rmg/resources.html#policy">Policies &amp; compliance</a></li>
-                                <li><a href="/school/directory/research-administration.html">See all</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Professional Training</h3></li>
-                                <li><a href="//postdocs.stanford.edu">Postdoctoral scholars</a></li>
-                                <li><a href="//gme.stanford.edu/">Clinical research fellows</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="menu-column">
-                            <aside id="home-nav-research-news" class="menu-box menu-box-news">
-                                <a class="article-link" href="#">
-                                    <img src="" alt=""/>
-                                    <h3 class="menu-news-heading">Research News</h3>
-                                    <p class="menu-news-body"></p>
-                                </a>
-                                    <a href="/news.html"><p class="menu-news-link">More research news <i class="fa fa-arrow-right"></i></p></a>
-                            </aside>
-
-                            <aside class="menu-box menu-box-explore bg-icon-book">
-                                <a href="/research.html">
-                                    <p>Learn how we are fueling innovation</p>
-                                    <h3>Explore Research <i class="fa fa-arrow-right"></i></h3>
-                                </a>
-                            </aside>
-                        </div>
-                    </section>
-                </div>
-            </li>
-            <li class="nav-item education">
-                <div class="popover-click-target"></div>
-                <a href="/education.html">
-                    <h3>Education</h3>
-                    <p>Empowering tomorrow's leading physicians and scientists</p>
-                </a>
-                <div class="nav-item-panel">
-                    <section>
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3>Degree Programs</h3></li>
-                                <li><a href="/md.html">MD program</a></li>
-                                <li><a href="/pa.html">PA program</a></li>
-                                <li><a href="/education/phd-programs.html">PhD programs</a></li>
-                                <li><a href="/education/masters-programs.html">Master's programs</a></li>
-                                <li><a href="/education/dual-degree-programs.html">Dual-degree programs</a></li>
-                                <li><a href="/pa.html">PA Program</a></li>
-                                <!-- <li><a href="//pcap.stanford.edu">Primary Care Associate Program</a></li>  -->
-                                <li><a href="/education.html">See all</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Professional Training</h3></li>
-                                <li><a href="//med.stanford.edu/cme/">Continuing Medical Education</a></li>
-                                <li><a href="//postdocs.stanford.edu/">Postdoctoral scholars</a></li>
-                                <li><a href="//gme.stanford.edu">Residencies &amp; fellowships</a></li>
-                                <li><a href="//globalhealth.stanford.edu/">Center for Innovation in Global Health</a></li>
-                                <li><a href="//www.gsb.stanford.edu/exed/ihl/">Executive Education</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Summer &amp; Youth Programs</h3></li>
-                                <li><a href="//smysp.stanford.edu/">Stanford Medical Youth Science Program</a></li>
-                                <li><a href="//ssrp.stanford.edu/">Stanford Summer Research Program</a></li>
-                                <li><a href="/content/sm/education/summer-outreach/">See all</a></li>
-                            </ul>
-
-                        </div>
-                        <div class="menu-column">
-                            <ul class="menu unstyled">
-                                <li><h3>Student Resources</h3></li>
-                                <li><a href="/school/academic-calendar.html">Academic calendar</a></li>
-                                <li><a href="//med.stanford.edu/alumni/">Alumni services</a></li>
-                                <li><a href="/school/directory/academic-resources.html">Student organizations</a></li>
-                                <li><a href="/about/diversity.html">Diversity programs</a></li>
-                                <li><a href="/school/directory/academic-resources.html">See all</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>Faculty Resources</h3></li>
-                                <li><a href="//med.stanford.edu/academicaffairs/">Academic Affairs</a></li>
-                                <li><a href="//med.stanford.edu/senate">Faculty Senate</a></li>
-                                <li><a href="//med.stanford.edu/diversity/">Office of Faculty Development &amp; Diversity</a></li>
-                                <li><a href="/school/directory/academic-resources.html">See all</a></li>
-                            </ul>
-                            <ul class="menu unstyled">
-                                <li><h3>School Administration</h3></li>
-                                <li><a href="//med.stanford.edu/academicaffairs/">Academic Affairs</a></li>
-                                <li><a href="/finance-admin.html">Finance &amp; Administration</a></li>
-                                <li><a href="/school/deans-office.html">See all</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-column">
-                            <aside id="home-nav-education-news" class="menu-box menu-box-news">
-                                <a class="article-link" href="">
-                                    <img src=""/>
-                                    <h3 class="menu-news-heading">Education News</h3>
-                                    <p class="menu-news-body"></p>
-                                </a>
-                                <a href="/news/topics/list.html?tags=mednews%253Atopic%252Feducation"><p class="menu-news-link">More education news <i class="fa fa-arrow-right"></i></p></a>
-                            </aside>
-                            <aside class="menu-box menu-box-explore bg-icon-money">
-                                <a href="/education.html">
-                                    <p>Learn how we empower tomorrow's leaders</p>
-                                    <h3>Explore Education <i class="fa fa-arrow-right"></i></h3>
-                                </a>
-                            </aside>
-                        </div>
-                    </section>
-                </div>
-            </li>
-        </ul>
-    </nav>
-</section>
-
-
-</div>
-
+  </div>
 </div>
 
 
-<main class="container" id="mainContent" role="main" tabindex="0">
-  
-
-
-  
-
-
-<div class="row content-panels">
-  <div class="col-md-12">
-    <div class="main parsys"><div class="heading parbase section">
-
-
-
-
-
-
-
-
-
-
-
-  
-  
     
+
+
+  <div data-block-plugin-id="block_content:71885ccf-3611-415b-a8c2-70adfed4d11e" class="block block-block-content randomizer block-block_content block-71885ccf-3611-415b-a8c2-70adfed4d11e">
   
+  <div class="randomizer__inner">
+    <div class="randomizer__text">
+      <div class="randomizer__text-inner">
+        <h3>
 
 
+            <div class="field field--name-field-text field--type-text field--label-hidden field__item">Research and learning are the foundations of discovery.</div>
+      </h3>        <a class="button" href="/academics-research">Explore H&S Departments and Programs</a>
+      </div>
+    </div>
+          <ul class="randomizer__images">
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Mathematics">
+              <p>Mathematics</p>
+                              
 
 
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/Mathematics-web_0.jpg?itok=i0DkQFmf 1x, /sites/default/files/styles/1009/public/Mathematics-web_0.jpg?itok=MioDbXyi 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/Mathematics-web_0.jpg?itok=atsDrwUD 1x, /sites/default/files/styles/square_350x350_large_2x/public/Mathematics-web_0.jpg?itok=xIuTfROe 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/Mathematics-web_0.jpg?itok=ozY7sULg 1x, /sites/default/files/styles/square_350x350_medium_2x/public/Mathematics-web_0.jpg?itok=WjRHrd4Z 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/Mathematics-web_0.jpg?itok=LUvX2hyS 1x, /sites/default/files/styles/square_350x350_small_2x/public/Mathematics-web_0.jpg?itok=dZkM6sgr 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/Mathematics-web_0.jpg?itok=i0DkQFmf" alt="Chalk board shape diagrams" />
 
-<hgroup class="section-header feature heading-level-1">
-  
-  <div class="heading-1-container">
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Native American Studies (CSRE)">
+              <p>Native American Studies (CSRE)</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/NativeAmericanStudies-web.jpg?itok=RtUbFfO2 1x, /sites/default/files/styles/1009/public/NativeAmericanStudies-web.jpg?itok=LEJEU5iT 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/NativeAmericanStudies-web.jpg?itok=vjV7U07Z 1x, /sites/default/files/styles/square_350x350_large_2x/public/NativeAmericanStudies-web.jpg?itok=2BcTjH61 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/NativeAmericanStudies-web.jpg?itok=kdqBrHgO 1x, /sites/default/files/styles/square_350x350_medium_2x/public/NativeAmericanStudies-web.jpg?itok=RbrOVWyH 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/NativeAmericanStudies-web.jpg?itok=_gDIoAph 1x, /sites/default/files/styles/square_350x350_small_2x/public/NativeAmericanStudies-web.jpg?itok=5PIh9hLf 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/NativeAmericanStudies-web.jpg?itok=RtUbFfO2" alt="Totem of a bird" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Science, Technology, and Society">
+              <p>Science, Technology, and Society</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/ScienceTechnologyandSociety-web.jpg?itok=1O62XNme 1x, /sites/default/files/styles/1009/public/ScienceTechnologyandSociety-web.jpg?itok=vgIhOiT- 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/ScienceTechnologyandSociety-web.jpg?itok=GqB2PmZP 1x, /sites/default/files/styles/square_350x350_large_2x/public/ScienceTechnologyandSociety-web.jpg?itok=EDUQc-vG 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/ScienceTechnologyandSociety-web.jpg?itok=ya6hS0fv 1x, /sites/default/files/styles/square_350x350_medium_2x/public/ScienceTechnologyandSociety-web.jpg?itok=RicDLSCN 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/ScienceTechnologyandSociety-web.jpg?itok=rtBX22aB 1x, /sites/default/files/styles/square_350x350_small_2x/public/ScienceTechnologyandSociety-web.jpg?itok=7ruLER2P 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/ScienceTechnologyandSociety-web.jpg?itok=1O62XNme" alt="Computer screens, a hologram of a sphere of text in front of a view of a city lit up at night" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Urban Studies">
+              <p>Urban Studies</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/Urban-Studies-web_0.jpg?itok=hr0menKH 1x, /sites/default/files/styles/1009/public/Urban-Studies-web_0.jpg?itok=_G7QatY1 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/Urban-Studies-web_0.jpg?itok=c_DLYxrY 1x, /sites/default/files/styles/square_350x350_large_2x/public/Urban-Studies-web_0.jpg?itok=8LE2aEjg 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/Urban-Studies-web_0.jpg?itok=sF0EfSC7 1x, /sites/default/files/styles/square_350x350_medium_2x/public/Urban-Studies-web_0.jpg?itok=5D8KIik- 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/Urban-Studies-web_0.jpg?itok=pFcxTDuH 1x, /sites/default/files/styles/square_350x350_small_2x/public/Urban-Studies-web_0.jpg?itok=j9kTMWfi 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/Urban-Studies-web_0.jpg?itok=hr0menKH" alt="People crossing a street" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+              </ul>
+      </div>
+</div>
     
-    <h1 class="black" >
-	    
-	    Explore Stanford Medicine
-	    
-    </h1>
+<div data-block-plugin-id="block_content:81b095aa-26ce-4f35-b1b2-3c44e942874c" class="is-bg-color--white block block-block-content block-block_content block-81b095aa-26ce-4f35-b1b2-3c44e942874c">
+  <div class="block-inner">
+    
+        
+          
+
+            <div class="text-long"><h3>The School of Humanities and Sciences is the center of a world-class liberal arts education.</h3></div>
+      
+      </div>
+</div>
+
+
+
+    
+
+
+      <div data-block-plugin-id="block_content:9baf0256-221a-49e0-83a6-668b9b5fb919" class="block block-block-content circle-stats block-block_content block-9baf0256-221a-49e0-83a6-668b9b5fb919">
+      
+    <ul class="circles">
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">46</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Departments and Programs</div>
+              </li>
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">49</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Undergraduate Majors</div>
+              </li>
+                                        <li class="circle-stats--length-3">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">43 </div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Master&#039;s Degrees</div>
+              </li>
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">33</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Doctoral Degrees</div>
+              </li>
+          </ul>
+  </div>
+
+
+
+    
+
+
+  <div data-block-plugin-id="block_content:60e9259d-7762-4924-8936-c25996fe32a8" class="is-bg-color--beige block block-block-content fifty-fifty fifty-fifty-image- block-block_content block-60e9259d-7762-4924-8936-c25996fe32a8">
+
+  <div class="fifty-fifty__inner">
+
+    
+    
+
+    <div class="fifty-fifty__image">
+                
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/feature_540x270_xlarge_1x/public/Taps314.184_web.jpg?itok=67MWFj-L 1x, /sites/default/files/styles/feature_540x270_xlarge_2x/public/Taps314.184_web.jpg?itok=vw5tzdxC 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_large_1x/public/Taps314.184_web.jpg?itok=Xcok2lko 1x, /sites/default/files/styles/feature_540x270_large_2x/public/Taps314.184_web.jpg?itok=zzJ_yhjc 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_medium_1x/public/Taps314.184_web.jpg?itok=n_6bPpdL 1x, /sites/default/files/styles/feature_540x270_medium_2x/public/Taps314.184_web.jpg?itok=kt9vnVn6 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_small_1x/public/Taps314.184_web.jpg?itok=eIeyfFyW 1x, /sites/default/files/styles/feature_540x270_small_2x/public/Taps314.184_web.jpg?itok=gIjpuWrV 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/feature_540x270_xlarge_2x/public/Taps314.184_web.jpg?itok=vw5tzdxC" alt="graduate seminar" />
+
+  </picture>
+
+</div>
+      
+          </div>
+
+          <div class="fifty-fifty__text">
+
+        
+          
+          
+
+            <div class="text-long"><h3>All of our professors and students have different backgrounds, perspectives, and dreams. But it’s the ways they work together and the qualities they share that make H&amp;S special. </h3>
+
+<p><a class="link--more" href="/about">Learn More about H&amp;S</a></p></div>
+      
+
+          
+        
+        
+      </div>
     
   </div>
-  
-  
- </hgroup></div>
-<div class="text parbase section">
-
-
-
-
-
-
-<div id="main_text_968863491" class=" ">
-    <p style="font-size: 30.0px;text-align: center;"><a href="https://twitter.com/StanfordMed" style="color: rgb(0,124,146);"><i
-    class="fa fa-twitter"> </i></a>  <a href="https://www.facebook.com/stanfordmedicine" style="color: rgb(0,124,146);"><i
-    class="fa fa-facebook-square"> </i></a>  <a href="https://www.linkedin.com/edu/stanford-university-school-of-medicine-17929" style="color: rgb(0,124,146);"><i
-    class="fa fa-linkedin"> </i></a>  <a href="https://instagram.com/stanford.med/" style="color: rgb(0,124,146);"><i class="fa fa-instagram"> </i></a></p>
-
-
 
 </div>
 
-<script>
-    $().ready(function() {
-    	if (RTECollapse !== undefined) {
-    		RTECollapse.init("main_text_968863491");
-    	}
-    });
-</script></div>
-<div class="panel_builder parbase section">
-
-
-
-
 
 
 
     
-    
-    
+<div class="views-element-container block block-views block-views_block block-latest_news-block_1" data-block-plugin-id="views_block:latest_news-block_1">
+  <div class="block-inner">
     
         
-    
-    
-
-
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-    
-    
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="row ">
-
-        
-
-        
-            
-                
-                
-                    
-                
-                
-                
-            
-            <div class="col-sm-8 panel-builder-66-col panel-builder-left">
-                
-                    
-                    
-                        <div class="panel_0 parsys"><div class="panel_builder parbase section">
-
-
-
-
-
-
-
-    
-    
-    
-        
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
-
-
-
-    
-    
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div><div class="js-view-dom-id-7fbb52e1a9740d0e2e2789b9091ac2835c22618f46fe19246e91498c8dc7edb0">
   
-  <div class="border-and-shadow">
-
-    <div class="row ">
-
-        
-
-        
-            
-                
-                    
-                
-                
-                
-                
-            
-            <div class="col-sm-12 panel-builder-100-col ">
-                
-                    
-                    
-                        <div class="panel_0 parsys"><div class="heading parbase section">
-
-
-
-
-
-
-
-
-
-
+  
+  
 
   
   
+  <div class="views-element-container"><div class="js-view-dom-id-8e4326e0f92b852b6da7c79a93884e5c26890a2ad05af7d30a86c86237322f8b">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row">
+    <article role="article">
+
+  <h2 class="heading-2">News</h2>
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/richard-saller-step-down-dean-humanities-sciences" rel="bookmark"><span>Richard Saller to step down as dean of Humanities &amp; Sciences</span>
+</a>
+    </h3>
     
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/richard-saller-step-down-dean-humanities-sciences">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/feature_560x360_xlarge_1x/public/Saller_teaching.jpg?itok=KqKn9LZS 1x, /sites/default/files/styles/feature_560x360_xlarge_2x/public/Saller_teaching.jpg?itok=R4alN0IN 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_730x375_large_1x/public/Saller_teaching.jpg?itok=lKdgrT7F 1x, /sites/default/files/styles/feature_560x360_large_2x/public/Saller_teaching.jpg?itok=NXy-EvTu 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_560x360_medium_1x/public/Saller_teaching.jpg?itok=4orSYVtl 1x, /sites/default/files/styles/feature_560x360_medium_2x/public/Saller_teaching.jpg?itok=18svAVEq 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_560x360_small_1x/public/Saller_teaching.jpg?itok=ifs-ra9J 1x, /sites/default/files/styles/feature_560x360_small_2x/public/Saller_teaching.jpg?itok=zazyAvyx 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/feature_560x360_xlarge_2x/public/Saller_teaching.jpg?itok=R4alN0IN&amp;h=afc7bdca" alt="" />
+
+  </picture>
+</a>
+</div>
+      
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">October 9, 2017</div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  
   
 
-
-
-
-
-<hgroup class="section-header standard heading-level-2">
   
-    <h2 class="black" >
-	    
-	    <a href="/news.html" style="color: #333333;">Stanford Medicine News</a>
-	    
+  
+
+  
+  
+</div>
+</div>
+
+
+      <div class="views-row">
+    <article role="article">
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/douglas-stanford-wins-breakthrough-new-horizons-prize" rel="bookmark"><span>Douglas Stanford wins Breakthrough New Horizons Prize</span>
+</a>
     </h2>
     
-  
- </hgroup></div>
-<div class="panel_builder parbase section">
-
-
-
-
-
-
-
-    
-    
-    
-    
-        
-    
-    
-
-
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-    
-    
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="row ">
-
-        
-
-        
-            
-                
-                
-                    
-                
-                
-                
-            
-            <div class="col-sm-4 panel-builder-33-col panel-builder-left">
-                
-                    
-                    
-                        <div class="panel_0 parsys"><div class="news-builder list parbase section">
-
-
-
-
-
-
-    
-    
-        
-
-
-
-<ul class="news">
-
-
-
-
 
   
+  <div>
+    
 
 
-
-
-	
-	
-	  
-	  
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">December 4, 2017</div>
       
-	  
-		
-		
-	  
-	  
-	
 
-  
 
-  
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/douglas-stanford-wins-breakthrough-new-horizons-prize">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=j_2AWUgc 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=VA48ZLwk 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=89n--wV- 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=_gC6iwr2 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=wh_MX-xY 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=Ne_MpBhc 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=JVQQNXr6 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=5OClhEIw 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=VA48ZLwk" />
 
-	
-	
-
-	
-	        
-	        
-	      
-	<li class="newsfeed-item row">
-	  <div class="col-sm-12">
+  </picture>
+</a>
+</div>
       
-        
-          
-            <div class="newsfeed-item-container newsfeed-item-image-container">
-              <a href='/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells.html'><div class="image " data-picture data-alt='Second ‘don’t eat me’ signal found on cancer'data-group=""><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.full.low.jpg' data-media="(min-width: 1025px) " data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.full.medium.jpg' data-media="(min-width: 1025px) " data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.full.high.jpg' data-media="(min-width: 1025px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.620.high.jpg' alt='Second ‘don’t eat me’ signal found on cancer'></noscript></div><!--[if lt IE 8]><img alt="Second ‘don’t eat me’ signal found on cancer" src='//med.stanford.edu/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
-
-            </div>
-          
-	        
-	        
-        
-        
-      
-    </div>
-	  <div class="col-sm-12">
-	    <a href="/news/all-news/2017/11/second-dont-eat-me-signal-found-on-cancer-cells.html"><h3 class="newsfeed-item-title">Second ‘don’t eat me’ signal found on cancer</h3></a>
-	    
-	      <p class="newsfeed-item-excerpt">CD47 is an important inhibitor of cancer-killing immune cells called macrophages. Now Stanford researchers have identified another, similar way to activate macrophages to destroy cancer cells.</p>
-	    
-
-	    <hr />
-
-	    <div class="newsfeed-item-footer">
-	      
-	        <div class="pull-left">
-	          <time datetime="2017-11-27T08:00:00.000-08:00"><i class="fa fa-clock-o"></i> Nov 27, 2017</time>
-	        </div>
-	      
-	      <ul class="pull-right">
-	        
-
-	          
-	          
-	            
-	              
-	                
-	                
-	                
-		                
-		                
-		                
-		                
-
-		                <li class="brand-link brand-press-color">
-		                  <a href="/news/all-news/brands/press.html" class=""> Press Releases <i class="fa fa-arrow-right"></i></a>
-		                </li>
-                  
-	              
-	            
-	          
-
-	          
-	          
-	        
-	      </ul>
-	    </div>
-	  </div>
-	</li>
-</ul>
-
-
-
-    
-</div>
-
-</div>
-
-                    
-                
-            </div>
-        
-            
-                
-                
-                
-                
-                    
-                
-            
-            <div class="col-sm-4 panel-builder-33-col panel-builder-mid">
-                
-                    
-                    
-                        <div class="panel_1 parsys"><div class="news-builder list parbase section">
-
-
-
-
-
-
-    
-    
-        
-
-
-
-<ul class="news">
-
-
-
-
-
-  
-
-
-
-
-	
-	
-	  
-	  
-      
-	  
-		
-		
-	  
-	  
-	
-
-  
-
-  
-
-	
-	
-
-	
-	        
-	        
-	      
-	<li class="newsfeed-item row">
-	  <div class="col-sm-12">
-      
-        
-          
-            <div class="newsfeed-item-container newsfeed-item-image-container">
-              <a href='/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health.html'><div class="image " data-picture data-alt='‘Drugs’ from gut bugs'data-group=""><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.full.low.jpg' data-media="(min-width: 1025px) " data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.full.medium.jpg' data-media="(min-width: 1025px) " data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.full.high.jpg' data-media="(min-width: 1025px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.620.high.jpg' alt='‘Drugs’ from gut bugs'></noscript></div><!--[if lt IE 8]><img alt="‘Drugs’ from gut bugs" src='//med.stanford.edu/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
-
-            </div>
-          
-	        
-	        
-        
-        
-      
-    </div>
-	  <div class="col-sm-12">
-	    <a href="/news/all-news/2017/11/druglike-molecules-from-gut-bacteria-can-affect-immune-health.html"><h3 class="newsfeed-item-title">‘Drugs’ from gut bugs</h3></a>
-	    
-	      <p class="newsfeed-item-excerpt">Stanford researchers found that manipulating the gut microbe Clostridium sporogenes changed levels of molecules in the bloodstreams of mice and, in turn, affected their health.</p>
-	    
-
-	    <hr />
-
-	    <div class="newsfeed-item-footer">
-	      
-	        <div class="pull-left">
-	          <time datetime="2017-11-22T10:00:00.000-08:00"><i class="fa fa-clock-o"></i> Nov 22, 2017</time>
-	        </div>
-	      
-	      <ul class="pull-right">
-	        
-
-	          
-	          
-	            
-	              
-	                
-	                
-	                
-		                
-		                
-		                
-		                
-
-		                <li class="brand-link brand-press-color">
-		                  <a href="/news/all-news/brands/press.html" class=""> Press Releases <i class="fa fa-arrow-right"></i></a>
-		                </li>
-                  
-	              
-	            
-	          
-
-	          
-	          
-	        
-	      </ul>
-	    </div>
-	  </div>
-	</li>
-</ul>
-
-
-
-    
-</div>
-
-</div>
-
-                    
-                
-            </div>
-        
-            
-                
-                
-                
-                    
-                
-                
-            
-            <div class="col-sm-4 panel-builder-33-col panel-builder-right">
-                
-                    
-                    
-                        <div class="panel_2 parsys"><div class="news-builder list parbase section">
-
-
-
-
-
-
-    
-    
-        
-
-
-
-<ul class="news">
-
-
-
-
-
-  
-
-
-
-
-	
-	
-	  
-	  
-      
-	  
-		
-		
-	  
-	  
-	
-
-  
-
-  
-
-	
-	
-
-	
-	        
-	        
-	      
-	<li class="newsfeed-item row">
-	  <div class="col-sm-12">
-      
-        
-          
-            <div class="newsfeed-item-container newsfeed-item-image-container">
-              <a href='/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease.html'><div class="image " data-picture data-alt='Male health condition linked to new risk'data-group=""><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.full.low.jpg' data-media="(min-width: 1025px) " data-quality="low"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.full.medium.jpg' data-media="(min-width: 1025px) " data-quality="medium"></div><div data-src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.full.high.jpg' data-media="(min-width: 1025px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.620.high.jpg' alt='Male health condition linked to new risk'></noscript></div><!--[if lt IE 8]><img alt="Male health condition linked to new risk" src='//med.stanford.edu/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease/_jcr_content/image.img.620.high.jpg' /><![endif]--></a>
-
-            </div>
-          
-	        
-	        
-        
-        
-      
-    </div>
-	  <div class="col-sm-12">
-	    <a href="/news/all-news/2017/12/study-links-common-male-medical-condition-and-vascular-disease.html"><h3 class="newsfeed-item-title">Male health condition linked to new risk</h3></a>
-	    
-	      <p class="newsfeed-item-excerpt">Harnessing the power of big data, Stanford researchers found that enlarged veins on the scrotum are linked with a higher risk of vascular and metabolic disease in men.</p>
-	    
-
-	    <hr />
-
-	    <div class="newsfeed-item-footer">
-	      
-	        <div class="pull-left">
-	          <time datetime="2017-12-01T12:00:00.000-08:00"><i class="fa fa-clock-o"></i> Dec 1, 2017</time>
-	        </div>
-	      
-	      <ul class="pull-right">
-	        
-
-	          
-	          
-	            
-	              
-	                
-	                
-	                
-		                
-		                
-		                
-		                
-
-		                <li class="brand-link brand-press-color">
-		                  <a href="/news/all-news/brands/press.html" class=""> Press Releases <i class="fa fa-arrow-right"></i></a>
-		                </li>
-                  
-	              
-	            
-	          
-
-	          
-	          
-	        
-	      </ul>
-	    </div>
-	  </div>
-	</li>
-</ul>
-
-
-
-    
-</div>
-
-</div>
-
-                    
-                
-            </div>
-        
-
-    </div><!-- row -->
-    
-
-
-<script>
-    (function(w){
-      w.init.add(function(){
-        if(w.SM.components.PanelBuilder !== undefined) {
-          w.SM.components.PanelBuilder.init();
-        }
-      });
-    }(window));
-</script></div>
-<div class="horizontal_rule parbase section">
-
-
-
-
-<hr class="clearfix " />
-</div>
-<div class="text parbase section">
-
-
-
-
-
-
-<div id="main_panel_builder_panel_0_panel_builder_panel_0_text" class=" ">
-    <p class="p-link-w-arrow" style="text-align: right;"><a href="/news.html">Explore more Stanford Medicine News</a></p>
-
-
-
-</div>
-
-<script>
-    $().ready(function() {
-    	if (RTECollapse !== undefined) {
-    		RTECollapse.init("main_panel_builder_panel_0_panel_builder_panel_0_text");
-    	}
-    });
-</script></div>
-
-</div>
-
-                    
-                
-            </div>
-        
-
-    </div><!-- row -->
-    
-
   </div>
 
-
-<script>
-    (function(w){
-      w.init.add(function(){
-        if(w.SM.components.PanelBuilder !== undefined) {
-          w.SM.components.PanelBuilder.init();
-        }
-      });
-    }(window));
-</script></div>
-
-</div>
-
-                    
-                
-            </div>
-        
-            
-                
-                
-                
-                    
-                
-                
-            
-            <div class="col-sm-4 panel-builder-33-col panel-builder-right">
-                
-                    
-                    
-                        <div class="panel_1 parsys"><div class="feature-box parbase section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-    
-    
-
-
-
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="feature-box-container border-and-shadow feature-box-layout-2 " >
-
-    
-        
-
-
-
-
-
-	<h2 class="feature-box-main-heading ">Precision Health</h2>
-
-    
-    
-         
-            
-            
-        		<div class="image " data-picture data-alt='two women running in the early morning'data-group=""><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.full.low.jpg' data-media="(min-width: 1025px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.full.medium.jpg' data-media="(min-width: 1025px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.full.high.jpg' data-media="(min-width: 1025px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.620.high.jpg' alt='two women running in the early morning'></noscript></div><!--[if lt IE 8]><img alt="two women running in the early morning" src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box.img.620.high.jpg' /><![endif]-->
-
-            
-        
-    
-    
-
-    
-
-    <div class="feature-box-body">
-        <p>Stanford Medicine is leading the biomedical revolution to improve health, defining and developing care that is proactive, predictive and precise</p>
-
-
-
-
-        
-            
-            
-                
-                <ul class="feature-box-footer-links feature-box-footer-align-left">
-                    
-                        
-                        
-                            <li>
-                                
-                                
-                                <a class="" href="/precisionhealth.html">
-                                    
-                                    Learn about Precision Health at Stanford <i class="fa fa-arrow-right default-icon"></i>
-                                </a>
-                            </li>
-                        
-                    
-                </ul>
-            
-            
-            
-        
-    </div>
-</div></div>
-<div class="feature-box parbase section">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        
-    
-    
-
-
-
-    
-    
-    
-    
-    
-        
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="feature-box-container border-and-shadow feature-box-layout-2 " >
-
-    
-        
-
-
-
-
-
-	<h2 class="feature-box-main-heading ">Diversity across Stanford Medicine</h2>
-
-    
-    
-         
-            
-            
-        		<div class="image " data-picture data-alt='""'data-group=""><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.320.low.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.320.medium.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.320.high.jpg' data-media="(min-width: 1px) and (max-width: 320px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.476.low.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.476.medium.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.476.high.jpg' data-media="(min-width: 321px) and (max-width: 476px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.620.low.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.620.medium.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.620.high.jpg' data-media="(min-width: 477px) and (max-width: 620px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.780.low.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.780.medium.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.780.high.jpg' data-media="(min-width: 621px) and (max-width: 767px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.845.low.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.845.medium.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.845.high.jpg' data-media="(min-width: 768px) and (max-width: 845px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1024.low.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1024.medium.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1024.high.jpg' data-media="(min-width: 846px) and (max-width: 1024px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1200.low.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1200.medium.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.1200.high.jpg' data-media="(min-width: 1025px) and (max-width: 1200px)" data-quality="high"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.full.low.jpg' data-media="(min-width: 1201px) " data-quality="low"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.full.medium.jpg' data-media="(min-width: 1201px) " data-quality="medium"></div><div data-src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.full.high.jpg' data-media="(min-width: 1201px) " data-quality="high"></div><noscript><img src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.620.high.jpg' alt='""'></noscript></div><!--[if lt IE 8]><img alt="""" src='//med.stanford.edu/_jcr_content/main/panel_builder/panel_1/feature_box_1542747851.img.620.high.jpg' /><![endif]-->
-
-            
-        
-    
-    
-
-    
-
-    <div class="feature-box-body">
-        <p>Innovative programs ensure diversity is reflected in our programs, culture and leadership.  </p>
-
-
-
-
-        
-            
-            
-                
-                <ul class="feature-box-footer-links feature-box-footer-align-left">
-                    
-                        
-                        
-                            <li>
-                                
-                                
-                                <a class="" href="/about/diversity.html">
-                                    
-                                    Learn about programs for students and faculty <i class="fa fa-arrow-right default-icon"></i>
-                                </a>
-                            </li>
-                        
-                    
-                </ul>
-            
-            
-            
-        
-    </div>
-</div></div>
-
-</div>
-
-                    
-                
-            </div>
-        
-
-    </div><!-- row -->
-    
-
-
-<script>
-    (function(w){
-      w.init.add(function(){
-        if(w.SM.components.PanelBuilder !== undefined) {
-          w.SM.components.PanelBuilder.init();
-        }
-      });
-    }(window));
-</script></div>
-<div class="heading parbase section">
-
-
-
-
-
-
-
-
-
-
+</article>
+
+  </div>
+    <div class="views-row">
+    <article role="article">
 
   
-  
-    
-  
-
-
-
-
-
-<hgroup class="section-header feature heading-level-2">
-  
-  <div class="heading-1-container">
-    
-    <h2 class="black" >
-	    
-	    A Legacy of Innovation
-	    
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/inspired-class-undergraduates-start-popular-science-publication" rel="bookmark"><span>Inspired by a class, undergraduates start a popular science publication</span>
+</a>
     </h2>
     
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">November 30, 2017</div>
+      
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/inspired-class-undergraduates-start-popular-science-publication">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=otZ2jS42 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=M1JjelqJ 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=y-4uW9OP 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=gRqIuY7Q 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=ynfVM3tq 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=S9shEsWz 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=jjvBPVif 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=sUp-eRAF 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=M1JjelqJ" />
+
+  </picture>
+</a>
+</div>
+      
   </div>
+
+</article>
+
+  </div>
+    <div class="views-row">
+    <article role="article">
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/artificial-intelligence-index-tracks-emerging-field" rel="bookmark"><span>Artificial intelligence index tracks emerging field</span>
+</a>
+    </h2>
+    
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">November 30, 2017</div>
+      
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/artificial-intelligence-index-tracks-emerging-field">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=p_vgYzTt 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=DEFuRSqd 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=LGOw_i8I 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=YXmTbtZo 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=gFTE3LnG 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=H437uHUm 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=EOP5fgVH 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=_8oYtIo0 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=DEFuRSqd" />
+
+  </picture>
+</a>
+</div>
+      
+  </div>
+
+</article>
+
+  </div>
+
   
   
- </hgroup></div>
-<div class="timeline list parbase section">
 
+  
+  <div class="more-link"><a href="/news">See all news</a></div>
 
 
-
-
-<ol class="media-list timeline">
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="1967-05-15T14:44:00.000-07:00" class="date"> <span class="year">1967</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">First synthesis of biologically active DNA in test tube</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline-1967-akornberg-A12.jpg"></p>
-<p>Nobel laureate Arthur Kornberg creates a strand of biologically active DNA, paving the way for studies of genetics.</p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media  selected " tabindex="0">
-        <div class="media-object">
-            <time datetime="1968-05-15T14:53:00.000-07:00" class="date"> <span class="year">1968</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">First adult human heart transplant in the United States</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline-1968-shumwayharrison-A16.jpg"></p>
-<p>Norman Shumway successfully transplants a heart into 54-year-old steelworker Mike Kasperak, who survives for 14 days.</p>
-<p>&nbsp;</p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="1973-05-16T11:53:00.000-07:00" class="date"> <span class="year">1973</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">First expression of a foreign gene implanted in bacteria by recombinant DNA methods</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline-1973-scohen-A30.jpg"></p>
-<p>Geneticist Stanely Cohen transfers a foreign gene into bacterial cells, which then express the gene.</p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="1981-05-15T10:03:00.000-07:00" class="date"> <span class="year">1981</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">First successful human combined heart/lung transplant in the world (fourth attempted worldwide)</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm-news/images/2012/01/timeline-1981-shumwayreitz-a36.jpg"></p>
-<p>Mary Gohlke receives the world's first combined heart and lung transplant in a landmark operation led by surgeon Bruce Reitz.</p>
-<p>&nbsp;</p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="1984-05-15T15:10:00.000-07:00" class="date"> <span class="year">1984</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">Isolation of a gene coding for part of the T-cell receptor, a key to the immune system’s function</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline-1984-mdavis3-A41.jpg"></p>
-<p>Immunologist Mark Davis characterizes the T-cell receptor, believed to regulate the body's response to infectious agents and cancerous diseases.</p>
-<p><a href="/content/dam/Timeline/legacy-1984_davis_A41.pdf" adhocenable="false">More about Dr. Mark Davis (PDF)</a></p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="1988-05-15T15:23:00.000-07:00" class="date"> <span class="year">1988</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">Isolation of pure hematopoietic stem cells from mice</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline-1988-weissman-A43.jpg"></p>
-<p>Pathologist Irving Weissman isolates a rare mouse cell, known as the hematopoetic stem cell, which gives rise to all the cells of the blood and immune systems.</p>
-
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media empty  " tabindex="0">
-        <div class="media-object">
-            <time datetime="2002-01-01T21:34:00.000-08:00" class="date"> <span class="year">2002</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">First use of gene expression profiling to predict cancer outcomes</h4>
-
-            <div class="media-content">
-                
-                
-            </div>
-
-            
-        </div>
-    </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <li class="media   " tabindex="0">
-        <div class="media-object">
-            <time datetime="2007-08-08T09:37:00.000-07:00" class="date"> <span class="year">2007</span></time>
-        </div>
-
-        <div class="media-body">
-            <h4 class="media-heading">Application and expansion of optogenetics, a technique to control brain cell activity with light</h4>
-
-            <div class="media-content">
-                
-                <p><img src="/content/dam/sm/global/images/timeline_2007_deisseroth_A92.jpg"></p>
-<p>Bioengineer Karl Deisseroth and his team develop a technique known as optogenetics that allows them to genetically alter brain cell activity in mice with light.</p>
-<p><a adhocenable="false" href="http://news.stanford.edu/news/2007/october24/neuron-101707.html">Read full story</a></p>
-<p>&nbsp;</p>
-
-            </div>
-
-            
-        </div>
-    </li></ol>
-
-<script>
-(function(w){
-  w.init.add(function(){
-	if(typeof(w.SM.components.Timeline) !== "undefined") {
-		w.SM.components.Timeline.init();
-	}
-});
-}(window));
-</script>
+  
+  
 </div>
-<div class="text parbase section">
-
-
-
-
-
-
-<div id="main_text" class=" ">
-    <p class="p-link-w-arrow" style="text-align: right;"><a href="/about/highlights.html">View more achievements</a></p>
-
-
-
 </div>
 
-<script>
-    $().ready(function() {
-    	if (RTECollapse !== undefined) {
-    		RTECollapse.init("main_text");
-    	}
-    });
-</script></div>
+      </div>
+</div>
 
+
+    
+
+  <div data-block-plugin-id="block_content:19e763b1-76c7-41cb-9887-055b5632aba8" class="block block-block-content featured-quote block-block_content block-19e763b1-76c7-41cb-9887-055b5632aba8">
+  
+      <div class="featured-quote__image">
+              
+
+
+            <div class="field field--name-field-featured-quote-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=EIg-jJbr 1x, /sites/default/files/styles/1009/public/miranda-stratton-110817-53-web_0.jpg?itok=sc8G3P1D 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=4hucLBCY 1x, /sites/default/files/styles/square_350x350_large_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=H1NAI4q8 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=Ccn2Y6OO 1x, /sites/default/files/styles/square_350x350_medium_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=vsYvMwaW 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=U9CJQyKq 1x, /sites/default/files/styles/square_350x350_small_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=2mRBhqeO 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=EIg-jJbr" alt="Miranda Stratton" />
+
+  </picture>
+
+</div>
+      
+          </div>
+  
+      <div class="featured-quote__text">
+      <blockquote>
+
+
+            <div class="field field--name-field-featured-quote-quote field--type-string-long field--label-hidden field__item">As the first in my family to go to college, I try to share every piece of information that I learn with them, to be a bridge for others to the world of scientific research. As a biologist, I focus a lot on articulating my work. At Stanford, I have found phenomenal mentors who are not only well-rounded academically, but also share my commitment to promoting diversity in the scientific community and conducting research that benefits society.</div>
+      </blockquote>      <span class="featured-quote__byline">
+
+
+            <div class="field field--name-field-featured-quote-source field--type-string field--label-hidden field__item">Miranda Stratton, Doctoral Candidate in Biology, 2017-19 DARE Fellow</div>
+      </span>    </div>
+  
+</div>
+
+
+
+
+    
+
+
+  <div data-block-plugin-id="block_content:40680068-4ea3-41dc-8494-b950f9e51e33" class="block block-block-content video-with-overlay is-bg-color block-block_content block-40680068-4ea3-41dc-8494-b950f9e51e33">
+
+  <div class="inner">
+            
+
+
+            <div class="field field--name-field-vo-video field--type-entity-reference field--label-hidden field__item"><article class="media media-video view-mode-embedded">
+      
+
+
+            <div class="field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item"><div class="video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/sdGx99KG-vU?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+</div>
+      
+  </article>
+</div>
+      
+                
+
+
+            <div class="field field--name-field-vo-background-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=3BNQzxaF 1x, /sites/default/files/styles/hero_1170x560_xlarge_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=hWTTxG4- 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_large_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=W9GF4S9d 1x, /sites/default/files/styles/hero_1170x560_large_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=Xl7I8cnf 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_medium_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=8GyrWdPf 1x, /sites/default/files/styles/hero_1170x560_medium_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=a__K0oc8 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_small_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=99onVYQ- 1x, /sites/default/files/styles/hero_1170x560_small_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=G3d_-3s8 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=3BNQzxaF" alt="" />
+
+  </picture>
+
+</div>
+      
+        <div class="video-with-overlay__text">
+      <div class="inner">
+                  <h2>
+
+
+            <div class="field field--name-field-vo-title field--type-string field--label-hidden field__item">Begin your journey with the School of Humanities and Sciences</div>
+      </h2>
+                          <button class="button button--alt-4">
+
+
+            Watch the Video
+      </button>
+              </div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+      </div>
 </div>
 
   </div>
-</div>
-</main>
 
+    </div>
+  </main>
 
-
-<div class="footer" id="footer" role="contentinfo">
   
-
-
-
-<footer class="footer-local container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="super-footer">
-    <div class="content">
-        <h2><a href="//med.stanford.edu">Stanford Medicine</a></h2>
-        <div class="left col-sm-6">
-            <h3><a href="/school.html">Stanford School of Medicine</a></h3>
-            <div class="col-sm-6">
-                <p><a href="/school.html">About</a></p>
-                <p><a href="/school/deans-office.html">School Administration</a></p>
-                <p><a href="/school/contacts.html">Contact</a></p>
-                <p><a href="/about/contacts/maps-directions.html">Maps &amp; Directions</a></p>
-                <p><a href="http://stanfordcareers.stanford.edu/">Jobs</a></p>
-            </div>
-            <div class="col-sm-6">
-                <p><a href="/school/directory/basic-science-departments.html">Basic Science Departments</a></p>
-                <p><a href="/school/directory/clinical-science-departments.html">Clinical Science Departments</a></p>
-                <p><a href="/education.html">Academic Programs</a></p>
-                <p><a href="/about/diversity.html">Diversity Programs</a></p>
-            </div>
-        </div>
-        <div class="right col-sm-6">
-            <div class="col-sm-6">
-                <h3><a href="http://www.stanfordhealthcare.org">Stanford Health Care</a></h3>
-                <p><a href="http://stanfordhealthcare.org/search-results.doctors.html">Find a Physician</a></p>
-                <p><a href="http://med.stanford.edu/clinicaltrials/">Clinical Trials</a></p>
-                <p><a href="http://stanfordhealthcare.org/for-patients-visitors.html">Patient Information</a></p>
-                <p><a href="http://stanfordhealthcare.org/about-us/contact.html">Contact</a></p>
-            </div>
-            <div class="col-sm-6">
-                <h3><a href="http://www.stanfordchildrens.org">Stanford Children's Health</a></h3>
-                <p><a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors">Find a Physician</a></p>
-                <p><a href="//med.stanford.edu/clinicaltrials/conditions/Pediatrics">Clinical Trials</a></p>
-                <p><a href="http://www.stanfordchildrens.org/en/about/contact">Contact</a></p>
-                <p><a href="http://www.stanfordchildrens.org/en/locations-directions">Maps &amp; Directions</a></p>
-            </div>
-        </div>
+  <footer class="footer">
+    <div class="footer__inner">
+              <div class="footer__footer1">
+            <div>
+    
+    
+<div id="block-footerabout" data-block-plugin-id="block_content:55baac1c-9fbb-49a4-8eb6-ae0e25cf9beb" class="is-bg-color--white block block-block-content block-block_content block-55baac1c-9fbb-49a4-8eb6-ae0e25cf9beb">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">About</h2>
         
+          
 
+            <div class="text-long"><p>The School of Humanities and Sciences is the foundation of a liberal arts education at Stanford. The school encompasses 23 departments and 23 interdisciplinary programs. It is the university's home for fundamental research, where free, open, and critical inquiry is pursued across disciplines.</p>
 
+<p><a href="/about">Learn more about H&amp;S</a></p></div>
+      
+      </div>
+</div>
 
+    
+<div id="block-footersociallinks" data-block-plugin-id="menu_block:footer-social-links" class="block block-menu-block block-menu_block block-footer-social-links">
+  <div class="block-inner">
+    
+        
+          
 
-
-
-
-<div class="simple-footer">
-    <div class="legal-text col-sm-6">&copy;<span id="footerCurrentYear">2017</span> Stanford Medicine</div>
-    <div class="links col-sm-6">
-        <ul class="unstyled clearfix">
-            <li class="link">
-                <a href="http://www.stanford.edu/site/terms.html">Terms of Use</a>
-            </li>
-            <li class="link last">
-                <a href="http://med.stanford.edu/irt/help/?group=webnewmedia">Help</a>
-            </li>
-            <li class="link link-social social-links">
-                <a href="https://www.facebook.com/stanfordmedicine">
-                    <span class="sr-only">See us on Facebook</span><i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="link link-social social-links">
-                <a href="https://twitter.com/stanfordmed">
-                    <span class="sr-only">See us on Twitter</span><i class="fa fa-twitter"></i>
-                </a>
-            </li>
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="https://www.facebook.com/stanford.humsci" title="School of Humanities and Sciences on Facebook" class="menu__link_facebook menu__link">Facebook</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://twitter.com/stanfordhumsci" title="School of Humanities and Sciences on Twitter" class="menu__link_twitter menu__link">Twitter</a>
+              </li>
         </ul>
-    </div>
-</div>
-    </div>
-</div>
-</footer>
-
-
   
 
 
-<footer class="footer-global">
-
-
-  <ul class="container ">
-    <li class="footer-item">
-      <a class="logo logo-stanford" href="//www.stanford.edu" title="Stanford University logo">Stanford University</a>
-    </li>
-    <li class="footer-item">
-      <a class="logo logo-stanford-som" href="//med.stanford.edu" title="Stanford School of Medicine logo">Stanford School of Medicine</a>
-    </li>
-    <li class="footer-item">
-      <a class="logo logo-stanford-hospital" href="http://stanfordhealthcare.org" title="Stanford Health Care">Stanford Health Care</a>
-    </li>
-    <li class="footer-item">
-      <a class="logo logo-stanford-childrens" href="http://www.stanfordchildrens.org" title="Stanford Children's Health logo">Stanford Children's Health</a>
-    </li>
-    <li class="footer-item">
-      <a class="logo logo-lpch" href="http://www.stanfordchildrens.org" title="Lucile Packard Children's Hospital Stanford logo">Lucile Packard Children's Hospital Stanford</a>
-    </li>
-    <li class="footer-item">
-      <a class="logo logo-stanford-healthcare" href="http://universityhealthcarealliance.org" title="University Healthcare Alliance logo">University Healthcare Alliance</a>
-    </li>
-  </ul></footer>
-
-<a href="#" id="backToTop" title="scroll back to top"><i class="fa fa-chevron-up"></i></a>
+      </div>
 </div>
+
   </div>
+
+        </div>
+      
+              <div class="footer__footer2">
+            <div>
+    
+    
+<div id="block-footerhsresources" data-block-plugin-id="menu_block:footer" class="block block-menu-block block-menu_block block-footer">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">H&amp;S resources</h2>
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="/giving/ways-give" class="menu__link_external-relations menu__link" data-drupal-link-system-path="node/261">External Relations</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://web.stanford.edu/dept/humsci/cgi-bin/facilities/" class="menu__link_facilities-and-capital-planning- menu__link" target="">Facilities and Capital Planning </a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://facultyaffairs-humsci.stanford.edu/" class="menu__link_faculty-affairs menu__link" target="">Faculty Affairs</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://finance-humsci.stanford.edu/" class="menu__link_finance menu__link" target="">Finance</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://gus-humsci.stanford.edu/" class="menu__link_graduate-and-undergraduate-studies menu__link" target="">Graduate and Undergraduate Studies</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://web.stanford.edu/dept/humsci/cgi-bin/hr/" class="menu__link_human-resources menu__link" target="">Human Resources</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://it-humsci.stanford.edu/" class="menu__link_information-technology menu__link" target="">Information Technology</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/planning" class="menu__link_planning menu__link" data-drupal-link-system-path="node/363">Planning</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads" class="menu__link_public-relations menu__link" data-drupal-link-system-path="node/257">Public Relations</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/research-administration-and-compliance" class="menu__link_research-administration-and-compliance menu__link" data-drupal-link-system-path="node/362">Research Administration and Compliance</a>
+              </li>
+        </ul>
   
 
 
-<div class="cloudservices servicecomponents"><script type="text/javascript">_satellite.pageBottom();</script>
+      </div>
 </div>
 
+  </div>
+
+        </div>
+      
+              <div class="footer__footer3">
+            <div>
+    
+    
+<div id="block-footercontact" data-block-plugin-id="block_content:e93d367f-8371-441e-aa2b-58711870c8ef" class="is-bg-color--white block block-block-content block-block_content block-e93d367f-8371-441e-aa2b-58711870c8ef">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">Contact Us</h2>
+        
+          
+
+            <div class="text-long"><p>Building 1, Main Quad<br />
+450 Serra Mall<br />
+Stanford, CA 94305-2070</p>
+
+<p>Phone: 650-723-2275<br />
+Fax: 650-723-3235</p></div>
+      
+      </div>
+</div>
+
+    
+<div id="block-footercontactlinks" data-block-plugin-id="menu_block:footer-contact-links" class="block block-menu-block block-menu_block block-footer-contact-links">
+  <div class="block-inner">
+    
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="mailto:hsdeansofc@lists.stanford.edu" class="menu__link_hsdeansofclistsstanfordedu menu__link" target="_blank" title="Email hsdeansofc@lists.stanford.edu">hsdeansofc@lists.stanford.edu</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://campus-map.stanford.edu/?id=01-001&amp;lat=37.42780204&amp;lng=-122.1696657&amp;zoom=17&amp;srch=Building%201" title="View the Campus Map" class="menu__link_campus-map menu__link">Campus Map</a>
+              </li>
+        </ul>
   
 
 
+      </div>
+</div>
+
+  </div>
+
+        </div>
+      
+              <div class="footer__footer4">
+            <div>
+    
+    
+<div id="block-footeruniversityresources" data-block-plugin-id="menu_block:footer-university-resources" class="block block-menu-block block-menu_block block-footer-university-resources">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">University resources</h2>
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="mailto:hs-communications@stanford.edu" class="menu__link_report-a-website-problem menu__link" target="">Report a website problem</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://studentaffairs.stanford.edu/policies" class="menu__link_stanford-non-discrimination-policy menu__link" target="">Stanford Non-Discrimination Policy</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/" class="menu__link_stanford-university menu__link" target="">Stanford University</a>
+              </li>
+        </ul>
+  
 
 
+      </div>
+</div>
 
+  </div>
 
+        </div>
+          </div>
+  </footer>
 
-<!--
-More detailed timing info is available by uncommenting some code in the timing.jsp component
-Timing chart URL:
-http://chart.apis.google.com/chart?chtt=sm.html+%28185ms%29&cht=bhs&chxt=x&chco=c6d9fd,4d89f9&chbh=a&chds=0,185,0,185&chxr=0,0,185&chd=t:4,5,5,5,8,8,9,9,9,10,11,11,12,12,12,12,13,13,13,14,25,25,26,26,80,81,81,84,84,85,85,85,86,87,87,87,88,88,88,89,89,89,95,107,108,108,108,111,124,124,124,125,128,137,138,138,138,138,164,164,178,179,179,179,179,180,180,180,181,181,181,182,182,182,182,182,183,183,184,184,184,184|8,0,0,3,0,2,1,1,1,1,0,1,0,0,1,172,0,0,12,11,0,55,54,54,4,3,3,0,98,0,1,97,92,51,51,51,0,19,49,0,18,18,12,17,0,13,13,10,13,13,13,0,9,1,0,1,26,40,0,14,1,0,0,1,3,0,0,1,0,0,0,0,1,1,1,1,0,1,1,1,1,1&chly=head.jsp|body_class.jsp|theme_body_class.jsp|analytics_datalayer_ob...|component-initializer.jsp|headlibs.jsp|dtm_include.jsp|headlibs.jsp|servicelibs.jsp|init.jsp|simulator.jsp|opengraph_meta.jsp|client_context.jsp|emergency_broadcast.jsp|local_header.jsp|body_layout.jsp|brand.jsp|local_header.jsp|global_navigation.jsp|global_navigation.jsp|local_site_search.jsp|hero.jsp|version_one_slide.jsp|hero-banner.jsp|panel_navigation.jsp|htmlinclude.jsp|parsys.jsp|page_heading.jsp|content.jsp|heading.jsp|text.jsp|parsys.jsp|panel_builder.jsp|parsys.jsp|panel_builder.jsp|parsys.jsp|heading.jsp|parsys.jsp|panel_builder.jsp|init.jsp|list.jsp|news-builder.jsp|listitem_news.jsp|parsys.jsp|init.jsp|list.jsp|news-builder.jsp|listitem_news.jsp|list.jsp|news-builder.jsp|parsys.jsp|init.jsp|listitem_news.jsp|horizontal_rule.jsp|text.jsp|feature-heading.jsp|feature-box.jsp|parsys.jsp|feature-heading.jsp|feature-box.jsp|heading.jsp|init.jsp|listitem-timeline.jsp|listitem-timeline.jsp|timeline.jsp|listitem-timeline.jsp|listitem-timeline.jsp|listitem-timeline.jsp|listitem-timeline.jsp|listitem-timeline.jsp|listitem-timeline.jsp|text.jsp|simple_footer.jsp|super_footer.jsp|local_footer.jsp|local_footer.jsp|global_footer.jsp|global_footer.jsp|dtm_include.jsp|dynamictagmanagement.jsp|servicecomponents.jsp|cloud_services.jsp&chs=600x500
--->
+</div>
+        
+      </div> <!-- #su-content end -->
+    </div> <!-- #su-wrap end -->
 
+    <!-- Global footer snippet start -->
+    <div id="global-footer">
+      <div class="container">
+        <div class="row">
+          <div id="bottom-logo" class="span2">
+            <a href="http://www.stanford.edu">
+              <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+            </a>
+          </div> <!-- #bottom-logo end -->
+          <div id="bottom-text" class="span10">
+              <div>
+    <ul>
+                            
+      <li class="menu__item">
+        <a href="http://www.stanford.edu" class="menu__link_stanford-home menu__link" target="">Stanford Home</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://visit.stanford.edu/plan/maps.html" class="menu__link_maps--directions menu__link" target="">Maps &amp; Directions</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/search" class="menu__link_search-stanford menu__link" target="">Search Stanford</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://emergency.stanford.edu" class="menu__link_emergency-info menu__link" target="">Emergency Info</a>
+              </li>
+        </ul>
+  
+      
+    
+  
+    
+          
+        
+          
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/site/terms.html" class="menu__link_terms-of-use menu__link" target="">Terms of Use</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://www.stanford.edu/site/privacy" class="menu__link_privacy-policy menu__link" target="">Privacy Policy</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/site/copyright.html" class="menu__link_copyright-complaints menu__link" target="">Copyright Complaints</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link_trademark-notice menu__link" target="">Trademark Notice</a>
+              </li>
+        </ul>
+  
+      
+    
+  
+    
+        
+          
+            <p>© Stanford University, Stanford, California 94305</p>
+  </div>
 
+          </div> <!-- .bottom-text end -->
+        </div> <!-- .row end -->
+      </div> <!-- .container end -->
+    </div> <!-- global-footer end -->
+    <!-- Global footer snippet end -->
 
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/40","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","fitvids":{"selectors":".node","custom_vendors":"","ignore_selectors":""},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"ajax":[],"user":{"uid":0,"permissionsHash":"d16e4becac1c26084dd9bc691d2b154c1e6fdd1b79bf7fbead689a74c759f04c"}}</script>
+<script src="/sites/default/files/js/js_sq4vJjauk-KX7vqxhvq-js3COwq9PqZmEy5w88N-DTM.js"></script>
 
-</body>
+  
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1a8a693eb4","applicationID":"37875605","transactionName":"MQBTYURZWkAFVUUNDAhKcFZCUVtdS3JDERMHCW12WUpRbyJZQwk\/IApDWHRNXV8AU0NJXRQAX1FTSmRfBVVUDAwKAVRHcFdGXiVVRQ0MCA==","queueTime":0,"applicationTime":300,"atts":"HUdQFwxDSU4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
 </html>
