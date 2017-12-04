@@ -1,463 +1,296 @@
 <!DOCTYPE html>
-<html  lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
   <head>
-    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
-<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-15197849-34", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");</script>
-<meta name="title" content="Stanford Careers" />
-<link rel="canonical" href="http://stanfordcareers.stanford.edu/" />
-<link rel="shortlink" href="http://stanfordcareers.stanford.edu/" />
-<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="apple-touch-icon" sizes="57x57" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="60x60" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="//www-media.stanford.edu/assets/favicon/apple-touch-icon-180x180.png" />
-<link rel="icon" type="image/png" sizes="196x196" href="//www-media.stanford.edu/assets/favicon/favicon-196x196.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="//www-media.stanford.edu/assets/favicon/favicon-192x192.png" />
-<link rel="icon" type="image/png" sizes="128x128" href="//www-media.stanford.edu/assets/favicon/favicon-128.png" />
-<link rel="icon" type="image/png" sizes="96x96" href="//www-media.stanford.edu/assets/favicon/favicon-96x96.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="//www-media.stanford.edu/assets/favicon/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="//www-media.stanford.edu/assets/favicon/favicon-16x16.png" />
-<link rel="mask-icon" color="#ffffff" href="//www-media.stanford.edu/assets/favicon/safari-pinned-tab.svg" />
-<meta name="application-name" content="Stanford University" />
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="//www-media.stanford.edu/assets/favicon/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="//www-media.stanford.edu/assets/favicon/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="//www-media.stanford.edu/assets/favicon/mstile-150x150.png" />
-<meta name="msapplication-square310x310logo" content="//www-media.stanford.edu/assets/favicon/mstile-310x310.png" />
-<link rel="shortcut icon" href="/themes/custom/careers/favicon.ico" type="image/vnd.microsoft.icon" />
-<link rel="revision" href="/home" />
-
-    <title>Stanford Careers</title>
-    <link rel="stylesheet" href="/sites/default/files/css/css_hmk1VucDPp5tl3ROjjlN3YeiYdiRwVX9SnTe34XZPxA.css?p06tiu" media="all" />
-<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" media="all" />
-<link rel="stylesheet" href="/sites/default/files/css/css_UvV7NM9LaMmPXmR8t5SF08fT3oTRunGK94UFwwo5PDY.css?p06tiu" media="all" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" media="all" />
-<link rel="stylesheet" href="/sites/default/files/css/css_AlxC6FTqeKmAPwB14PR4X6SQcPfqJ98dipjkNAsWLPo.css?p06tiu" media="all" />
-
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <title>Stanford Profiles | Stanford University</title>
+    <meta name="description" content="CAP Network is a virtual workspace to support collaboration among faculty, graduate students, postdocs and staff. Combining a profile directory with a social networking backend, CAP makes it easy for you to work closely with colleagues and track the projects that matter most to you - all in a private, secure environment.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<!--[if lte IE 8]>
-<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
-<![endif]-->
-
+    <link rel="stylesheet" href="/styles/main.css;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09?r=7.4.0">
+    <link rel="icon" href="/images/favicon.ico;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09?r=7.4.0">
+    <!--[if IE 7]><link rel="stylesheet" href="/styles/font-awesome-ie7.min.css;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09?r=7.4.0"><![endif]-->
+    <script src="/scripts/vendor/modernizr.min.js;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09?r=7.4.0"></script>
+    <!-- Google Analytics -->
+    <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  </script>
+    <!-- End Google Analytics -->
   </head>
-  <body class="path-frontpage page-node-type-page has-glyphicons featured">
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      Skip to main content
-    </a>
-    
-    <div id="page-wrap">
-<header id="site-header">
-
-  <div id="global-header">
-  <div class="container">
-    <div class="global-logo">
-      <a href="http://www.stanford.edu" target="_blank"><img srcset="/themes/custom/careers/img/header-stanford-logo@2x.png 2x" src="/themes/custom/careers/img/header-stanford-logo.png" alt="Stanford University"></a>
-    </div>
-  </div>
-</div>
-
-  <div id="main-header">
-
-    <div class="container">
-
-      <div class="nav-header">
-
-        <div class="site-logo">
-          <a href="/">
-            <img src="/themes/custom/careers/img/stanford-careers-logo.png" alt="stanford-careers-logo">
-          </a>
-        </div>
-
-        <div class="mobile-triggers">
-          <a class="mobile-trigger" id="site-navigation-trigger" href="#"><i class="fa fa-bars" aria-hidden="true"><span>Menu</span></i></a>
-        </div>
-
-      </div>
-
-      <nav class="site-navigation">
-        <div class="nav-primary yamm">
-          <div class="region region-navigation">
-    <nav role="navigation" aria-labelledby="block-careers-main-menu-menu" id="block-careers-main-menu">
-            <h2 class="sr-only" id="block-careers-main-menu-menu">Main navigation</h2>
-
-      
-  <div class="nav-primary">
-              <ul>
-                            <li>
-        <a href="/our-community" data-drupal-link-system-path="node/2">Our Community</a>
-                  </li>
-                        <li>
-        <a href="/benefits-rewards" data-drupal-link-system-path="node/4">Benefits &amp; Rewards</a>
-                  </li>
-                        <li>
-        <a href="/explore-careers" data-drupal-link-system-path="node/5">Explore Careers</a>
-                  </li>
-        </ul>
-    </div>
+  <body class="home">
+    <div class="wrapper  ">
+      <header class="navbar navbar-fixed-top" id="headerContent">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 
+  <div class="navbar-inner">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="brand">
+          <div class="logo">
+            <div class="stanford-logo">
+              <a href="http://www.stanford.edu/">
+                <span>Stanford</span>
+              </a>
+            </div>
+          </div>
+          <div class="signature">
+            <div class="site-name">
+              <a href="/">
+                <span class="site-name-1">Profiles</span>
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <div id="sidebarTrigger" class="visible-phone pull-right">
+          <a href="#" class="icon-background"><i class="icon-reorder"></i></a>
+        </div>
 
-  </nav>
+        <div class="hidden-phone pull-right link-container">
+          <div id="searchHeaderContent" class="search-header-region hidden-phone"></div>
+          <div class="browse-popover menu-popover">
+            <a data-toggle="tooltip">
+              <i class="icon-list-ul visible-phone"></i>
+              <span>Browse</span>
+              <i class="icon-caret-down hidden-phone"></i>
+            </a>
+          </div>
 
-  </div>
+          <div class="sign-in">
+            <a data-toggle="tooltip" href="/intranet/" class="sign-in-link" data-bypass>
+              <i class="icon-signin visible-phone"></i>
+              <span>Sign In</span>
+            </a>
+          </div>
 
+          <div class="edit-profile">
+            <a id="editProfile" data-toggle="tooltip" href="https://cap.stanford.edu/profiles/auth/edit">
+              <i class="icon-pencil visible-phone"></i>
+              <span>Edit My Profile</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div>
-        <div class="nav-utility">
-  <ul>
-    <li>
-      <a class="btn btn-primary btn-lg" href="/job-search?utm_source=top-right&utm_medium=button&utm_campaign=Search%20Jobs">Search Jobs</a>
+  </div>
+
+      </header>
+      <div id="bodyContent">
+        <div id="mainContent">
+          <section class="banner ">
+  <div class="container">
+    <div class="masthead">
+      <div class="searchLink">
+        <a class="btn-link searchLinkButton" data-toggle="tooltip" href="/intranet/" data-bypass >
+            <div class="icon-background"><i class="icon icon-lock"></i></div>
+            Switch to Stanford-only View
+        </a>
+      </div>
+      <div class="searchTitle">
+        <h1>
+          Search or Browse Profiles<span class="sr-only"> at Stanford University</span>
+        </h1>
+      </div>
+      <div id="searchContent">
+        <form class="navbar-search" method="get" action="/search">
+  <div class="searchPopover" data-toggle="tooltip" >
+    <input class="search-query" type="text" name="q" placeholder="Search by name, email, work phone, SUNet ID, topic or organization..." autocomplete="off" />
+    <button class="icon-search" type="submit" name="search" title="Search"></button>
+  </div>  
+</form>
+      </div>
+      <div id="browseContent">
+        <div class="browser" role="navigation">
+  <ul class="unstyled">
+    <li class="dropdown">
+      <button id="Schools" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-right visible-phone"></i>Schools<i class="icon-caret-down hidden-phone"></i></button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Schools">
+          <li role="presentation"><a href="/browse/graduate-school-of-business" role="menuitem">Graduate School of Business</a></li>
+          <li role="presentation"><a href="/browse/school-of-earth-energy-environmental-sciences" role="menuitem">School of Earth, Energy &amp; Environmental Sciences</a></li>
+          <li role="presentation"><a href="/browse/school-of-engineering" role="menuitem">School of Engineering</a></li>
+          <li role="presentation"><a href="/browse/school-of-humanities-and-sciences" role="menuitem">School of Humanities and Sciences</a></li>
+          <li role="presentation"><a href="/browse/school-of-medicine" role="menuitem">School of Medicine</a></li>
+      </ul>
     </li>
+    <li class="dropdown">
+      <button id="Institutes" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-right visible-phone"></i>Institutes<i class="icon-caret-down hidden-phone"></i></button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Institutes">
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/bio-x" role="menuitem">Bio-X</a></li>
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/freeman-spogli-institute-for-international-studies" role="menuitem">Freeman Spogli Institute for International Studies</a></li>
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/precourt-institute-for-energy" role="menuitem">Precourt Institute for Energy</a></li>
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-chem-h" role="menuitem">Stanford ChEM-H</a></li>
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-neurosciences-institute" role="menuitem">Stanford Neurosciences Institute</a></li>
+          <li role="presentation"><a href="/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-woods-institute-for-the-environment" role="menuitem">Stanford Woods Institute for the Environment</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <button id="Administration" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-right visible-phone"></i>Administration<i class="icon-caret-down hidden-phone"></i></button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="Administration">
+          <li role="presentation"><a href="/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer" role="menuitem">Office of Vice President for Business Affairs and Chief Financial Officer</a></li>
+          <li role="presentation"><a href="/browse/public-affairs" role="menuitem">Public Affairs</a></li>
+          <li role="presentation"><a href="/browse/stanford-university-libraries" role="menuitem">Stanford University Libraries</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-and-dean-of-research" role="menuitem">Vice Provost and Dean of Research</a></li>
+          <li role="presentation"><a href="/browse/vice-provost-for-student-affairs" role="menuitem">Vice Provost for Student Affairs</a></li>
+      </ul>
+    </li>
+
+
   </ul>
 </div>
-      </nav>
 
+      </div>
     </div>
-
-  </div>
-
-</header>
-
-
-                              <div class="col-sm-12" role="heading">
-              <div class="region region-header">
-    
-
-  </div>
-
-          </div>
-              
-            
-                        <section>
-
-                
-                
-                
-                                      
-                  
-                          <a id="main-content"></a>
-            <div class="region region-content">
-      <article data-history-node-id="1" role="article" about="/home" typeof="schema:WebPage" class="page full clearfix">
-
-  
-      <span property="schema:name" content="Home" class="hidden"></span>
-
-
-  
-  <div class="content">
-    
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field--items">
-              <div class="field--item"><div class="paragraph paragraph--type--home-hero-rotater paragraph--view-mode--default">
-    
-            <div class="field field--name-field-home-hero-view field--type-entity-reference field--label-hidden field--item">
-<section class="views-element-container block block-views block-views-blockhome-hero-rotater-block-1 clearfix" id="block-views-block-home-hero-rotater-block-1">
-  
-    
-
-      <div class="form-group"><div class="view view-home-hero-rotater view-id-home_hero_rotater view-display-id-block_1 js-view-dom-id-4daf9f94eda36ec54fe8002ce1e73e0a9c2593d46d397b76be3b9a30fcdbde6f">
-  
-    
-      
-      <div class="view-content">
-      
-  <section class="hero full w-bg" style="background-image: url(/sites/default/files/homehero/redset.jpg);">
-  <div class="home-hero-statement">
-    Our history is rich and inspiring. Our future will be cutting edge and groundbreaking.
   </div>
 </section>
-
-
-    </div>
-  
-          </div>
-</div>
-
-  </section>
-
-</div>
-      
-</div></div>
-              <div class="field--item"><section class="paragraph paragraph--type--text-and-image-rows paragraph--view-mode--default section" id="">
-    
-            <div class="field field--name-field-text-rows-intro field--type-entity-reference-revisions field--label-hidden field--item"><section class="paragraph paragraph--type--one-plus-two-column-text paragraph--view-mode--default section section-spaced" id="">
+<section class="information">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <small class="sub-title">
-            <div class="field field--name-field-supertitle field--type-string field--label-hidden field--item">Contributions that</div>
-      </small>
-        <h2>
-            <div class="field field--name-field-headline field--type-text field--label-hidden field--item">Impact the World</div>
-      </h2>
-      </div>
-      <div class="col-md-8">
-        
-            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>As one of the world’s premier research institutions, our greatest resource is our people—those behind the innovations and discoveries that are changing the landscape of medicine, the environment, technology and more.</p>
+    <div class="row-fluid">
 
-<p>We seek people committed to excellence and driven to make the world a better place. If this sounds like you, you’ve come to the right place.</p>
-
-<p><a class="btn-text" href="https://stanford.box.com/s/ascj6uj5hktilfk7yac2x46zvcp4n8w0" target="_blank">View a summary of our offerings</a></p>
-</div>
-      
-      </div>
-    </div>
-  </div>
-</section></div>
-      
-      <div class="field field--name-field-text-and-image-rows field--type-entity-reference-revisions field--label-hidden field--items">
-              <div class="field--item"><section id="" class="section">
-<div class="paragraph paragraph--type--text-and-image-row paragraph--view-mode--default flex-row info section-bordered reversed">
-  <div class="col">
-    <div class="text">
-      <span class="sub-title"></span>
-      <h2 class="title">
-            <div class="field field--name-field-headline field--type-text field--label-hidden field--item">Our Community</div>
-      </h2>
-      
-            <div class="field field--name-field-text-block field--type-text-long field--label-hidden field--item"><p>Our culture is focused on growing talent and realizing the aspirations of students and employees alike. Join a community where excellence is at the core of our culture and your contributions are valued.</p>
-
-<p><a class="btn-text" href="/our-community">Learn more about the Stanford Community</a></p>
-</div>
-      
-    </div>
-  </div>
-  <div class="col">
-      <div class="image" style="background-image: url(/sites/default/files/imagerow/ourcommunity.jpg)"></div>
-    </div>
-</div> 
-</section>
-</div>
-              <div class="field--item"><section id="" class="section">
-<div class="paragraph paragraph--type--text-and-image-row paragraph--view-mode--default flex-row info section-bordered not-reversed">
-  <div class="col">
-    <div class="text">
-      <span class="sub-title"></span>
-      <h2 class="title">
-            <div class="field field--name-field-headline field--type-text field--label-hidden field--item">Benefits &amp; Rewards</div>
-      </h2>
-      
-            <div class="field field--name-field-text-block field--type-text-long field--label-hidden field--item"><p>Access an array of benefits to support every stage of your career and promote a healthy, fulfilling life.</p>
-
-<p><a class="btn-text" href="/benefits-rewards">Learn more about Benefits &amp; Rewards at Stanford</a></p>
-</div>
-      
-    </div>
-  </div>
-  <div class="col">
-      <div class="image" style="background-image: url(/sites/default/files/imagerow/hero-benefits.jpg)"></div>
-    </div>
-</div> 
-</section>
-</div>
-          </div>
-  
-</section></div>
-              <div class="field--item"><section id="" class="section section-spaced bb section-colored job-triptych">
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <small class="sub-title"></small>
-                <h2 class="title">
-            <div class="field field--name-field-title field--type-string field--label-hidden field--item">Explore Careers</div>
-      </h2>
-              </div>
-              <div class="col-md-9">
-                
-            <div class="field field--name-field-body field--type-text-long field--label-hidden field--item"><p>Our dynamic and complex organization seeks individuals who will bring innovation and excellence to their respective area of expertise, from our grounds crews and information technology to our libraries and more.</p>
-
-<p><a class="btn-text" href="/explore-careers">Learn more about career opportunities at Stanford</a></p>
-</div>
-      
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-
-            <div class="text-grid bordered">
-                <div class="grid-item col-md-4">
-  <label>  FINANCE
-</label>
-  <br>
-  <h4>
-            <div class="field field--name-field-job-title field--type-link field--label-hidden field--item"><a href="https://chk.tbe.taleo.net/chk01/ats/careers/requisition.jsp?org=SLAC&amp;cws=1&amp;rid=2843" target="_blank">Accountant 1 (2843)</a></div>
-      </h4>
-  <p class="small">
-            <div class="field field--name-field-job-office field--type-string field--label-hidden field--item">SLAC</div>
-      </p>
-</div>
-  <div class="grid-item col-md-4">
-  <label>  RESEARCH
-</label>
-  <br>
-  <h4>
-            <div class="field field--name-field-job-title field--type-link field--label-hidden field--item"><a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=76121" target="_blank">Director of Research Informatics (76121)</a></div>
-      </h4>
-  <p class="small">
-            <div class="field field--name-field-job-office field--type-string field--label-hidden field--item">School of Medicine</div>
-      </p>
-</div>
-  <div class="grid-item col-md-4">
-  <label>  INFORMATION TECHNOLOGY SERVICES
-</label>
-  <br>
-  <h4>
-            <div class="field field--name-field-job-title field--type-link field--label-hidden field--item"><a href="https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=76934" target="_blank">Software Developer 3 (76934)</a></div>
-      </h4>
-  <p class="small">
-            <div class="field field--name-field-job-office field--type-string field--label-hidden field--item">School of Medicine</div>
-      </p>
-</div>
-
-            </div>
-            <div class="actions">
-              
-            <div class="field field--name-field-bottom-row field--type-text-long field--label-hidden field--item"><p><a class="btn btn-lg btn-primary" href="/job-search" id="view-open-jobs-btn">View All Open Jobs</a> <a class="btn btn-lg btn-default" href="/contact#faq" id="how-apply-btn">How do I apply</a></p>
-</div>
-      
-            </div>
-          </div>
-
-        </section>
-</div>
-          </div>
-  
-  </div>
-
-</article>
-
-
-  </div>
-
-              </section>
-
-            
-
- <footer class="footer">
-
-  <div id="site-footer">
-
-    <div class="container">
-            
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><div class="row sidebar-left">
-<div class="sidebar col-sm-4"><a class="btn btn-block btn-secondary" href="http://cardinalatwork.stanford.edu/?utm_source=footer&amp;utm_medium=uhr-button&amp;utm_campaign=Stanford%20Careers" target="_blank">University Human Resources</a> <a class="btn btn-block btn-secondary" href="/contact#faq">Stanford Careers Help Center</a> <a class="btn btn-block btn-secondary" href="/contact">Contact Staffing Services</a></div>
-
-<div class="main col-sm-8">
-<p>Stanford complies with the Jeanne Clery Act and publishes crime statistics for the most recent three-year period. <a href="https://police.stanford.edu/security-report.html" rel="external" target="_blank">View the full report.</a></p>
-
-<p>Stanford is an equal employment opportunity and affirmative action employer and is committed to recruiting and hiring without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, veteran status, or any other characteristic protected by law.</p>
-
-<p><a href="https://bechtel.stanford.edu/departments/lca-notifications" target="_blank">LCA Notifications</a> | <a href="http://www.stanford.edu/dept/diversityaccess/access.html" target="_blank">Disability and Diversity Services</a> | <a href="https://military.stanford.edu/" target="_blank">Veterans</a></p>
-</div>
-</div>
-</div>
-      
-  
-
-
-    </div>
-
-  </div>
-
-  <div id="global-footer">
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="global-logo">
-          <a href="http://www.stanford.edu">
-            <img srcset="/themes/custom/careers/img/footer-stanford-logo@2x.png 2x" src="/themes/custom/careers/img/footer-stanford-logo.png" alt="Stanford University">
-          </a>
+      <div class="span4">
+        <div class="information-block">
+          <h2>About Stanford Profiles</h2>
+          <p>Search for faculty, staff, students and postdocs in one place to find information (Expertise, Bio, Research, Publications, and more) on people you would like to collaborate with and contact information to be able to communicate with them directly. Search for Staff to also find information on current roles, professional experience, and project work. Browse a list of people affiliated with an organization by selecting from the available menu options or search for a department or organization by name.</p>
         </div>
+      </div>
 
-        <div class="global-content">
+      <div class="span4">
+        <div class="information-block">
+          <h2>Stanford Campus Map</h2>
+          <p>
+            <a href="https://campus-map.stanford.edu/" class="btn-link" target="_blank">
+              <img src="/images/map.png" width="276" height="160" alt="Stanford Campus Map">
+              Search the Stanford Map&nbsp;<i class="icon-external-link" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+      </div>
 
-          <div class="global-nav">
-            <ul>
-              <li><a href="http://www.stanford.edu">SU Home</a></li>
-              <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
-              <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
-              <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
-              <li><a href="http://emergency.stanford.edu">Emergency Info</a></li>
+      <div class="span4">
+        <div class="information-block">
+          <h2>Related Resources</h2>
+          <p>
+            <ul class="unstyled">
+              <li>
+                <a href="http://www.stanford.edu/search/?cx=003265255082301896483%3Asq5n7qoyfh8&amp;cof=FORID%3A9&amp;q=" class="btn-link" target="_blank">
+                  Search Stanford Web <i class="icon-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://stanfordhealthcare.org" class="btn-link" target="_blank">
+                  Find an Adult-care doctor <i class="icon-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.stanfordchildrens.org/en/search/default?tab=doctors" class="btn-link" target="_blank">
+                  Find a Pediatrician or pediatric specialist <i class="icon-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.stanford.edu/dept/pres-provost/budget/org/orgchart/index.html" class="btn-link" target="_blank">
+                  Tree View of University Org Code Hierarchy <i class="icon-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://org.stanford.edu/main/OrgApp" class="btn-link" target="_blank">
+                  Organization Manager <i class="icon-external-link" aria-hidden="true"></i>
+                </a>
+              </li>
             </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        </div>
+      </div>
+      <footer id="footerContent">
+	      <div class="container">
+          <div class="accessibility">
+            <a href="http://www.stanford.edu/site/accessibility">Report Accessibility Issues <i class="icon-caret-right"></i></a>
+            
+          </div>
+	        <div class="powered-by-cap">Powered By CAP Network</div>
+	      </div>
+	      <div class="footer-wrapper">
+          <div class="container">
+            <div class="row-fluid">
+              <div class="span12">
+                <div class="logo span2">
+                  <a href="http://www.stanford.edu/">Stanford University</a>
+                </div>
+                <ul class="unstyled span10">
+                  <li>
+                    <a href="http://www.stanford.edu/">SU Home</a>
+                  </li>
+                  <li>
+                    <a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/search/">Search Stanford</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/terms.html">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a>
+                  </li>
+                </ul>
+                <small class="copyright span10">&copy; Stanford University, Stanford, California 94305</small>
+              </div>
+            </div>
           </div>
         </div>
-
-          <div class="legal col-md-10">
-           <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span class="copyright-links"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></span></p>
-          </div>
-
-      </div>
-
+      </footer>
     </div>
+    <script>
+      var require = {
+    		baseUrl: '/scripts;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09',
+    		urlArgs: 'r=7.4.0'
+    	};
 
-  </div>
-
-</footer>
-
-<a class="back-to-top" href="#"><span class="hidden">Back to top</span></a>
-</div>
-
- <!-- Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Video Title <small>(Optional)</small></h4>
-      </div>
-      <div class="modal-body">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="mobile-navigation">
-
-  <a class="sidr-close" href="#"><i class="fa fa-times" aria-hidden="true"><span class="hidden">Close</span></i></a>
-
-  <div class="nav-primary">
-    <ul>
-      <li>
-        <a href="/our-community">Our Community</a>
-      </li>
-      <li>
-        <a href="/benefits-rewards">Benefits &amp; Rewards</a>
-      </li>
-      <li>
-        <a href="/explore-careers">Explore Careers</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="nav-utility">
-    <ul>
-      <li>
-        <a class="btn btn-primary btn-block" href="/job-search?utm_source=menu-bar&utm_medium=red-button&utm_campaign=Search%20Jobs">Search Jobs</a>
-      </li>
-    </ul>
-  </div>
-
-</div>
-
-    
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackUrlFragments":true},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_keyboard":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","popover_trigger_autoclose":1,"tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"user":{"uid":0,"permissionsHash":"9e9cfbc6b01e27f5974441a1e33b8fc58cfe3c8252ab3c42abc43faab66faf91"}}</script>
-<script src="/sites/default/files/js/js_nNk4zljk50fv-1CJpVhRTZIZ2bvwRVRhe0n3QXkBCEk.js"></script>
-<script src="//cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="/sites/default/files/js/js_Rpr2f-3Fumt8TXp7kgC0U74ZYOkzDXTB2bHaFAhIuUA.js"></script>
-<script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js"></script>
-<script src="/sites/default/files/js/js_84KqqQzhP65k89xNpLfSugYXHFlYzn2wXLrdbeE3cZA.js"></script>
-
-  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3252dcc498","applicationID":"32112066","transactionName":"M1YGN0NXXEJWVEFQCQocMRFYGR1YWVNQQUgUWxQ=","queueTime":0,"applicationTime":184,"atts":"HxEFQQtNT0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+      (function() {
+    	  if (navigator && navigator.platform === 'Win32') {
+    	    var d = document.getElementsByTagName('html')[0];
+    	    d.className = d.className + ' win';
+    	  }
+      }());
+    </script>
+    <script src="/scripts/vendor/require.js;jsessionid=96D68155C9943A85F131112DC79E7A1D.cap-su-capappprd09?r=7.4.0"></script>
+    <script>
+      define('app-config', 
+        { c:  { accessToken: ''
+              , baseUrl:     ''
+              , capApiUrl:   'https://profiles.stanford.edu/proxy/api/cap'
+              , googleAnalyticsId: 'UA-40553629-2'
+              , capIntranetPath:   '/intranet'
+              , capClassicSignInUrl: 'https://cap.stanford.edu/profiles/auth/'
+              , browseOrgs: {"administrations":[{"name":"Office of Vice President for Business Affairs and Chief Financial Officer","url":"/browse/office-of-vice-president-for-business-affairs-and-chief-financial-officer"},{"name":"Public Affairs","url":"/browse/public-affairs"},{"name":"Stanford University Libraries","url":"/browse/stanford-university-libraries"},{"name":"Vice Provost and Dean of Research","url":"/browse/vice-provost-and-dean-of-research"},{"name":"Vice Provost for Student Affairs","url":"/browse/vice-provost-for-student-affairs"}],"institutes":[{"name":"Bio-X","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/bio-x"},{"name":"Freeman Spogli Institute for International Studies","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/freeman-spogli-institute-for-international-studies"},{"name":"Precourt Institute for Energy","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/precourt-institute-for-energy"},{"name":"Stanford ChEM-H","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-chem-h"},{"name":"Stanford Neurosciences Institute","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-neurosciences-institute"},{"name":"Stanford Woods Institute for the Environment","url":"/browse/independent-labs-institutes-and-centers-dean-of-research/stanford-woods-institute-for-the-environment"}],"schools":[{"name":"Graduate School of Business","url":"/browse/graduate-school-of-business"},{"name":"School of Earth, Energy & Environmental Sciences","url":"/browse/school-of-earth-energy-environmental-sciences"},{"name":"School of Engineering","url":"/browse/school-of-engineering"},{"name":"School of Humanities and Sciences","url":"/browse/school-of-humanities-and-sciences"},{"name":"School of Medicine","url":"/browse/school-of-medicine"}]}
+              }
+        , u:  {"intranetPathInUrl":"","switchViewPath":"/intranet/","uCtxET":0} 
+        }); // 0[ms]
+      require(['main']);
+    </script>
+  </body>
 </html>

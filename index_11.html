@@ -1,519 +1,485 @@
 <!DOCTYPE html>
-<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<!--[if lt IE 7]> <html class="ie6 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if !IE]> --> <html lang="en" dir="ltr"> <!-- <![endif]-->
 <head>
-  <title>Stanford News</title>
-
-  <!-- Meta -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Stanford University" />
-
-
-  <!--
-    _____ _               __              _
-   / ____| |             / _|            | |
-  | (___ | |_ __ _ _ __ | |_ ___  _ __ __| |
-   \___ \| __/ _` | '_ \|  _/ _ \| '__/ _` |
-   ____) | || (_| | | | | || (_) | | | (_| |
-  |_____/ \__\__,_|_| |_|_| \___/|_|  \__,_|
-
-  Curious about our code? We're curious about you! The Web Communications team is hiring a
-  Front-end Architect. Learn more and apply online at
-  https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=76250
-
-  Note: mentioning this comment block in your cover letter will definitely get our attention. ;)
-  -->
-
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/base.min.css?v=1.1.13" type="text/css" />
-    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/home.min.css?v=1.1.13" type="text/css" />
-    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/style.css?v=1.1.13" type="text/css"/>
-  <!--[if lt IE 9]>
-  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <!--[if IE 8]>
-  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie8.css?v=1.1.13" />
-  <![endif]-->
-  <!--[if IE 7]>
-  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie7.css?v=1.1.13" />
-  <![endif]-->
-
-  <!-- JS and jQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="//news.stanford.edu/wp-content/themes/news/js/modernizr.custom.17475.js"></script>
-  <script src="//news.stanford.edu/wp-content/themes/news/js/bootstrap.min.js"></script>
-
-  <!--[if lt IE 9]>
-  <script src="//news.stanford.edu/wp-content/themes/news/js/respond.js"></script>
-  <![endif]-->
-
-  <!-- custom JS -->
-  <script src="//news.stanford.edu/wp-content/themes/news/js/base.js?v=1.1.13"></script>
-
-  <!-- Google analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-1860414-2', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <!-- wp_head(); -->
-  
-<!-- This site is optimized with the Yoast SEO Premium plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Latest news from and about Stanford University."/>
-<meta name="news_keywords" content="" />
-<link rel="original-source" href="https://news.stanford.edu/" />
-<meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://news.stanford.edu/" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Stanford News" />
-<meta property="og:description" content="Latest news from and about Stanford University." />
-<meta property="og:url" content="https://news.stanford.edu/" />
-<meta property="og:site_name" content="Stanford News" />
-<meta property="og:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="628" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:description" content="Latest news from and about Stanford University." />
-<meta name="twitter:title" content="Stanford News" />
-<meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
-<meta property="DC.date.issued" content="2016-03-28T16:44:42-08:00" />
-<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/news.stanford.edu\/","name":"Stanford News","potentialAction":{"@type":"SearchAction","target":"https:\/\/news.stanford.edu\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/news.stanford.edu\/","sameAs":[],"name":"Stanford University News Service","logo":""}</script>
-<!-- / Yoast SEO Premium plugin. -->
-
-<link rel='dns-prefetch' href='//s.w.org' />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/news.stanford.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.3"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='sunews-panels-css-css'  href='https://news.stanford.edu/wp-content/themes/news/css/panels.css?ver=1.1.7' type='text/css' media='all' />
-<link rel='stylesheet' id='awesome-weather-css'  href='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/awesome-weather.css?ver=4.8.3' type='text/css' media='all' />
-<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/wp-retina-2x/js/picturefill.min.js?ver=3.0.2'></script>
-<script type='text/javascript' src='https://news.stanford.edu/wp-content/themes/news/js/home.js?ver=1.1.13'></script>
-<link rel='https://api.w.org/' href='https://news.stanford.edu/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://news.stanford.edu/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://news.stanford.edu/wp-includes/wlwmanifest.xml" /> 
-<link rel='shortlink' href='http://stanford.io/26bPoAh' />
-<link rel="alternate" type="application/json+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F&#038;format=xml" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link rel="shortcut icon" href="https://undergrad.stanford.edu/sites/default/themes/undergrad/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://undergrad.stanford.edu/" />
+<link rel="shortlink" href="https://undergrad.stanford.edu/" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Stanford Undergrad</title>
+  <link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_QnDqumlAmBiA-LkPKOOEj-wMlRQlYuHQdMmPGFs03GQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_VVs55pPANgm-xw10crIqLvN2tQEJw3QGsSCve4iCRSI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_NYq1XXqPUzbNnSAy-RFs1v2nnY3i9881XaAB_HiMF5g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_owXFPzvU5tciLpwVMkYh-TJufXWvmb-RBqbINqlnxCg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_nGZ0EUi6HATidAf3pITrpLdyTGtTsmfVAzXLpUp2gr4.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_PnwCharj7ZGck1Zy4Mq-eARBYWpRJJn4ps5HnEKzVMQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css_injector/css_injector_41.css?oztrm9" media="all" />
+<link type="text/css" rel="stylesheet" href="https://undergrad.stanford.edu/sites/default/files/css/css_gujxIIeEI6oK9kTdGAQdZduZ0WSN_ycmyntvpSjD6hI.css" media="all" />
+  <script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_ZDOaep6HA5A0eriyiN-YaNv7MHsjd-FIuFyilZ2o5cw.js"></script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_g98Ekqvuj1mMaUqTkLdcrMmJymw4aFC5YyzBQBviahY.js"></script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_V1ZuwJK9uzfm6fFffOcHHubfxnimoxnbgG58pvTQdpY.js"></script>
 <script type="text/javascript">
-	window._se_plugin_version = '8.1.9';
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '54c7b294abe53d152954232f'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
 </script>
-
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_0qGD1CqGsDpO1yJ1qzckatKYx8lDESM0HyyA0gOUh_k.js"></script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_milYGJ9fqCTC6ZqXRqqnmm4Wv_yl242UNt5H823Ptrk.js"></script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_e8_xAlUO33NVzjX6ub-uiUhNHOgN4LRpnjVGDoOL6h4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://undergrad.stanford.edu/sites/default/files/googleanalytics/analytics.js?oztrm9","ga");ga("create", "UA-2437815-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "dimension2", "anonymous user");ga("set", "metric2", 0);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js_--Ux7W5DjWcsVVtMWJI4FaD7dgnEJi0EBbPbQ7W39Jk.js"></script>
+<script type="text/javascript" src="https://undergrad.stanford.edu/sites/default/files/js/js__jnzapbsbxHVUkKcA6zrQ1Pu8hDebySt2ifNGdR7CGU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"undergrad","theme_token":"SFqBlIU0BjYcSzwPvrhmA8URgb2dj-qcS30EAT92EvY","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/default\/modules\/stanford\/stanford_fwb\/css\/stanford_fwb.css":1,"sites\/default\/modules\/stanford\/stanford_gallery\/css\/stanford_gallery.css":1,"sites\/default\/modules\/stanford\/stanford_person\/css\/stanford_person.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/context_accordion\/context_accordion.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap-responsive.min.css":1,"sites\/all\/themes\/open_framework\/packages\/font-awesome-3.2.1\/css\/font-awesome.min.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework.css":1,"sites\/all\/themes\/stanford_framework\/css\/stanford-framework.css":1,"sites\/all\/themes\/stanford_framework\/css\/stanford_default\/stanford-default.css":1,"sites\/all\/themes\/stanford_framework\/css\/ie.css":1,"sites\/all\/themes\/stanford_wilbur\/css\/stanford_wilbur.css":1,"sites\/default\/themes\/undergrad\/bootstrap\/css\/bootstrap-responsive.min.css":1,"sites\/default\/themes\/undergrad\/css\/undergrad.css":1,"sites\/default\/themes\/undergrad\/css\/undergrad-extras.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework_print.css":1,"public:\/\/css_injector\/css_injector_7.css":1,"public:\/\/css_injector\/css_injector_17.css":1,"public:\/\/css_injector\/css_injector_21.css":1,"public:\/\/css_injector\/css_injector_25.css":1,"public:\/\/css_injector\/css_injector_41.css":1,"public:\/\/css_injector\/css_injector_47.css":1,"public:\/\/css_injector\/css_injector_64.css":1,"public:\/\/css_injector\/css_injector_66.css":1,"public:\/\/css_injector\/css_injector_68.css":1,"public:\/\/css_injector\/css_injector_72.css":1,"public:\/\/css_injector\/css_injector_74.css":1,"public:\/\/css_injector\/css_injector_87.css":1,"public:\/\/css_injector\/css_injector_91.css":1,"public:\/\/css_injector\/css_injector_93.css":1,"public:\/\/css_injector\/css_injector_95.css":1},"js":{"misc\/jquery.js":1,"sites\/all\/themes\/open_framework\/js\/jquery-migrate-1.2.1.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"0":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/ui\/jquery.ui.accordion.min.js":1,"sites\/all\/modules\/stanford\/stanford_events_importer\/js\/stanford_event_nodes.js":1,"sites\/all\/modules\/stanford\/stanford_events_importer\/js\/stanford_events_calendar.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/context_accordion\/context_accordion.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/js\/bootstrap.min.js":1,"sites\/all\/themes\/open_framework\/js\/open_framework.js":1,"sites\/all\/themes\/open_framework\/js\/jquery.placeholder.min.js":1,"sites\/default\/themes\/undergrad\/js\/override.js":1,"sites\/all\/themes\/stanford_framework\/js\/stanford-framework.js":1,"sites\/all\/themes\/stanford_wilbur\/js\/stanford_wilbur.js":1,"sites\/default\/themes\/undergrad\/js\/undergrad.js":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/":true},"field_group":{"div":"default"}});
+//--><!]]>
+</script>
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="/sites/all/themes/open_framework/packages/font-awesome-3.2.1/css/font-awesome-ie7.min.css" />  <![endif]-->
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="/sites/all/themes/open_framework/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
-<body class="home page-template page-template-front-page page-template-front-page-php page page-id-13 zzz-not-edit-news-page">
-<div id="su-wrap"> <!-- used to force footer to bottom of short pages -->
-  <div id="su-content"> <!-- used to force footer to bottom of short pages -->
 
-    <!--=== Top ===-->
-    <div id="top" class="hidden-print nocontent" data-ga-category="header">
-      <div class="container">
-        <!--=== Skip links ===-->
-        <div id="skip"> <a href="#content" onClick="$('#content').focus()" data-ga-action="skip-link" data-ga-label="content">Skip to content</a> </div>
-        <!-- /Skip links -->
-      </div>
-    </div>
-    <!--/top-->
-
-    <!--=== Header ===-->
-    <div id="header" class="clearfix" role="banner" data-ga-category="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <!-- Logo -->
-            <div id="logo" class="clearfix"> <a href="http://www.stanford.edu/" data-ga-action="logo"><img class="img-responsive" src="//news.stanford.edu/wp-content/themes/news/images/stanford-white@2x.png" alt="Stanford University" /></a> </div>
-            <!-- /logo -->
-            <div id="signature">
-              <div id="site-name">
-                <a href="/" data-ga-action="site-name"><span id="site-name-1">News</span></a>
+<body class="html front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-3703 node-type-stanford-page        style-default  header-bkg-image header-bkg-text-light" >
+    <div id="wrap"><a href="#main" class="element-invisible element-focusable">Skip to content</a>
+    <a href="#main-nav" class="element-invisible element-focusable">Skip to navigation</a>
+    <!-- /#skipnav -->
+  <div id="global-header" class="global-header">
+    <div class="container">
+      <div class="row-fluid">
+        <div id="top-logo" class="span4 top-logo"><a href="http://www.stanford.edu"><img src="/sites/default/themes/undergrad/images/header-stanford-logo@2x.png" alt="Stanford University"></a></div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Menu -->
-    <div id="mainmenu" class="clearfix hidden-print nocontent" role="navigation" data-ga-category="header" data-ga-action="nav">
-      <div class="container">
-        <div class="navbar navbar-default">
-
-          <!-- main navigation -->
-          <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">Menu</button>
-          <!-- /nav-collapse -->
-
-          <div id="nav-search" role="search">
-  <form action="/search" method="get" id="search-form" accept-charset="UTF-8">
-    <h2 class="hidden">Search form</h2>
-    <input type="hidden" name="cx"  value="010498062362927390610:dlcoultwj8i">
-    <input type="hidden" name="cof" value="FORID:9">
-    <input type="hidden" name="ie"  value="UTF-8">
-    <label class="hidden" for="search-field">Search term</label>
-    <input type="text" id="search-field" name="q" title="Search string" class="input-medium" placeholder="Search Stanford news&hellip;" value="" size="15" maxlength="128" />
-    <button id="search-btn" type="submit" name="submit" aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
-  </form>
-</div>
-
-          <div class="navbar-collapse collapse">
-            <div  role="navigation">
-              <div id="primary-nav" class="menu-top-nav-container"><ul id="menu-top-nav" class="nav navbar-nav" aria-label="primary navigation"><li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-32"><a data-ga-label="Home" href="https://news.stanford.edu/">Home</a></li>
-<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a data-ga-label="Find Stories" href="https://news.stanford.edu/find-stories/">Find Stories</a></li>
-<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a data-ga-label="For Journalists" href="https://news.stanford.edu/for-journalists/">For Journalists</a></li>
-<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a data-ga-label="Contact" href="https://news.stanford.edu/contact/">Contact</a></li>
-</ul></div>            </div>
-          </div>
-          <!-- /nav-collapse -->
-        </div>
-        <!-- /navbar -->
-
-      </div>
-      <!-- /container -->
-    </div>
-    <!-- /mainmenu -->
-
-    <!-- main content -->
-<section id="section-top-stories" role="main" tabindex="0" data-ga-category="top-stories">
-  <div class="container" id="content">
-    <h1 class="sr-only">Top Stories</h1>
-    <div class="row">
-
-      <div class="col-sm-12 col-md-6">
-        <article class="card full" id="top-story-1">
-            <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/30/artificial-intelligence-index-tracks-emerging-field/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-705x470.jpg" class="attachment-card-lg size-card-lg wp-post-image" alt="AI illustration" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart.jpg 1200w" sizes="(max-width: 705px) 100vw, 705px" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/30/artificial-intelligence-index-tracks-emerging-field/"  data-ga-action="position-1">Artificial intelligence index tracks emerging field</a></h3>
-    <p class="teaser">A Stanford-led team has launched the first index to track the state of artificial intelligence and measure technological progress in the same way the GDP and the S&amp;P 500 index take the pulse of the U.S. economy and stock market.</p>
-  </div>        </article>
-      </div>
-
-      <div class="col-sm-6 col-md-3">
-        <article class="card large featured" id="top-story-2">
-            <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Fei-Fei Li" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Fei-Fei Li" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/social-sciences/">Social Sciences</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/"  data-ga-action="position-2">A neighborhood’s cars indicate its politics</a></h3>
-    <p class="teaser">Stanford researchers led by Fei-Fei Li use computer algorithms to analyze millions of publicly available images on Google Street View.</p>
-  </div>        </article>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <article class="card large featured" id="top-story-3">
-            <div class="card-photo ">
-    <a href="https://engineering.stanford.edu/magazine/article/researchers-look-fruit-fly-help-understand-human-brain" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Drosophila brain with various olfactory neurons labeled by different-colored fluorescent markers" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Drosophila brain with various olfactory neurons labeled by different-colored fluorescent markers" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://engineering.stanford.edu/magazine/article/researchers-look-fruit-fly-help-understand-human-brain"  data-ga-action="position-3">Looking to fruit fly to help understand the human brain</a></h3>
-    <p class="teaser">With a new genetic tool to study how flies detect scents, Stanford researchers take a step toward developing techniques to repair the faulty wiring behind human brain disorders.</p>
-  </div>        </article>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <article class="card large featured" id="top-story-4">
-            <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/27/striking-look-turbulent-motion/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/20154649/fluid_Re1100_1_2_pair-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/27/striking-look-turbulent-motion/"  data-ga-action="position-4">A striking look at turbulent motion</a></h3>
-    <p class="teaser">A new way of plotting turbulent air movement illustrates the beauty in fluid dynamics.</p>
-  </div>        </article>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <article class="card large featured" id="top-story-5">
-            <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/30/undergraduates-start-popular-science-publication/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-5"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Grayson Melby, left, Recruitment and Outreach Officer, and Lisa Manzanete,right, Events and Programming Officer, from the Fascinate organization recruit at the 2017 Student Activities Fair" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Grayson Melby, left, Recruitment and Outreach Officer, and Lisa Manzanete,right, Events and Programming Officer, from the Fascinate organization recruit at the 2017 Student Activities Fair" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/teaching-students/">Teaching &amp; Students</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/30/undergraduates-start-popular-science-publication/"  data-ga-action="position-5">Inspired by a class, undergraduates start a popular science publication</a></h3>
-    <p class="teaser">A science communication seminar taught by chemist Paul Wender helped launch the first undergraduate pop-science publication, called <em>Fascinate</em>.</p>
-  </div>        </article>
-      </div>
     </div>
   </div>
-</section>
-<section id="section-spotlight" data-ga-category="spotlight">
-  <div class="container">
-    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/section/spotlight/' data-ga-action='section-head'>In the Spotlight</a></h2>
-    <div class="row padding-top">
-
-      <article class="col-sm-4">
-          <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="Samira Borgozi" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/arts-creativity/">Arts &amp; Creativity</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/"  data-ga-action="position-1">New exhibition marks centenary of 1917 Russian Revolution</a></h3>
-    <p class="teaser">A joint exhibition at the Hoover Institution Library &amp; Archives and the Cantor Arts Center highlights Stanford’s rich collections of materials on the history of late imperial and early Soviet Russia.  <em> </em></p>
-  </div>      </article>
-      <article class="col-sm-4">
-          <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="historic image of pressman at work at Stanford University Press" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/humanities/">Humanities</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/"  data-ga-action="position-2">Stanford University Press celebrates 125th anniversary</a></h3>
-    <p class="teaser">Since its inception in 1892, Stanford University Press has published thousands of books and other research works authored by faculty at Stanford and across the world.</p>
-  </div>      </article>
-      <article class="col-sm-4">
-          <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-795x531.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-960x641.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/"  data-ga-action="position-3">New techniques for removing carbon from the atmosphere</a></h3>
-    <p class="teaser">As the world continues to burn 100 million barrels of oil a day – a rate that is expected to continue for the next 50 years – Stanford Earth researchers are developing greener ways of extracting the oil and mitigating the resulting greenhouse gases.</p>
-  </div>      </article>
+  <!-- /#global-header -->
+  <div id="header" class="clearfix header">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+                    <div id="logo" class="logo-mobile site-logo"> <a href="/" title="Undergrad Main Site" rel="home"> <img src="https://undergrad.stanford.edu/sites/default/files/undergrad_wordmark.png" alt="" role="presentation"> </a></div>
+                    <!-- /#logo -->
+                              <div id="site" class="hide">
+            <div id="name"><a href="/">Stanford Undergrad</a></div>
+          </div>
+                    <!-- /#name-and-slogan -->
+                    <!-- /#header-content -->
+        </div>
+              </div>
     </div>
   </div>
-</section>
+  <!-- /#header -->
 
-<section id="section-more-stories">
-  <div class="container">
-    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/all-stories/' data-ga-action='section-head'>More Stories</a></h2>
-    <div class="row padding-top">
-
-      <div class="col-md-8">
-                <div class="row" id="card-flow">
-          <div class="col-sm-6" data-ga-category="more-stories-left">
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Inside view of an active volcano with lava flow at Hawaii Volcanoes National Park." /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/"  data-ga-action="position-1">Puzzling patches in Earth’s interior billions of years in the making</a></h3>
-    <p class="teaser">Mysterious patches on the planet’s core that dampen seismic waves could be the result of ancient seawater chemically reacting with iron under extreme conditions.</p>
-  </div>            </article>
-            <article class="card large">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/15/algorithm-outperforms-radiologists-diagnosing-pneumonia/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Matt Lungren, Jeremy Irvin and Pranav Rajpurkar" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15103426/chest_6984-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Matt Lungren, Jeremy Irvin and Pranav Rajpurkar" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/15/algorithm-outperforms-radiologists-diagnosing-pneumonia/"  data-ga-action="position-2">Algorithm outperforms radiologists at diagnosing pneumonia</a></h3>
-    <p class="teaser">Stanford researchers have developed a deep learning algorithm that evaluates chest X-rays for signs of disease. In just over a month of development, their algorithm outperformed expert radiologists at diagnosing pneumonia.</p>
-  </div>            </article>
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/17/winds-change-vertical-axis-turbines/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/16124548/turbines_alaska-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="vertical axis wind turbing in Alaska" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/17/winds-change-vertical-axis-turbines/"  data-ga-action="position-3">Winds of change for vertical axis turbines?</a></h3>
-    <p class="teaser">New research suggests vertical axis turbines, which may have fewer impacts on birds and the environment, could increase public support for new wind energy installations.</p>
-  </div>            </article>
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/immigration-issues/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/12/16085349/sandstone_placeholder_icon_09951-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Sandstone columns and arches" /></a>
-  </div>  <div class="card-content">
-    
-    <h3><a href="https://news.stanford.edu/immigration-issues/"  data-ga-action="position-4">Stanford principles regarding immigration</a></h3>
-    <p class="teaser">As events continue to unfold regarding federal immigration policy, a website has been created where Stanford leaders summarize the principles of the university’s support for international and undocumented community members. Also found on the site are links to resources for the Stanford community.</p>
-  </div>            </article>
-          </div>
-
-          <div class="col-sm-6" data-ga-category="more-stories-right">
-            <article class="card large">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/16/stanford-programs-help-students-make-healthy-choices-around-alcohol/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Students at Giants game." srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-375x250.jpg 375w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/15153013/alcohol_cardnights_Giants-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Students at Giants game." /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/campus-life/">Campus Life</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/16/stanford-programs-help-students-make-healthy-choices-around-alcohol/"  data-ga-action="position-1">Stanford programs help students make healthy choices around alcohol</a></h3>
-    <p class="teaser">At Stanford, the Office of Alcohol Policy and Education is dedicated to enhancing the health and safety of students by empowering them to make healthy choices around alcohol consumption. This year, the office is studying ways to expand programs.</p>
-  </div>            </article>
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Eroded soil" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
-    <h3><a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/"  data-ga-action="position-2">Disrupting sensitive soils could worsen climate change</a></h3>
-    <p class="teaser">Global warming and land use practices, such as farming, could change the environment for microbes living in the soil and alter the amount of greenhouse gases they release into the atmosphere.</p>
-  </div>            </article>
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/08/28162139/arches-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="arches" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
-    <h3><a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/"  data-ga-action="position-3">Stanford University statement on White House plans for DACA</a></h3>
-    <p class="teaser">Stanford University vigorously and adamantly opposes the shameful decision to rescind the Deferred Action for Childhood Arrivals program.</p>
-  </div>            </article>
-            <article class="card short">
-                <div class="card-photo ">
-    <a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/04/25185104/frontentrance_790-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Stanford&#039;s main quad" /></a>
-  </div>  <div class="card-content">
-    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
-    <h3><a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/"  data-ga-action="position-4">Report details universities&#8217; efforts on sexual assault</a></h3>
-    <p class="teaser">Stanford is among the U.S. universities included in a new report by the Association of American Universities summarizing campus initiatives to combat sexual violence. The report presents an opportunity to learn from others, Provost Persis Drell says.</p>
-  </div>            </article>
-          </div>
-        </div>
-      </div>
-
-      <aside class="col-md-4">
-        <div class="row sidebar-margin">
-          <div class="col-sm-6 col-md-12">
-            <div class="sidebar-section" id="around-the-farm" data-ga-category="sidebar-around-the-farm">
-  <h2><a class="see-all-link" href="/around-the-farm/" data-ga-action='section-head'>Around the Farm</a></h2>
-    <p class="side-byline">Stanford Graduate School of Education</p>
-    <p><a href="https://ed.stanford.edu/news/how-can-children-develop-skills-be-more-resilient"  data-ga-action="position-1">How can children develop skills to be more resilient?</a></p>
-    <p class="side-byline">Stanford Humanities Center</p>
-    <p><a href="http://shc.stanford.edu/news/qa/reetika_khera"  data-ga-action="position-1">Can biometrics improve welfare services in India?</a></p>
-    <p class="side-byline">Stanford Law</p>
-    <p><a href="https://law.stanford.edu/stanford-lawyer/articles/the-run-for-office-jds-in-politics/?utm_source=highlights&utm_medium=masonry&utm_campaign=homepage&utm_content=stanfordlawyer-cta-readmore"  data-ga-action="position-1">The run for office: JDs in politics</a></p>
-    <p class="side-byline">SLAC and Stanford School of Earth, Energy & Environmental Sciences</p>
-    <p><a href="https://earth.stanford.edu/news/scientists-make-first-observations-how-meteor-shock-turns-silica-glass"  data-ga-action="position-1">Scientists make first observations of how a meteor-like shock turns silica into glass</a></p>
-    <p class="side-byline">Stanford Medicine</p>
-    <p><a href="http://scopeblog.stanford.edu/2017/11/27/worry-unlike-anxiety-improves-memory-skills-in-elderly-stanford-study-finds/"  data-ga-action="position-1">Worry, unlike anxiety, improves memory skills in elderly, Stanford study finds</a></p>
+    <div id="main-menu" class="clearfix site-main-menu">
+    <div class="container">
+      <div class="navbar">
+                <div class="navbar-inner">
+                              <div id="nav-search" class="nav-search"> <div class="region region-search-box clearfix">
+  <div id="block-search-form" class="clearfix block block-search" role="search">       <div class="content"> <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." class="input-medium search-query form-text" placeholder="Search this site..." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
 </div>
-<div class="sidebar-section" id="the-dish" data-ga-category="rss-the-dish">
-  <h2><a class="see-all-link" href="http://news.stanford.edu/thedish/">The Dish</a></h2>
-      <div id="rss-feed-item">
-    <a href="https://news.stanford.edu/thedish/2017/11/29/three-wise-women-meet-the-baby-king-in-stanford-production/" data-ga-action="position-1" aria-hidden="true"><img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/sites/2/2017/11/29130551/wisewomen_imageonly.jpg" /></a>    <p><a href="https://news.stanford.edu/thedish/2017/11/29/three-wise-women-meet-the-baby-king-in-stanford-production/" data-ga-action="position-1">Three wise women meet the baby King in Stanford production</a></p>
-  </div>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="btn-search form-submit" alt="Search" type="image" id="edit-submit" name="submit" src="https://undergrad.stanford.edu/sites/all/themes/open_framework/images/searchbutton.png" /></div><input type="hidden" name="form_build_id" value="form-GQ4h_Kq-5JrSamk4dcR5nx2kgq_6T_GfhCAePmMO5bY" />
+<input type="hidden" name="form_id" value="search_block_form" />
 </div>
-          </div>
-          <div class="col-sm-6 col-md-12">
-            <div class="sidebar-section" id="faculty-staff-news" data-ga-category="sidebar-faculty-staff-news">
-  <h2><a class="see-all-link" href="/section/faculty-staff/" data-ga-action='section-head'>Faculty &amp; Staff News</a></h2>
-    <p><a href="https://news.stanford.edu/2017/11/28/charles-kruger-former-vice-provost-dean-research-stanford-dies/"  data-ga-action="position-1">Charles Kruger, former vice provost and dean of research at Stanford, dies</a></p>
-    <p><a href="https://news.stanford.edu/2017/11/20/two-elected-members-aaas/"  data-ga-action="position-1">Two Stanford faculty elected members of AAAS</a></p>
-</div>
-<div class="sidebar-section" id="in-the-news" data-ga-category="sidebar-in-the-news">
-  <h2><a class="see-all-link" href="http://news.stanford.edu/in-the-news/" data-ga-action='section-head'>In the News</a></h2>
-    <p class="side-byline">Quartz</p>
-    <p><a href="https://qz.com/1103806/a-pioneering-economics-class-is-tackling-social-justice-issues-with-big-data-and-women-and-minorities-are-enrolling-in-droves/"  data-ga-action="position-1">An innovative introductory economics course at Stanford is now free online</a></p>
-    <p class="side-byline">Live Science</p>
-    <p><a href="https://www.livescience.com/61036-mysterious-blobs-beneath-earth.html"  data-ga-action="position-1">Oddly behaving blobs beneath earth&#8217;s surface finally explained </a></p>
-    <p class="side-byline">Seeker</p>
-    <p><a href="https://www.seeker.com/videos/how-is-fear-studied-in-the-brain"  data-ga-action="position-1">This neurobiologist swims with great white sharks to study fear</a></p>
-    <p class="side-byline">Newsweek</p>
-    <p><a href="http://www.newsweek.com/2017/12/01/what-happens-world-without-water-jordan-crisis-717365.html"  data-ga-action="position-1">What will happen if the world no longer has water?</a></p>
-    <p class="side-byline">LinkedIn</p>
-    <p><a href="https://www.linkedin.com/pulse/shifting-mindset-from-high-cost-health-care-high-value-lloyd-minor/?published=t"  data-ga-action="position-1">Shifting the mindset from high-cost health care to high-value</a></p>
-</div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
-
-	</div><!-- #su-content -->
-</div><!-- #su-wrap -->
-
-<!-- BEGIN footer -->
-<div id="footer" class="clearfix footer hidden-print nocontent" role="contentinfo">
-
-	  <!-- Fat footer start -->
-  <div class="container">
-    <div id="footer-content" class="row" data-ga-category="footer">
-      <div class="col-sm-6 col-md-3">
-<h3 class="widgettitle">Stanford Report</h3>
-			<div class="textwidget"><div id="mc_embed_signup">
-  <form action="//stanford.us5.list-manage.com/subscribe/post?u=a8e6569da943904e9ac369cde&amp;id=29ce9f751e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <label for="mce-EMAIL">Receive daily Stanford news.</label><br/>
-    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" size="30" placeholder="your email address" required>
-    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default" style="margin-top: -3px; padding: 6px;">
-  </form>
-</div>
-<p><a href="/stanford-report/">More about <em>Stanford Report</em></a></p></div>
-		</div>
-<div class="col-sm-6 col-md-3">
-<h3 class="widgettitle">For Journalists</h3>
-			<div class="textwidget"><ul>
-  <li><a href="/press-releases/">Press Releases</a></li>
-  <li><a href="/contact/media-contacts/">Media Contacts</a></li>
-  <li><a href="/experts/">Stanford Experts</i></a></li>
-</ul></div>
-		</div>
-<div class="col-sm-6 col-md-3">
-<h3 class="widgettitle">See Also</h3>
-			<div class="textwidget"><ul>
-  <li><a href="/contact/">Contact Stanford News</a></li>
-  <li><a href="http://ucomm.stanford.edu/facstaff/" target="_blank">Faculty / Staff Resources <i class="fa fa-external-link"></i></a></li>
-</ul></div>
-		</div>
-<div class="col-sm-6 col-md-3">
-			<div class="textwidget"><div id="weather" class="col-xs-6">
-
-  <h3>Weather</h3>
-<div id="awesome-weather-widget">
-
-  
-  
-    <div class="awesome-weather-current-temp">
-      <i class="wi wi-yahoo-32" aria-label="Sunny" title="Sunny"></i>      58<sup>&deg;</sup>
-    </div><!-- /.awesome-weather-current-temp -->
-    <div class="awesome-weather-more-weather-link" data-ga-category="footer"><a data-ga-action="weather" href="http://www.weather.com/weather/tenday/l/Stanford+CA+94305:4:US" target="_blank">Stanford forecast</a></div></div><!-- /.awesome-weather-wrap: custom --> 
-
-</div>
-<div id="events" class="col-xs-6">
-  <h3>Events</h3>
-  <a href="http://events.stanford.edu/">
-    <i class="fa fa-calendar fa-3x"></i><span class="sr-only">Events calendar</span>
-  </a>
+</div></form> </div>
 </div></div>
-		</div>
-			<div id="site-credit" class="col-xs-12">
-				<p>Stanford News is a publication of <a href="https://ucomm.stanford.edu">Stanford University Communications</a></p>
-			</div>
+ <!-- /.region -->
+ </div>
+                              <button class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <div class="nav-collapse collapse">
+            <nav id="main-nav" role="navigation">
+                                          <div class="region region-navigation clearfix">
+  <div id="block-menu-block-31" class="clearfix block block-menu-block">     <h2>Main menu</h2>
+      <div class="content"> <div class="menu-block-wrapper menu-block-31 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first expanded menu-mlid-1861 dropdown"><a href="/advising" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Advising <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-6531"><div title="" class="nolink">About Advising</div></li>
+<li class="leaf has-children menu-mlid-9633"><a href="https://undergrad.stanford.edu/advising" title="">Getting Started</a></li>
+<li class="leaf has-children menu-mlid-9635"><a href="/advising/about-your-advisors">About Your Advisors</a></li>
+<li class="leaf menu-mlid-2997"><a href="/advising/make-appointment">Make an Appointment</a></li>
+<li class="leaf menu-mlid-6533"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6529"><div title="" class="nolink">Advising For...</div></li>
+<li class="leaf has-children menu-mlid-10373"><a href="/advising/approaching/approaching-stanford">Approaching Stanford</a></li>
+<li class="leaf has-children menu-mlid-7859"><a href="/advising/student-guides/frosh" title="">First Year Students</a></li>
+<li class="leaf menu-mlid-6759"><a href="/advising/student-guides/sophomore" title="">Sophomore</a></li>
+<li class="leaf menu-mlid-6761"><a href="/advising/student-guides/junior" title="">Junior</a></li>
+<li class="leaf menu-mlid-6763"><a href="/advising/student-guides/senior" title="">Senior</a></li>
+<li class="leaf menu-mlid-6765"><a href="/advising/student-guides/transfer" title="">Transfer</a></li>
+<li class="leaf has-children menu-mlid-13517"><a href="/advising/coterm">Coterm</a></li>
+<li class="last leaf has-children menu-mlid-15787"><a href="/advising/getting-started/athletic-academic-resource-center-aarc">Student-Athletes</a></li>
+</ul></li>
+<li class="expanded menu-mlid-2999 dropdown"><a href="/planning" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Academic Planning <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-6545"><div title="" class="nolink">Get Inspired</div></li>
+<li class="leaf menu-mlid-17370"><a href="/academic-planning/cardinal-compass/my-stanford-story" title="">My Stanford Story</a></li>
+<li class="leaf menu-mlid-7769"><a href="/planning/gallery" title="">Student Project Gallery</a></li>
+<li class="leaf menu-mlid-6535"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6547"><div title="" class="nolink">Choose Your Path</div></li>
+<li class="leaf menu-mlid-6651"><a href="/academic-planning/cardinal-compass">Cardinal Compass</a></li>
+<li class="leaf menu-mlid-13029"><a href="http://majors.stanford.edu" title="">Explore Majors</a></li>
+<li class="leaf has-children menu-mlid-9103"><a href="/academic-planning/choosing-courses">Choosing Courses</a></li>
+<li class="leaf has-children menu-mlid-9585"><a href="/academic-planning/engage-faculty">Engage with Faculty</a></li>
+<li class="leaf has-children menu-mlid-10229"><a href="/academic-planning/planning-departmental-honors">Planning for Honors</a></li>
+<li class="leaf menu-mlid-6537"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6549"><div title="" class="nolink">Requirements</div></li>
+<li class="leaf has-children menu-mlid-10221"><a href="/academic-planning/degree-requirements">Degree Requirements</a></li>
+<li class="last leaf has-children menu-mlid-3007"><a href="/planning/academic-policies">Academic Policies</a></li>
+</ul></li>
+<li class="expanded menu-mlid-3005 dropdown"><a href="/programs" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Programs <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-6551"><div title="" class="nolink">Autumn, Winter, Spring</div></li>
+<li class="leaf menu-mlid-5239"><a href="/programs/introsems">Introductory Seminars</a></li>
+<li class="leaf has-children menu-mlid-13167"><a href="/programs/oral-communication-program">Oral Communication Program</a></li>
+<li class="leaf menu-mlid-6747"><a href="/programs/pwr">Program in Writing and Rhetoric</a></li>
+<li class="leaf menu-mlid-8297"><a href="/programs/thinking-matters">Thinking Matters</a></li>
+<li class="leaf menu-mlid-11401"><a href="/programs/ways">Ways of Thinking/Ways of Doing</a></li>
+<li class="leaf has-children menu-mlid-15993"><a href="/programs/residential">Residential Programs</a></li>
+<li class="leaf has-children menu-mlid-9079"><a href="/programs/special-focus-programs">Special Focus Programs</a></li>
+<li class="leaf menu-mlid-6539"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6553"><div title="" class="nolink">Summer</div></li>
+<li class="leaf menu-mlid-5811"><a href="/programs/lelandscholars">Leland Scholars</a></li>
+<li class="leaf menu-mlid-7843"><a href="/programs/sophomore-college">Sophomore College</a></li>
+<li class="leaf menu-mlid-7847"><a href="/programs/arts-intensive">Arts Intensive</a></li>
+<li class="leaf has-children menu-mlid-15941"><a href="/programs/bhc">Bing Honors College</a></li>
+<li class="leaf menu-mlid-6543"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6555"><div title="" class="nolink">Off-Campus</div></li>
+<li class="leaf menu-mlid-4383"><a href="/programs/bosp">Bing Overseas Studies Program</a></li>
+<li class="leaf has-children menu-mlid-12479"><a href="/programs/community-engaged-learning-cel">Community Engaged Learning</a></li>
+<li class="leaf menu-mlid-13453"><a href="/programs/hopkins-marine-station">Hopkins Marine Station</a></li>
+<li class="last leaf menu-mlid-19862"><a href="/programs/stanford-in-new-york">Stanford in New York</a></li>
+</ul></li>
+<li class="expanded menu-mlid-3001 dropdown"><a href="/opportunities" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Opportunities & Research <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-6557"><div title="" class="nolink">Research</div></li>
+<li class="leaf menu-mlid-5603"><a href="/opportunities/research">Research and Independent Projects</a></li>
+<li class="leaf menu-mlid-11343"><a href="/opportunities-research/research-support">Research Support</a></li>
+<li class="leaf menu-mlid-6565"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6559"><div title="" class="nolink">Academic Excellence</div></li>
+<li class="leaf has-children menu-mlid-11085"><a href="/opportunities-research/fellowships">Fellowships</a></li>
+<li class="leaf has-children menu-mlid-10299"><a href="/opportunities-research/awards-grad-honors">Awards and Graduation Honors</a></li>
+<li class="leaf menu-mlid-6567"><div title="" class="separator"><hr></div></li>
+<li class="leaf has-children menu-mlid-6561"><div title="" class="nolink">Opportunities</div></li>
+<li class="leaf has-children menu-mlid-10427"><a href="/opportunities-research/arts">Arts</a></li>
+<li class="leaf has-children menu-mlid-11693"><a href="/opportunities-research/humanities">Humanities</a></li>
+<li class="leaf has-children menu-mlid-10565"><a href="/opportunities-research/overseas-campus">Overseas &amp; Off-Campus</a></li>
+<li class="leaf has-children menu-mlid-10429"><a href="/opportunities-research/leadership">Leadership</a></li>
+<li class="leaf menu-mlid-13447"><a href="/opportunities-research/careers-and-internships">Careers and Internships</a></li>
+<li class="leaf has-children menu-mlid-10559"><a href="/opportunities-research/public-community-service">Public &amp; Community Service</a></li>
+<li class="leaf has-children menu-mlid-3039"><a href="/opportunities-research/diversity-outreach-opportunities">Diversity Outreach &amp; Opportunities</a></li>
+<li class="leaf menu-mlid-6569"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6563"><div title="" class="nolink">Looking Ahead</div></li>
+<li class="leaf has-children menu-mlid-9815"><a href="/opportunities-research/steps-planning-graduate-and-professional-school">Graduate and Professional School</a></li>
+<li class="last leaf menu-mlid-9589"><a href="/opportunities-research/whats-next">What&#039;s Next?</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-8181 dropdown"><a href="/tutoring-support/tutoring" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Tutoring & Support <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-6571"><div title="" class="nolink">Tutoring</div></li>
+<li class="leaf menu-mlid-6751"><a href="/tutoring-support/hume-center">Hume Center for Writing and Speaking</a></li>
+<li class="leaf menu-mlid-17594"><a href="https://vptl.stanford.edu/students/get-tutoring-or-language-practice" title="">Get Tutoring or Language Practice</a></li>
+<li class="leaf menu-mlid-15795"><a href="https://undergrad.stanford.edu/advising/getting-started/advising-student-athletes/aarc-and-other-campus-tutorial-resources" title="">Student-Athlete Tutorial Resources</a></li>
+<li class="leaf menu-mlid-9043"><a href="/tutoring-support/other-tutoring-and-learning-resources">Other Tutoring and Learning Resources</a></li>
+<li class="leaf menu-mlid-6575"><div title="" class="separator"><hr></div></li>
+<li class="leaf menu-mlid-6573"><div title="" class="nolink">Support</div></li>
+<li class="leaf menu-mlid-17642"><a href="https://vptl.stanford.edu/students/academic-skills" title="">Academic Skills</a></li>
+<li class="leaf menu-mlid-21771"><a href="https://slc.stanford.edu/" title="">Support for Students with Learning Differences</a></li>
+<li class="leaf menu-mlid-7799"><a href="/tutoring-support/community-center-resources">Community Center Resources</a></li>
+<li class="last leaf menu-mlid-10395"><a href="/tutoring-support/health-wellness-resources">Health &amp; Wellness Resources</a></li>
+</ul></li>
+</ul></div>
+ </div>
+</div></div>
+ <!-- /.region -->
+                          </nav>
+          </div>
+                                      </div>
+              </div>
     </div>
   </div>
-  <!-- Fat footer end -->
+  <!-- /#main-menu -->
+  
+        <div id="fullwidth-top" class="row-fluid fullwidth">
+        <div class="container"> <div class="region region-fullwidth-top clearfix">
+  <div id="block-views-f425d4d629a626516c6a718fb9fb03aa" class="clearfix block block-views">       <div class="content"> <div class="view view-undergrad-home-slides-full-width-banner view-id-undergrad_home_slides_full_width_banner view-display-id-block view-dom-id-7ff4a7b2883a9a36bf507b38b31d5184">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
       
-	<!-- Global footer snippet start -->
-	<div id="global-footer">
-		<div class="container">
-			<div class="row">
-				<div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="https://news.stanford.edu/wp-content/themes/news/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
-				<!-- #bottom-logo end -->
-				<div id="bottom-text" class="col-xs-6 col-sm-10">
-					<ul>
-						<li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
-						<li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
-						<li class="search-stanford"><a href="http://stanford.edu/search/">Search Stanford</a></li>
-						<li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
-						<li class="emergency-info"><a href="http://emergency.stanford.edu/" class="su-link" data-ua-label="global-footer">Emergency Info</a></li>
-					</ul>
-				</div>
-				<!-- .bottom-text end -->
-				<div class="clear"></div>
-				<p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="http://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
-			</div>
-			<!-- .row end -->
-		</div>
-		<!-- .container end -->
-	</div>
-	<!-- Global footer snippet end -->
-
+  <div class="views-field views-field-nothing">        <span class="field-content"><div class="full-width-banner">
+   <div class="banner-image"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/full-width-banner/public/_mg_0470_hps.jpg?itok=Ov21m0kk" width="1600" height="600" alt="Arts Intensive Student Showcase. Photo by Joel Simon." /></div>  
+   <div class="banner-overlay [field_s_slide_caption_color] carousel-position-left">
+   <div>
+      <div class="slide-title"><h2 class="slidetitle-f9bc67"><a href="https://undergrad.stanford.edu/planning/gallery">Student Project Gallery</a></h2></div>
+      <div class="slide-caption">Check out what your fellow undergrads are doing. Want your project featured? Send us a proposal!
 </div>
-<!-- END footer -->
+      <div class="edit-link"></div>
+   </div>
+   </div>
+</div></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div>
+</div></div>
+ <!-- /.region -->
+ </div>
+      </div>
+  
+  <div id="main" class="clearfix main">
+    <div class="container">
+                        <div id="main-content" class="row main-content">
+                <div id="content" class="mc-content span8">
+          <div id="content-wrapper" class="content-wrapper">
+            <div id="content-head" class="row-fluid content-head">
+              <div id="highlighted" class="clearfix highlighted"></div>
+                                                                      <h1 class="title" id="page-title"> Home </h1>
+                                                                      <div class="tabs">  </div>
+                                                                    </div>
+                                                <div id="content-body" class="row-fluid content-body"> <div class="region region-content clearfix">
+  <div id="block-views-front-page-slide-features-block" class="clearfix block block-views span12">     <h2>News &amp; Features</h2>
+      <div class="content"> <div class="view view-front-page-slide-features view-id-front_page_slide_features view-display-id-block frontmasonry view-dom-id-7f061480136c72b9dc4335674a24bbba">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/gaozong_preceptor_group_hero.png?itok=WQgotqHq" width="370" height="370" alt="LSP Preceptors." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/residential">About Residential Programs</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p><span>Learn more about our residential living-learning communities: ITALIC, SLE, LSP, and FroSoCo.</span></p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-2 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/images/2016/09/idt_mg_9532.jpg?itok=Df9pQ_YE" width="370" height="370" alt="Stop Hunger Now Community Service event. Photo by Ian Terpin." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/opportunities-research/public-community-service">Cardinal Service</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>Through Cardinal Service, Stanford offers you a wide variety of public and community service opportunities, ranging from on-campus courses to off-campus research to community-based leadership projects. Students pursuing any course of study can find opportunities to serve and many offer academic credit. Find out more!</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-3 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/170809-4590_sq.png?itok=nr8TPpZO" width="370" height="370" alt="LSP students in the lab. Photo by L.A. Cicero / Stanford News Service." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/lelandscholars">Leland Scholars Program</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>The Leland Scholars Program helps ease the transition to Stanford for students who may be the first members of their families to attend college, come from low-income households or are graduates of high schools with limited curricular offerings.</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-4 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/img_3781_hps_alt.png?itok=h4XGHROn" width="370" height="370" alt="Be a Language Conversation Partner" /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://vptl.stanford.edu/students/tutoring-foreign-language-practice/become-tutor/become-language-conversation-partner">Be a Language Conversation Partner</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>Language Conversation Partners (LCPs) are Stanford students who meet with language students during one-to-one appointments to practice conversation in Arabic, Chinese (Mandarin), French, German, Italian, Japanese, Korean, Portuguese (Brazilian), Russian, or Spanish. </p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-5 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/new_york_nyc_slide_sq.png?itok=zkCZ6i6t" width="370" height="370" alt="Statue of Liberty and New York skyline." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/stanford-in-new-york/spring-quarter-global-city-coming-spring-2018">Stanford in New York: The Global City</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>Spend Spring Quarter 2018 in New York! Classes and internships will investigate how New York, as a complex, dynamic city, shapes and is shaped by concepts of globalism in various fields, industries, and lived experience.</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-6 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/soco_cueto_13_hps.png?itok=AUb5Jv3m" width="370" height="370" alt="Sophomore College field trip. Photo by Jorge Cueto." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/sophomore-college/2017">SoCo 2017</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p><span>Sophomore College is a three-week residential summer program during which second-year students in seminars of 12 students engage in intense academic exploration. </span></p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-7 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/lovinglight_starkey_crop.png?itok=krdnDLt_" width="370" height="370" alt="Lake Lag, long exposure. Photo by Samatha Starkey." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/vpue-overview/vpue-opportunities-students/undergrad-photo-contest/undergrad-photo-contest-winners-2">Undergrad Photo Contest</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>The Undergrad Photo Contest is a way for you to show us -- and the rest of the student body -- your Stanford life. Check out our award-winning photos for 2016-17 in the following categories: The Arts, Learning in Action, A Day in the LIfe, Off Campus, and Loving Light. (Photo by Samantha Starkey.)</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-8 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/taylormacgroupoutdoor4_slide.jpg?itok=SXfXAnJZ" width="370" height="370" alt="Stanford Arts Intensive, Taylor Mac project." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/arts-intensive/arts-intensive-courses">Increase Your Creative Confidence</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p><span>Students worked alongside acclaimed performer/playwright Taylor Mac and designer Machine Dazzle to take part in a West Coast production of Mac's epic durational pop-art cabaret concert </span><i>The 24-Decade History of Popular Music</i><span>. Find out more about this and other Arts Intensive courses here.</span></p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-9 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/images/2015/08/1_clapping_dancers_hpslide.png?itok=NvDcWsqO" width="370" height="370" alt="Arts Intensive students on stage." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/arts-intensive/explore/ask-faculty">Being An Artist</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>Visit our "Ask the Artists" section, where Arts Intensive faculty speak candidly about practicing and teaching their craft.</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-10 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/_mg_0470_hps.jpg?itok=3QOl9jbd" width="370" height="370" alt="Arts Intensive Student Showcase. Photo by Joel Simon." /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/planning/gallery">Student Project Gallery</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p><span>Check out </span><span>what</span><span> your fellow undergrads are do</span><span>i</span><span>ng. Want your project featured? Send us a proposal!</span></p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-11 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/f15_is_philo13n_56_sq.png?itok=lrznjFhH" width="370" height="370" alt="Why Thinking Matters?" /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="https://undergrad.stanford.edu/programs/thinking-matters/explore/why-thinking-matters">Why Thinking Matters?</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>Thinking Matters helps you ask rigorous and genuine questions that can lead to scientific experimentation, literary interpretation, or social policy analysis. The lively lecture and seminar format challenges you to discover collaborative ways to approach problem solving.</p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+  <div class="views-row views-row-12 frontbrick">
+      
+  <div class="views-field views-field-field-image-override">        <div class="field-content"><img typeof="foaf:Image" src="https://undergrad.stanford.edu/sites/default/files/styles/superlarge_square_370/public/nsc6.jpg?itok=YQLto4bk" width="370" height="370" alt="Two NSC students" /></div>  </div>  
+  <div class="views-field views-field-title">        <h2 class="field-content"><a href="http://nsc.stanford.edu">The Notation in Science Communication</a></h2>  </div>  
+  <div class="views-field views-field-field-s-image-caption">        <div class="field-content"><p>It's not just about the research you do, it's about how you share it.  Learn how to most effectively communicate technical information to a variety of audiences. </p>
+</div>  </div>  
+  <div class="views-field views-field-edit-node">        <span class="field-content"></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> </div>
+</div><div id="block-system-main" class="clearfix block block-system">       <div class="content"> <article id="node-3703" class="node node-stanford-page clearfix" about="/home" typeof="sioc:Item foaf:Document">      <span property="dc:title" content="Home" class="rdf-meta element-hidden"></span>    <div class="content">
+      </div>
+    </article> </div>
+</div></div>
+ <!-- /.region -->
+  </div>
+                                                                                                                      </div>
+          <!-- /#content-wrap -->
+        </div>
+        <!-- /#content -->
+                <div id="sidebar-second" class="sidebar site-sidebar-second span4">
+          <div class="row-fluid"><div class="region region-sidebar-second clearfix">
+  <div id="block-views-random-guide-post-block" class="clearfix block block-views color-block">     <h2>From the Advising Guides</h2>
+      <div class="content"> <div class="view view-random-guide-post view-id-random_guide_post view-display-id-block view-dom-id-11885f3990f1dea9b03f24982e1dd901">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content"><a href="/advising/student-guides/declaring-major-0">Declaring a Major</a></h3>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content">Transfers are encouraged to declare a major as soon as they are ready. That means when you have connected with a department and have learned the major is the right choice for you. The process for declaring a major varies. Check the website for your prospective major for details and ask the...</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <a href="https://undergrad.stanford.edu/advising" class="more-link" rel="nofollow">Learn more in the Advising Guides</a>
+    </div>
+  
+  
+</div> </div>
+</div>
+<div id="block-bean-vpue-twitter-feed" class="clearfix block block-bean">       <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/vpue-twitter-feed" typeof="">
 
-<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/awesome-weather-widget-frontend.js?ver=1.1'></script>
-<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/js-cookie.js?ver=1.1'></script>
-<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/wp-embed.min.js?ver=4.8.3'></script>
-</body>
+  <div class="content">
+    <div id="bean-stanford-postcard-full-group-s-postcard" class="postcard group-s-postcard field-group-div"><div id="bean-stanford-postcard-full-group-s-postcard-content" class="postcard-content group-s-postcard-content field-group-div"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><a class="twitter-timeline" href="https://twitter.com/StanfordVPUE" data-widget-id="588407611692724224">Tweets by @StanfordVPUE</a>
+<script>
+<!--//--><![CDATA[// ><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--><!]]>
+</script></div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+</div>
+ <!-- /.region -->
+</div>
+        </div>
+        <!-- /#sidebar-second -->
+              </div>
+                </div>
+  </div>
+  <!-- /#main, /#main-wrapper -->
+    <div id="push"></div>
+  <!-- /#push -->
+</div>
+<!-- /#wrap -->
+<div id="footer" class="clearfix footer">
+  <div class="container">
+    <div id="footer-content" class="row-fluid footer-content"> <div class="region region-footer clearfix">
+  <div id="block-block-1" class="clearfix block block-block span4">     <h2>About This Site</h2>
+      <div class="content"> <div class="postcard-left">
+	<div><a href="https://undergrad.stanford.edu/about"><img alt="VPUE logo" src="https://undergrad.stanford.edu/sites/default/themes/undergrad/images/vpue-logo.png" /></a></div>
+	<div>
+		<p>Stanford Undergrad is your guide to undergraduate academics and opportunities run by the Vice Provost for Undergraduate Education.</p>
+	</div>
+</div>
+ </div>
+</div>
+<div id="block-menu-block-43" class="clearfix block block-menu-block span4">     <h2>About VPUE</h2>
+      <div class="content"> <div class="menu-block-wrapper menu-block-43 menu-name-menu-about-vpue-footer parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first leaf has-children menu-mlid-1859"><a href="/about">VPUE Overview</a></li>
+<li class="leaf menu-mlid-1851"><a href="/about/meet-vice-provost">Meet the Vice Provost</a></li>
+<li class="leaf has-children menu-mlid-1853"><a href="/about/faculty-committees">Faculty Committees &amp; Boards</a></li>
+<li class="leaf menu-mlid-11689"><a href="/about/study-undergraduate-education-stanford">Study of Undergraduate Education at Stanford</a></li>
+<li class="leaf has-children menu-mlid-1857"><a href="/about/contact-us">Contact Us</a></li>
+<li class="leaf has-children menu-mlid-10835"><a href="/about/about-site">About This Site</a></li>
+<li class="last leaf menu-mlid-10387"><a href="/advising/approaching/approaching-stanford/new-student-resources/administrative-offices-and-resources">Administrative Offices and Resources</a></li>
+</ul></div>
+ </div>
+</div>
+<div id="block-bean-see-also-block-for-vpue-tan-foot" class="clearfix block block-bean span4">     <h2>See Also</h2>
+      <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/see-also-block-for-vpue-tan-foot" typeof="">
+
+  <div class="content">
+    <div id="bean-stanford-postcard-full-group-s-postcard--2" class="postcard group-s-postcard field-group-div"><div id="bean-stanford-postcard-full-group-s-postcard-content--2" class="postcard-content group-s-postcard-content field-group-div"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><ul class="links-list"><li><a href="https://undergrad.stanford.edu/calendar/events" title="">Undergrad Calendar</a></li>
+	<li><a href="http://teachingcommons.stanford.edu/" title="">Teaching Commons</a></li>
+	<li><a href="http://studentaffairs.stanford.edu/" title="">Vice Provost for Student Affairs</a></li>
+	<li><a href="http://admission.stanford.edu/" title="">Undergraduate Admissions</a></li>
+</ul><p> </p>
+<div style="float:right;"><p><span class="social-twitter"><a href="http://twitter.com/StanfordVPUE">Twitter</a><span class="social-youtube"><a href="https://www.youtube.com/channel/UCNAz7OoWHquLxR6AUZTL5Mw">YouTube</a></span></span></p></div>
+</div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+</div>
+ <!-- /.region -->
+ </div>
+  </div>
+</div>
+<!-- /#footer -->
+<div id="global-footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div id="bottom-logo" class="span2"><a href="http://www.stanford.edu"><img src="/sites/default/themes/undergrad/images/footer-stanford-logo@2x.png" alt="Stanford University"></a></div>
+      <div id="bottom-menu" class="span10">
+        <ul>
+          <li><a href="http://www.stanford.edu">SU Home</a></li>
+          <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+          <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+          <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+          <li><a href="http://emergency.stanford.edu/">Emergency Info</a></li>
+        </ul>
+      </div>
+      <div id="copyright" class="span10 offset2">
+        <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span class="copyright-links"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#global-footer -->
+  </body>
+
 </html>
