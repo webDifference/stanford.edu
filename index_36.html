@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
 
 <head>
-<title>Visitor Information : Stanford University</title>
+<title>Undergraduate Admission : Stanford University</title>
 <!-- TemplateParam name="theme" type="text" value="cardinal" -->
-
+<!-- Google Tag Manager -->
+<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MRT5VSK');</script>-->
+<!-- End Google Tag Manager -->
 <!-- Meta -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Visitor Information Services at Stanford University--one of the world's leading research and teaching institutions. It is located in Palo Alto, California." />
-<meta name="author" content="Visitor Information Services at Stanford University" />
-<link rel="icon" type="image/png" href="https://www.stanford.edu/favicon.ico"/>
+<meta name="description" content="Undergraduation Admission at Stanford University--one of the world's leading research and teaching institutions. It is located in Palo Alto, California." />
+<meta name="author" content="Undergraduation Admission at Stanford University" />
+<link rel="icon" type="image/png" href="//www.stanford.edu/favicon.ico"/>
 <!-- These meta tags are used when someone shares a link to this page on Facebook,
      Twitter or other social media sites. All tags are optional, but including them
      and customizing the content for specific sites can help the visibility of your
@@ -28,134 +33,412 @@
 <meta name="twitter:site" content="@TwitterHandle" />
 <meta name="twitter:title" content="Title for Twitter" />
 <meta name="twitter:description" content="Snippet when tweet is expanded." />
-<meta name="twitter:image" content="http://stanford.edu/about/images/intro_about.jpg" />
-<link rel="publisher" href="https://plus.google.com/id# of Google+ entity associated with your department or group" />
+<meta name="twitter:image" content="//stanford.edu/about/images/intro_about.jpg" />
+<link rel="publisher" href="//plus.google.com/id# of Google+ entity associated with your department or group" />
 -->
 
 <!-- CSS -->
 <link rel="stylesheet" href="assets/cardinal/css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="assets/cardinal/css/base.min.css?v=0.1" type="text/css" />
-<link rel="stylesheet" href="assets/cardinal/css/custom.css?v=0.1" type="text/css"/>
-<link rel="stylesheet" href="assets/cardinal/css/weather.css?v=0.1" type="text/css"/>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="assets/cardinal/css/base.min.css?v=0.4" type="text/css" />
+<link rel="stylesheet" href="assets/cardinal/css/custom.css?v=0.4" type="text/css"/>
+<link rel="stylesheet" href="assets/cardinal/css/landing.css?v=0.1" type="text/css" />
+<link href="assets/cardinal/css/layerslider.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/cardinal/css/banner_homepage.css?v=0.3" type="text/css"/>
+
 <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if IE 8]>
-  <link rel="stylesheet" type="text/css" href="assets/cardinal/css/ie/ie8.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/cardinal/css/ie/ie8.css" />
 <![endif]-->
 <!--[if IE 7]>
-  <link rel="stylesheet" type="text/css" href="assets/cardinal/css/ie/ie7.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/cardinal/css/ie/ie7.css" />
 <![endif]-->
 <!-- JS and jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="assets/cardinal/js/modernizr.custom.17475.js"></script>
 <script src="assets/cardinal/js/bootstrap.min.js"></script>
-<script src="assets/cardinal/js/jquery.simpleWeather.min.js"></script>
 
 <!--[if lt IE 9]>
-	<script src="assets/cardinal/js/respond.js"></script>
+	<script src="//admission.stanford.edu/assets/cardinal/js/respond.js"></script>
 <![endif]-->
 
 <!-- custom JS -->
 <script src="assets/cardinal/js/base.js?v=1.0"></script>
+<script src="assets/cardinal/js/banner.js?v=0.3"></script>
 <script src="assets/cardinal/js/custom.js"></script>
+<script src="assets/cardinal/js/jquery-mobile-1.3.2.js?v=0.3"></script>
+<link rel="stylesheet" href="assets/cardinal/css/video.css?ver=1.0.0" type="text/css" media="all" />
+<style type="text/css">
+h3 {
+	color: #000;
+}
+/*CAROUSEL TOGGLE FOR VIDEO AND PHOTO VIEWS*/
+.carousel .carousel-indicators {
+	bottom: -40px
+}
+.carousel .carousel-indicators li {
+	position: relative;
+	margin: 3px;
+	margin-right: 20px;
+	height: 12px;
+	width: 12px;
+	background-color: transparent;
+	border: none
+}
+.carousel .carousel-indicators li.active button {
+	background-color: #8c1515;
+	color: #fff;
+}
+.carousel .carousel-indicators li button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 27px;
+	width: 27px;
+	border-radius: 50%;
+	border: 1px solid #8c1515;
+	background-color: #fff;
+	color: #8c1515;
+	margin: 2px;
+	padding: 0;
+}
+.carousel .carousel-indicators li button:hover {
+	background-color: #8c1515;
+	color: #fff;
+}
+.carousel .carousel-indicators li button:focus {
+	outline-offset: 0
+}
+.carousel .carousel-control {
+	display: none;
+}
+.carousel .carousel-control.right {
+	right: 15px;
+	left: auto
+}
+.carousel .carousel-control:focus {
+	outline: 2px solid #0098db
+}
+/*SOCIAL TABS*/
+#exTab .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: #5f574f;
+	background-color: #f2f1eb;
+	text-decoration: none;
+	font-weight: 400;
+}
+#exTab .nav > li > a {
+	background-color: #e3dfd5;
+}
+#exTab .nav-pills > li > a {
+	border-radius: 9px 9px 0 0;
+	margin-top: 15px;
+	text-decoration: none;
+	padding: 10px 11px 10px 11px;
+}
+#exTab .tab-content {
+	background-color: #f2f1eb;
+	padding : 5px 15px;
+	width: 31%;
+	min-height: 300px;
+}
+#feature-banner .carousel-control, #feature-banner .carousel-indicators {
+/*display: none;*/
+}
+
+@media (max-width:767px) {
+#exTab .nav-pills > li > a {
+	padding: 10px 9px 10px 10px;
+}
+#exTab .tab-content {
+	width: 300px;
+}
+}
+ @media(max-width:991px) {
+#body .banner .container {
+	position: relative;
+	padding: 35px 0 150px 0;
+	overflow: none;
+	min-width: none;
+}
+#body .banner .description {
+	float: right;
+	margin: 0 20px 0 20px;
+	width: 100%;
+	top: -50px;
+	position: relative;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+#exTab .nav-pills > li > a {
+ padding: 10px 9px 10px 10px;
+}
+#exTab .tab-content {
+ width: 300px;
+}
+#social-icons {
+ padding-top: 20px;
+}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+ #exTab .nav-pills > li > a {
+ padding: 10px 9px 10px 10px;
+}
+#exTab .tab-content {
+ width: 300px;
+}
+ #social-icons {
+ padding-top: 20px;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+ #exTab .nav-pills > li > a {
+ padding: 10px 9px 10px 10px;
+}
+#exTab .tab-content {
+ width: 300px;
+}
+}
+/*TWITTER*/
+.twitter-timeline {
+	background-color: transparent;
+}
+.twitter-timeline .timeline-Footer {
+	font-size: 0px;
+}
+</style>
 </head>
 
 <body class="home">
-<!-- class="home" underlines the Home link in the top nav -->
-<div id="su-wrap"> <!-- used to force footer to bottom of short pages -->
+<!-- class="home" underlines the Home link in the top nav --> 
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRT5VSK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="su-wrap"> 
+  <!-- used to force footer to bottom of short pages -->
   <div id="su-content"> <!-- used to force footer to bottom of short pages --> 
-        <!--=== Top ===-->
-    <div id="top">
-      <div class="container"> 
-        <!--=== Skip links ===-->
-        <div id="skip"> <a href="#content" onClick="$('#content').focus()">Skip to content</a> </div>
-        <!-- /Skip links --> 
-      </div>
-    </div>
-    <!--/top--> 
-    
-    <!--=== Header ===-->
-    <div id="header" class="clearfix" role="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8"> 
-            <!-- Logo -->
-            <div id="logo" class="clearfix"> <a href="https://www.stanford.edu/"><img class="img-responsive" src="//visit.stanford.edu/assets/cardinal/images/stanford-white@2x.png"  alt="Stanford University" /></a> </div>
-            <!-- /logo -->
-            <div id="signature">
-              <div id="site-name"> <a href="/"> <span id="site-name-1">Visitor Information</span> <span id="site-name-2">Optional line 2 - add two-line-signature to body class to display</span> </a> </div>
-            </div>
-          </div>
+    <!--=== Top ===-->
+
+<div id="top">
+  <div class="container"> 
+    <!--=== Skip links ===-->
+    <div id="skip"> <a href="#content" onClick="$('#content').focus()">Skip to content</a> </div>
+    <!-- /Skip links --> 
+  </div>
+</div>
+<!--/top--> 
+
+<!--=== Header ===-->
+<div id="header" class="clearfix" role="banner" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> 
+        <!-- Logo -->
+        <div id="logo" class="clearfix"> <a href="http://www.stanford.edu/"><img class="img-responsive" src="//admission.stanford.edu/assets/cardinal/images/stanford-white@2x.png"  alt="Stanford University" /></a> </div>
+        <!-- /logo -->
+        <div id="signature">
+          <div id="site-name"> <a href="http://admission.stanford.edu"> <span id="site-name-1">Undergraduate Admission</span> <span id="site-name-2"></span></a> </div>
         </div>
       </div>
     </div>
-    
-    <!-- Menu -->
-    <div id="mainmenu" class="clearfix" role="navigation">
-      <div class="container">
-        <div class="navbar navbar-default"> 
-          
-          <!-- main navigation -->
-          <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
-          <!-- /nav-collapse -->
-          
-          <div class="navbar-collapse collapse"> 
-           <!--search box-->
-          <div id="nav-search" role="search">
-            <form action="https://visit.stanford.edu/search/" method="get" id="search-form" accept-charset="UTF-8">
-              <h2 class="hidden">Search form</h2>
-              <label class="hidden" for="search-field">Search term</label>
-              <input name="cx" type="hidden" value="005252872952349847953:kny9yffw67s">
-              <input name="cof" type="hidden" value="FORID:9">
-              <input name="ie" type="hidden" value="UTF-8">
-              <!-- replace value in next line with your site URL -->
-              <input name="as_sitesearch" type="hidden" value="https://visit.stanford.edu/">
-              <input title="Search string" class="input-medium" placeholder="Search Visitor Info&hellip;" type="text" id="search-field" name="q" value="" size="15" maxlength="128" />
-              <button id="search-btn" type="submit" name="submit"  aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>          
-</form>
-            </form>
-          </div>
-            <div  role="navigation">
-              <div id="primary-nav">
-                <ul class="nav navbar-nav" aria-label="primary navigation">
-                  <li id="nav-1"> <a href="https://visit.stanford.edu/basics/">The Basics</a></li>
-                  <li id="nav-2"> <a href="https://visit.stanford.edu/tours/">Campus Tours</a> </li>
-                  <li id="nav-3"> <a href="https://visit.stanford.edu/plan/">Plan Your Visit</a> </li>
-                  <li id="nav-4"> <a href="https://visit.stanford.edu/activities/">Campus Activities</a> </li>
+  </div>
+</div>
+
+<!-- Menu -->
+<div id="mainmenu" class="clearfix" role="navigation"  data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+  <div class="container">
+    <div class="navbar navbar-default"> 
+      
+      <!-- main navigation -->
+      <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+      <!-- /nav-collapse -->
+      
+      <div class="navbar-collapse collapse"> 
+        <!--search box-->
+        <div id="nav-search" role="search">
+          <form action="//admission.stanford.edu/search/" method="get" id="search-form" accept-charset="UTF-8">
+            <h2 class="hidden">Search form</h2>
+            <label class="hidden" for="search-field">Search term</label>
+            <input name="cx" type="hidden" value="005252872952349847953:xiaxlhc-rsq">
+            <input name="cof" type="hidden" value="FORID:9">
+            <input name="ie" type="hidden" value="UTF-8">
+            <!-- replace value in next line with your site URL -->
+            <input name="as_sitesearch" type="hidden" value="//admission.stanford.edu/">
+            <input title="Search string" class="input-medium" placeholder="Search Admission&hellip;" type="text" id="search-field" name="q" value="" size="15" maxlength="128" />
+            <button id="search-btn" type="submit" name="submit"  aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div  role="navigation">
+          <div id="primary-nav">
+            <ul class="nav navbar-nav" aria-label="primary navigation">
+              <li id="nav-1"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Discover <i class="caret"></i></a>
+                <ul class="dropdown-menu">
+                  <li id="nav-1-1"><a href="//admission.stanford.edu/academics/">Academics</a></li>
+                  <li id="nav-1-2"><a href="//admission.stanford.edu/student/">Student Life</a></li>
+                  <li id="nav-1-3"><a href="//admission.stanford.edu/diversity">Diversity at Stanford</a></li>
                 </ul>
+              </li>
+              <li id="nav-2"> <a href="//admission.stanford.edu/apply/">Apply</a></li>
+              <li id="nav-3"> <a href="//admission.stanford.edu/afford/">Afford</a></li>
+              <li id="nav-4"> <a href="//admission.stanford.edu/visit/">Visit</a></li>
+            </ul>
+          </div>
+          <div id="gateway-nav">
+            <h4><span class="fa fa-chevron-circle-right"></span>Gateways for...</h4>
+            <ul id="gateways" class="pull-right" aria-label="gateways">
+              <li id="nav-5"><a href="//admission.stanford.edu/alumni" title="Admission Volunteers Responsive Link">Admission Volunteers</a></li>
+              <li id="nav-6"><a href="//admission.stanford.edu/counselors" title="College Counselors Responsive Link">Counselors</a></li>
+              <li id="nav-7"><a href="//admission.stanford.edu/parents" title="Parents/Families Responsive Link">Parents</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /nav-collapse --> 
+    </div>
+    <!-- /navbar --> 
+    
+  </div>
+  <!-- /container --> 
+</div>
+<!-- /mainmenu --> 
+    <div id="body"> 
+      
+      <!-- Feature Banner -->
+      <div id="feature-banner" class="container carousel slide"> 
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner"> 
+          
+          <!-- begin feature banner 1 -->
+          <div class="item active" tabindex="0"> 
+            
+            <!-- Video start -->
+            <div class="panel video-preview">
+              <div class="video-container">
+                <video id="background_video" class="lazyLoadVid viewportAutoPlay" autoplay loop muted poster="video/homepage_video_poster.jpg">
+                  <source src="video/homepage_video_hb.mp4" type="video/mp4" />
+                  <source src="video/homepage_video.webm" type="video/webm" />
+                </video>
+                <iframe title="Video" class="hidden" width="1600" height="900" src=" " allowfullscreen></iframe>
+                <div class="overlay-content"> <a href="#" class="btn btn-primary btn-lg" data-video-url="https://www.youtube.com/embed/9SvjvyaDS40"><span class="sr-only">Watch Video</span><i class="fa fa-play-circle-o"></i></a></div>
               </div>
             </div>
-          </div>
-          <!-- /nav-collapse --> 
-        </div>
-        <!-- /navbar --> 
-        
-      </div>
-      <!-- /container --> 
-    </div>
-    <!-- /mainmenu -->  
-    <!-- main content -->
-    <div id="content" class="container" role="main" tabindex="0">
-      <h1 class="hide">Cardinal Theme</h1>
-      <div class="row"> 
-        <!-- Main column -->
-        <div id="main-content" class="col-md-9 col-md-push-3" role="main">
-          <div id="feature-banner" class="margin-bottom-30"> <img class="img-responsive" src="assets/cardinal/images/home_palm_drive.jpg" alt="Palm Drive"/>
-            <div class="feature-caption">
-              <h3>Welcome to the Farm</h3>
-              <p>Stanford University is a place where pioneering spirit meets 21st-century possibility.</p>
+            <!-- Video end -->
+            
+            <div class="carousel-caption" >
+              <h3>Discover Stanford</h3>
+              <p>Since 1891, the idea of freedom has animated Stanford, pervading the University's mission, location, and people. It's reflected in our motto "the wind of freedom blows."</p>
             </div>
           </div>
-          <!-- Announcements --> 
-          <div id="news_results">
-<div class="well" id="announcements" style="margin-top:10px;"><h2>Announcements</h2><h3> YEARLY UNIVERSITY WINTER CLOSURE</h3><p>The final date for campus walking tours in 2017 will be December 15. The Visitor Center will be closed the weekend of December 16 and 17, as well as for the annual University Winter Closure from December 23 - January 8. <br><a href="#item47"data-toggle="collapse" class="show_hide">See details</a><div id="item47"class="collapse"><p>The Stanford Visitor Center will be closed and no tours will be given on Saturday, December 16 and Sunday, December 17. The Center will re-open for office hours only (no tours) from Monday, December 18 through Friday, December 22.  Both Hoover Tower and The Visitor Center will be closed for Stanford's annual University Winter closure from Saturday, December 23, 2017 through Sunday, January 7, 2018. Both will re-open on Monday, January 8, 2018.
-Happy Holidays!</p></div></p><h3>Time changes for Campus Walking Tours in 2018</h3><p>Taking effect Monday, January 8, 2018, the starting times of the Stanford Visitor Center's two free daily walking tours of campus will be changed to 11:30am and 3:30 pm.<br><a href="#item49"data-toggle="collapse" class="show_hide">See details</a><div id="item49"class="collapse"><p>After decades of offering free daily walking tours of the Stanford campus at 11:00am and 3:15pm, we are updating the starting times for these tours to 11:30am and 3:30pm respectively. Based upon changes made last year to the University's overall time schedule for courses, this change will increase the availability of student guides to lead our tours and thus enable us to better serve our visitors. Tours will remain free and continue to last approximately 70 minutes.
-Come visit us on The Farm!</p></div></p><h3>Visitor Center offers Athletics Tour, coupled with chance to visit the new Home of Champions</h3><p>* Stanford Athletics & Recreational Opportunities Tour, and the fabulous new "Home of Champions" facility (FREE)<br><a href="#item43"data-toggle="collapse" class="show_hide">See details</a><div id="item43"class="collapse"><p>Our Athletics and Recreational Opportunities Tour (10:30-11:15 & 2:30-3:15), is offered most* Mondays and Fridays through Dec 8, resuming Jan 19; *not offered Nov 20 or Nov 24)
-This overview tour of Stanford Athletics highlights not only the breadth and achievements of Stanford's competitive teams, but also the many recreational opportunities for Stanford students at all levels, including varsity athletics, club sports, intramurals, classes, and personal recreation. Led by one of our student guides, the tour begins on the steps of the Ford Center (365 Galvez Street, behind the Office of Undergraduate Admission), and concludes outside the Arrillaga Family Sports Center, where you can then visit Stanford's brand new, state-of-the-art and interactive athletics facility "Home of Champions" for free.
-(Note: Sorry, this tour does NOT provide entrance into Stanford Stadium or Maples Pavilion, and is not intended in any way as a tour for athletic recruits.)
-</p></div></p><h3>Tour and Program Registration</h3><p>Our tours and programs for winter and spring quarter (through June 15, 2018) are now posted for online registration. Summer offerings will be posted on or before March 2, 2018.<br><a href="http://visit.stanford.edu/calendar/index.html">View Schedule and Register &raquo;</a></p></div></div>
+          <!-- end feature banner 1 --> 
+          
+          <!-- begin feature banner 2 -->
+          <div class="item" tabindex="1"> <img class="banner-background" src="video/homepage_video_poster.jpg" alt="Aerial view of Stanford campus">
+            <div class="carousel-caption" >
+              <h3>Discover Stanford</h3>
+              <p>Since 1891, the idea of freedom has animated Stanford, pervading the University's mission, location, and people. It's reflected in our motto "the wind of freedom blows."</p>
+            </div>
+          </div>
+          <!-- end feature banner 2 --> 
+          
+        </div>
+        <!-- carousel-inner --> 
+        
+        <!-- Indicators -->
+        <ol class="carousel-indicators" aria-label="Video and photo modes">
+          <li role="presentation" class="active">
+            <button class="startVideo" data-target="#feature-banner" data-slide-to="0" value="V"><span class="screen-reader">Video mode</span><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+          </li>
+          <li role="presentation">
+            <button class="stopVideo" data-target="#feature-banner" data-slide-to="1" value="P"><span class="screen-reader">Photo mode</span><i class="fa fa-camera" aria-hidden="true"></i></button>
+          </li>
+        </ol>
+        
+        <!-- Controls -->
+        <button class="left carousel-control startVideo" data-target="#feature-banner" data-slide="prev" accesskey="V"><span class="screen-reader">Video</span></button>
+        <button class="right carousel-control stopVideo" data-target="#feature-banner" data-slide="next" accesskey="P"><span class="screen-reader">Photo</span></button>
+      </div>
+      <!--//End Feature Banner--> 
+      
+      <!-- main content -->
+      <div id="content" class="container" role="main" tabindex="0">
+        <h1 class="hide">Undergraduate Admission</h1>
+        <div class="row" style="padding-top: 40px;">
+          <div id="sidebar-home1" class="col-md-3">
+            <h2 class="headline">Calendar</h2>
+            <div id="event-list"> 
+              <!-- BEGIN event -->
+              <div class="event postcard-left"> </div>
+              <!-- <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">OCT</span><span class="event-day">15</span></div>
+                <div class="event-text">
+                  <p>REA applications with arts portfolio due</p>
+                </div>
+              </div> --> 
+              <!--<div class="event postcard-left">
+                <div class="event-date"><span class="event-month">NOV</span><span class="event-day">1</span></div>
+                <div class="event-text">
+                  <p>Restrictive Early Action applications due</p>
+                </div>
+              </div>-->
+              <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">DEC</span><span class="event-day">1</span></div>
+                <div class="event-text">
+                  <p>RD applications with arts portfolio due</p>
+                </div>
+              </div>
+              <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">DEC</span><span class="event-day">15</span></div>
+                <div class="event-text">
+                  <p>Restrictive Early Action decisions released
+                  </p>
+                </div>
+              </div>
+              <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">JAN</span><span class="event-day">2</span></div>
+                <div class="event-text">
+                  <p>Regular Decision applications due</p>
+                </div>
+              </div>
+              <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">MAR</span><span class="event-day">15</span></div>
+                <div class="event-text">
+                  <p>Transfer student applications due</p>
+                </div>
+              </div>
+              <div class="event postcard-left">
+                <div class="event-date"><span class="event-month">APR</span><span class="event-day">1</span></div>
+                <div class="event-text">
+                  <p>Regular decisions released</p>
+                </div>
+              </div>
+              <!-- END event --> 
+            </div>
+            <p style="margin-top:10px;"><a href="apply/deadlines/index.html" class="more-link"><i class="fa fa-chevron-circle-right"></i> <span>View All Deadlines</span></a></p>
+          </div>
+          <!-- Main column -->
+          <div id="main-content" class="col-md-5" role="main"> 
+            <!-- News --> 
+            <div id="news_results">
+<h2 class="headline"></i>News</h2><h3>Early Office Closure</h3><p>The Office of Undergraduate Admission will close at 4:00 p.m. on Friday, 12/1/17 and will reopen for regular business hours on Monday, 12/4/17.</p><h3>Update: Accommodations for applicants affected by recent natural disasters</h3><p>Stanford's Restrictive Early Action deadline is November 1, but we understand some applicants may have difficulty completing their applications on time. Read more about our deadline extension policy and other accommodations.<br><a href="#item97"data-toggle="collapse" class="show_hide">See details</a><div id="item97"class="collapse"><p><p>Those students who live in areas that have been impacted by the recent natural disasters and are seeking an extension to the deadline should email our office at <a href="mailto:credentials@stanford.edu">credentials@stanford.edu</a>.</p>
+
+<p>We understand that Puerto Rico and many islands in the Caribbean have been severely impacted in recent weeks. We encourage students from these areas to apply for Stanford’s Regular Decision round. Students may request an extension beyond the January 2 deadline, which we will grant on a case-by-case basis. Students should email <a href="mailto:credentials@stanford.edu">credentials@stanford.edu</a> to request an extension. </p>
+
+<p>We also encourage students to review the College Board’s <a href="https://pages.collegeboard.org/announcement-for-hurricane-impacted-students-educators" target="_blank" class="external">supports for students affected by recent hurricanes</a> for rescheduled test dates and registration assistance.</p>
+
+<p>Stanford will grant a fee waiver to any student for whom the application fee is a financial hardship.  Please follow our <a href="https://admission.stanford.edu/apply/freshman/fee.html">fee waiver instructions</a>.</p>
+
+<p>As a practice, we have a grace period for accepting and processing supporting materials after the November 1 deadline. This practice extends to counselors and teachers in the affected areas.</p>
+
+<p>For students unable to gather all supporting materials, such as letters of recommendation, we will review their files to the best of our ability and provide a decision. An additional option for students is to <a href="https://admission.stanford.edu/apply/decision_process/restrictive.html">change their application plan</a> to Regular Decision on or before December 1.</p></p></div></p><h3>Beyond the classroom: Research opportunities expand undergraduate education at Stanford</h3><p>Each year about 1,000 Stanford undergraduates work closely with faculty mentors on research ranging from engineering and medicine to the humanities, fine arts and social sciences, in some cases traveling world-wide.<p><a href="http://news.stanford.edu/2017/08/16/beyond-classroom-research-opportunities-expand-undergraduate-education-stanford/"class="more-link"><i class="fa fa-chevron-circle-right"></i> Read more in Stanford News about Research Projects </a></p></p></div>
 <script type="text/javascript">
 /*******************************************************************
 Show/hide announcement details
@@ -169,120 +452,75 @@ $('.show_hide').click(function(){
 			$this.text('Hide details');
 		}
 	});
-</script>
-          <h2 class="headline">New to Stanford? Start Here!</h2>
-          <div class="postcard-left">
-            <div class="postcard-image"><img src="assets/cardinal/images/home_tourists.jpg" alt="Campus entrance" /></div>
-            <div class="postcard-text">
-              <h3><a href="plan/guides/visit.html">Tourists and Visitors</a></h3>
-              <p>The Stanford campus offers a wealth of sightseeing and educational opportunities for tourists and visitors.</p>
+</script> 
+          </div>
+          <div id="sidebar-third" class="col-md-4">
+            <h2 class="headline">Follow</h2>
+            <div class="container">
+              <h3>@EngageStanford</h3>
+              <div id="exTab" class="container">
+                <ul  class="nav nav-pills">
+                  <li class="active"><a  href="#1b" data-toggle="tab"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> </li>
+                  <li><a href="#2b" data-toggle="tab"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a> </li>
+                  <li><a href="#3b" data-toggle="tab"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</a> </li>
+                </ul>
+                <div class="tab-content clearfix">
+                  <div class="tab-pane active" id="1b">
+                    <div id="instafeed"></div>
+                    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe title="Instagram" src="//lightwidget.com/widgets/d2ce5c14194754afae097e37a3bd2c74.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                  </div>
+                  <div class="tab-pane" id="2b"> <a class="twitter-timeline" href="https://twitter.com/EngageStanford" data-widget-id="381137632643645441" data-chrome="noheader nofooter transparent"></a> </div>
+                  <div class="tab-pane" id="3b">
+                    <iframe title="YouTube" id="youtubechannel" width="100%" height="275px" src="https://www.youtube.com/embed/videoseries?list=PLdDUewgCI3ANpBeLX8ZkcyXdMBAdOrTDk&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="postcard-left">
-            <div class="postcard-image"><img src="assets/cardinal/images/home_undergrad.jpg" alt="Quad walkway" /></div>
-            <div class="postcard-text">
-              <h3><a href="plan/guides/undergrad.html">Prospective Undergraduates</a></h3>
-              <p>Considering Stanford University? Come spend a day on The Farm and get a feel for campus and student life.</p>
-            </div>
-          </div>
-          <div class="postcard-left">
-            <div class="postcard-image"><img src="assets/cardinal/images/home_grad.jpg" alt="Young couple enjoying a day on campus" /></div>
-            <div class="postcard-text">
-              <h3><a href="plan/guides/graduate.html">Prospective Graduate Students</a></h3>
-              <p>Stanford offers graduate and professional degrees in more than 65 departments and programs. Learn first-hand about our vibrant graduate community.</p>
-            </div>
-          </div>
-          <div class="postcard-left">
-            <div class="postcard-image"><img src="assets/cardinal/images/home_groups.jpg" alt="Group of students sitting and talking on the Quad" /></div>
-            <div class="postcard-text">
-              <h3><a href="plan/guides/groups.html">Large Groups</a></h3>
-              <p>Large groups will find plenty to do on the beautiful Stanford campus. Check out the opportunities we have for tours, meals, and sightseeing.</p>
-            </div>
-          </div>
-        </div>
-        <div id="sidebar-second" class="col-md-3 col-md-pull-9">
-          <div class="well">
-            <h2>Top Destinations</h2>
-            <img src="assets/cardinal/images/home_hoover_tower.jpg" alt="Hoover Tower" />
-            <p class="caption">Hoover Tower</p>
-            <p><a class="more-link" href="plan/guides/hoover.html"><i class="fa fa-chevron-circle-right"></i> <span>Visit the Observation Platform</span></a></p>
-            <p>Enjoy a panoramic view of the Stanford campus and the surrounding Bay Area from the Hoover Tower observation platform.</p>
-            <img src="assets/cardinal/images/home_rodin.jpg" alt="Rodin sculpture" />
-            <p class="caption">Rodin Sculpture Garden</p>
-            <p><a class="more-link external_shaded_bkg" href="http://museum.stanford.edu/view/rodin.html" target="_blank"><i class="fa fa-chevron-circle-right"></i> <span>About the Rodin Collection</span></a></p>
-            <p>The Rodin Sculpture Garden is open all hours, with lighting for nighttime viewing.</p>
-          </div>
-          <div class="well" id="events">
-            <h2>Events</h2>
-            <div id="rss-feed"><a href="http://events.stanford.edu/xml/rss.xml" title="Subscribe to Event RSS"><img alt="RSS" src="https://visit.stanford.edu/assets/cardinal/images/social/rss@2x.png" /></a></div>
-              <h3><span class="event_month">Dec</span><span class="event_day">4</span></h3>
-  <div class="event_list">
-     <p><span class="event_title"><a href="http://events.stanford.edu/events/718/71879" data-ua-action="hp-event" data-ua-label="id" class="su-link">Apologizing for Genocide: In/Justice, Reconciliation, and Indigenous Peoples in Australia (and the United States)</a></span><br/><span class="event_time">6:30 PM</span></p>
-  </div>
-  <h3><span class="event_month">Dec</span><span class="event_day">5</span></h3>
-  <div class="event_list">
-     <p><span class="event_title"><a href="http://events.stanford.edu/events/706/70621" data-ua-action="hp-event" data-ua-label="id" class="su-link">NEW TIME - Danielle Allen / Cuz: The Life and Times of Michael A.</a></span><br/><span class="event_time">7:30 PM</span></p>
-  </div>
-  <h3><span class="event_month">Dec</span><span class="event_day">6</span></h3>
-  <div class="event_list">
-     <p><span class="event_title"><a href="http://events.stanford.edu/events/715/71555" data-ua-action="hp-event" data-ua-label="id" class="su-link">NOON CONCERT: SLSQ Emerging String Quartet Program – Tesla Quartet</a></span><br/><span class="event_time">12:30 PM</span></p>
-  </div>
- 
-
-            <p><a class="more-link external_shaded_bkg" href="http://events.stanford.edu/" target="_blank"><i class="fa fa-chevron-circle-right"></i> <span>Events at Stanford</span></a></p>
-          </div>
-          <div class="well">
-            <h2>Current Weather</h2>
-            <div id="weather"></div>
-            <p><a class="more-link external_shaded_bkg" href="http://weather.stanford.edu/" target="_blank"><i class="fa fa-chevron-circle-right"></i><span> Stanford Station</span></a></p>
           </div>
         </div>
       </div>
+      <!-- #content--> 
     </div>
-    <!-- #content--> 
-    
+    <!-- #su-content --> 
   </div>
-  <!-- #su-content --> 
-</div>
-<!-- #su-wrap --> 
-<!-- BEGIN footer -->
+  <!-- #su-wrap --> 
+  <!-- BEGIN footer -->
+
 <div id="footer" class="clearfix footer" role="contentinfo"> 
   <!-- Fat footer start -->
   <div class="container">
     <div id="footer-content" class="row">
       <div class="col-xs-12 col-sm-3 col-sm-push-3">
-        <h3>Self-Guided Tours</h3>
-        <p>Explore the campus at your own pace and learn more about Stanford's rich history, distinctive architecture, and notable landmarks.</p>
+        <h3>Programs</h3>
         <ul>
-          <!--<li><a href="https://itunes.apple.com/us/app/visit-stanford/id372934311?mt=8">Visit Stanford App</a></li>-->
-          <li><a href="https://visit.stanford.edu/tours/virtual/">Virtual Tours</a></li>
-          <li><a href="https://lbre.stanford.edu/sites/default/files/self_guided_tour_map_0.pdf" target="_blank">Self-Guided Tour Map</a></li>
-          <li><a href="https://ucomm.stanford.edu/mobileapp/" target="_blank">Stanford Mobile App <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+          <li><a href="https://apply.stanford.edu/portal/stanfordinyourarea">Stanford in Your Area</a></li>
+          <li><a href="http://visit.stanford.edu/tours/prospective.html" target="_blank">Discover Stanford <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-3 col-sm-push-3">
-        <h3>Newsletter</h3>
-        <p>Subscribe to a free monthly email featuring upcoming concerts, lectures, sports, art exhibitions, family activities &amp; more.</p>
+      <div class="col-xs-12 col-sm-2 col-sm-push-2">
+        <h3>Publications</h3>
         <ul>
-        <li><a href="http://web.stanford.edu/dept/publicaffairs/stanfordforyou/">Stanford for You</a></li>
-        </ul>
-        <h3>Related Sites</h3>
-        <ul>
-        <li><a href="https://financialaid.stanford.edu">Financial Aid</a></li>
-        <li><a href="https://admission.stanford.edu">Undergraduate Admission</a></li>
-        <li><a href="https://neighbors.stanford.edu">Neighbors</a></li>
+          <li><a href="http://admission.stanford.edu/publications/index.html#preview" title="Link to Stanford Preview page">Stanford Preview</a></li>
+          <li><a href="http://admission.stanford.edu/publications/index.html#viewbook">Stanford Viewbook</a></li>
         </ul>
       </div>
-       <div id="hp-buttons" class="col-xs-12 col-sm-3 col-sm-push-3">
+      <div id="hp-buttons" class="col-xs-12 col-sm-4 col-sm-push-3">
         <ul>
-        <li><a href="http://visit.stanford.edu/calendar" class="btn btn-u btn-block"><i class="fa fa-calendar fa-fw"></i> <span>Visitor Calendar</span></a> </li>
-          <li><a href="http://visit.stanford.edu/plan" class="btn btn-u btn-block" title="Maps and Directions link in global site footer"><i class="fa fa-map-marker fa-fw"></i> <span>Maps &amp; Directions</span></a> </li>
-          <li><a href="http://visit.stanford.edu/contact" class="btn btn-u btn-block" title="Contact Us link in footer"><i class="fa fa-comment-o fa-fw"></i> <span>Contact Us</span></a> </li>
+          <li><a href="https://apply.stanford.edu/register/requestinfo" class="btn btn-u btn-block"><i class="fa fa-envelope fa-fw"></i> <span>Join the Mailing List</span></a> </li>
+          <li><a href="//admission.stanford.edu/contact/index.html" class="btn btn-u btn-block"><i class="fa fa-comment-o fa-fw"></i> <span>Contact Us</span></a> </li>
         </ul>
       </div>
       <div id="social-icons" class="col-xs-12 col-sm-3 col-sm-pull-9">
-        <h3>Connect with us</h3>
-        <a href="https://www.facebook.com/stanford"><img alt="Facebook" src="//visit.stanford.edu/assets/cardinal/images/social/facebook@2x.png" /></a> <a href="http://twitter.com/stanford"><img alt="Twitter" src="//visit.stanford.edu/assets/cardinal/images/social/twitter@2x.png" /></a> <a href="https://itunes.stanford.edu/"><img alt="iTunes" src="//visit.stanford.edu/assets/cardinal/images/social/apple@2x.png" /></a><a href="https://www.youtube.com/stanford"><img alt="YouTube" src="//visit.stanford.edu/assets/cardinal/images/social/youtube@2x.png" /></a><a href="https://instagram.com/stanford"><img alt="Instagram" src="//visit.stanford.edu/assets/cardinal/images/social/instagram@2x.png" /></a><a href="//futurity.org/university/stanford-university/"><img alt="Futurity" src="//visit.stanford.edu/assets/cardinal/images/social/futurity@2x.png" /></a> </div>
+        <h3>Engage with Us</h3>
+        <a href="http://instagram.com/engagestanford"><img alt="Instagram" src="//admission.stanford.edu/assets/cardinal/images/social/instagram@2x.png" /></a><a href="http://twitter.com/engagestanford"><img alt="Twitter" src="//admission.stanford.edu/assets/cardinal/images/social/twitter@2x.png" /></a> <a href="http://www.youtube.com/engagestanford"><img alt="YouTube" src="//admission.stanford.edu/assets/cardinal/images/social/youtube@2x.png" /></a> 
+        <!--<a href="http://itunes.stanford.edu/"><img alt="iTunes" src="assets/cardinal/images/social/apple@2x.png" /></a>--><!--<a href="http://www.facebook.com/stanford"><img alt="Facebook" src="assets/cardinal/images/social/facebook@2x.png" /></a>--> 
+        <!--<a href="http://futurity.org/university/stanford-university/"><img alt="Futurity" src="http://assets/cardinal/images/social/futurity@2x.png" /></a>--> </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center cleryact">Stanford complies with the Jeanne Clery Act and publishes crime statistics for the most recent three-year period. <a href="https://police.stanford.edu/pdf/ssfr-2017.pdf" target="_blank">View the full report</a>.</p>
+      </div>
     </div>
   </div>
   <!-- Fat footer end --> 
@@ -291,20 +529,20 @@ $('.show_hide').click(function(){
   <div id="global-footer">
     <div class="container">
       <div class="row">
-        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="https://www.stanford.edu"> <img src="//visit.stanford.edu/assets/cardinal/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
+        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="//admission.stanford.edu/assets/cardinal/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
         <!-- #bottom-logo end -->
         <div id="bottom-text" class="col-xs-6 col-sm-10">
           <ul>
-            <li class="home"><a href="https://www.stanford.edu">SU Home</a></li>
-            <li class="maps alt"><a href="https://visit.stanford.edu/plan/index.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer" title="Maps and Directions link in page footer">Maps &amp; Directions</a></li>
-            <li class="search-stanford"><a href="https://stanford.edu/search/">Search Stanford</a></li>
-            <li class="terms alt"><a href="https://www.stanford.edu/site/terms.html" title="Stanford Terms of Use">Terms of Use</a></li>
+            <li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+            <li class="maps alt"><a href="http://visit.stanford.edu/plan/index.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
+            <li class="search-stanford"><a href="http://stanford.edu/search/">Search Stanford</a></li>
+            <li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
             <li class="emergency-info"><a href="http://emergency.stanford.edu/" class="su-link" data-ua-label="global-footer">Emergency Info</a></li>
           </ul>
         </div>
         <!-- .bottom-text end -->
         <div class="clear"></div>
-        <p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="https://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
+        <p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="http://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
       </div>
       <!-- .row end --> 
     </div>
@@ -313,29 +551,31 @@ $('.show_hide').click(function(){
   <!-- Global footer snippet end --> 
   
 </div>
-<!-- END footer -->
-<script src="https://visit.stanford.edu/assets/cardinal/js/tracking.js?v=1.0"></script>
- 
+<!-- END footer --> 
+<!-- Start Google Analytics --> 
+<script src="//admission.stanford.edu/assets/cardinal/js/tracking.js?v=1.2"></script>
+<!-- End Google Analytics -->
+<!-- Sticky Menu -->
 <script type="text/javascript">
-$(document).ready(function() {
-  $.simpleWeather({
-    location: 'Stanford, CA',
-    woeid: '',
-    unit: 'f',
-    success: function(weather) {
-      html = '<h2><i class="icon-'+weather.code+'"></i></h2>';
-      html += '<ul>';
-      html += '<li class="temp"> '+weather.temp+'&deg;'+weather.units.temp+' </li><br>';
-      html += '<li class="currently"> '+weather.currently+' </li><br>';
-      html += '<li class="winds">Winds '+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
-      $("#weather").html(html);
-    },
-    error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
-    }
-  });
-});
+	$(window).on('scroll', function(){
+		var position = $(this).scrollTop();
+		if(position > 60) {
+			$('#mainmenu').addClass('sticky-nav');
+		} else {
+			$('#mainmenu').removeClass('sticky-nav');
+		}		
+	});
 </script>
+<!-- End Sticky Menu --> 
+  <!--Admission Twitter Widget --> 
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+  
+  <!-- Start Google Analytics --> 
+  <script src="//admission.stanford.edu/assets/cardinal/js/tracking.js?v=1.0"></script> 
+  <!-- End Google Analytics --> 
+</div>
+<script type="text/javascript" src="assets/cardinal/js/jquery.waypoints.min.js?ver=1.0.0"></script> 
+<script type="text/javascript" src="assets/cardinal/js/jquery.lazyloadvid.js?ver=1.0.0"></script> 
+<script type="text/javascript" src="assets/cardinal/js/video-preview.js?ver=1.3.0"></script>
 </body>
 </html>
