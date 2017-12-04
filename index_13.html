@@ -1,2012 +1,600 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <title>Stanford Searchable Map</title>
-    <meta charset='utf-8' />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta content='' name='description' />
-    <meta content='' name='author' />
-	<link rel="shortcut icon" type="image/ico" href="https://www.stanford.edu/favicon.ico" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/custom.css"/>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	<!-- from Stanford identity -->
-	<link href="https://web.stanford.edu/su-identity/css/su-identity.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
-	<link href="css/chardinjs.css" rel="stylesheet">
-	<link href="css/printgm.css" rel="stylesheet">
-	<!--[if IE 8]>
-	  <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie8.css" />
-	<![endif]-->
-	<!--[if IE 7]>
-	  <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie7.css" />
-	<![endif]-->
-	 <!-- End from Stanford identity -->
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" ></script>
+<!--[if lt IE 7]> <html class="ie6 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie" lang="en" dir="ltr"> <![endif]-->
+<!--[if !IE]> --> <html lang="en" dir="ltr"> <!-- <![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-167x167.png" rel="apple-touch-icon" sizes="167x167" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link rel="canonical" href="/home" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/93" />
+<link rel="shortcut icon" href="https://vpge.stanford.edu/sites/all/themes/stanford_wilbur/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link href="/sites/all/themes/stanford_framework/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Office of the Vice Provost for Graduate Education</title>
+  <link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_JsNupfpWENtZl3PsbtMoRvOBlo9YKAdVhAdHLPsR8FE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_ikO0Dxm7cLx8sij8aCz93A0aaPm7Vn5LlfEi4H4knHY.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css__Bwk-u-nd1vo_2dqBfydbfx0ZQxWn0NksvcdHl63bvE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_AlAIslTv5Jw_QZg7h3SLn3Agam88bxHoV2RwIs_YFio.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_k57u5PB2r778Rp3YiupvRI5gsf_VfpXpGymzYLyJXko.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_nGZ0EUi6HATidAf3pITrpLdyTGtTsmfVAzXLpUp2gr4.css" media="print" />
+<link type="text/css" rel="stylesheet" href="https://vpge.stanford.edu/sites/default/files/css/css_RpTJ4dJvRFlyHM1SaXw_nyjkjNrTJwq9Nd5gvNYLOfw.css" media="all" />
+  <script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_ZDOaep6HA5A0eriyiN-YaNv7MHsjd-FIuFyilZ2o5cw.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_g98Ekqvuj1mMaUqTkLdcrMmJymw4aFC5YyzBQBviahY.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_V1ZuwJK9uzfm6fFffOcHHubfxnimoxnbgG58pvTQdpY.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_yP3AG0oywwlnM49HcobZ7WgJFzKhwMKpDG9pUHX6nh8.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_vknc2yPS3GpGbENaHL83zadi9QSSvqdVvyB388xfS5Q.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_JBII3plGAkBIQcH8MpZqJ7Uj5btcZVHAZUjy1Gt2TyY.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-36497246-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_PJhTnkxydMuVbMTmxqAHkqjfBvIpFssfwf4u5a-Jteg.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_lwzJeXOXdNPAbw7ThjcrhrPFAUgW_lR49bJ8nQYUbcY.js"></script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js/js_6lEiBKPgYd0J4j7bMPiKzKQR5ow6mo0LR6Gtg_UkEpo.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function($) {
+  var ts = $("table.views-table tr td.views-field, .field-name-field-s-learning-experience .field-items a");
+  $.each(ts, function(index) {
+    var t_str = this.innerHTML;
+    t_str = t_str.replace(/(Mostly learn by self)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/learning-1.png" />');
+    t_str = t_str.replace(/(Learn with one other or small group)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/learning-2.png" />');
+    t_str = t_str.replace(/(Mostly learn with others)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/learning-3.png" />');
     
-
-	<script type="text/javascript" src="js/custom.js"></script>
-	<script type="text/javascript" src="js/google-geolocation.js"></script>
-	<script src="js/chardinjs.min.js"></script>
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&libraries=places&v=3.17"></script>
-	<script type="text/javascript" src="js/stan_cm_js.cfm"></script>
-    
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-67559572-1', 'auto');
-	  ga('send', 'pageview');
-  </script>
-	<script>
-		var device = {
-            is_android: function() {
-                return navigator.userAgent.match(/Android/i);
-            },
-            is_blackberry: function() {
-                return navigator.userAgent.match(/BlackBerry/i);
-            },
-            is_iphone: function() {
-                return navigator.userAgent.match(/iPhone/i);
-            },
-            is_ipad: function() {
-                return navigator.userAgent.match(/iPad/i);
-            },
-            is_ipod: function() {
-                return navigator.userAgent.match(/iPod/i);
-            },
-            is_ios: function() {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            is_windows_phone: function() {
-                return navigator.userAgent.match(/IEMobile/i);
-            },
-            is_mobile: function() {
-                return (device.is_android() || device.is_blackberry() || device.is_ios() || device.is_windows_phone() );
-            }
-
-        };
-
-	 /*function printMap(){
-    	var content = window.document.getElementById("map_canvas"); // get you map details
-		var newWindow = window.open(); // open a new window
-		newWindow.document.write(content.innerHTML); // write the map into the new window
-		newWindow.print();
-   	 }
-	 */
-	 function printMap2(){
-	 	$('#printarea').fadeIn(1000);
-		$('.searchBlock').fadeOut(1000);
-    	$('#printarea').removeClass('hide');
-		//window.print();
-
-   	 }
-
-	$(document).ready(function(){
-
-
-
-		$('#cancelprinting').on('click', function(){
-			$('#printarea').fadeOut(1000);
-			$('.searchBlock').fadeIn(1000);
-		});
-
-		/*Add ESC key to cancel printing when pressed*/
-		$(document).keyup(function(e){
-			if(e.keyCode==27 && $('#printarea').css('display') == 'block'){
-				$('#printarea').fadeOut(1000);
-				$('.searchBlock').fadeIn(1000);
-			}
-		});
-
-
-		$(document).on('click', '#take_a_tour', function(e) {
-			$('#infoLinkBlock').popover('hide');
-			$('#watch_video_modal').modal('show');
-			$('#iframe_video_holder').html('<iframe width="100%" height="360" src="//www.youtube.com/embed/C8CVygm8iDQ" frameborder="0"></iframe>');
-		});
-
-
-		/*******************Set Cookie to check the first time user********************/
-		/*
-		expiry = new Date();
-		//expiry.setTime(new Date().getTime()+(10*60*1000)); // ten minutes
-                expiry.setTime(new Date().getTime()+ 31536000000)// (525600*60*1000) == one year
-		if (document.cookie.indexOf("visited") >= 0) {
-		  // They've been here before.
-		  document.cookie = "visited" + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-		  document.cookie = "visited=yes; expires=" + expiry.toGMTString();
-		}else{
-			// set a new cookie
-		  document.cookie = "visited=yes; expires=" + expiry.toGMTString();
-		  * */
-		  /*******Tutorial overlay to load ********/
-		  /*var url = window.location.href;
-			if(url.indexOf('?id=') == -1){
-			$('.introLogoBlock').removeClass('hide');
-			$('body').chardinJs('start');
-			$('.searchBlock').css('z-index', '99999999999');
-			$('.searchBlock').css('pointer-events', 'none');
-
-			//$('#searchButton').addClass('chardinjs-helper-layer');
-
-			$('#searchButton').css('pointer-events','none');
-			$('.topright').css('pointer-events', 'none');
-			$('body').on('chardinJs:stop', function(){
-				$('.searchBlock').css('z-index', '10');
-				$('.introLogoBlock').addClass('hide');
-				$('.searchBlock').css('pointer-events', 'all');
-				$('.topright').css('pointer-events', 'all');
-				$('#searchButton').css('pointer-events','all');
-			});
-
-			$('.stanfordLogo').on('click', function(){
-				$('body').chardinJs('stop');
-			});
-			$('.stanfordMapWelcomeButton').on('click', function(){
-				$('body').chardinJs('stop');
-			});
-		}
-
-		}*/
-
-		$("#questionsBlock").on('click', function(){
-			$('.introLogoBlock').removeClass('hide');
-			$('body').chardinJs('start');
-			$('.searchBlock').css('z-index', '99999999999');
-			$('.searchBlock').css('pointer-events', 'none');
-
-			//$('#searchButton').addClass('chardinjs-helper-layer');
-
-			$('#searchButton').css('pointer-events','none');
-			$('.topright').css('pointer-events', 'none');
-			$('body').on('chardinJs:stop', function(){
-				$('.searchBlock').css('z-index', '10');
-				$('.introLogoBlock').addClass('hide');
-				$('.searchBlock').css('pointer-events', 'all');
-				$('.topright').css('pointer-events', 'all');
-				$('#searchButton').css('pointer-events','all');
-			});
-
-			$('.stanfordLogo').on('click', function(){
-				$('body').chardinJs('stop');
-			});
-			$('.stanfordMapWelcomeButton').on('click', function(){
-				$('body').chardinJs('stop');
-			});
-		});
-
-
-		$(document).on('click', '#get_curr_loc', function(e) {
-			 e.preventDefault();
-			 var GeoMarker = new GeolocationMarker(map);
-	  	     GeoMarker.setCircleOptions({fillColor: '#808080'});
-
-			  google.maps.event.addListenerOnce(GeoMarker, 'geolocation_error', function(){
-			  	$('#current_location_note').css('display', 'block');
-
-	  		});
-
-			 google.maps.event.addListenerOnce(GeoMarker, 'position_changed', function() {
-		                    map.setCenter(this.getPosition());
-		                    map.fitBounds(this.getBounds());
-							console.log(this.getPosition().lat());
-							set_driv_orig(this.getPosition().lat(), this.getPosition().lng())
-			    });
-		});
-
-		$('[data-toggle="popover"]').popover();
-		$('[data-toggle="tooltip"]').tooltip();
-
-
-		/*Click on the anywhere to close the Popover bubbles*/
-		$('body').on('click', function (e) {
-
-
-			 $('#mapLegendBlock, #relativeLinkBlock, #selfTourBlock, #bugReportBlock, #infoLinkBlock').each(function () {
-	            //the 'is' for buttons that trigger popups
-	            //the 'has' for icons within a button that triggers a popup
-	                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-	                $(this).popover('hide');
-	            }
-	        });
-
-		});
-		/******************************************************/
-
-
-		/*******************SHOW THE BUG**********************/
-		$('#bugReportBlock').each(function(){
-				$(this).addClass("floating");
-
-		});
-
-
-		/*$(document).on('click', '#reportSubmit', function(e){
-			e.preventDefault();
-			var submitData = true;
-			var newJsonData = {};
-			newJsonData["reportName"] = $("#reportName").val();
-			newJsonData["reportIssue"] = $("#reportIssue").val();
-
-			if ($("#reportIssue").val().length === 0){submitData = false;}
-
-			newJsonData["reportBrowser"] = navigator.userAgent;
-			newJsonData["reportOS"] = navigator.appVersion;
-			newJsonData["reportCookie"] = navigator.cookieEnabled;
-			//console.log(JSON.stringify(newJsonData));
-
-			if (submitData){
-				$.ajax({
-					type: "POST",
-					url: "notification.cfc",
-					dataType: "json",
-					data: {
-						method: "sendNotification",
-						JSONPacket: JSON.stringify(newJsonData)
-					},
-					success: function(data){
-						if(data == 0){
-							$('#bugReportBlock-form').addClass('hide');
-							$('#bugReportBlock-thankyou').removeClass('hide');
-						}else {
-							alert("System Error! cannot report the issue.");
-						}
-					},
-					error: function(e){
-						console.log(e);
-					}
-				});
-			}else{
-				$("#reportIssue").effect("highlight", {}, 3000);
-			}
-		});*/
-
-
-		$(document).on('click', '#campus_tour_button', function(e){
-			e.preventDefault();
-			window.location.href="https://web.stanford.edu/group/lbre_apps_forms/Story_Map/Stanford_Campus_Tour/";
-		});
-		/*****************************************************/
-
-
-
-
-		var currentPanel = $('#currentPanel');
-		currentPanel.text($('#menuPanel').attr('id'));
-		var currentOpener =$('#currentOpener');
-		currentOpener.text($('#openerExploreSU').attr('id'));
-
-		if (device.is_mobile()) {
-			$('#get_curr_loc').css('display', 'block');
-        }
-
-		/*tooltip show for menu*/
-		/*var om = $('#openerMain');
-    	om.tooltip('show');
-		setTimeout(function(){
-      		om.tooltip('hide');
-    	}, 5000);
-*/
-		brb = $('#bugReportBlock');
-    	brb.tooltip('show');
-		setTimeout(function(){
-      		brb.tooltip('hide');
-    	}, 5000);
-
-
-		$(document).on('click', '#get_dir', function(e) {
-			 e.preventDefault();
-			 set_driv_dest($("#bldg_addr").text())
-			 $('#myModal').modal('hide');
-			 $('#cm_bgOverlay').addClass('modal-backdrop');
-			 fnOpenDirection();
-		});
-		$(document).on('click', '#eateries_get_dir', function(e) {
-			 e.preventDefault();
-			 set_driv_dest($("#eateries_addr").val())
-			 $('#myModal').modal('hide');
-			 $('#cm_bgOverlay').addClass('modal-backdrop');
-			 fnOpenDirection();
-		})
-		$(document).on('click', '#info_modal_get_dir', function(e) {
-			 e.preventDefault();
-			 var latlng = $("#info_modal_lat").val() + ", " + $("#info_modal_lng").val();
-			 set_driv_dest(latlng);
-			 $('#myModal').modal('hide');
-			 $('#cm_bgOverlay').addClass('modal-backdrop');
-			 fnOpenDirection();
-		});
-
-		//reverse directions
-		$(document).on('click', '#rev_addr', function(e) {
-                e.preventDefault();
-				 //Get the values
-			    var fromVal = $("#orig").val();
-			    var toVal = $("#dest").val();
-			    //Set the values
-			    $("#orig").val(toVal);
-			    $("#dest").val(fromVal);
-				reverse_orig_dest();
-        });
-
-		//get directions
-		$(document).on('click', '#searchdir', function(e) {
-                e.preventDefault();
-				map_driv_dir(0);
-        });
-
-		//search clear button
-		$("#search_address").keyup(function(){
-                    $("#searchclear").toggle(Boolean($(this).val()));
-                });
-        $("#searchclear").toggle(Boolean($("#search_address").val()));
-		$("#searchclear").click(function(){
-			$("#search_address").val('').focus();
-            $(this).hide();
-		});
-		//end search clear button
-
-		/*close the slide panel when search box is on focus*/
-		$('#search_address').focus(function(){
-			var panel = $('.slide-panel');
-			var px_to_close = $('.slidepanelclose').css('margin-left');
-			panel.removeClass('visible').animate({'margin-left': px_to_close});
-		});
-
-		$('#openerMain').on('click', function() {
-			var panel = $('.slide-panel');
-			panel.addClass('visible').animate({'margin-left':'0px'});
-			map.getStreetView().setVisible(false);
-			$('#cm_bgOverlay').addClass('modal-backdrop');
-			//$('#cover').css('display','block');
-			$('#' + currentPanel.text()).show();
-			$('#openerExploreSU').removeAttr('style');
-			$('#openerDirection2').removeAttr('style');
-			$('#openerSearch2').removeAttr('style');
-			$('#' + currentOpener.text()).css('opacity', '1.0');
-
-			return false;
-		});
-
-		$('#openerMain').on('mouseenter', function() {
-			/*tooltip show for menu*/
-			var that = $(this);
-    		that.tooltip('show');
-			setTimeout(function(){
-      			that.tooltip('hide');
-    		}, 1000);
-		});
-
-
-		$('#openerExploreSU').on('click', function() {
-			var panel = $('.slide-panel');
-			panel.addClass('visible').animate({'margin-left':'0px'});
-				currentPanel.text($('#menuPanel').attr('id'));
-				currentOpener.text($(this).attr('id'));
-				$('#menuPanel').show();
-				$('#searchPanel').hide();
-				$('#directionPanel').hide();
-				$(this).css('opacity', '1.0');
-				$('#openerDirection2').removeAttr('style');
-				$('#openerSearch2').removeAttr('style');
-			return false;
-		});
-
-
-		$('.cm-searchResult').on('click', function() {
-			var panel = $('.slide-panel');
-				panel.addClass('visible').animate({'margin-left':'0px'});
-				currentPanel.text($('#searchPanel').attr('id'));
-				currentOpener.text($(this).attr('id'));
-				$('#menuPanel').hide();
-				$('#searchPanel').show();
-				$('#directionPanel').hide();
-				$(this).css('opacity', '1.0');
-				$('#openerDirection2').removeAttr('style');
-				$('#openerExploreSU').removeAttr('style');
-			return false;
-		});
-
-		function fnOpenDirection(){
-				var panel = $('.slide-panel');
-				panel.addClass('visible').animate({'margin-left':'0px'});
-				currentPanel.text($('#directionPanel').attr('id'));
-				currentOpener.text($(this).attr('id'));
-				$('#menuPanel').hide();
-				$('#searchPanel').hide();
-				$('#directionPanel').show();
-				$('#openerDirection2').css('opacity', '1.0');
-				$('#openerExploreSU').removeAttr('style');
-				$('#openerSearch2').removeAttr('style');
-			return false;
-		}
-
-		$('#openerDirection2').on('click', function() {
-			var panel = $('.slide-panel');
-				panel.addClass('visible').animate({'margin-left':'0px'});
-				currentPanel.text($('#directionPanel').attr('id'));
-				currentOpener.text($(this).attr('id'));
-				$('#menuPanel').hide();
-				$('#searchPanel').hide();
-				$('#directionPanel').show();
-				$(this).css('opacity', '1.0');
-				$('#openerExploreSU').removeAttr('style');
-				$('#openerSearch2').removeAttr('style');
-			return false;
-		});
-
-		$('#openerSearch2').on('click', function() {
-			currentOpener.text($(this).attr('id'));
-
-		});
-
-		$('#closeButton2, #cm_bgOverlay').on('click', function() {
-			var panel = $('.slide-panel');
-			var px_to_close = $('.slidepanelclose').css('margin-left');
-			panel.removeClass('visible').animate({'margin-left': px_to_close});
-			$('#openerExploreSU').css('opacity', '1.0');
-			$('#openerDirection2').removeAttr('style');
-			$('#openerSearch2').removeAttr('style');
-			$('#cm_bgOverlay').removeClass('modal-backdrop');
-			return false;
-		});
-
-		$('#relativeLinkBlock').popover({
-	        animate: false,
-	        html: true,
-	        placement: 'bottom',
-			trigger: 'manual',
-	        title: function(){return $('#relativeLinkBlock-title').html();},
-			content: function (){return $('#relativeLinkBlock-content').html();}
-		}).click(function(){
-				$(this).popover('toggle');
-		});
-
-		$('#selfTourBlock').popover({
-	        animate: false,
-	        html: true,
-	        placement: 'bottom',
-			trigger: 'manual',
-	        title: function(){return $('#selfTourBlock-title').html();},
-			content: function (){return $('#selfTourBlock-content').html();}
-		}).click(function(){
-				$(this).popover('toggle');
-		});
-
-
-		$('#infoLinkBlock').popover({
-	        animate: false,
-	        html: true,
-	        placement: 'bottom',
-			trigger: 'manual',
-	        title: function(){return $('#infoLinkBlock-title').html();},
-			content: function (){return $('#infoLinkBlock-content').html();}
-		}).click(function(){
-			$(this).popover('toggle');
-		});
-
-		$('#mapLegendBlock').popover({
-	        animate: false,
-	        html: true,
-	        placement: 'bottom',
-			trigger: 'manual',
-			content: function (){return $('#mapLegendBlock-content').html();}
-		}).click(function(){
-			$(this).popover('toggle');
-		});
-
-		$('#bugReportBlock').popover({
-	        animate: false,
-	        html: true,
-	        placement: 'right',
-			trigger: 'manual',
-	        title: function(){return $('#bugReportBlock-title').html();},
-			content: function (){return $('#bugReportBlock-content').html();}
-		}).click(function(){
-			$(this).popover('toggle');
-		});
-
-		$('#close').click(function(){
-			$('#current_location_note').css('display','none');
-		});
-	});
-
-	$('input:checkbox').click( function(){
-    	$(this).parent('label').toggleClass('highlight', this.checked);
-	});
-
-
-
-	//google.maps.event.addDomListener(window, 'load', initialize);
-
-	 </script>
-
-	<style>
-
-	html{
-		margin:0;
-		padding:0;
-		overflow: hidden;
-	}
-	body {
-    	background-color: #f2f1eb; /*#fbfbf9*/
-    	color: #696969;
-    	font-family: "Source Sans Pro", Arial, sans-serif;
-    	font-size: 14px;
-    	line-height: 1.6;
-    	overflow: hidden;
-        -ms-content-zoom-chaining: none;
-        -ms-touch-action: none;
-	}
-
-	/*google info box text*/
-	.gm-style {
-	    font-family: "Source Sans Pro", Arial, sans-serif;
-	}
-	/* For carousel settings */
-	.slider-size {
-		height: 225px; /* This is your slider height */
-	}
-	.carousel {
-		width:80%;
-		margin:0 auto; /* center your carousel if other than 100% */
-	}
-	/* end - For carousel settings */
-
-	#search_address{
-		z-index: 1001;
-	}
-	.searchbar-container{
-		padding-left: 0px;
-		/*padding-top: 2px;
-		padding-bottom: 2px;*/
-		margin-left: -10px;
-		z-index: 2000;
-		/*height: 0px;*/
-	}
-	/* For desktop and larger screen devices */
-	@media(min-width: 1025px)  {
-    	/*.navbar .navbar-form {
-        	width: 450px;
-        	padding-left:0px;
-
-    	}*/
-
-		#search_address {
-			width: 600px;
-		}
-
-		.ui-menu{
-			width: 600px;
-		}
-
-		.container {
-			width: 100%;
-			padding-left : 10px;
-		}
-
-		.popover{
-			min-width: 250px;
-  			max-width: 500px;
-			}
-
-
-		.slidepanelclose{
-			margin-left: -317px;
-		}
-
-
-		.topright2{
-			float:none !important;
-			position: absolute !important;
-			margin-left: 39% !important;
-		/*margin: 0 0 0px 10px;*/
-
-	}
-
-	}
-
-	/* For iPad  and tablet screen devices */
-	@media(min-width: 768px) and (max-width: 1024px) {
-    	/*.navbar .navbar-form {
-        	width: 450px;
-        	padding-left:0px;
-
-    	}*/
-
-
-		#search_address {
-			width: 400px;
-		}
-
-		.ui-menu{
-			width: 400px;
-		}
-
-		.container {
-			width: 100%;
-			padding-left : 10px;
-		}
-
-		.popover{
-			min-width: 250px;
-  			max-width: 500px;
-			}
-
-
-		.slidepanelclose{
-			margin-left: -317px;
-		}
-
-		.tooltip{
-			display:none !important;
-		}
-
-
-	}
-	/*For iPhone 6/6 Plus and Larger Android devices*/
-	@media only screen and (min-device-width: 375px) and (max-width: 767px) {
-    	/*.navbar .navbar-form {
-        	width: 300px;
-        	padding-left:0px;
-
-    	}*/
-
-		#search_address {
-			width: 180px;
-		}
-
-		.ui-menu{
-			width: 300px;
-		}
-
-		/*.container {
-			width: 100%;
-			padding-left : 10px;
-		}*/
-
-		.slidepanelclose{
-			margin-left: -317px;
-		}
-
-		.popover{
-			min-width: 250px;
-  			max-width: 320px;
-		}
-
-		.tooltip{
-			display:none !important;
-		}
-
-
-	}
-	/*For iPhone 4/5 or Android devices*/
-	/*@media only screen  and (min-device-width:320px) and (max-width: 374px) and (orientation: landscape)  {*/
-	@media only screen  and (min-device-width:320px)  and (max-device-width:480px)   {
-    	/*.navbar .navbar-form {
-        	width: 210px;
-			padding-left:0px;
-        	padding-right:0px;
-    	}*/
-
-		#search_address {
-			width: 130px;
-		}
-
-		.ui-menu{
-			width: 250px;
-		}
-		.popover{
-			min-width: 250px;
-  			max-width: 320px;
-			}
-
-
-		/* For carousel settings */
-		.slider-size {
-			height: 125px;
-		}
-		.carousel {
-			width:100%;
-		}
-
-		.tooltip{
-			display:none !important;
-		}
-
-		.slide-panel{
-			width: 270px !important;
-		}
-
-		.slidepanelclose{
-			margin-left: -270px;
-		}
-
-		.betaText {
-			font-size: 1.6em !important;
-
-		}
-
-		.circle {
-
-			margin-left: 110px !important;
-			margin-top: -95px !important;
-
-		}
-
-	}
-
-
-	.searchBlock{
-    	position: absolute;
-		z-index: 10;
-		margin-top : 5px;
-		margin-left: 20px;
-    }
-
-	.topright{
-		float: right;
-		margin: 0 0 0px 10px;
-		line-height: 1.5;
-	}
-	.topright2{
-		float: right;
-
-		/*margin: 0 0 0px 10px;*/
-
-	}
-
-	.blink_me {
-	    -webkit-animation-name: blinker;
-	    -webkit-animation-duration: 1s;
-	    -webkit-animation-timing-function: linear;
-	    -webkit-animation-iteration-count: infinite;
-
-	    -moz-animation-name: blinker;
-	    -moz-animation-duration: 1s;
-	    -moz-animation-timing-function: linear;
-	    -moz-animation-iteration-count: infinite;
-
-	    animation-name: blinker;
-	    animation-duration: 1s;
-	    animation-timing-function: linear;
-	    animation-iteration-count: infinite;
-	}
-
-	@-moz-keyframes blinker {
-	    0% { opacity: 1.0; }
-	    50% { opacity: 0.0; }
-	    100% { opacity: 1.0; }
-	}
-
-	@-webkit-keyframes blinker {
-	    0% { opacity: 1.0; }
-	    50% { opacity: 0.0; }
-	    100% { opacity: 1.0; }
-	}
-
-	@keyframes blinker {
-	    0% { opacity: 1.0; }
-	    50% { opacity: 0.0; }
-	    100% { opacity: 1.0; }
-	}
-
-	.bar-link {
-  		color: #f2f1eb;
-  		font-size: 20px;
-  		font-weight: 300;
-  		margin-left: 15px;
-		text-decoration: none;
-	}
-
-	.bar-link:hover{
-		background-color: #820000;
-		color: #f2f1eb;
-		text-decoration: none;
-		border-radius:5px 5px 5px 5px;
-	}
-
-	.bar-link:visited {
-  		color: #f2f1eb;
-  		text-decoration: none;
-	}
-
-	/*Overriding Bootstrap btn class, the panel opener button*/
-	.menubtn{
-		padding: 7px 10px;
-	}
-
-	/*Overriding Bootstrap btn class for search result button */
-	.searchresultbtn{
-		padding: 6px 12px;
-		font-size:1.2em;
-	}
-
-	/*refresh button icon css*/
-	#refreshbtn{
-		padding: 6px 12px;
-	}
-
-	/*Overriding Bootstrap Accordion-moz-binding*/
-	.panel{
-
-		border-style: none;
-	}
-	.panel-heading{
-		background-color: #f2f1eb !important;
-	}
-
-	.panel-heading.accordion-toggle:after {
-		bottom : 36px !important;
-		font-size: 18pt !important;
-	}
-
-
-	/*Overriding the jQuery UI autocomplete classes*/
-	.ui-autocomplete {
-		  position: absolute;
-		  top: 100%;
-		  left: 0;
-		  z-index: 2000;
-		  float: left;
-		  display: none;
-		  min-width: 160px;
-		  _width: 160px;
-		  padding: 4px 0;
-		  margin: 2px 0 0 0;
-		  list-style: none;
-		  background-color: #ffffff;
-		  border-color: #ccc;
-		  border-color: rgba(0, 0, 0, 0.2);
-		  border-style: solid;
-		  border-width: 1px;
-		  -webkit-border-radius: 5px;
-		  -moz-border-radius: 5px;
-		  border-radius: 5px;
-		  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-		  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-		  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-		  -webkit-background-clip: padding-box;
-		  -moz-background-clip: padding;
-		  background-clip: padding-box;
-		  *border-right-width: 2px;
-		  *border-bottom-width: 2px;
-		  max-height: 80%;
-		  overflow-y: scroll;
-		  overflow-x: hidden;
-	}
-	.ui-menu {
-
-		list-style:none;
-		padding: 2px;
-		margin: 0;
-		display:block;
-		float: left;
-	}
-	.ui-menu .ui-menu {
-		margin-top: -3px;
-	}
-	.ui-menu .ui-menu-item {
-		margin:0;
-		padding: 0;
-		zoom: 1;
-		float: left;
-		clear: left;
-		width: 100%;
-	}
-	.ui-menu .ui-menu-item a {
-		text-decoration:none;
-		display:block;
-		padding:.2em .4em;
-		line-height:1.5;
-		font-size:1.5em;
-		zoom:1;
-	}
-	.ui-menu .ui-menu-item a.ui-state-hover,
-	.ui-menu .ui-menu-item:hover,
-	.ui-menu .ui-menu-item:active,
-	.ui-menu .ui-menu-item a.ui-state-active{
-		background-color:#8C1515;
-		color:#FFFFFF;
-		-webkit-text-fill-color: #FFFFFF; /*Code for Safari*/
-		-moz-text-decoration-color: #8C1515; /* Code for Firefox */
-		font-weight: normal;
-		margin: -1px;
-	}
-	/*End of overriding*/
-
-	/*For slide panel */
-	.slide-panel {
-    	width:315px;
-    	height:100%;
-    	padding:0px;
-    	background:#f2f1eb;
-    	margin-left:-317px;
-		z-index:2000;
-		position: absolute;
-		left: 0px;
-    	top: 0px;
-		box-shadow: 2px -2px 2px 0px #d0d0d0;
-		-webkit-box-shadow: 2px -2px 2px 0px #d0d0d0;
-		-moz-box-shadow: 2px -2px 0px 2px #d0d0d0;
-
-	}
-
-
-	.cm-navbar{
-		padding-top: 0px;
-		padding-left: 0px;
-		padding-right: 0px;
-		padding-bottom: 5px;
-
-	}
-	/* For Slide panel Nav bar main menu right */
-	.cm-navbar .right {
-    	display: block;
-		margin-left: 70px;
-		height: 70px;
-    	width: auto;
-		/*border-bottom-width:1px;
-   		border-bottom-color: #b1b1b1;
-   		border-bottom-style: solid;*/
-	}
-
-	.cm-navbar .rightBottom {
-    	display: block;
-		margin-left: 70px;
-		height: 30px;
-    	width: auto;
-		border-bottom-width:1px;
-   		border-bottom-color: #b1b1b1;
-   		border-bottom-style: solid;
-	}
-	/* For Slide panel Nav bar main menu left (has background picture) */
-	.cm-navbar .left {
-    	width: 70px;
-		height: 100px;
-    	background-image: url("images/new/hoover2.png");
-    	float: left;
-		border-bottom-width:1px;
-   		border-bottom-color: #b1b1b1;
-   		border-bottom-style: solid;
-	}
-
-	.cm-searchResult{
-		position: absolute;
-		right:12px;
-
-	}
-
-	.cm-buttons{
-		position: absolute;
-		right:0px;
-		padding: 10px
-	}
-
-	.cm-button-effect{
-		opacity: 0.4;
-		filter: alpha(opacity=40);
-	}
-
-	.cm-button-effect .changed{
-		opacity: 1.0;
-		filter: alpha(opacity=100);
-	}
-
-	.cm-button-effect:hover{
-		opacity: 1.0;
-		filter: alpha(opacity=100);
-	}
-
-	 .tabclass:hover{
-	 	background:#FFFFFF;
-	 }
-
-	 #openerSearch {
-  	  	float:right;
-    	margin:85px -50px 0px 0px;
-    	border-radius:0px 5px 5px 0px;
-		background:#8C1515;
-		border:none;
-		/*border-color:#8C1515;*/
-		visibility:hidden;
-	 }
-
-	 .scrollPanelPadding{
-
-		padding-left: 10px;
-	 }
-	 .ScrollPanel{
-	 	 height: calc(100% - 170px);
-	 	 overflow:auto;
-   		 overflow-x:hidden;
-		 position: relative;
-
-	 }
-
-	 .directionBox{
-	 	padding : 2px;
-	 }
-
-	 /*override the box shadow for input box*/
-	 .form-control{
-
-		box-shadow: none;
-		-webkit-appearance: none;
-		-moz-box-shadow: none;
-	 }
-
-	  /*override to 0px*/
-	 .col-md-12{
-		padding-left: 0px;
-		padding-right: 0px;
-
-	 }
-
-	/*header fixed in modal */
-	.modal-body.suModal-Body {
-    	max-height: calc(100vh - 210px);
-    	overflow-y: auto;
-	}
-	.modal-header, .modal-footer {
-		padding-top:4px;
-		padding-bottom: 4px;
-	}
-	.modal-header .close {
-    	margin-top: 0;
-	}
-
-	#searchclear {
-    	position: absolute;
-    	right: 50px;
-    	top: 0;
-    	bottom: 0;
-    	height: 20px;
-    	margin: auto;
-    	font-size: 20px;
-    	cursor: pointer;
-    	color: #ccc;
-		z-index:1001;
-	}
-
-
-	/*print button css start*/
-	.custom-control-container {
-    		margin: 5px;
-	}
-	.custom-control {
-    	cursor: pointer;
-    	direction: ltr;
-	    overflow: hidden;
-	    text-align: center;
-	    position: relative;
-	    color: rgb(0, 0, 0);
-	    font-family: "Roboto", Arial, sans-serif;
-	    -webkit-user-select: none;
-	    font-size: 11px !important;
-	    background-color: rgb(255, 255, 255);
-	    padding: 1px 6px;
-	    border-bottom-left-radius: 2px;
-	    border-top-left-radius: 2px;
-	    -webkit-background-clip: padding-box;
-	    background-clip: padding-box;
-	    border: 1px solid rgba(0, 0, 0, 0.14902);
-	    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-	    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-	    min-width: 28px;
-	    font-weight: 500;
-	}
-
-	.custom-control:hover {
-    	font-weight: 900 !important;
-	}
-	/*print button css end*/
-   #maplink
-   {
-       padding:10px 15px 12px 10px;
-       position:absolute;
-       right:0;
-       top:0;
-       background:#F8F8F8;
-       border:1px solid #9A9A9A;
-       border-top-style:none;
-       z-index:100;
-       width:300px;
-       margin:0;
-   }
-
-   #maplink_box
-   {
-       font-size:.9em;
-       width:280px;
-       margin-top:3px;
-   }
-   #maplink_close
-   {
-       z-index:200;
-       cursor:pointer;
-       right:5px;
-       top:5px;
-       position:absolute;
-       background:transparent url("//www.google.com/intl/en_ALL/mapfiles/iwcimgs0.png") no-repeat scroll -24px 0;
-       height:12px;
-       width:12px;
-   }
-
-   #srch_add_btn_group {
-    display: flex;
-   }
-
-   /* accordion expand/collapse */
-  	.panel-heading.accordion-toggle:after {
-    /* symbol for "opening" panels */
-    font-family:'Glyphicons Halflings';
-    /* essential for enabling glyphicon */
-    content:"\e259";
-    /* adjust as needed, taken from bootstrap.css */
-    float: right;
-    position: relative;
-    bottom: 23px;
-    font-size: 15pt;
-    /* adjust as needed */
-    color: grey;
-    /* adjust as needed */
-	}
-	.panel-heading.accordion-toggle.collapsed:after {
-	    /* symbol for "collapsed" panels */
-	    content:"\e258";
-	    /* adjust as needed, taken from bootstrap.css */
-	}
-
-	.panel-heading:hover {
-	    cursor: pointer;
-	}
-
-	.panel-heading:hover h4 {
-	    text-decoration: none;
-	}
-	  /* accordion expand/collapse */
-
-	 /*get direction swap button*/
-	.table tbody>tr>td.vert-align{
-	    vertical-align: middle;
-	}
-	.table tbody>tr>td.no-border-top{
-	    border-top: none;
-	}
-	/* well*/
-	.well.padding5{
-		padding:5px;
-	}
-
-	/* well*/
-	.panel-body.panel-body-explore{
-		padding:10px;
-	}
-	     .msg {
-	        color: white;
-	     }
-		 </style>
-		<style>
-		/* Base for label styling */
-	[type="checkbox"]:not(:checked),
-	[type="checkbox"]:checked {
-	  position: absolute;
-	  left: -9999px;
-	}
-	[type="checkbox"]:not(:checked) + label,
-	[type="checkbox"]:checked + label {
-	  position: relative;
-	  padding-left: 25px;
-	  cursor: pointer;
-	}
-
-	/* checkbox aspect */
-	[type="checkbox"]:not(:checked) + label:before,
-	[type="checkbox"]:checked + label:before {
-	  content: '';
-	  position: absolute;
-	  left:0; top: 4px;
-	  width: 17px; height: 17px;
-	  border: 1px solid #aaa;
-	  background: #f8f8f8;
-	  border-radius: 3px;
-	  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
-	}
-	/* checked mark aspect */
-	[type="checkbox"]:not(:checked) + label:after,
-	[type="checkbox"]:checked + label:after {
-	  content: '✔';
-	  position: absolute;
-	  top: 0; left: 4px;
-	  font-size: 14px;
-	  color: #8C1515;
-	  transition: all .2s;
-	}
-	/* checked mark aspect changes */
-	[type="checkbox"]:not(:checked) + label:after {
-	  opacity: 0;
-	  transform: scale(0);
-	}
-	[type="checkbox"]:checked + label:after {
-	  opacity: 1;
-	  transform: scale(1);
-	}
-	/* disabled checkbox */
-	[type="checkbox"]:disabled:not(:checked) + label:before,
-	[type="checkbox"]:disabled:checked + label:before {
-	  box-shadow: none;
-	  border-color: #bbb;
-	  background-color: #ddd;
-	}
-	[type="checkbox"]:disabled:checked + label:after {
-	  color: #999;
-	}
-	[type="checkbox"]:disabled + label {
-	  color: #aaa;
-	}
-	/* accessibility */
-	[type="checkbox"]:checked:focus + label:before,
-	[type="checkbox"]:not(:checked):focus + label:before {
-	  border: 1px solid blue;
-	}
-
-	/* hover style just for information */
-	label:hover:before {
-	  border: 1px solid #4778d9!important;
-	}
-
-	/*dotted line for btn */
-	.btn-link.btn-link-su  {
-    	color: #2c2d29;
-		text-decoration-style: dotted;
-
-	}
-	.btn-link.btn-link-su:hover, .btn-link.btn-link-su:focus, .btn-link.btn-link-su:active {
-	 	color:#8c1515;
-
-	}
-	#within_bldg a, .sucmlinks{
-		border-bottom: 1px dotted #696969;
-		text-decorcation : none;
-	}
-
-	/*extra padding for tab in bldg info*/
-	.tab-content {
-	  padding: 10px;
-	  > .tab-pane {
-	    display: none;
-	  }
-	  > .active {
-	    display: block;
-	  }
-	}
-	.modal-backdrop
-	{
-    	opacity:0.5 !important;
-
-		/*height:1500px;
-		width:1500px;*/
-		height: 100% !important;
-		height: 100vh !important;
-		width: 100% !important;
-		width: 100vw !important;
-	}
-
-	.chardinjs-overlay{
-		height: 100% !important;
-		height: 100vh !important;
-		width: 100% !important;
-		width: 100vw !important;
-	}
-	.form-control-feedback.pt-events-auto {pointer-events: auto;}
-	.form-group.no-margin-bottom {margin-bottom: 0px;}
-
-	.betaText{
-		color: #FFFFFF;
-		line-height: 1.0;
-		font-size: 1.5em;
-		display: none;
-	}
-
-	#bugReportBlock {
-    	position: absolute;
-		z-index: 13;
-		/*margin-top : 80px;*/
-		bottom: 0;
-		margin-left: 10px;
-		display: block;
-		height: 50px;
-		width: 50px;
-		margin-bottom: 120px;
-		background: url('images/new/start_tour.png') no-repeat center;
-		background-size: contain;
-
-	}
-
-	/*#bugReportBlock {
-    	position: absolute;
-		z-index: 13;
-		margin-top : 80px;
-		margin-left: 10px;
-		display: block;
-		height: 50px;
-		width: 50px;
-		margin-bottom: 120px;
-		background: url('images/new/bug-report.png') no-repeat center;
-		background-size: contain;
-		display: none;
-	}*/
-
-
-	/*
-	==============================================
-	floating
-	==============================================
-	*/
-
-	.floating{
-		animation-name: floating;
-		-webkit-animation-name: floating;
-
-		animation-duration: 1.5s;
-		-webkit-animation-duration: 1.5s;
-
-		animation-iteration-count: infinite;
-		-webkit-animation-iteration-count: infinite;
-
-		visibility: visible !important;
-	}
-
-	@keyframes floating {
-		0% {
-			transform: translateY(0%);
-		}
-		50% {
-			transform: translateY(30%);
-		}
-		100% {
-			transform: translateY(0%);
-		}
-	}
-
-	@-webkit-keyframes floating {
-		0% {
-			-webkit-transform: translateY(0%);
-		}
-		50% {
-			-webkit-transform: translateY(30%);
-		}
-		100% {
-			-webkit-transform: translateY(0%);
-		}
-	}
-
-
-	#cover{
-		position:absolute; /* absolute position (so we can position it where we want)*/
-	    bottom:0px; /* position will be on bottom */
-	    left:0px;
-	    width:100%;
-		height: 100%;
-	    /* styling below */
-	    background-color:black;
-	    opacity:0.6; /* transparency */
-	    filter:alpha(opacity=60); /* IE transparency */
-		z-index: 15;
-	}
-
-
-	#current_location_note {
-	    position: absolute;
-	    z-index: 9999999;
-	    bottom: 0;
-		margin-bottom:30px;
-	    left: 0;
-	    right: 0;
-		color: #FFFFFF;
-	    background: #4D4F53;
-	    text-align: center;
-	    line-height: 2.5;
-	    overflow: hidden;
-	    -webkit-box-shadow: 0 0 5px black;
-	    -moz-box-shadow:    0 0 5px black;
-	    box-shadow:         0 0 5px black;
-		display: none;
-	}
-
-	#current_location_note a{
-	    color: #FFFFFF;
-		font-weight: bold;
-		text-decoration: underline;
-
-	}
-
-	/*@-webkit-keyframes slideDown {
-	    0%, 100% { -webkit-transform: translateY(50px); }
-	    10%, 90% { -webkit-transform: translateY(0px); }
-	}
-	@-moz-keyframes slideDown {
-	    0%, 100% { -moz-transform: translateY(50px); }
-	    10%, 90% { -moz-transform: translateY(0px); }
-	}
-	*/
-	.cssanimations.csstransforms #current_location_note {
-	    -webkit-transform: translateY(50px);
-	    -webkit-animation: slideUp 2.5s 1.0s 1 ease forwards;
-	    -moz-transform:    translateY(50px);
-	    -moz-animation:    slideUp 2.5s 1.0s 1 ease forwards;
-	}
-
-	.cssanimations.csstransforms #close {
-	  display: none;
-	}
-	/*.slide-panel:target, .slide-panel:target + #cover{
-		display:block;
-		opacity:0.2;
-	}*/
-
-	.container-fluid, .row ,.col-md-12, su_map { height: 100% }
-	#map_canvas {
-		width:100%;
-	 	height:calc(100% - 30px);
-	}
-
-
-	.introLogoBlock{
-		position: absolute;
-		z-index: 99999999;
-		top: 40%;
-		left: 50%;
-
-	}
-
-	.stanfordLogo {
-    	position: absolute;
-		z-index: 99999999;
-		/*bottom: 0;*/
-		display: block;
-		margin-left: -50px;
-		margin-top: -50px;
-		height: 100px;
-		width: 100px;
-		background: url('images/new/stanford_logo_g1.png') no-repeat center;
-		background-size: contain;
-	}
-
-	.circle {
-		display:block;
-		background: #FFFFFF;
-		margin-left: 200px;
-		margin-top: -175px;
-		-moz-border-radius: 50px;
-		-webkit-border-radius: 50px;
-		width:10px;
-		height:10px;
-		border-radius: 50px;
-		z-index: 99999999;
-	}
-
-	.stanfordMapWelcome{
-		position: absolute;
-		z-index: 99999999;
-		margin-left: -117px;
-		margin-top: 40px;
-		width:250px;
-		color: #FFFFFF;
-	}
-
-	.stanfordMapWelcomeButton{
-		position: absolute;
-		z-index: 99999999;
-		margin-left: -60px;
-		margin-top: 100px;
-		width:150px;
-	}
-
-	.stanfordMapWelcomeButton .btn{
-		background-color:#8c1515;
-		border-color: #761212;
-	}
-
-	.highlight-suggestion{
-		padding:.2em .4em;
-		line-height:1.5;
-		font-size:1.5em;
-		zoom:1;
-	}
-
-	.custom-control-container {
-		height:110px;
-	}
-
-	.inMapButton{
-		margin-bottom: 3px;
-	}
-
-	.form-control .txtarea{
-		color: #b7b5b5;
-	}
-
-
-	</style>
-
-  </head>
-  <body>
-
-
-        <!-- Brandbar snippet start -->
-        
-
-
-			<div id="printable-brandbar" style="display: none;">
-                <div id="printable-wrapper" style="padding: 4px 10px 0;">
-                        <img src="images/new/printable-stanford.png" alt="Stanford University" >
-                </div>
-            </div>
-
-            <div id="brandbar">
-                <div id="wrapper" style="padding: 4px 10px 0;">
-                    <a href="http://www.stanford.edu">
-                        <img src="https://web.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
-                    </a>
-
-					<span class="topright">
-					<a href="#" id="selfTourBlock">
-						<img src="images/new/camera.png" width="23" height="23" data-intro="Virtual Tour" data-position="left" title="Virtual Visitor Tour"/>
-					</a>
-
-					<div id="selfTourBlock-title" class="hide">Virtual Visitor Tour</div>
-					<div id="selfTourBlock-content" class="hide">
-						<p>
-						    <div class="col-sm-12">
-								<img src="images/new/main_quad.png" class="img-responsive"/>
-							</div>
-							 <div class="col-sm-12">
-								 &nbsp;
-							 </div>
-						    <div class="col-sm-12">
-						      <button id="campus_tour_button" type="submit" class="btn btn-primary">Let's Get Started!</button>
-						    </div>
-						    <div class="col-sm-12">
-								 &nbsp;
-							 </div>
-						</p>
-
-					</div>
-
-					<a href="#" id="relativeLinkBlock">
-						<img src="images/new/relative_link_g1.png" width="23" height="23" data-intro="Related Websites" data-position="left" title="Related Websites"/>
-					</a>
-					<div id="relativeLinkBlock-title" class="hide">Related Websites</div>
-					<div id="relativeLinkBlock-content" class="hide">
-						<p><a href='http://maps.stanford.edu/mapsportal/' target='_blank'>Maps Portal</a></p>
-						<p><a href='http://transportation.stanford.edu/' target='_blank'>Parking & Transportation</a></p>
-						<p><a href='http://visit.stanford.edu/' target='_blank'>Visitor Information</a></p>
-						<p><a href='https://web.stanford.edu/group/lbre_apps_forms/Story_Map/Stanford_Campus_Tour/' target='_blank'>Virtual Visitor Tour</a> &nbsp;<img src='images/new/newly-added.png'/></p>
-						<p><a href='http://stanfordwho.stanford.edu/' target='_blank'>Stanford Who</a></p>
-
-					</div>
-					&nbsp;
-					
-					<a href="#" id="mapLegendBlock">
-						<img src="images/new/map_legend_g1.png" width="23" height="23" data-intro="Map Legend" data-position="bottom" title="Map Legend"/>
-					</a>
-					<div id="mapLegendBlock-content" class="hide">
-						<p><img src='images/new/map_legend_actual_3.png' width='227'></p>
-					</div>
-                    &nbsp;
-					<a href="#" id="infoLinkBlock">
-						<img src="images/faq_1.png" alt="Information" width="23" height="23" data-intro="Info" data-position="bottom" title="Information"/>
-					</a>
-					<div id="infoLinkBlock-title" class="hide">Info Links</div>
-					<div id="infoLinkBlock-content" class="hide">
-						<p><a id='take_a_tour' href='#'>Take a tour</a></p>
-						
-						<p><a href="faq/FAQ.html" target="_blank">FAQ</a></p>
-						<p><a href='https://stanford.service-now.com/services?id=get_help&cmdb_ci=a3df6a3f1302260019813598d144b0ef' target='_blank'>Contact Us</a></p>
-
-					</div>
-					<a href="#" id="questionsBlock">
-						<img src="images/new/questions.png" alt="questions" width="23" height="23" />
-					</a>
-				   </span>
-				   <span class="topright2">
-						<span class="betaText blink_me">Beta</span>
-					</span>
-
-                </div>
-
-            </div>
-	
-	<!-- Brandbar snippet end -->
-
-    <div class='container-fluid'>
-
-      <div class='row'>
-        <div class='col-md-12 su_map'>
-        		    <div id="maplink" style="display: none;">
-		            <div id="maplink_close" onclick="tog_share(); return false;"></div>
-		            <div>
-		                Copy and paste link:
-		            </div>
-
-		            <div><input id="maplink_box"/>
-					</div>
-					<div>
-					Tip: Easily create your custom maps with
-					<a href="http://mapmaker.stanford.edu/" target="_blank" class="sucmlinks">Stanford's Custom Map Maker
-						<span class="glyphicon glyphicon-lock" aria-hidden="true" style="font-size:12px"></span>
-					</a>
-					</div>
-		        </div>
-
-
-          
-		  <div class="slidepanelclose"></div>
-		  <div id="currentPanel" style="display:none;"></div>
-		  <div id="currentOpener" style="display:none;"></div>
-          <div class="slide-panel">
-          	 <div class="cm-navbar" >
-			 	<div class="cm-navbar left"></div>
-				<div class="cm-navbar right">
-					<div class="cm-buttons">
-						<a href="#" ><img id="openerExploreSU" class="cm-button-effect" src="images/new/explore_g2.png" data-toggle="tooltip"  data-placement="bottom" data-original-title="Explore Stanford"  /></a>
-						<a href="#"><img id="openerDirection2" class="cm-button-effect" src="images/new/directions_g2.png" data-toggle="tooltip" data-placement="bottom" data-original-title="Get Directions" /></a>
-						
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<a href="#"><img id="closeButton2" class="cm-button-effect" src="images/new/closemenu_g1.png" data-toggle="tooltip" data-placement="bottom" data-original-title="Close"  /></a>
-					</div>
-				</div>
-				<div class="cm-navbar rightBottom">
-					<div class="cm-searchResult" style="display:none;" >
-						 <button id="openerSearch2" type="button" class="btn btn-default btn-xs">Search Result(s)</button>
-					</div>
-				</div>
-			 </div>
-
-
-			<div id="searchPanel" class="ScrollPanel scrollPanelPadding" style="text-transform: capitalize;">
-			</div>
-
-
-		   <div id="directionPanel" class="ScrollPanel " style="display:none;">
-				<div>
-					   <table class="table table-condensed">
-					      <tbody>
-							<tr>
-						  	<td colspan='2' align='center' class='no-border-top'>
-						  		<a href="#"><img src="images/new/direction_car_g2.png" alt="By Car" title="Car" onClick="map_driv_dir(0);" width="40px"/></a>
-								<a href="#"><img src="images/new/direction_bus_g2.png" alt="Transit" title="Transit" onClick="map_driv_dir(3);" width="40px"/></a>
-								<a href="#"><img src="images/new/direction_bike_g2.png" alt="Biking" title="Biking" onClick="map_driv_dir(1);" width="40px"/></a>
-								<a href="#"><img src="images/new/direction_walking_g2.png" alt="Walking" title="Walking" onClick="map_driv_dir(2);" width="40px"/></a>
-							</td>
-						  </tr>
-					       <tr>
-					         <td class='no-border-top'>
-					         	<div class='directionBox'>
-								  <div class="form-group no-margin-bottom has-feedback">
-									<input class='form-control' autocomplete='off' id='orig' placeholder='From' type='text' />
-									<img style='display:none;' id="get_curr_loc" class="form-control-feedback pt-events-auto" src="images/new/cm-target.png" alt="Get Currecnt Location" title="Get Currecnt Location" />
-								  </div>
-								</div>
-								<div class='directionBox'>
-									<input class='form-control' autocomplete='off' id='dest' placeholder='To' type='text' />
-								</div>
-							</td>
-					    	<td class="vert-align no-border-top">
-					    		<a href="#"><span id='rev_addr' aria-hidden="true" title="Reverse starting point and destination"><img src="images/dir1.png"></span></a>
-							 </td>
-					      </tr>
-						  <tr>
-						  	<td class='no-border-top'>
-						  	<a class='btn btn-default' id='searchdir' href='#'>
-						              <i class='glyphicon glyphicon-road'></i>
-						              Get Directions
-						            </a>
-							</td>
-						  </tr>
-					        </tbody>
-					    </table>
-	        	</div>
-				<div id="dir_driv_info" class="tab-content">
-				</div>
-		   </div>
-
-			<div id="menuPanel" class="ScrollPanel" style="display:none;">
-			
-
-			<div class="panel-group" id="accordions">
-
-										
-
-													<div class="panel panel-default">
-														<div class="panel-heading accordion-toggle " data-toggle="collapse" data-parent="#accordion" data-target="#collapse_10" title="Visiting Campus">
-															<div><h4 class="panel-title">
-															
-																<img src="images/new/visitingCampus_g1.png">
-															
-															&nbsp;&nbsp;&nbsp;Visiting Campus</h4></div>
-														</div>
-
-														<div id="collapse_10" class="panel-collapse collapse in">
-															<div class="panel-body panel-body-explore">
-													
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_poi" autocomplete="off" id="checkbox_poi_10" onclick="tog_cust_layer('poi');"/>
-															    <label id="poi" for="checkbox_poi_10" title="Points of Interest"><img src="images/cat/poi.png" /> Points of Interest</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-v" autocomplete="off" id="checkbox_park-v_10" onclick="tog_cust_layer('park-v');"/>
-															    <label id="park-v" for="checkbox_park-v_10" title="Time Limit Parking 20 Minutes"><img src="images/cat/visitor_parking.png" /> Time Limit Parking 20 Minutes</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-vp" autocomplete="off" id="checkbox_park-vp_10" onclick="tog_cust_layer('park-vp');"/>
-															    <label id="park-vp" for="checkbox_park-vp_10" title="Visitor Parking (pay station)"><img src="images/cat/visitor_parking_pay_station.png" /> Visitor Parking (pay station)</label>
-															    </p>
-														   
-															</div>
-														</div>
-													</div>
-												   
-
-													<div class="panel panel-default">
-														<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_20" title="Life on Campus">
-															<div><h4 class="panel-title">
-															
-																<img src="images/new/campusLife_g1.png">
-															
-															&nbsp;&nbsp;&nbsp;Life on Campus</h4></div>
-														</div>
-
-														<div id="collapse_20" class="panel-collapse collapse ">
-															<div class="panel-body panel-body-explore">
-													
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_din" autocomplete="off" id="checkbox_din_20" onclick="tog_cust_layer('din');"/>
-															    <label id="din" for="checkbox_din_20" title="Eateries"><img src="images/cat/eateries.png" /> Eateries</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_acad" autocomplete="off" id="checkbox_acad_20" onclick="tog_cust_layer('acad');"/>
-															    <label id="acad" for="checkbox_acad_20" title="Academic Programs"><img src="images/cat/academic_prog.png" /> Academic Programs</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_lib" autocomplete="off" id="checkbox_lib_20" onclick="tog_cust_layer('lib');"/>
-															    <label id="lib" for="checkbox_lib_20" title="Libraries"><img src="images/cat/library.png" /> Libraries</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_hfd" autocomplete="off" id="checkbox_hfd_20" onclick="tog_cust_layer('hfd');"/>
-															    <label id="hfd" for="checkbox_hfd_20" title="Housing Front Desks"><img src="images/cat/HFD.png" /> Housing Front Desks</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_well" autocomplete="off" id="checkbox_well_20" onclick="tog_cust_layer('well');"/>
-															    <label id="well" for="checkbox_well_20" title="Wellness Rooms"><img src="images/cat/wellness.png" /> Wellness Rooms</label>
-															    </p>
-														   
-															</div>
-														</div>
-													</div>
-												   
-
-													<div class="panel panel-default">
-														<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_30" title="Parking & Transportation">
-															<div><h4 class="panel-title">
-															
-																<img src="images/new/bus_g1.png">
-															
-															&nbsp;&nbsp;&nbsp;Parking & Transportation</h4></div>
-														</div>
-
-														<div id="collapse_30" class="panel-collapse collapse ">
-															<div class="panel-body panel-body-explore">
-													
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-v" autocomplete="off" id="checkbox_park-v_30" onclick="tog_cust_layer('park-v');"/>
-															    <label id="park-v" for="checkbox_park-v_30" title="Time Limit Parking 20 Minutes"><img src="images/cat/visitor_parking.png" /> Time Limit Parking 20 Minutes</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-vp" autocomplete="off" id="checkbox_park-vp_30" onclick="tog_cust_layer('park-vp');"/>
-															    <label id="park-vp" for="checkbox_park-vp_30" title="Visitor Parking (pay station)"><img src="images/cat/visitor_parking_pay_station.png" /> Visitor Parking (pay station)</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_load" autocomplete="off" id="checkbox_load_30" onclick="tog_cust_layer('load');"/>
-															    <label id="load" for="checkbox_load_30" title="Loading Zone"><img src="images/cat/loading.png" /> Loading Zone</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_m_stop" autocomplete="off" id="checkbox_m_stop_30" onclick="tog_cust_layer('m_stop');"/>
-															    <label id="m_stop" for="checkbox_m_stop_30" title="Marguerite Stop"><img src="images/cat/bus_stop_small.png" /> Marguerite Stop</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-a" autocomplete="off" id="checkbox_park-a_30" onclick="tog_cust_layer('park-a');"/>
-															    <label id="park-a" for="checkbox_park-a_30" title="Permit Parking A"><img src="images/cat/a.png" /> Permit Parking A</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-c" autocomplete="off" id="checkbox_park-c_30" onclick="tog_cust_layer('park-c');"/>
-															    <label id="park-c" for="checkbox_park-c_30" title="Permit Parking C"><img src="images/cat/c.png" /> Permit Parking C</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_zip-c" autocomplete="off" id="checkbox_zip-c_30" onclick="tog_cust_layer('zip-c');"/>
-															    <label id="zip-c" for="checkbox_zip-c_30" title="Car-Sharing Vehicle"><img src="images/cat/car_share.png" /> Car-Sharing Vehicle</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_c-rent" autocomplete="off" id="checkbox_c-rent_30" onclick="tog_cust_layer('c-rent');"/>
-															    <label id="c-rent" for="checkbox_c-rent_30" title="Car Rental"><img src="images/cat/car_rent.png" /> Car Rental</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_buspk" autocomplete="off" id="checkbox_buspk_30" onclick="tog_cust_layer('buspk');"/>
-															    <label id="buspk" for="checkbox_buspk_30" title="Bus Parking"><img src="images/cat/bus_park.png" /> Bus Parking</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_park-dis" autocomplete="off" id="checkbox_park-dis_30" onclick="tog_cust_layer('park-dis');"/>
-															    <label id="park-dis" for="checkbox_park-dis_30" title="Disabled Parking"><img src="images/cat/disabled.png" /> Disabled Parking</label>
-															    </p>
-														   
-															</div>
-														</div>
-													</div>
-												   
-
-													<div class="panel panel-default">
-														<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_50" title="Safety & Security">
-															<div><h4 class="panel-title">
-															
-																<img src="images/new/safety_g1.png">
-															
-															&nbsp;&nbsp;&nbsp;Safety & Security</h4></div>
-														</div>
-
-														<div id="collapse_50" class="panel-collapse collapse ">
-															<div class="panel-body panel-body-explore">
-													
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_b_twr" autocomplete="off" id="checkbox_b_twr_50" onclick="tog_cust_layer('b_twr');"/>
-															    <label id="b_twr" for="checkbox_b_twr_50" title="Blue Towers/Emergency Phones"><img src="images/cat/blue_towers.png" /> Blue Towers/Emergency Phones</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_eap" autocomplete="off" id="checkbox_eap_50" onclick="tog_cust_layer('eap');"/>
-															    <label id="eap" for="checkbox_eap_50" title="Emergency Assembly Points"><img src="images/cat/eap.png" /> Emergency Assembly Points</label>
-															    </p>
-														   
-														    	<p>
-															    <input name="layerbox" type="checkbox" class="checkbox_aed" autocomplete="off" id="checkbox_aed_50" onclick="tog_cust_layer('aed');"/>
-															    <label id="aed" for="checkbox_aed_50" title="Automated External Defibrillator"><img src="images/cat/aed.png" /> Automated External Defibrillator</label>
-															    </p>
-														   
-													<br>
-													</div>
-													</div>
-													</div>
-										  
-										  <div id="clrSelectionLink" style="display:none;"><center><a href="#" onclick="hide_all_cats();" class="sucmlinks">Clear Selections</a></center></div>
-
-				</div>
-			
-
-          </div>
-
-		</div>
-		
-		 <div id="printarea" class="printarea hide">
-		 	<div class="wording">Print Area</div>
-			<div class="wording-vertical">Print Area</div>
-		 	<button class="print btn btn-primary" onclick="javascript:window.print()"><span class="glyphicon glyphicon-print" ></span> Print</button>
-			<button id="cancelprinting" class="print-cancel btn btn-primary"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-		 </div>
-		<div class="searchBlock" >
-		<form class="searchbar-container" role="search" action="javascript:bldg_srch('')">
-            	<div class="input-group">
-             		<div class="btn-group" id="srch_add_btn_group">
-						<button type="button" src="" id="openerMain" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" data-trigger="manual" data-original-title="Menu"
-						data-intro="Menu [Click here to see additional points of interest]" data-position="bottom" >
-         					<span class="glyphicon glyphicon-menu-hamburger" ></span>
-         				</button>
-			   			<input class='form-control' id='search_address' placeholder='Search' type='text' autocorrect="off" autocapitalize="off"
-						data-intro="[Search for building name, id, classrooms.]" data-position="bottom" />
-		       				<span id="searchclear" class="glyphicon glyphicon-remove-circle"></span>
-               				
-               				
-                  			<button id="searchButton" type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" data-original-title="Search"
-							data-intro="Search" data-position="bottom" >
-                  				<span class="glyphicon glyphicon-search"></span>
-							</button>
-
-						<div id='parking' class='hide'>Explore pane <img width='23' height='23' alt='explore' src='images/explore_1black.png'/></div>
-               		
-			  		</div>
-            	</div>
-
-        </form>
-		</div>
-
-		
-		
-
-		
-			<div id='cm_bgOverlay'></div>
-		
-		<div class='introLogoBlock hide'>
-
-			<div class='stanfordLogo'></div>
-			<div class='stanfordMapWelcome'>
-				<h3>Got it! Use the map now. </h3>
-			</div>
-			<div class='stanfordMapWelcomeButton'>
-				<button class="btn btn-primary">Let's Get Started!</button>
-			</div>
-			<div class='circle' data-intro='Click on a building' data-position='bottom'></div>
-		</div>
-
-		<div id="current_location_note">Stanford Map could not determine your precise location. Please turn <b>ON</b> your location services. <a href="#" id="close">[Close]</a></div>
-          <div id='map_canvas' class='printmap'></div>
-		  
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
-		        <h4 class="modal-title" id="myModalLabel">Building Information</h4>
-		      </div>
-		      <div class="modal-body suModal-Body">
-
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		
-		
-		<div id="watch_video_modal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Take A Tour Video</h4>
-					</div>
-					<div class="modal-body centered" id="iframe_video_holder">
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		</div>
+    t_str = $.trim(t_str);
+    this.innerHTML = t_str;
+  });
+
+  var ts = $("table.views-table tr td.views-field, .field-name-field-professional-development-r .field-items a");
+  $.each(ts, function(index) {
+    var t_str = this.innerHTML;
+    t_str = t_str.replace(/(level 1)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" />');
+    t_str = t_str.replace(/(level 2)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" />');
+    t_str = t_str.replace(/(level 3)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" />');
+    t_str = t_str.replace(/(level 4)/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/flame.png" />');
+    t_str = $.trim(t_str);
+    this.innerHTML = t_str;
+  });
+
+  var ts = $("table.views-table tr td.views-field, .field-name-field-depth .field-items a");
+  $.each(ts, function(index) {
+    var t_str = this.innerHTML;
+    t_str = t_str.replace(/(1 \(shallow \/ tip of the iceberg\))/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/pyramid-tip.png" />');
+    t_str = t_str.replace(/(2 \(medium \/ half of the iceberg\))/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/pyramid-half.png" />');
+    t_str = t_str.replace(/(3 \(deep \/ all of the iceberg\))/gi,'<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/pyramid-full.png" />');
+    t_str = $.trim(t_str);
+    this.innerHTML = t_str;
+  });
+
+  var ts = $("table.views-table tr td.views-field, .field-name-field-time-commitment .field-items a");
+  $.each(ts, function(index) {
+    var t_str = this.innerHTML;
+    t_str = t_str.replace(/(&lt; 3 hours)/gi, '<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" />');
+    t_str = t_str.replace(/(3 - 8 hours)/gi, '<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" />');
+    t_str = t_str.replace(/(&gt; 8 hours)/gi, '<img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" /><img class="gpdf-icon" src="//web.stanford.edu/group/vpge/cgi-bin/gpdfpub/images/clock.png" />');
+    t_str = $.trim(t_str);
+    this.innerHTML = t_str;
+  });
+
+$('.field-name-field-s-program-professional-dev .term-tree-list > .term .term, .field-name-field-s-partner-professional-dev .term-tree-list > .term .term, .field-name-field-s-resource-professionl-dev .term-tree-list > .term .term, .field-name-field-s-event-professional-dev .term-tree-list > .term .term').hide();
+
+var ts = $(".field-name-field-s-program-professional-dev .field-items a, .field-name-field-s-partner-professional-dev .field-items a, .field-name-field-s-resource-professionl-dev .field-items a, .field-name-field-s-event-professional-dev .field-items a");
+$.each(ts, function(index) {
+  var t_str = this.innerHTML;
+  t_str = t_str.replace(/Specialized Content Knowledge &amp; Skills/gi, '<img src="//vpge.stanford.edu/sites/default/files/content-skills-small.png" />');
+  t_str = t_str.replace(/Teaching/gi, '<img src="//vpge.stanford.edu/sites/default/files/teaching-small.png" />');
+  t_str = t_str.replace(/Communication/gi, '<img src="//vpge.stanford.edu/sites/default/files/communication-small.png" />');
+  t_str = t_str.replace(/Leadership &amp; Management/gi, '<img src="//vpge.stanford.edu/sites/default/files/leadership-small.png" />');
+  t_str = t_str.replace(/Personal Development/gi, '<img src="//vpge.stanford.edu/sites/default/files/diversity-small.png" />');
+  t_str = t_str.replace(/Career Development/gi, '<img src="//vpge.stanford.edu/sites/default/files/career-small.png" />');
+  t_str = t_str.replace(/<ul>/gi, '').replace(/<\/ul>/gi, '').replace(/<li>(.+)<\/li>/gi, "$1");
+  t_str = $.trim(t_str);
+  this.innerHTML = t_str;
+});
+
+var ts = $(".field-name-field-s-program-professional-dev .field-items ul, .field-name-field-s-partner-professional-dev .field-items ul, .field-name-field-s-resource-professionl-dev .field-items ul, .field-name-field-s-event-professional-dev .field-items ul");
+$.each(ts, function() {
+  $(this).replaceWith(this.innerHTML);
+});
+
+var ts = $(".field-name-field-s-program-professional-dev .field-items li, .field-name-field-s-partner-professional-dev .field-items li, .field-name-field-s-resource-professionl-dev .field-items li, .field-name-field-s-event-professional-dev .field-items li");
+$.each(ts, function() {
+  $(this).replaceWith(this.innerHTML);
+});
+
+});
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://vpge.stanford.edu/sites/default/files/js_injector/js_injector_17.js?p0b0u8"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"stanford_wilbur","theme_token":"incU8ApcQilsuYIMnOptuDJ4FtQ7a72Ctz8NeZEQxQw","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"misc\/ui\/jquery.ui.datepicker.css":1,"misc\/ui\/jquery.ui.slider.css":1,"sites\/default\/libraries\/jquery-ui-timepicker\/jquery-ui-timepicker-addon.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/default\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/default\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/stanford\/stanford_bean_types\/css\/social-media.css":1,"sites\/all\/modules\/stanford\/stanford_bean_types\/css\/icon-block.css":1,"sites\/all\/modules\/stanford\/stanford_bean_types\/css\/full-width-banner.css":1,"sites\/default\/modules\/stanford\/stanford_carousel\/css\/stanford_carousel.css":1,"sites\/default\/modules\/stanford\/stanford_jumpstart\/css\/jumpstart.css":1,"sites\/default\/modules\/stanford\/stanford_jumpstart\/css\/jumpstart-theme-fixes.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/context_accordion\/context_accordion.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/field_collection\/field_collection.theme.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap-responsive.min.css":1,"sites\/all\/themes\/open_framework\/packages\/font-awesome-3.2.1\/css\/font-awesome.min.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework.css":1,"sites\/all\/themes\/stanford_framework\/css\/stanford-framework.css":1,"sites\/all\/themes\/stanford_framework\/css\/stanford_default\/stanford-default.css":1,"sites\/all\/themes\/stanford_framework\/css\/ie.css":1,"sites\/all\/themes\/stanford_wilbur\/css\/stanford_wilbur.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework_print.css":1,"public:\/\/css_injector\/css_injector_1.css":1,"public:\/\/css_injector\/css_injector_3.css":1,"public:\/\/css_injector\/css_injector_5.css":1,"public:\/\/css_injector\/css_injector_7.css":1,"public:\/\/css_injector\/css_injector_9.css":1,"public:\/\/css_injector\/css_injector_11.css":1,"public:\/\/css_injector\/css_injector_13.css":1,"public:\/\/css_injector\/css_injector_15.css":1,"public:\/\/css_injector\/css_injector_17.css":1,"public:\/\/css_injector\/css_injector_19.css":1,"public:\/\/css_injector\/css_injector_21.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_25.css":1,"public:\/\/css_injector\/css_injector_27.css":1,"public:\/\/css_injector\/css_injector_29.css":1,"public:\/\/css_injector\/css_injector_37.css":1,"public:\/\/css_injector\/css_injector_48.css":1,"public:\/\/css_injector\/css_injector_50.css":1,"public:\/\/css_injector\/css_injector_52.css":1,"public:\/\/css_injector\/css_injector_53.css":1},"js":{"misc\/jquery.js":1,"sites\/all\/themes\/open_framework\/js\/jquery-migrate-1.2.1.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"misc\/ui\/jquery.ui.accordion.min.js":1,"misc\/ui\/jquery.ui.datepicker.min.js":1,"misc\/ui\/jquery.ui.mouse.min.js":1,"misc\/ui\/jquery.ui.slider.min.js":1,"sites\/default\/libraries\/jquery-ui-timepicker\/jquery-ui-sliderAccess.js":1,"sites\/default\/libraries\/jquery-ui-timepicker\/jquery-ui-timepicker-addon.js":1,"sites\/all\/modules\/stanford\/stanford_bean_types\/js\/stanford-bean-types.js":1,"sites\/default\/modules\/stanford\/stanford_carousel\/js\/stanford_carousel.js":1,"sites\/all\/modules\/stanford\/stanford_events_importer\/js\/stanford_event_nodes.js":1,"sites\/all\/modules\/stanford\/stanford_events_importer\/js\/stanford_events_calendar.js":1,"sites\/default\/modules\/stanford\/stanford_jumpstart\/js\/jumpstart.js":1,"sites\/all\/modules\/contrib\/context_accordion\/context_accordion.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/modules\/stanford\/stanford_date_timepicker\/js\/stanford_date_timepicker.js":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/js\/bootstrap.min.js":1,"sites\/all\/themes\/open_framework\/js\/open_framework.js":1,"sites\/all\/themes\/open_framework\/js\/jquery.placeholder.min.js":1,"sites\/all\/themes\/open_framework\/js\/override.js":1,"sites\/all\/themes\/stanford_framework\/js\/stanford-framework.js":1,"sites\/all\/themes\/stanford_wilbur\/js\/stanford_wilbur.js":1,"sites\/default\/modules\/stanford\/stanford_carousel\/js\/stanford_carousel_aria.js":1,"1":1,"sites\/default\/files\/js_injector\/js_injector_17.js":1}},"better_exposed_filters":{"views":{"stanford_carousel":{"displays":{"caption_block_span9":{"filters":[]}}},"stanford_events_views":{"displays":{"block":{"filters":[]}}},"stanford_news":{"displays":{"block_2_item_recent_news_list":{"filters":{"title":{"required":false},"field_s_news_area_of_focus_tid":{"required":false},"field_s_news_categories_tid":{"required":false}}}}}}},"field_group":{"div":"default"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/":true},"stanford_date_timepicker":{"classes":"","default_date_format":"yy-mm-dd","default_time_format":"hh:mm","default_separator":" "}});
+//--><!]]>
+</script>
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="/sites/all/themes/open_framework/packages/font-awesome-3.2.1/css/font-awesome-ie7.min.css" />  <![endif]-->
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="/sites/all/themes/open_framework/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body class="html front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-93 node-type-stanford-page        style-default  header-bkg-image header-bkg-text-light" >
+    <div id="wrap"><a href="#main" class="element-invisible element-focusable">Skip to content</a>
+    <a href="#main-nav" class="element-invisible element-focusable">Skip to navigation</a>
+    <!-- /#skipnav -->
+    <!-- /#admin-shortcuts -->
+  <div id="global-header">
+    <div class="container">
+      <div class="row-fluid">
+        <div id="top-logo" class="span4"><a href="http://www.stanford.edu"><img src="/sites/all/themes/stanford_framework/images/header-stanford-logo@2x.png" alt="Stanford University"></a></div>
+                <div id="top-menu" class="span8"><div class="region region-global-header clearfix">
+  <div id="block-webauth-webauth-login-block" class="clearfix block block-webauth">     <h2>WebAuth Login</h2>
+      <div class="content"> <div id="webauth_login_url">
+  <a class="button" href="https://vpge.stanford.edu/sites/default/webauth/login?destination=node/93">SUNetID Login</a>
+</div>
+ </div>
+</div></div>
+ <!-- /.region -->
+</div>
+              </div>
+    </div>
+  </div>
+  <!-- /#global-header -->
+  <div id="header" class="clearfix header line1 line2" role="banner">
+    <div class="container">
+      <div class="row">
+        <div class="span9">
+                    <div id="logo" class=" "> <a href="/" title="Home" rel="home"> <img src="https://vpge.stanford.edu/sites/all/themes/stanford_wilbur/logo.png" alt="Stanford" role="presentation"> </a>
+                      </div>
+                    <!-- /#logo -->
+                    <div id="name-and-slogan"  class="with-logo two-lines">
+                                    <div id="site-title-first-line" ><a href="/" title="Home" rel="home">Office of the Vice Provost</a></div>
+                                    <div id="site-title-second-line"><a href="/" title="Home" rel="home">for Graduate Education</a></div>
+                                              </div>
+                                        <!-- /#name-and-slogan -->
+                    <!-- /#header-content -->
+        </div>
       </div>
     </div>
+  </div>
+  <!-- /#header -->
+    <div id="main-menu" class="clearfix site-main-menu">
+    <div class="container">
+      <div class="navbar">
+                <div class="navbar-inner">
+                              <div id="nav-search" class="nav-search"> <div class="region region-search-box clearfix">
+  <div id="block-search-form" class="clearfix block block-search" role="search">       <div class="content"> <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." class="input-medium search-query form-text" placeholder="Search this site..." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="btn-search form-submit" alt="Search" type="image" id="edit-submit" name="submit" src="https://vpge.stanford.edu/sites/all/themes/open_framework/images/searchbutton.png" /></div><input type="hidden" name="form_build_id" value="form-RMWNkqGBxrKZhkUUQqR5UQ_cMuSmT-KNFjuEiu9PtG4" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form> </div>
+</div></div>
+ <!-- /.region -->
+ </div>
+                              <button aria-label="Navigation menu" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="hide">Navigation menu</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <div class="nav-collapse collapse">
+            <nav id="main-nav" role="navigation">
+                                          <div class="region region-navigation clearfix">
+  <div id="block-menu-block-2" class="clearfix block block-menu-block">       <div class="content"> <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu nav"><li class="first leaf active menu-mlid-1241"><a href="/" class="active">Home</a></li>
+<li class="expanded menu-mlid-1395 dropdown"><a href="/academic-guidance" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Academic Guidance <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1525"><a href="/academic-guidance/overview">Overview</a></li>
+<li class="leaf has-children menu-mlid-1407"><a href="/academic-guidance/advising-mentoring">Advising &amp; Mentoring</a></li>
+<li class="leaf has-children menu-mlid-1409"><a href="/academic-guidance/policies-planning">Policies &amp; Planning</a></li>
+<li class="last leaf has-children menu-mlid-1411"><a href="/academic-guidance/problem-solving-crisis-intervention">Problem Solving &amp; Crisis Intervention</a></li>
+</ul></li>
+<li class="expanded menu-mlid-1413 dropdown"><a href="/diversity-initiatives" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Diversity Initiatives <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1523"><a href="/diversity-initiatives/overview">Overview</a></li>
+<li class="leaf menu-mlid-1415"><a href="/diversity-initiatives/commitment">Commitment to Diversity</a></li>
+<li class="leaf menu-mlid-1421"><a href="/diversity-initiatives/recruitment">Recruitment</a></li>
+<li class="leaf menu-mlid-3970"><a href="/diversity-initiatives/programs-funding">Programs &amp; Funding</a></li>
+<li class="last leaf has-children menu-mlid-3788"><a href="/diversity-initiatives/academic-achievement-awards" title="">Awards</a></li>
+</ul></li>
+<li class="expanded menu-mlid-1423 dropdown"><a href="/professional-development" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Professional Development <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1429"><a href="/professional-development/overview">Overview</a></li>
+<li class="leaf has-children menu-mlid-1427"><a href="/professional-development/framework">GPD Framework</a></li>
+<li class="leaf has-children menu-mlid-3753"><a href="/professional-development/career-planning">Career Planning</a></li>
+<li class="leaf menu-mlid-1665"><a href="/professional-development/programs">Programs</a></li>
+<li class="leaf menu-mlid-2863"><a href="/professional-development/courses">Courses</a></li>
+<li class="last leaf menu-mlid-3784"><a href="/professional-development/videos" title="">Videos</a></li>
+</ul></li>
+<li class="expanded menu-mlid-1453 dropdown"><a href="/interdisciplinary-learning" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Interdisciplinary Learning <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1455"><a href="/interdisciplinary-learning/overview">Overview</a></li>
+<li class="leaf has-children menu-mlid-1457"><a href="/interdisciplinary-learning/sgsi">Stanford Graduate Summer Institute</a></li>
+<li class="leaf menu-mlid-1467"><a href="/interdisciplinary-learning/networking-learning">Networking &amp; Learning</a></li>
+<li class="leaf menu-mlid-1989"><a href="/interdisciplinary-learning/programs">Programs</a></li>
+<li class="leaf menu-mlid-1471"><a href="/interdisciplinary-learning/funding">Funding</a></li>
+<li class="last leaf menu-mlid-2859"><a href="/courses/interdisciplinary" title="">Courses</a></li>
+</ul></li>
+<li class="last expanded menu-mlid-1473 dropdown"><a href="/fellowships-funding" class="dropdown-toggle" data-toggle="dropdown" data-target="#">Fellowships & Funding <span class="caret"></span></a><ul class="dropdown-menu"><li class="first leaf menu-mlid-1475"><a href="/fellowships-funding/overview">Overview</a></li>
+<li class="leaf has-children menu-mlid-1995"><a href="/fellowships-funding/graduate-student-funding">Graduate Student Funding</a></li>
+<li class="leaf has-children menu-mlid-1971"><a href="/fellowships-funding/all" title="">VPGE Fellowships</a></li>
+<li class="leaf has-children menu-mlid-1477"><a href="/fellowships-funding/policies">VPGE Fellowship Policies</a></li>
+<li class="leaf menu-mlid-2401"><a href="/fellowships-funding/other" title="">VPGE Funding Opportunities</a></li>
+<li class="last leaf has-children menu-mlid-1997"><a href="/fellowships-funding/current-vpge-fellows">Current VPGE Fellows</a></li>
+</ul></li>
+</ul></div>
+ </div>
+</div></div>
+ <!-- /.region -->
+                          </nav>
+          </div>
+                                      </div>
+              </div>
+    </div>
+  </div>
+  <!-- /#main-menu -->
+  
+  
+  <div id="main" class="clearfix main" role="main">
+  	        <div class="container">
+            <div id="main-content" class="row main-content">
+                <div id="sidebar-first" class="sidebar site-sidebar-first span3">
+          <div class="row-fluid"><div class="region region-sidebar-first clearfix">
+  <div id="block-bean-jumpstart-home-page-about" class="clearfix block block-bean well">     <h2>About VPGE</h2>
+      <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/jumpstart-home-page-about" typeof="">
 
+  <div class="content">
+    <div class="postcard"><div class="postcard"><div class="field-collection-container clearfix"><div class="field field-name-field-s-image-info field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-stanford-3-col-header field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-s-image-info clearfix" about="/field-collection/field-s-image-info/159" typeof="">
+  <div class="content">
+    <div id="field-collection-item-field-s-image-info-stanford-3-col-header-group-s-image-border-style" class="border-simple-nowidth border-shadow group-s-image-border-style field-group-div"><div class="field field-name-field-s-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/3-col-header/public/sgsi-reception.png?itok=VVwDO6-j" width="270" height="100" alt="Students at SGSI reception" /></div></div></div></div>  </div>
+</div>
+</div></div></div></div></div></div><div class="postcard-content"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p class="summary">Expanding what's possible in graduate education</p>
+<p>The VPGE office works collaboratively across the University to ensure that every graduate student has the best possible education.  </p>
+</div></div></div><div class="field field-name-field-s-postcard-link field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://vpge.stanford.edu/about" class="more-link">Learn more</a></div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+<div id="block-bean-jumpstart-home-page-academics" class="clearfix block block-bean well">     <h2>Gateways</h2>
+      <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/jumpstart-home-page-academics" typeof="">
 
+  <div class="content">
+    <div class="postcard"><div class="postcard"><div class="field-collection-container clearfix"><div class="field field-name-field-s-image-info field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-stanford-3-col-header field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-s-image-info clearfix" about="/field-collection/field-s-image-info/19" typeof="">
+  <div class="content">
+    <div id="field-collection-item-field-s-image-info-stanford-3-col-header-group-s-image-border-style--2" class="border-simple-nowidth border-shadow group-s-image-border-style field-group-div"><div class="field field-name-field-s-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/3-col-header/public/img_1496_0_0.jpg?itok=8H-rAi7C" width="270" height="100" alt="Stanford arch" /></div></div></div></div>  </div>
+</div>
+</div></div></div></div></div></div><div class="postcard-content"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>Find what you're looking for quickly using these audience gateways:</p>
+<ul><li><a class="more-link" href="https://vpge.stanford.edu/gradgateway">New Students</a></li>
+	<li><a class="more-link" href="https://vpge.stanford.edu/gateways/prospective-students">Prospective Students</a></li>
+	<li><a class="more-link" href="https://vpge.stanford.edu/gateways/current-students">Current Students</a></li>
+	<li><a class="more-link" href="https://vpge.stanford.edu/gateways/faculty-staff">Faculty &amp; Staff</a></li>
+</ul></div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+</div>
+ <!-- /.region -->
+</div>
+        </div>
+        <!-- /#sidebar-first -->
+                <div id="content" class="mc-content span9">
+          <div id="content-wrapper" class="content-wrapper">
+            <div id="content-head" class="row-fluid content-head">
+                                                        <h1 class="title" id="page-title"> Home </h1>
+                                                                                                </div>
+                                                <div id="content-body" class="row-fluid content-body"> <div class="region region-content clearfix">
+  <div id="block-views-9eb33d9a23c032d5db1b20253b714ccf" class="clearfix block block-views block-no-bottom-margin">       <div class="content"> <div class="view view-stanford-carousel view-id-stanford_carousel view-display-id-caption_block_span9 carousel slide view-dom-id-4c37bec6fc09fb90200ddc396503a0ce">
+            <div class="view-header">
+      <div class="offscreen" role="heading" aria-level="2">Carousel Start</div>
+    </div>
+  
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first item carousel-block">
+      
+          <div class="carousel-caption stanford-carousel-text carousel-light carousel-position-right carousel-position-top">
+    <h2 class="slide-title"><a href="https://vpge.stanford.edu/professional-development/framework">Take the wheel.</a></h2>
+    <div class="slide-caption"><a href="https://vpge.stanford.edu/professional-development/framework">Connect your interests and goals with the abundant opportunities Stanford offers using the Graduate Professional Development Framework.
+</a></div>
+    <div class="more-link"><a href="https://vpge.stanford.edu/professional-development/framework">Launch the GPD Framework</a></div>
+    <div class="edit-link"></div>
+    </div>
+    <div><a href="https://vpge.stanford.edu/professional-development/framework"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/9-col-banner/public/wheelbanner1.png?itok=oj-SZHVr" width="970" height="330" alt="Elaine Li presents to three students" /></a></div>    </div>
+  <div class="views-row views-row-2 views-row-even item carousel-block">
+      
+          <div class="carousel-caption stanford-carousel-text carousel-light carousel-position-right carousel-position-bottom">
+    <h2 class="slide-title"><a href="https://vpge.stanford.edu/events/programs?field_s_event_series_focus_area_tid=All&amp;field_s_quarter_tid=203&amp;tid=All">Sign Up for Our Autumn Programs!</a></h2>
+    <div class="slide-caption"><a href="https://vpge.stanford.edu/events/programs?field_s_event_series_focus_area_tid=All&amp;field_s_quarter_tid=203&amp;tid=All">We offer a variety of one-time and ongoing programs to help students grow academically and professionally. Find out what programs are available this autumn.
+</a></div>
+    <div class="more-link"><a href="https://vpge.stanford.edu/events/programs?field_s_event_series_focus_area_tid=All&amp;field_s_quarter_tid=203&amp;tid=All">View Autumn Offerings</a></div>
+    <div class="edit-link"></div>
+    </div>
+    <div><a href="https://vpge.stanford.edu/events/programs?field_s_event_series_focus_area_tid=All&amp;field_s_quarter_tid=203&amp;tid=All"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/9-col-banner/public/autumnslide2.png?itok=8NLQ8OTV" width="970" height="330" alt="three students talking to each other and laughing" /></a></div>    </div>
+  <div class="views-row views-row-3 views-row-odd item carousel-block">
+      
+          <div class="carousel-caption stanford-carousel-text carousel-light carousel-position-left carousel-position-bottom">
+    <h2 class="slide-title"><a href="https://vpge.stanford.edu/gradgateway">Welcome to Stanford!</a></h2>
+    <div class="slide-caption"><a href="https://vpge.stanford.edu/gradgateway">Find resources you need to begin your graduate career at Stanford.
+</a></div>
+    <div class="more-link"><a href="https://vpge.stanford.edu/gradgateway">Explore the Grad Gateway</a></div>
+    <div class="edit-link"></div>
+    </div>
+    <div><a href="https://vpge.stanford.edu/gradgateway"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/9-col-banner/public/welcome2.png?itok=5aoo2AlE" width="970" height="330" alt="four students smiling and holding cards" /></a></div>    </div>
+  <div class="views-row views-row-4 views-row-even item carousel-block">
+      
+          <div class="carousel-caption stanford-carousel-text carousel-light carousel-position-right carousel-position-bottom">
+    <h2 class="slide-title"><a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2017">Welcome new fellows!</a></h2>
+    <div class="slide-caption"><a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2017">VPGE supports hundreds of Stanford graduate students each year through its various fellowships, funding opportunities, and awards. 
+</a></div>
+    <div class="more-link"><a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2017">See the 2017 VPGE Fellows</a></div>
+    <div class="edit-link"></div>
+    </div>
+    <div><a href="https://vpge.stanford.edu/fellowships-funding/current-vpge-fellows/all-2017"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/9-col-banner/public/fellowsbanner4.png?itok=qbISwyrN" width="970" height="330" alt="SIGF Fellows" /></a></div>    </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last item carousel-block">
+      
+          <div class="carousel-caption stanford-carousel-text carousel-light carousel-position-left carousel-position-top">
+    <h2 class="slide-title"><a href="https://vpge.stanford.edu/professional-development/videos">No time to attend a workshop? No problem!</a></h2>
+    <div class="slide-caption"><a href="https://vpge.stanford.edu/professional-development/videos">Enhance your learning experience at Stanford with VPGE's professional development videos.
+</a></div>
+    <div class="more-link"><a href="https://vpge.stanford.edu/professional-development/videos">Check out the videos</a></div>
+    <div class="edit-link"></div>
+    </div>
+    <div><a href="https://vpge.stanford.edu/professional-development/videos"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/9-col-banner/public/capture_92_0.png?itok=_51UPRXK" width="970" height="330" alt="John Boothroyd" /></a></div>    </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <div class="carousel-controls">
+    <button accesskey="p" type="button" class="carousel-control left" data-target="#myCarousel" data-slide="prev"><span aria-hidden="true">‹</span><span class="offscreen">Previous Slide</span></button><br /><button accesskey="n" type="button" class="carousel-control right" data-target="#myCarousel" data-slide="next"><span aria-hidden="true">›</span><span class="offscreen">Next Slide</span></button>
+    </div>
+<div class="carousel-dots">
+    </div>
+<div class="offscreen">Carousel End</div>
+    </div>
+  
+  
+</div> </div>
+</div><div id="block-system-main" class="clearfix block block-system">       <div class="content"> <article id="node-93" class="node node-stanford-page clearfix" about="/home" typeof="sioc:Item foaf:Document">      <span property="dc:title" content="Home" class="rdf-meta element-hidden"></span>    <div class="content">
+    <div id="node-stanford-page-full-group-s-postcard" class="postcard group-s-postcard field-group-div"><div id="node-stanford-page-full-group-s-postcard-content" class="postcard-content group-s-postcard-content field-group-div"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"></div></div></div></div></div>  </div>
+    </article> </div>
+</div></div>
+ <!-- /.region -->
+  </div>
+                                                            <div id="content-row3" class="row-fluid content-row3"> <div class="region region-content-row3 clearfix">
+  <div id="block-views-stanford-events-views-block" class="span4 clearfix block block-views well">     <h2>Upcoming Events</h2>
+      <div class="content"> <div class="view view-stanford-events-views view-id-stanford_events_views view-display-id-block view-dom-id-08fea606ec3d5eaf33a7b9a793c8c9e9">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div>        <div><div class="postcard-left">
 
+  <div class="date-stacked">
+  <div class="date-month"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-12-04T12:00:00-08:00">Dec</span></div>
+  <div class="date-day"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-12-04T12:00:00-08:00">04</span></div>
+  </div>
 
+  <div>
+  <div class="event-title normal-link"><h3><a href="/events/inside-graduate-admissions-merit-diversity">Inside Graduate Admissions: Merit, Diversity, and Designing for Inclusive Excellence</a></h3></div>
+  <div class="event-location descriptor">Tresidder Oak West</div>
+  <div class="event-date-long descriptor"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-12-04T12:00:00-08:00">12:00pm</span></div>
+  <div class="edit-link"></div>
+  </div>
 
+  </div></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div>        <div><div class="postcard-left">
 
+  <div class="date-stacked">
+  <div class="date-month"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2018-01-12T13:00:00-08:00">Jan</span></div>
+  <div class="date-day"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2018-01-12T13:00:00-08:00">12</span></div>
+  </div>
 
+  <div>
+  <div class="event-title normal-link"><h3><a href="/events/winter-quarter-ta-orientation">Winter Quarter TA Orientation</a></h3></div>
+  <div class="event-location descriptor">Tresidder Memorial Union</div>
+  <div class="event-date-long descriptor"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2018-01-12T13:00:00-08:00">1:00pm</span></div>
+  <div class="edit-link"></div>
+  </div>
+
+  </div></div>  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/events">
+    See Full VPGE Events Calendar  </a>
+</div>
+  
+  
+  
+</div> </div>
+</div>
+<div id="block-views-f73ff55b085ea49217d347de6630cd5a" class="span4 clearfix block block-views well">     <h2>Recent News</h2>
+      <div class="content"> <div class="view view-stanford-news view-id-stanford_news view-display-id-block_2_item_recent_news_list view-dom-id-f2b48b0fb0e0a1695bc7b7410f0bf5f4">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-nothing">        <div class="field-content"><div class="descriptor"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-12-01T00:00:00-08:00">Dec 1 2017</span> | <a href="https://news.stanford.edu/2017/12/01/faculty-senate-discusses-long-range-planning-postdocs/">Stanford News</a></div>
+      <div class="postcard-left">
+
+      <div class="postcard-image">
+           <div class="news-image"><a href="/news/faculty-senate-hears-reports-long-range"><div class="field-collection-view clearfix view-mode-stanford-icon-square field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-s-image-info clearfix" about="/field-collection/field-s-image-info/17543" typeof="">
+  <div class="content">
+    <div id="field-collection-item-field-s-image-info-stanford-icon-square-group-s-image-border-style" class=" group-s-image-border-style field-group-div"><div class="field field-name-field-s-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/icon-square/public/facsen_7337-960x640.jpg?itok=nRi_19vp" width="50" height="50" alt="Patricia Gumport speaks at a Faculty Senate meeting" /></div></div></div></div>  </div>
+</div>
+</div></a></div>
+      </div>
+      <div class="postcard-content">
+           <div class="normal-link"><h3><a href="/news/faculty-senate-hears-reports-long-range">Faculty Senate hears reports on long-range planning efforts, postdoctoral scholars</a></h3></div>
+      </div>
+
+      </div>
+      <div class="edit-link"></div></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-nothing">        <div class="field-content"><div class="descriptor"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-11-28T00:00:00-08:00">Nov 28 2017</span> | <a href="https://quadblog.stanford.edu/2017/11/28/tax-reform-and-graduate-students/">Notes from the Quad</a></div>
+      <div class="postcard-left">
+
+      <div class="postcard-image">
+           <div class="news-image"><a href="/news/tax-reform-and-graduate-students"><div class="field-collection-view clearfix view-mode-stanford-icon-square field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-s-image-info clearfix" about="/field-collection/field-s-image-info/17535" typeof="">
+  <div class="content">
+    <div id="field-collection-item-field-s-image-info-stanford-icon-square-group-s-image-border-style--2" class=" group-s-image-border-style field-group-div"><div class="field field-name-field-s-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/icon-square/public/capture_27.png?itok=0WGrtWfd" width="50" height="50" alt="Notes from the Quad" /></div></div></div></div>  </div>
+</div>
+</div></a></div>
+      </div>
+      <div class="postcard-content">
+           <div class="normal-link"><h3><a href="/news/tax-reform-and-graduate-students">Tax reform and graduate students</a></h3></div>
+      </div>
+
+      </div>
+      <div class="edit-link"></div></div>  </div>  </div>
+    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="/news/recent-news">
+    See More News  </a>
+</div>
+  
+  
+  
+</div> </div>
+</div>
+<div id="block-bean-jumpstart-affiliated-programs" class="span4 clearfix block block-bean well">     <h2>Partners</h2>
+      <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/jumpstart-affiliated-programs" typeof="">
+
+  <div class="content">
+    <div class="postcard"><div class="postcard"><div class="field-collection-container clearfix"><div class="field field-name-field-s-image-info field-type-field-collection field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-collection-view clearfix view-mode-stanford-3-col-header field-collection-view-final"><div class="entity entity-field-collection-item field-collection-item-field-s-image-info clearfix" about="/field-collection/field-s-image-info/161" typeof="">
+  <div class="content">
+    <div id="field-collection-item-field-s-image-info-stanford-3-col-header-group-s-image-border-style--3" class="border-simple-nowidth border-shadow group-s-image-border-style field-group-div"><div class="field field-name-field-s-image-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://vpge.stanford.edu/sites/default/files/styles/3-col-header/public/el-centro-partner.png?itok=I6N58-0b" width="270" height="100" alt="Student at El Centro table" /></div></div></div></div>  </div>
+</div>
+</div></div></div></div></div></div><div class="postcard-content"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>The VPGE office collaborates with many campus offices that share in our commitment to enhancing and enriching graduate education.</p>
+<ul><li><a href="http://studentaffairs.stanford.edu/cdc"></a><a href="https://beam.stanford.edu">BEAM, Stanford Career Education</a></li>
+	<li><a href="http://vptl.stanford.edu">Office of the Vice Provost for Teaching and Learning</a></li>
+	<li><a href="http://studentaffairs.stanford.edu/glo">Graduate Life Office</a></li>
+	<li><a href="https://undergrad.stanford.edu/tutoring-support/hume-center">Hume Center for Writing and Speaking</a></li>
+</ul></div></div></div><div class="field field-name-field-s-postcard-link field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://vpge.stanford.edu/partners" class="more-link">See all partners</a></div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+</div>
+ <!-- /.region -->
+ </div>
+                                                                                  </div>
+          <!-- /#content-wrap -->
+        </div>
+        <!-- /#content -->
+              </div>
+                </div>
+  </div>
+  <!-- /#main, /#main-wrapper -->
+    <div id="push"></div>
+  <!-- /#push -->
+</div>
+<!-- /#wrap -->
+<div id="footer" class="clearfix footer site-footer">
+  <div class="container">
+        <div id="footer-content" class="row-fluid footer-content"> <div class="region region-footer clearfix">
+  <div id="block-bean-vpge-shield" class="clearfix block block-bean span2">       <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/vpge-shield" typeof="">
+
+  <div class="content">
+    <div class="postcard"><div class="postcard-content"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><a href="https://vpge.stanford.edu/about/our-mission"><img alt="VPGE Shield Logo" src="https://vpge.stanford.edu/sites/default/files/vpge-sheild.png" /></a></p>
+</div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+<div id="block-menu-menu-footer-about-menu" class="clearfix block block-menu span2">     <h2>About VPGE</h2>
+      <div class="content"> <ul class="menu nav"><li class="first leaf"><a href="/about/our-mission" title="">Our Mission</a></li>
+<li class="leaf"><a href="/about/staff" title="">Staff</a></li>
+<li class="leaf"><a href="/about/meet-vice-provost" title="">Meet the Vice Provost</a></li>
+<li class="last leaf"><a href="/about-vpge/contact-us" title="">Contact Us</a></li>
+</ul> </div>
+</div>
+<div id="block-menu-menu-quick-links" class="clearfix block block-menu span2">     <h2>Quick Links</h2>
+      <div class="content"> <ul class="menu nav"><li class="first leaf"><a href="/news/recent-news" title="">Recent News</a></li>
+<li class="leaf"><a href="/events/upcoming-events" title="">Calendar</a></li>
+<li class="leaf"><a href="/resources">Resources</a></li>
+<li class="leaf"><a href="/events/programs" title="">Programs</a></li>
+<li class="last leaf"><a href="/partners" title="">Partners</a></li>
+</ul> </div>
+</div>
+<div id="block-menu-menu-vpge-footer-menu-gateways" class="clearfix block block-menu span2">     <h2>Gateways</h2>
+      <div class="content"> <ul class="menu nav"><li class="first leaf"><a href="https://vpge.stanford.edu/gradgateway" title="Gateway for new Stanford graduate students">New Students</a></li>
+<li class="leaf"><a href="/gateways/prospective-students" title="">Prospective Students</a></li>
+<li class="leaf"><a href="/gateways/current-students" title="">Current Students</a></li>
+<li class="last leaf"><a href="/gateways/faculty-staff" title="">Faculty &amp; Staff</a></li>
+</ul> </div>
+</div>
+<div id="block-bean-jumpstart-footer-social-media-0" class="clearfix block block-bean span2">     <h2>Connect</h2>
+      <div class="content"> <div class="entity entity-bean bean-stanford-social-media-connect clearfix" about="/block/jumpstart-footer-social-media--0" typeof="">
+
+  <div class="content">
+    <div class="field field-name-field-s-smc-facebook field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.facebook.com/StanfordVPGE">Facebook</a></div></div></div><div class="field field-name-field-s-smc-twitter field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://twitter.com/StanfordVPGE">Twitter</a></div></div></div><div class="field field-name-field-s-smc-youtube field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.youtube.com/user/stanfordvpge/">YouTube</a></div></div></div><div class="field field-name-field-s-smc-instagram field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="http://instagram.com/stanfordvpge">Instagram</a></div></div></div><div class="field field-name-field-s-smc-tumblr field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="http://vpgefellows.tumblr.com">Tumblr</a></div></div></div><div class="field field-name-field-s-smc-flickr field-type-link-field field-label-hidden"><div class="field-items"><div class="field-item even"><a href="https://www.flickr.com/stanfordvpge">Flickr</a></div></div></div>  </div>
+</div>
+ </div>
+</div>
+<div id="block-menu-menu-vpge-footer-menu-see-also" class="clearfix block block-menu span2">     <h2>See Also</h2>
+      <div class="content"> <ul class="menu nav"><li class="first leaf"><a href="http://gap.stanford.edu/" title="">Graduate Academic Policies</a></li>
+<li class="leaf"><a href="http://studentaffairs.stanford.edu/gradadmissions" title="">Graduate Admissions</a></li>
+<li class="leaf"><a href="http://www.stanford.edu/dept/finaid/grad/" title="Information about funding graduate school">Graduate Funding</a></li>
+<li class="leaf"><a href="http://studentaffairs.stanford.edu/glo" title="">Graduate Life Office</a></li>
+<li class="last leaf"><a href="http://studentaffairs.stanford.edu/registrar" title="">Office of the Registrar</a></li>
+</ul> </div>
+</div>
+<div id="block-bean-vpge-webmaster-block" class="clearfix block block-bean span12">       <div class="content"> <div class="entity entity-bean bean-stanford-postcard clearfix" about="/block/vpge-webmaster-block" typeof="">
+
+  <div class="content">
+    <div class="postcard"><div class="postcard-content"><div class="field field-name-field-s-postcard-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p class="float-right">Questions or comments? Please contact: <a href="mailto:vpgewebmaster@stanford.edu?subject=VPGE%20Website" rel="nofollow">vpgewebmaster@stanford.edu</a></p>
+</div></div></div></div></div>  </div>
+</div>
+ </div>
+</div>
+</div>
+ <!-- /.region -->
+ </div>
+      </div>
+</div>
+<!-- /#footer -->
+<div id="global-footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div id="bottom-logo" class="span2"><a href="http://www.stanford.edu"><img src="/sites/all/themes/stanford_framework/images/footer-stanford-logo@2x.png" alt="Stanford University"></a></div>
+      <div id="bottom-menu" class="span10">
+        <ul>
+          <li><a href="http://www.stanford.edu">SU Home</a></li>
+          <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+          <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+          <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+          <li><a href="http://emergency.stanford.edu/">Emergency Info</a></li>
+        </ul>
+      </div>
+      <div id="copyright" class="span10 offset2">
+        <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span class="copyright-links"><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#global-footer -->
   </body>
+
 </html>
