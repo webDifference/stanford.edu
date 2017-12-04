@@ -1,192 +1,519 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Stanford Children's Health - Lucile Packard Children's Hospital Stanford</title><!--fixed-layout--><!--ls:begin[stylesheet]--><style type="text/css">body
-{
-  margin:0;
-}
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <title>Stanford News</title>
 
-body.ls-center
-{
-  text-align:center;
-}
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Stanford University" />
 
-.ls-canvas .ls-row .ls-row-clr
-{
-  clear:both;
-}
 
-.ls-canvas .ls-col
-{
-  overflow:hidden;
-}
+  <!--
+    _____ _               __              _
+   / ____| |             / _|            | |
+  | (___ | |_ __ _ _ __ | |_ ___  _ __ __| |
+   \___ \| __/ _` | '_ \|  _/ _ \| '__/ _` |
+   ____) | || (_| | | | | || (_) | | | (_| |
+  |_____/ \__\__,_|_| |_|_| \___/|_|  \__,_|
 
-.ls-canvas .ls-col-body
-{
-  overflow:hidden;
-}
+  Curious about our code? We're curious about you! The Web Communications team is hiring a
+  Front-end Architect. Learn more and apply online at
+  https://stanford.taleo.net/careersection/2/jobdetail.ftl?job=76250
 
-.ls-canvas .ls-area
-{
-  overflow:hidden;
-}
+  Note: mentioning this comment block in your cover letter will definitely get our attention. ;)
+  -->
 
-.ls-canvas .ls-area-body
-{
-  overflow:hidden;
-}
 
-.ls-canvas .ls-area .ls-1st
-{
-  margin-top:0 !important;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/base.min.css?v=1.1.13" type="text/css" />
+    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/css/home.min.css?v=1.1.13" type="text/css" />
+    <link rel="stylesheet" href="//news.stanford.edu/wp-content/themes/news/style.css?v=1.1.13" type="text/css"/>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if IE 8]>
+  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie8.css?v=1.1.13" />
+  <![endif]-->
+  <!--[if IE 7]>
+  <link rel="stylesheet" type="text/css" href="//news.stanford.edu/wp-content/themes/news/css/ie/ie7.css?v=1.1.13" />
+  <![endif]-->
 
-.ls-canvas .ls-cmp-wrap
-{
-  padding:1px 0;
-}
+  <!-- JS and jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/modernizr.custom.17475.js"></script>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/bootstrap.min.js"></script>
 
-.ls-canvas .iw_component
-{
-  margin:-1px 0;
-}
+  <!--[if lt IE 9]>
+  <script src="//news.stanford.edu/wp-content/themes/news/js/respond.js"></script>
+  <![endif]-->
 
-.ls-canvas .ls-row .ls-lqa-fix
-{
-  font-size:0;
-  line-height:0;
-  height:0;
-  margin-top:0;
-}
+  <!-- custom JS -->
+  <script src="//news.stanford.edu/wp-content/themes/news/js/base.js?v=1.1.13"></script>
 
-.ls-canvas .ls-row .ls-lqr-w
-{
-  float:left;
-  width:100%;
-}
+  <!-- Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-1860414-2', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-.ls-canvas .ls-row .ls-lqr-w-fx
-{
-  float:left;
-}
+  <!-- wp_head(); -->
+  
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.2.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Latest news from and about Stanford University."/>
+<meta name="news_keywords" content="" />
+<link rel="original-source" href="https://news.stanford.edu/" />
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://news.stanford.edu/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Stanford News" />
+<meta property="og:description" content="Latest news from and about Stanford University." />
+<meta property="og:url" content="https://news.stanford.edu/" />
+<meta property="og:site_name" content="Stanford News" />
+<meta property="og:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="628" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Latest news from and about Stanford University." />
+<meta name="twitter:title" content="Stanford News" />
+<meta name="twitter:image" content="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/03/30160018/Stanford_News_hero_image.jpg" />
+<meta property="DC.date.issued" content="2016-03-28T16:44:42-08:00" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/news.stanford.edu\/","name":"Stanford News","potentialAction":{"@type":"SearchAction","target":"https:\/\/news.stanford.edu\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/news.stanford.edu\/","sameAs":[],"name":"Stanford University News Service","logo":""}</script>
+<!-- / Yoast SEO Premium plugin. -->
 
-.ls-canvas .ls-row .ls-lqr-e-fx
-{
-  float:right;
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/news.stanford.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.4"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
+</style>
+<link rel='stylesheet' id='sunews-panels-css-css'  href='https://news.stanford.edu/wp-content/themes/news/css/panels.css?ver=1.1.7' type='text/css' media='all' />
+<link rel='stylesheet' id='awesome-weather-css'  href='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/awesome-weather.css?ver=4.8.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/wp-retina-2x/js/picturefill.min.js?ver=3.0.2'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/themes/news/js/home.js?ver=1.1.13'></script>
+<link rel='https://api.w.org/' href='https://news.stanford.edu/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://news.stanford.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://news.stanford.edu/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://stanford.io/26bPoAh' />
+<link rel="alternate" type="application/json+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://news.stanford.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnews.stanford.edu%2F&#038;format=xml" />
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
 
-</style><!--ls:end[stylesheet]--><!--ls:begin[meta-keywords]--><meta name="keywords" content="" /><!--ls:end[meta-keywords]--><!--ls:begin[meta-description]--><meta name="description" content="Stanford Children’s Health is the only network in the area—and one of the few in the country—exclusively dedicated to pediatric and obstetric care. " /><!--ls:end[meta-description]--><!--ls:begin[meta-vpath]--><meta name="vpath" content="" /><!--ls:end[meta-vpath]--><!--ls:begin[meta-page-locale-name]--><meta name="page-locale-name" content="" /><!--ls:end[meta-page-locale-name]--><!--ls:begin[stylesheet]--><link type="text/css" href="/web-resources/default/css/bootstrap.css" rel="stylesheet" /><!--ls:end[stylesheet]--><!--ls:begin[stylesheet]--><link type="text/css" href="/web-resources/default/css/layout.css" rel="stylesheet" /><!--ls:end[stylesheet]--><!--ls:begin[stylesheet]--><link type="text/css" href="/web-resources/default/css/main1.css" rel="stylesheet" /><!--ls:end[stylesheet]--><!--ls:begin[stylesheet]--><link type="text/css" href="/web-resources/default/css/main2.css" rel="stylesheet" /><!--ls:end[stylesheet]--><!--ls:begin[script]--><script type="text/javascript" src="/web-resources/default/js/jquery-1.9.1.min.js" ></script><!--ls:end[script]--><!--ls:begin[head-injection]--><script src="https://cdn.optimizely.com/js/2890630263.js"></script><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta property="fb:app_id" content="24321622660" /><meta property="fb:pages" content="24321622660" /><meta property="og:title" content="Stanford Children's Health - Lucile Packard Children's Hospital Stanford" /><meta property="og:image" content="/www.stanfordchildrens.org/content-public/images/og-stanfordchildrens-logo.jpg" /><meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no"><script type="text/javascript" src="//nexus.ensighten.com/stanfordchildrens/Bootstrap.js"></script><link rel="icon" type="image/ico" href="//www.stanfordchildrens.org/favicon.ico"/><link type="text/css" href="/web-resources/default/css/fonts.css" rel="stylesheet" /><script type="text/javascript" src="/web-resources/default/js/respond-custom-1.4.1.min.js"></script><!--ls:end[head-injection]--><!--ls:begin[script]--><!--ls:end[script]--></head><body><!--ls:begin[body]--><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P27P4S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P27P4S');</script><div class="ls-canvas" id="ls-canvas"><div class="ls-row" id="ls-row-1"><div class="ls-lqr" id="ls-gen10158247-ls-lqr"><div class="ls-area ls-area.span12.header-area" id="ls-row-1-area-1"><div class="ls-area-body" id="ls-gen10158248-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1380232206966"><!--ls:begin[component-1380232206966]--><div class="iw_component" id="1380232206966"><script type="text/javascript">
-	
-	var SiteLang='/en';
-	var DoctorsLabel='Doctors';
-	var PagesLabel='Other';
-	var LibraryLabel='Health Topics';
-	var LocationsLabel='Locations';
-	var ClassesLabel='Classes';
-	var AllLabel='View all search results';
-	var ServicesLabel='Services';
-	
-	var ServicesResultsLabel = 'View all matching services';
-	var DoctorsResultsLabel = 'View all matching doctors';
-	var PagesResultsLabel = 'View all matching pages';
-	var LocationsResultsLabel = 'View all matching locations';
-	var ClassesResultsLabel = 'View all matching classes';
-	var LibraryResultsLabel = 'View all matching health topics';
-	
-	</script><div style="display:none">nutch_noindex</div><div style="display:none"><link rel="stylesheet" href="/web-resources/default/css/main1.css?722" type="text/css"/><link rel="stylesheet" href="/web-resources/default/css/main2.css?722" type="text/css"/></div><div id="mobile-content-overlay"></div><div class="active" id="persistent-search"><div class="p-search-wrapper"><div class="p-search-spacer"></div><div class="p-search-bar"><form method="get" class="p-search-form" action="/en/search/default"><label class="hide" for="search-term">Search Term</label><input autocomplete="off" type="text" class="p-search-input" name="search-term" id="search-term" placeholder="Find Doctors, Services, and Health Topics" title="Find Doctors, Services, and Health Topics"/></form></div><a title="Search" class="p-search-mag" href="#"><img alt="Search Icon" src="/web-resources/default/img/p-search-mag-glass.png"/></a><ul aria-live="polite" class="p-search-results"></ul></div></div><div id="header-wrapper" class="en"><div id="header"><div class="header-inner"><a href="#nav" class="nav-btn">Menu Button</a><div class="span3"><div class="logo"><a class="hidden-phone" href="/en/default.page"><img alt="Stanford Children's Health" src="/web-resources/default/img/logo.png"/></a><a class="visible-phone" href="/en/default.page"><img alt="" src="/web-resources/default/img/logo-mobile.png"/></a></div></div><div class="find-doctor"><a class="special-contact-link donate visible-tablet" target="_blank" href="https://my.supportlpch.org/campaign/2017-humans-of-packard-childrens/c154669?utm_source=stanfordchildrens.org&amp;utm_medium=header">Donate</a><a class="special-contact-link visible-tablet" href="https://forms.stanfordchildrens.org/contact-us/contactus.jsp?lang=en">Contact</a><a class="mychart-btn" href="https://mychart.stanfordchildrens.org/">MyChart Login</a><a class="find-btn" href="/en/search/default?tab=doctors">Find a Doctor</a></div><div class="utinity-primary"><ul><li class="visible-desktop"><a class="new-hospital" href="https://newhospital.stanfordchildrens.org">New Hospital</a></li><li class="visible-desktop"><a class="donate" target="_blank" href="https://my.supportlpch.org/campaign/2017-humans-of-packard-childrens/c154669?utm_source=stanfordchildrens.org&amp;utm_medium=header">Donate</a></li><li class="visible-desktop"><a href="https://forms.stanfordchildrens.org/contact-us/contactus.jsp?lang=en">Contact</a></li><li class="visible-desktop"><a href="/en/refer">Refer a patient</a></li><li class="visible-desktop lang"><script type="text/javascript">var currlang = "en_US";</script><a href="#">En Español</a></li></ul></div></div></div></div><div id="navigation" class="en"><div id="iscroll-navigation"><div class="nav-item nav-item--search hidden-desktop"><input type="text" placeholder="Search for a doctor, location..." class="search-nav"/></div><ul class="nav"><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-1" href="/en/locations-directions?" target=""><span>Our Locations</span></a></li><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-2" href="/en/services?" target=""><span>Medical Services</span></a></li><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-3" href="/en/about-us?" target=""><span>About Us</span></a></li><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-4" href="/en/research-innovation?" target=""><span>Research &amp; Innovation</span></a></li><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-5" href="/en/patient-family-resources?" target=""><span>Patients &amp; Visitors</span></a></li><li class="nav-item closed"><a class="dropdown-btn dropdown-nav-item topnav-position-6" href="/en/for-health-professionals?" target=""><span>For Health Professionals</span></a></li><li class="nav-item nav-item--recently hidden-desktop"><a href="#recent" class="dropdown-btn"><span>Recently Visited</span></a><div class="dropdown"><div class="dropdown-inner"><ul class="dropdown-nav"></ul></div></div></li></ul><div class="utinity-primary hidden-desktop"><ul><li class="new-hospital-mob"><a href="https://newhospital.stanfordchildrens.org">New Hospital</a></li><li class="mychart-mob"><a href="https://mychart.stanfordchildrens.org">MyChart Login</a></li><li class="lang-mob"><a href="#">En Español</a></li></ul></div></div></div><div id="navigation-tablet"><ul class="tablet-nav"><li class="tablet-item"><a class="tablet-btn" href="/en/locations-directions">Our Locations</a></li><li class="tablet-item"><a class="tablet-btn" href="/en/services">Medical Services</a></li><li class="tablet-item"><a class="tablet-btn" href="/en/about-us">About Us</a></li><li class="tablet-item"><a class="tablet-btn" href="/en/research-innovation">Research &amp; Innovation</a></li><li class="tablet-item"><a class="tablet-btn" href="/en/patient-family-resources">Patients &amp; Visitors</a></li><li class="tablet-item"><a class="tablet-btn" href="/en/for-health-professionals">For Health Professionals</a></li></ul></div><div id="light-sidebar"><div class="iscroll-light-sidebar"><div class="light-sidebar-header"><div class="input-wrap"><i class="icon search"></i><form method="get" id="lightSideBarForm" autocomplete="off" action="/en/search/default"><label class="hide" for="lightSideBarSearch">Search Term</label><input placeholder="Search for a doctor, location..." id="lightSideBarSearch" type="text" name="search-term"/></form><i class="icon clear"></i></div><a class="button-cancel" href="#">CANCEL</a></div><div id="light_sidebar_results" class="light-sidebar-results"><ul class="results-list unstyled clearfix"><li class="view-more-item"><a class="view-more" href="#">View More Results</a></li></ul><p class="loading">Loading...</p></div></div></div><div style="display:none">/nutch_noindex</div></div><!--ls:end[component-1380232206966]--></div></div></div><div class="ls-row-clr" ></div></div></div><div class="ls-row" id="ls-row-2"><div class="ls-lqr" id="ls-gen10158249-ls-lqr"><div class="ls-area ls-area.span12.header-area" id="ls-row-2-area-1"><div class="ls-area-body" id="ls-gen10158250-ls-area-body" ></div></div><div class="ls-row-clr" ></div></div></div><div class="ls-row" id="ls-row-3"><div class="ls-lqr" id="ls-gen10158251-ls-lqr"><div class="ls-area ls-area.span12.header-area" id="ls-row-3-area-1"><div class="ls-area-body" id="ls-gen10158252-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1459915562006"><!--ls:begin[component-1459915562006]--><div class="iw_component" id="1459915562006"><div class="home-banner"><div class="slide-content slide-content--fix-height-mobile"><div class="slide-banner"><ul class="slider-home-banner" id="home_banner"><li class="item"><img src="/content-public/images/home/stanford-childrens-lucile-packard-new-hospital.jpg" alt="Drs. Concepcion, Cornfield and Sidell in front of the new Lucile Packard Children's Hospital"/><div class="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;carousel-caption hide bottom-right"><div class="carousel-title"><h1>Take a peek inside</h1></div><div class="carousel-text"><h2>The children’s hospital of the future is almost here</h2></div><div class="carousel-link"><a href="http://newhospital.stanfordchildrens.org?source=homepage-banner">Learn more  ></a></div></div></li><li class="item"><img src="/content-public/images/home/bingham-family-stanford-childrens-980x540.jpg" alt="Bingham family"/><div class="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;carousel-caption hide bottom-left"><div class="carousel-title"><h1>One family, four heart transplants</h1></div><div class="carousel-text"><h2>A new MSNBC documentary features the Bingham family’s extraordinary journey</h2></div><div class="carousel-link"><a href="https://healthier.stanfordchildrens.org/en/heart-transplant-familys-journey/?source=homepage-banner">Learn more  ></a></div></div></li><li class="item"><img src="/content-public/images/carousel/open-enrollment-stanfordchildrens-980x540.jpg" alt="Stanford Children's Health pediatrician with young patient"/><div class="&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;carousel-caption hide top-right"><div class="carousel-title"><h1>It's Open Enrollment</h1></div><div class="carousel-text"><h2>Find a pediatrician that's right for you—and right in your neighborhood</h2></div><div class="carousel-link"><a href="/en/landing/open-enrollment?source=homepage">Learn more ></a></div></div></li></ul></div></div></div><div class="home-content"><div class="home-content-inner"><div class="stacked-accordion-wrapper"><div class="span3 stacked-nav-accordion"><div class="stacked-nav-title"><div class="arrow bottom top"></div><h2>I Want to...</h2></div><div class="accordion-wrapper"><ul class="accordion-nav nav nav-pills nav-stacked"><li class="stacked-item"><a href="https://mychart.stanfordchildrens.org/">Access MyChart</a></li><li class="stacked-item"><a href="/en/patient-family-resources/pay-your-bill?source=want-to-links">Pay my bill</a></li><li class="stacked-item"><a href="/en/locations-directions?source=want-to-links">Find a location</a></li><li class="stacked-item"><a href="/en/refer?source=want-to-links">Refer a patient</a></li><li class="stacked-item"><a href="/en/service/index?source=want-to-links">Locate a service</a></li><li class="stacked-item"><a href="/en/volunteer?source=want-to-links">Volunteer</a></li><li class="stacked-item"><a href="https://my.supportlpch.org/campaign/2017-humans-of-packard-childrens/c154669?utm_source=stanfordchildrens.org&amp;utm_medium=header">Donate</a></li><li class="stacked-item"><a href="/en/classes?source=want-to-links">Attend a class</a></li><li class="stacked-item"><a href="http://forms.stanfordchildrens.org/forPatientsVisitors/cards/index.jsp?source=want-to-links">Send a greeting card</a></li></ul></div></div></div><div class="span9 home-tabs"><div class="home-tabs-inner"><div class="nav-wrap"><ul id="homeTab" class="nav nav-tabs"><li class="active"><a class="down" href="#whatsnew"><div class="arrow bottom top"></div>What's new</a></li><li><a class="up" href="#blog"><div class="arrow bottom top"></div>Our Blog</a></li><li><a class="up" href="#event-classes"><div class="arrow bottom top"></div>Events &amp; Classes</a></li></ul><div class="tab-content span12"><div id="whatsnew" class="tab-pane active"><div class="tab-blocks"><div class="tab-block span6"><div class="image-text-first"><div class="image-text-img"><a href="http://bizj.us/1pexqu"><img src="/content-public/images/carousel/chris-dawes-ceo-stanford-childrens-300x200.jpg" alt="Chris Dawes, President and CEO of Stanford Children's Health, Lucile Packard Children's Hospital Stanford"/></a></div></div><div class="image-text-second"><div class="image-text-content"><h2>Approaching leadership as a team</h2><p>President and CEO Christopher Dawes sits down with the Silicon Valley Business Journal.</p><p><a href="http://bizj.us/1pexqu" title="Learn more &gt;">Learn more ></a></p></div></div></div><div class="tab-block span6"><div class="image-text-first"><div class="image-text-img"><a href="http://stanmed.stanford.edu/2017fall.html?source=whats-new"><img src="/content-public/images/home/dunlevie-garden-stanford-childrens-300x200.jpg" alt="Dunlevie Garden "/></a></div></div><div class="image-text-second"><div class="image-text-content"><h2>A healing environment at every turn</h2><p>Stanford Medicine magazine puts a spotlight on kids and the new hospital.</p><p><a href="http://stanmed.stanford.edu/2017fall.html?source=whats-new" title="Learn more &gt;">Learn more ></a></p></div></div></div></div></div><div id="blog" class="tab-pane"></div><div id="event-classes" class="tab-pane"><div class="tab-blocks"><div class="tab-block span6"><div class="image-text-first"><div class="image-text-img"><a href="http://supportlpch.org/get-involved/events"><img src="/content-public/images/home/events-homepage-stanford-childrens-300x200.jpg" alt="Children at Lucile Packard Childen's Hosital Stanford Scamper event"/></a></div></div><div class="image-text-second"><div class="image-text-content"><h2>Get involved</h2><p>Join an event and help bring smiles to children in our care.</p><p><a title="Learn more &gt;" href="http://supportlpch.org/get-involved/events">Learn more ></a></p></div></div></div><div class="tab-block span6"><div class="image-text-first"><div class="image-text-img"><a href="http://www.stanfordchildrens.org/en/classes?class=BB"><img src="/content-public/images/home/classes-stanford-childrens-300x200.jpg" alt="A father cradling his baby."/></a></div></div><div class="image-text-second"><div class="image-text-content"><h2>Education and support for the whole family</h2><p>We offer a number of comprehensive classes to help new parents, families and caregivers prepare for the arrival of a new baby.</p><p><a title="Learn more &gt;" href="http://www.stanfordchildrens.org/en/classes?class=BB">Learn more ></a></p></div></div></div></div></div><div class="seperator"></div></div></div></div></div></div></div><div class="stan-med"><div class="stan-med-inner"><div class="stan-logo span6"><span class="helper"></span><img src="/web-resources/default/img/logo-stanford-medicine-lg.png" alt="Stanford Medicine logo" title="Stanford Medicine logo"/></div><div class="stan-text span6"><p>Stanford Medicine improves health through leadership, diversity and collaborative discoveries and innovation in health care, education and research.</p></div></div></div></div><!--ls:end[component-1459915562006]--></div></div></div><div class="ls-row-clr" ></div></div></div><div class="ls-row" id="ls-row-4"><div class="ls-lqr" id="ls-gen10158253-ls-lqr"><div class="ls-area ls-area.span12.header-area" id="ls-row-4-area-1"><div class="ls-area-body" id="ls-gen10158254-ls-area-body" ></div></div><div class="ls-row-clr" ></div></div></div><div class="ls-row" id="ls-row-5"><div class="ls-lqr" id="ls-gen10158255-ls-lqr"><div class="ls-area ls-area.span12.header-area" id="ls-row-5-area-1"><div class="ls-area-body" id="ls-gen10158256-ls-area-body"><div class="ls-cmp-wrap ls-1st" id="w1375307723172"><!--ls:begin[component-1375307723172]--><div class="iw_component" id="1375307723172"><div style="display: none;">nutch_noindex</div>
-<div class="footer">
-<div class="footer-mobile">
-<div class="footer-left span6">
-<ul>
-<li><a href="/en/about-us">About Us</a></li>
-<li><a href="https://forms.stanfordchildrens.org/contact-us/contactus.jsp?lang=en">Contact</a></li>
-<li><a href="https://mychart.stanfordchildrens.org/">MyChart Login</a></li>
-<li><a href="http://careers.stanfordchildrens.org">Careers</a></li>
-<li><a href="/en/refer">Refer a Patient</a></li>
-</ul>
+</head>
+<body class="home page-template page-template-front-page page-template-front-page-php page page-id-13 zzz-not-edit-news-page">
+<div id="su-wrap"> <!-- used to force footer to bottom of short pages -->
+  <div id="su-content"> <!-- used to force footer to bottom of short pages -->
+
+    <!--=== Top ===-->
+    <div id="top" class="hidden-print nocontent" data-ga-category="header">
+      <div class="container">
+        <!--=== Skip links ===-->
+        <div id="skip"> <a href="#content" onClick="$('#content').focus()" data-ga-action="skip-link" data-ga-label="content">Skip to content</a> </div>
+        <!-- /Skip links -->
+      </div>
+    </div>
+    <!--/top-->
+
+    <!--=== Header ===-->
+    <div id="header" class="clearfix" role="banner" data-ga-category="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <!-- Logo -->
+            <div id="logo" class="clearfix"> <a href="http://www.stanford.edu/" data-ga-action="logo"><img class="img-responsive" src="//news.stanford.edu/wp-content/themes/news/images/stanford-white@2x.png" alt="Stanford University" /></a> </div>
+            <!-- /logo -->
+            <div id="signature">
+              <div id="site-name">
+                <a href="/" data-ga-action="site-name"><span id="site-name-1">News</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="mainmenu" class="clearfix hidden-print nocontent" role="navigation" data-ga-category="header" data-ga-action="nav">
+      <div class="container">
+        <div class="navbar navbar-default">
+
+          <!-- main navigation -->
+          <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">Menu</button>
+          <!-- /nav-collapse -->
+
+          <div id="nav-search" role="search">
+  <form action="/search" method="get" id="search-form" accept-charset="UTF-8">
+    <h2 class="hidden">Search form</h2>
+    <input type="hidden" name="cx"  value="010498062362927390610:dlcoultwj8i">
+    <input type="hidden" name="cof" value="FORID:9">
+    <input type="hidden" name="ie"  value="UTF-8">
+    <label class="hidden" for="search-field">Search term</label>
+    <input type="text" id="search-field" name="q" title="Search string" class="input-medium" placeholder="Search Stanford news&hellip;" value="" size="15" maxlength="128" />
+    <button id="search-btn" type="submit" name="submit" aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
+  </form>
 </div>
-<div class="footer-right span6">
-<ul>
-<li><a href="/content-public/pdf/lpch-notice-of-nondiscrimination.pdf" target="_blank">Notice of Nondiscrimination</a></li>
-<li><a href="/en/patient-family-resources/terms-of-use">Terms of Use</a></li>
-<li><a href="/en/patient-family-resources/privacy-policy">Privacy Policy</a></li>
-<li class="li--last"><a href="/en/patient-family-resources/code-of-conduct">Code of Conduct</a></li>
-</ul>
-<p>&copy;
-<script type="text/javascript">// <![CDATA[
-document.write(new Date().getFullYear())
-// ]]></script>
-Stanford Children's Health</p>
+
+          <div class="navbar-collapse collapse">
+            <div  role="navigation">
+              <div id="primary-nav" class="menu-top-nav-container"><ul id="menu-top-nav" class="nav navbar-nav" aria-label="primary navigation"><li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-13 current_page_item menu-item-32"><a data-ga-label="Home" href="https://news.stanford.edu/">Home</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a data-ga-label="Find Stories" href="https://news.stanford.edu/find-stories/">Find Stories</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a data-ga-label="For Journalists" href="https://news.stanford.edu/for-journalists/">For Journalists</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a data-ga-label="Contact" href="https://news.stanford.edu/contact/">Contact</a></li>
+</ul></div>            </div>
+          </div>
+          <!-- /nav-collapse -->
+        </div>
+        <!-- /navbar -->
+
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /mainmenu -->
+
+    <!-- main content -->
+<section id="section-top-stories" role="main" tabindex="0" data-ga-category="top-stories">
+  <div class="container" id="content">
+    <h1 class="sr-only">Top Stories</h1>
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6">
+        <article class="card full" id="top-story-1">
+            <div class="card-photo ">
+    <a href="http://www.gostanford.com/news/2017/12/3/womens-soccer-national-champions.aspx" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/03135538/soccer.jpeg" class="attachment-card-lg size-card-lg wp-post-image" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/03135538/soccer.jpeg 700w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/03135538/soccer-555x328.jpeg 555w" sizes="(max-width: 700px) 100vw, 700px" /></a>
+  </div>  <div class="card-content">
+    
+    <h3><a href="http://www.gostanford.com/news/2017/12/3/womens-soccer-national-champions.aspx"  data-ga-action="position-1">Storybook ending for women&#8217;s soccer</a></h3>
+    <p class="teaser"><dfn></dfn>Jaye Boissiere scored in the 67th minute to give Stanford a 3-2 victory over UCLA on Sunday and its second national women's soccer championship.</p>
+  </div>        </article>
+      </div>
+
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-2">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/30/artificial-intelligence-index-tracks-emerging-field/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="AI illustration" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart.jpg 1200w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/29124915/AIart-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="AI illustration" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/30/artificial-intelligence-index-tracks-emerging-field/"  data-ga-action="position-2">Artificial intelligence index tracks emerging field</a></h3>
+    <p class="teaser">A Stanford-led team has launched the first index to track the state of artificial intelligence and measure technological progress in the same way the GDP and the S&amp;P 500 index take the pulse of the U.S. economy and stock market.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-3">
+            <div class="card-photo ">
+    <a href="https://law.stanford.edu/2017/12/01/225535/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="prescription bottle with pills spilling out over scrip and money" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/01150444/rxdrugcosts-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="prescription bottle with pills spilling out over scrip and money" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/law-policy/">Law &amp; Policy</a></div>
+    <h3><a href="https://law.stanford.edu/2017/12/01/225535/"  data-ga-action="position-3">Tackling the high cost of prescription drugs</a></h3>
+    <p class="teaser">In a Q&amp;A, law Professor Michelle Mello, co-author of the "Making Medicines Affordable" report of the National Academies, explains some of the key challenges facing Americans in need of prescription drugs.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-4">
+            <div class="card-photo ">
+    <a href="https://engineering.stanford.edu/magazine/article/researchers-look-fruit-fly-help-understand-human-brain" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Drosophila brain with various olfactory neurons labeled by different-colored fluorescent markers" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/30095238/flybrain-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Drosophila brain with various olfactory neurons labeled by different-colored fluorescent markers" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://engineering.stanford.edu/magazine/article/researchers-look-fruit-fly-help-understand-human-brain"  data-ga-action="position-4">Looking to fruit fly to help understand the human brain</a></h3>
+    <p class="teaser">With a new genetic tool to study how flies detect scents, Stanford researchers take a step toward developing techniques to repair the faulty wiring behind human brain disorders.</p>
+  </div>        </article>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <article class="card large featured" id="top-story-5">
+            <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-5"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Fei-Fei Li" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/22105946/neighbors_fei-fei-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Fei-Fei Li" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/social-sciences/">Social Sciences</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/28/neighborhoods-cars-indicate-political-leanings/"  data-ga-action="position-5">A neighborhood’s cars indicate its politics</a></h3>
+    <p class="teaser">Stanford researchers led by Fei-Fei Li use computer algorithms to analyze millions of publicly available images on Google Street View.</p>
+  </div>        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-spotlight" data-ga-category="spotlight">
+  <div class="container">
+    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/section/spotlight/' data-ga-action='section-head'>In the Spotlight</a></h2>
+    <div class="row padding-top">
+
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="Samira Borgozi" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/13153452/revolution_5732.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/arts-creativity/">Arts &amp; Creativity</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/15/new-exhibition-marks-centenary-1917-russian-revolution/"  data-ga-action="position-1">New exhibition marks centenary of 1917 Russian Revolution</a></h3>
+    <p class="teaser">A joint exhibition at the Hoover Institution Library &amp; Archives and the Cantor Arts Center highlights Stanford’s rich collections of materials on the history of late imperial and early Soviet Russia.  <em> </em></p>
+  </div>      </article>
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="historic image of pressman at work at Stanford University Press" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/11/09122915/pressman_featuredimage.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/humanities/">Humanities</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/09/press-celebrates-125th-anniversary/"  data-ga-action="position-2">Stanford University Press celebrates 125th anniversary</a></h3>
+    <p class="teaser">Since its inception in 1892, Stanford University Press has published thousands of books and other research works authored by faculty at Stanford and across the world.</p>
+  </div>      </article>
+      <article class="col-sm-4">
+          <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image" alt="" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-795x531.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-960x641.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2018/10/02133801/gas_6625.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/02/tools-oil-extraction-can-also-sequester-carbon/"  data-ga-action="position-3">New techniques for removing carbon from the atmosphere</a></h3>
+    <p class="teaser">As the world continues to burn 100 million barrels of oil a day – a rate that is expected to continue for the next 50 years – Stanford Earth researchers are developing greener ways of extracting the oil and mitigating the resulting greenhouse gases.</p>
+  </div>      </article>
+    </div>
+  </div>
+</section>
+
+<section id="section-more-stories">
+  <div class="container">
+    <h2 class="text-center"><a class='see-all-link' href='https://news.stanford.edu/all-stories/' data-ga-action='section-head'>More Stories</a></h2>
+    <div class="row padding-top">
+
+      <div class="col-md-8">
+                <div class="row" id="card-flow">
+          <div class="col-sm-6" data-ga-category="more-stories-left">
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/12/01/confidential-data-exposure/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/12/16085357/sandstone_placeholder_icon_09921-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="detail of carved sandstone arch" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
+    <h3><a href="https://news.stanford.edu/2017/12/01/confidential-data-exposure/"  data-ga-action="position-1">Confidential data exposure</a></h3>
+    <p class="teaser">Misconfigured permissions on file-sharing platforms may have exposed personal information for some students and thousands of campus employees.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="http://www.gostanford.com/news/2017/12/3/football-bowl.aspx" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/03141550/football-100x100.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Football players" /></a>
+  </div>  <div class="card-content">
+    
+    <h3><a href="http://www.gostanford.com/news/2017/12/3/football-bowl.aspx"  data-ga-action="position-2">Cardinal headed to the Alamo Bowl</a></h3>
+    <p class="teaser">For the ninth consecutive season, Stanford will play in a postseason football bowl game. The Cardinal will face TCU in the Valero Alamo Bowl on Dec. 28 in San Antonio.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/27111108/ULVZ-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Inside view of an active volcano with lava flow at Hawaii Volcanoes National Park." /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/22/puzzling-patches-earths-interior-billions-years-making/"  data-ga-action="position-3">Puzzling patches in Earth’s interior billions of years in the making</a></h3>
+    <p class="teaser">Mysterious patches on the planet’s core that dampen seismic waves could be the result of ancient seawater chemically reacting with iron under extreme conditions.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/immigration-issues/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/12/16085349/sandstone_placeholder_icon_09951-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Sandstone columns and arches" /></a>
+  </div>  <div class="card-content">
+    
+    <h3><a href="https://news.stanford.edu/immigration-issues/"  data-ga-action="position-4">Stanford principles regarding immigration</a></h3>
+    <p class="teaser">As events continue to unfold regarding federal immigration policy, a website has been created where Stanford leaders summarize the principles of the university’s support for international and undocumented community members. Also found on the site are links to resources for the Stanford community.</p>
+  </div>            </article>
+          </div>
+
+          <div class="col-sm-6" data-ga-category="more-stories-right">
+            <article class="card large">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/30/undergraduates-start-popular-science-publication/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-1"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-345x230.jpg" class="attachment-card-sm size-card-sm wp-post-image hidden-xs" alt="Grayson Melby, left, Recruitment and Outreach Officer, and Lisa Manzanete,right, Events and Programming Officer, from the Fascinate organization recruit at the 2017 Student Activities Fair" srcset="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-345x230.jpg 345w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-555x370.jpg 555w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-795x530.jpg 795w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-960x640.jpg 960w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-705x470.jpg 705w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-375x250.jpg 375w, https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732.jpg 1500w" sizes="(max-width: 345px) 100vw, 345px" /><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/12/30111544/fascinate_4732-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image visible-xs" alt="Grayson Melby, left, Recruitment and Outreach Officer, and Lisa Manzanete,right, Events and Programming Officer, from the Fascinate organization recruit at the 2017 Student Activities Fair" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/teaching-students/">Teaching &amp; Students</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/30/undergraduates-start-popular-science-publication/"  data-ga-action="position-1">Inspired by a class, undergraduates start a popular science publication</a></h3>
+    <p class="teaser">A science communication seminar taught by chemist Paul Wender helped launch the first undergraduate pop-science publication, called <em>Fascinate</em>.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-2"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/10/25160304/microsites_shutterstock_454273327-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Eroded soil" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/science-technology/">Science &amp; Technology</a></div>
+    <h3><a href="https://news.stanford.edu/2017/11/24/disrupting-sensitive-soils-worsen-climate-change/"  data-ga-action="position-2">Disrupting sensitive soils could worsen climate change</a></h3>
+    <p class="teaser">Global warming and land use practices, such as farming, could change the environment for microbes living in the soil and alter the amount of greenhouse gases they release into the atmosphere.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-3"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2017/08/28162139/arches-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="arches" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
+    <h3><a href="http://undocumented.stanford.edu/2017/09/05/stanford-statement-daca/"  data-ga-action="position-3">Stanford University statement on White House plans for DACA</a></h3>
+    <p class="teaser">Stanford University vigorously and adamantly opposes the shameful decision to rescind the Deferred Action for Childhood Arrivals program.</p>
+  </div>            </article>
+            <article class="card short">
+                <div class="card-photo ">
+    <a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/" tabindex="-1" aria-hidden="true" role="presentation"  data-ga-action="position-4"><img src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/2016/04/25185104/frontentrance_790-100x100.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Stanford&#039;s main quad" /></a>
+  </div>  <div class="card-content">
+    <div class="meta"><a href="https://news.stanford.edu/section/university-affairs/">University Affairs</a></div>
+    <h3><a href="https://news.stanford.edu/2017/04/26/report-details-universities-efforts-sexual-assault/"  data-ga-action="position-4">Report details universities&#8217; efforts on sexual assault</a></h3>
+    <p class="teaser">Stanford is among the U.S. universities included in a new report by the Association of American Universities summarizing campus initiatives to combat sexual violence. The report presents an opportunity to learn from others, Provost Persis Drell says.</p>
+  </div>            </article>
+          </div>
+        </div>
+      </div>
+
+      <aside class="col-md-4">
+        <div class="row sidebar-margin">
+          <div class="col-sm-6 col-md-12">
+            <div class="sidebar-section" id="around-the-farm" data-ga-category="sidebar-around-the-farm">
+  <h2><a class="see-all-link" href="/around-the-farm/" data-ga-action='section-head'>Around the Farm</a></h2>
+    <p class="side-byline">Stanford Graduate School of Education</p>
+    <p><a href="https://ed.stanford.edu/news/how-can-children-develop-skills-be-more-resilient"  data-ga-action="position-1">How can children develop skills to be more resilient?</a></p>
+    <p class="side-byline">Stanford Humanities Center</p>
+    <p><a href="http://shc.stanford.edu/news/qa/reetika_khera"  data-ga-action="position-1">Can biometrics improve welfare services in India?</a></p>
+    <p class="side-byline">Stanford Law</p>
+    <p><a href="https://law.stanford.edu/stanford-lawyer/articles/the-run-for-office-jds-in-politics/?utm_source=highlights&utm_medium=masonry&utm_campaign=homepage&utm_content=stanfordlawyer-cta-readmore"  data-ga-action="position-1">The run for office: JDs in politics</a></p>
+    <p class="side-byline">SLAC and Stanford School of Earth, Energy & Environmental Sciences</p>
+    <p><a href="https://earth.stanford.edu/news/scientists-make-first-observations-how-meteor-shock-turns-silica-glass"  data-ga-action="position-1">Scientists make first observations of how a meteor-like shock turns silica into glass</a></p>
+    <p class="side-byline">Stanford Medicine</p>
+    <p><a href="http://scopeblog.stanford.edu/2017/11/27/worry-unlike-anxiety-improves-memory-skills-in-elderly-stanford-study-finds/"  data-ga-action="position-1">Worry, unlike anxiety, improves memory skills in elderly, Stanford study finds</a></p>
 </div>
+<div class="sidebar-section" id="the-dish" data-ga-category="rss-the-dish">
+  <h2><a class="see-all-link" href="http://news.stanford.edu/thedish/">The Dish</a></h2>
+      <div id="rss-feed-item">
+    <a href="https://news.stanford.edu/thedish/2017/12/03/governor-reappoints-newsha-ajami-to-the-san-francisco-bay-regional-water-quality-control-board/" data-ga-action="position-1" aria-hidden="true"><img class="img-responsive" src="https://s3-us-west-1.amazonaws.com/stanford.ucomm.newsms.media/wp-content/uploads/sites/2/2017/11/30103751/Newsha.jpg" /></a>    <p><a href="https://news.stanford.edu/thedish/2017/12/03/governor-reappoints-newsha-ajami-to-the-san-francisco-bay-regional-water-quality-control-board/" data-ga-action="position-1">Governor reappoints Newsha Ajami to the San Francisco Bay Regional Water Quality Control Board</a></p>
+  </div>
 </div>
-<div class="footer-desktop">
-<div class="row-fluid">
-<div class="about span4">
-<h3>About</h3>
-<ul class="span2 span2--first">
-<li><a href="/en/about-us">About Us</a></li>
-<li><a href="/en/location/lucile-packard-childrens-hospital">Our Hospital</a></li>
-<li><a href="http://healthier.stanfordchildrens.org/category/patient-stories">Patient Stories</a></li>
-<li><a href="http://healthier.stanfordchildrens.org">Blog</a></li>
-</ul>
-<ul class="span2">
-<li><a href="/en/about/news">News</a></li>
-<li><a href="http://forms.stanfordchildrens.org/forPatientsVisitors/cards/index.jsp">Send a Greeting Card</a></li>
-<li><a href="https://newhospital.stanfordchildrens.org">New Hospital</a></li>
-<li><a href="http://careers.stanfordchildrens.org/">Careers</a></li>
-</ul>
+          </div>
+          <div class="col-sm-6 col-md-12">
+            <div class="sidebar-section" id="faculty-staff-news" data-ga-category="sidebar-faculty-staff-news">
+  <h2><a class="see-all-link" href="/section/faculty-staff/" data-ga-action='section-head'>Faculty &amp; Staff News</a></h2>
+    <p><a href="https://news.stanford.edu/2017/12/01/faculty-senate-discusses-long-range-planning-postdocs/"  data-ga-action="position-1">Faculty Senate hears reports on long-range planning efforts, postdoctoral scholars</a></p>
+    <p><a href="https://news.stanford.edu/2017/11/28/charles-kruger-former-vice-provost-dean-research-stanford-dies/"  data-ga-action="position-1">Charles Kruger, former vice provost and dean of research at Stanford, dies</a></p>
 </div>
-<div class="connect span2">
-<h3>Connect</h3>
-<ul>
-<li><a href="http://give.supportlpch.org/site/Donation2?2200.donation=form1&amp;df_id=2200">Donate</a></li>
-<li><a href="/en/refer">Refer a Patient</a></li>
-<li><a href="https://forms.stanfordchildrens.org/contact-us/contactus.jsp?lang=en">Contact Us</a></li>
-<li><a href="/en/patient-family-resources/pay-your-bill">Pay Your Bill</a></li>
-</ul>
+<div class="sidebar-section" id="in-the-news" data-ga-category="sidebar-in-the-news">
+  <h2><a class="see-all-link" href="http://news.stanford.edu/in-the-news/" data-ga-action='section-head'>In the News</a></h2>
+    <p class="side-byline">New York Times</p>
+    <p><a href="https://www.nytimes.com/2017/11/30/opinion/sunday/anniversary-heart-transplant.html?_r=1"  data-ga-action="position-1">Happy anniversary, heart transplant</a></p>
+    <p class="side-byline">Washington Post</p>
+    <p><a href="https://www.washingtonpost.com/news/the-switch/wp/2017/11/30/apple-wants-to-know-your-heart-rate-for-science/?utm_term=.69f6fff4aead"  data-ga-action="position-1">Apple wants to know your heart rate. For science.</a></p>
+    <p class="side-byline">Quartz</p>
+    <p><a href="https://qz.com/1103806/a-pioneering-economics-class-is-tackling-social-justice-issues-with-big-data-and-women-and-minorities-are-enrolling-in-droves/"  data-ga-action="position-1">An innovative introductory economics course at Stanford is now free online</a></p>
+    <p class="side-byline">Live Science</p>
+    <p><a href="https://www.livescience.com/61036-mysterious-blobs-beneath-earth.html"  data-ga-action="position-1">Oddly behaving blobs beneath earth&#8217;s surface finally explained </a></p>
+    <p class="side-byline">Seeker</p>
+    <p><a href="https://www.seeker.com/videos/how-is-fear-studied-in-the-brain"  data-ga-action="position-1">This neurobiologist swims with great white sharks to study fear</a></p>
 </div>
-<div class="connect span2">
-<h3>Find</h3>
-<ul>
-<li><a href="/en/search/default?tab=doctors">Doctors</a></li>
-<li><a href="/en/locations-directions">Locations</a></li>
-<li><a href="/en/services">Services</a></li>
-<li><a href="/en/classes">Classes</a></li>
-</ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+	</div><!-- #su-content -->
+</div><!-- #su-wrap -->
+
+<!-- BEGIN footer -->
+<div id="footer" class="clearfix footer hidden-print nocontent" role="contentinfo">
+
+	  <!-- Fat footer start -->
+  <div class="container">
+    <div id="footer-content" class="row" data-ga-category="footer">
+      <div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">Stanford Report</h3>
+			<div class="textwidget"><div id="mc_embed_signup">
+  <form action="//stanford.us5.list-manage.com/subscribe/post?u=a8e6569da943904e9ac369cde&amp;id=29ce9f751e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <label for="mce-EMAIL">Receive daily Stanford news.</label><br/>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" size="30" placeholder="your email address" required>
+    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default" style="margin-top: -3px; padding: 6px;">
+  </form>
 </div>
-<div class="stanford span2">
-<ul>
-<li><a href="http://med.stanford.edu/" target="_blank" class="outbound">Stanford Medicine</a></li>
-<li><a href="http://stanford.edu/" target="_blank" class="outbound">Stanford University</a></li>
-<li><a href="http://stanfordhealthcare.org/" target="_blank" class="outbound">Stanford Health Care</a></li>
-<li><a href="http://lpfch.org/" target="_blank" class="outbound">Lucile Packard Foundation</a></li>
-</ul>
+<p><a href="/stanford-report/">More about <em>Stanford Report</em></a></p></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">For Journalists</h3>
+			<div class="textwidget"><ul>
+  <li><a href="/press-releases/">Press Releases</a></li>
+  <li><a href="/contact/media-contacts/">Media Contacts</a></li>
+  <li><a href="/experts/">Stanford Experts</i></a></li>
+</ul></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+<h3 class="widgettitle">See Also</h3>
+			<div class="textwidget"><ul>
+  <li><a href="/contact/">Contact Stanford News</a></li>
+  <li><a href="http://ucomm.stanford.edu/facstaff/" target="_blank">Faculty / Staff Resources <i class="fa fa-external-link"></i></a></li>
+</ul></div>
+		</div>
+<div class="col-sm-6 col-md-3">
+			<div class="textwidget"><div id="weather" class="col-xs-6">
+
+  <h3>Weather</h3>
+<div id="awesome-weather-widget">
+
+  
+  
+    <div class="awesome-weather-current-temp">
+      <i class="wi wi-yahoo-33" aria-label="Mostly Clear" title="Mostly Clear"></i>      47<sup>&deg;</sup>
+    </div><!-- /.awesome-weather-current-temp -->
+    <div class="awesome-weather-more-weather-link" data-ga-category="footer"><a data-ga-action="weather" href="http://www.weather.com/weather/tenday/l/Stanford+CA+94305:4:US" target="_blank">Stanford forecast</a></div></div><!-- /.awesome-weather-wrap: custom --> 
+
 </div>
-<div class="find-us-on span2">
-<h3>Also Find Us on:</h3>
-<ul class="find-us"><!--
-<li><a class="icon-rss" href="#" mce_href="#">rss</a></li>
--->
-<li><a href="https://www.facebook.com/stanfordchildrens" target="_blank" class="icon-facebook">facebook</a></li>
-<li class="li--twitter"><a href="https://twitter.com/StanfordChild" target="_blank" class="icon-twitter">twitter</a></li>
-<li class="li--youtube"><a href="http://www.youtube.com/StanfordChildrens" target="_blank" class="icon-youtube">youtube</a></li>
-<li class="li--linkedin"><a href="https://www.linkedin.com/company/lucile-packard-children%27s-hospital" target="_blank" class="icon-linkedin">linkedin</a></li>
-</ul>
-<a href="http://health.usnews.com/best-hospitals/area/ca/lucile-salter-packard-childrens-hospital-at-stanford-6933605" target="_blank"><img style="width: 50%; margin-left: 35px; margin-right: 35px;" title="US News &amp; World Report Badge" src="/web-resources/default/img/best-childrens-hospitals-honor-roll-2017-2018.png" alt="US News &amp; World Report Badge" width="623" height="693" /></a></div>
+<div id="events" class="col-xs-6">
+  <h3>Events</h3>
+  <a href="http://events.stanford.edu/">
+    <i class="fa fa-calendar fa-3x"></i><span class="sr-only">Events calendar</span>
+  </a>
+</div></div>
+		</div>
+			<div id="site-credit" class="col-xs-12">
+				<p>Stanford News is a publication of <a href="https://ucomm.stanford.edu">Stanford University Communications</a></p>
+			</div>
+    </div>
+  </div>
+  <!-- Fat footer end -->
+      
+	<!-- Global footer snippet start -->
+	<div id="global-footer">
+		<div class="container">
+			<div class="row">
+				<div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="https://news.stanford.edu/wp-content/themes/news/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
+				<!-- #bottom-logo end -->
+				<div id="bottom-text" class="col-xs-6 col-sm-10">
+					<ul>
+						<li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+						<li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
+						<li class="search-stanford"><a href="http://stanford.edu/search/">Search Stanford</a></li>
+						<li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+						<li class="emergency-info"><a href="http://emergency.stanford.edu/" class="su-link" data-ua-label="global-footer">Emergency Info</a></li>
+					</ul>
+				</div>
+				<!-- .bottom-text end -->
+				<div class="clear"></div>
+				<p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>. <span id="termsofuse"><a href="http://www.stanford.edu/group/security/dmca.html" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
+			</div>
+			<!-- .row end -->
+		</div>
+		<!-- .container end -->
+	</div>
+	<!-- Global footer snippet end -->
+
 </div>
-<div class="row-fluid">
-<ul class="term-policy">
-<li><a href="/content-public/pdf/lpch-notice-of-nondiscrimination.pdf" target="_blank">Notice of Nondiscrimination</a></li>
-<li><a href="/en/patient-family-resources/terms-of-use">Terms of Use</a></li>
-<li><a href="/en/patient-family-resources/privacy-policy">Privacy Policy</a></li>
-<li><a href="/en/patient-family-resources/code-of-conduct">Code of Conduct</a></li>
-</ul>
-<ul class="term-policy">
-<li style="font: 400 11px/18px 'BrandonTextRegular'; color: #4d4d4f; text-transform: uppercase;">&copy;
-<script type="text/javascript">// <![CDATA[
-document.write(new Date().getFullYear())
-// ]]></script>
-Stanford Children's Health</li>
-</ul>
-</div>
-</div>
-</div>
-<div style="display: none;">/nutch_noindex</div><script src="/web-resources/default/js/scripts.min.js?77" type="text/javascript"></script><script type="text/javascript">var addthis_config = {"data_track_addressbar":false};addthis_config.lang = 'en';</script><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52cddf2142ac1afd" type="text/javascript"></script></div><!--ls:end[component-1375307723172]--></div></div></div><div class="ls-row-clr" ></div></div></div></div><!--ls:end[body]--></body></html>
+<!-- END footer -->
+
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/awesome-weather-widget-frontend.js?ver=1.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-content/plugins/awesome-weather-pro/js/js-cookie.js?ver=1.1'></script>
+<script type='text/javascript' src='https://news.stanford.edu/wp-includes/js/wp-embed.min.js?ver=4.8.4'></script>
+</body>
+</html>

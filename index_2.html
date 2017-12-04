@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-6274115-3", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="title" content="Discover academic freedom | Stanford Humanities and Sciences" />
+<link rel="shortlink" href="https://humsci.stanford.edu/" />
+<link rel="canonical" href="https://humsci.stanford.edu/" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/custom/stanford_hs/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/home" />
+<link rel="shortlink" href="/node/40" />
+<link rel="revision" href="/home" />
+
+    <title>Discover academic freedom | Stanford Humanities and Sciences</title>
+    <style id="prevent-fouc">
+      body {
+        opacity: 0;
+        transition: opacity .2s ease-out;
+      }
+    </style>
+    <link rel="stylesheet" href="/sites/default/files/css/css_iyoJn0Nn2f1MaQCWDTlDKg4SLT9u9HN4LU55b46bIeA.css?p0979m" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Source+Sans+Pro:300,300i,400,400i,700,700i,900,900i" media="all" />
+<link rel="stylesheet" href="/sites/default/files/css/css_txuAb1lZrGco-8FpRC8HSxa_QIKs1E5YHntJuQzTU7E.css?p0979m" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <link href="https://www.stanford.edu/su-identity/css/su-identity.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie8.css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="https://www.stanford.edu/su-identity/css/ie/ie7.css" />
+    <![endif]-->
+  </head>
+  <body class="user-logged-out path-frontpage page-node-type-page path-home">
+    <div id="su-wrap"> <!-- #su-wrap start -->
+      <div id="su-content"> <!-- #su-content start -->
+        <a href="#main-content" class="visually-hidden focusable skip-to-content">
+          Skip to main content
+        </a>
+        <!-- Brandbar snippet start -->
+        <div id="brandbar">
+          <div class="container">
+            <a href="http://www.stanford.edu">
+              <img src="https://www.stanford.edu/su-identity/images/brandbar-stanford-logo@2x.png" alt="Stanford University" width="152" height="23">
+            </a>
+          </div> <!-- .container end -->
+        </div> <!-- #brandbar end -->
+        <!-- Brandbar snippet end -->
+        
+        <div class="layout-container">
+
+  <header class="header">
+    <div class="navigation">
+	
+<div id="block-stanford-hs-branding" data-block-plugin-id="system_branding_block">
+  
+    
+      <div class="stanford-hs-branding__inner">
+      <a href="/"><img src="/themes/custom/stanford_hs/logo.svg" alt="Home" />
+</a>
+    </div>
+  </div>
+
+  
+<div id="block-stanfordsearchblock" data-block-plugin-id="stanford_search_block" class="block block-stanford-search block-stanford_search_block">
+  <div class="block-inner">
+    
+        
+          <div class="site-search"><h2 tabindex="0">Search</h2><form class="stanford-search-form site-search--search-form" data-drupal-selector="stanford-search-form" action="/" method="post" id="stanford-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item">
+      <label for="edit-keys" class="visually-hidden form-item__label">Search</label>
+        <input data-drupal-selector="edit-keys" size="22" placeholder="Search..." type="search" id="edit-keys" name="keys" value="" maxlength="128" class="form-search form-item__search" placeholder="Enter your keywords" />
+
+        </div>
+<input data-drupal-selector="form-77fbeieg5opzp7tgx5mwgyuzgu8gnnxb6m-xouevzlu" type="hidden" name="form_build_id" value="form-77fbEiEg5opZP7tgX5MwGYuzGU8gNnXB6m_XOUevzLU" class="form-item__hidden" />
+<input data-drupal-selector="edit-stanford-search-form" type="hidden" name="form_id" value="stanford_search_form" class="form-item__hidden" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit form-item__submit" />
+</div>
+
+</form>
+</div>
+
+      </div>
+</div>
+<nav role="navigation" class="main-menu" aria-labelledby="block-stanford-hs-main-menu-menu" id="block-stanford-hs-main-menu" data-block-plugin-id="system_menu_block:main">
+  
+  <!-- Mobile menu toggle button (hamburger/x icon) -->
+  <input id="main-menu-state" type="checkbox" />
+  <label class="main-menu-btn" for="main-menu-state">
+    <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+  </label>
+  
+            
+  <h2 class="visually-hidden" id="block-stanford-hs-main-menu-menu">Main navigation</h2>
+  
+
+        
+
+                  <ul class="menu sm">
+                            
+      <li class="menu__item">
+        <a href="/prospective-students" class="menu__link_prospective-students menu__link" target="" data-drupal-link-system-path="node/58">Prospective Students</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school" class="menu__link_preparing-for-graduate-school menu__link" data-drupal-link-system-path="node/242">Preparing for Graduate School</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/gre-preparation" class="menu__link_gre-preparation menu__link" data-drupal-link-system-path="node/244">GRE Preparation</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/graduate-school-prep-timeline" class="menu__link_graduate-school-prep-timeline menu__link" data-drupal-link-system-path="node/243">Graduate School Prep Timeline</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/conducting-research-graduate-school" class="menu__link_conducting-research-before-graduate-school menu__link" data-drupal-link-system-path="node/245">Conducting Research Before Graduate School</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/conducting-research-graduate-school/hs-summer" class="menu__link_hs-summer-research-programs menu__link" data-drupal-link-system-path="node/247">H&amp;S Summer Research Programs</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/prospective-students/preparing-graduate-school/paying-graduate-school" class="menu__link_paying-for-graduate-school menu__link" data-drupal-link-system-path="node/249">Paying for Graduate School </a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students" class="menu__link_current-students menu__link" target="" data-drupal-link-system-path="node/59">Current Students</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/current-students/diversity-resources-and-programs" class="menu__link_diversity-resources-and-programs menu__link" data-drupal-link-system-path="node/250">Diversity Resources and Programs</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/current-students/diversity-resources-and-programs/humsci-201" class="menu__link_humsci-201 menu__link" data-drupal-link-system-path="node/251">HumSci 201</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/fellowships-and-funding" class="menu__link_fellowships-and-funding menu__link" data-drupal-link-system-path="node/233">Fellowships and Funding</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/sterling-award-undergraduates" class="menu__link_sterling-award-for-undergraduates menu__link" data-drupal-link-system-path="node/252">Sterling Award for Undergraduates</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/current-students/academic-and-community-resources" class="menu__link_academic-and-community-resources menu__link" data-drupal-link-system-path="node/253">Academic and Community Resources</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/academics-and-research" class="menu__link_academics-and-research menu__link" data-drupal-link-system-path="node/60">Academics and Research</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/academics-and-research/centers-institutes-and-affiliates" class="menu__link_centers-institutes-and-affiliates menu__link" data-drupal-link-system-path="node/364">Centers, Institutes, and Affiliates</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/news" class="menu__link_news menu__link" data-drupal-link-system-path="node/304">News</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about" class="menu__link_about menu__link" target="" data-drupal-link-system-path="node/62">About</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/hs-dean" class="menu__link_hs-dean menu__link" data-drupal-link-system-path="node/254">H&amp;S Dean</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/diversity-and-inclusion" class="menu__link_diversity-and-inclusion menu__link" data-drupal-link-system-path="node/269">Diversity and Inclusion</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/hs-council" class="menu__link_hs-council menu__link" data-drupal-link-system-path="node/256">H&amp;S Council</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/senior-associate-deans" class="menu__link_senior-associate-deans menu__link" data-drupal-link-system-path="node/255">Senior Associate Deans</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads" class="menu__link_administrative-leads menu__link" data-drupal-link-system-path="node/257">Administrative Leads</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/administrative-leads/planning" class="menu__link_planning menu__link" data-drupal-link-system-path="node/363">Planning</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/research-administration-and-compliance" class="menu__link_research-administration-and-compliance menu__link" data-drupal-link-system-path="node/362">Research Administration and Compliance</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/staff" class="menu__link_staff menu__link" target="" data-drupal-link-system-path="node/210">Staff</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards" class="menu__link_national-awards menu__link" data-drupal-link-system-path="node/258">National Awards</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/national-awards/american-academy-arts-and-sciences" class="menu__link_american-academy-of-arts-and-sciences menu__link" data-drupal-link-system-path="node/270">American Academy of Arts and Sciences</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/macarthur-fellowship" class="menu__link_macarthur-fellowship menu__link" data-drupal-link-system-path="node/271">MacArthur Fellowship</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-academy-sciences" class="menu__link_national-academy-of-sciences menu__link" data-drupal-link-system-path="node/272">National Academy of Sciences</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-humanities-medal" class="menu__link_national-humanities-medal menu__link" data-drupal-link-system-path="node/273">National Humanities Medal</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/national-medal-science" class="menu__link_national-medal-of-science menu__link" data-drupal-link-system-path="node/274">National Medal of Science</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/nobel-prize" class="menu__link_nobel-prize menu__link" data-drupal-link-system-path="node/275">Nobel Prize</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/national-awards/pulitzer-prize" class="menu__link_pulitzer-prize menu__link" data-drupal-link-system-path="node/276">Pulitzer Prize</a>
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/hs-history" class="menu__link_hs-history menu__link" data-drupal-link-system-path="node/259">H&amp;S History</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/about/hs-history/hs-past-deans" class="menu__link_hs-past-deans menu__link" data-drupal-link-system-path="node/309">H&amp;S Past Deans</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving" class="menu__link_giving menu__link" data-drupal-link-system-path="node/291">Giving</a>
+                                    <ul>
+                            
+      <li class="menu__item">
+        <a href="/giving/ways-give" class="menu__link_ways-to-give menu__link" data-drupal-link-system-path="node/261">Ways to Give</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/annual-giving-graduate-education" class="menu__link_annual-giving-to-graduate-education menu__link" data-drupal-link-system-path="node/264">Annual Giving to Graduate Education</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/support-world-class-faculty" class="menu__link_support-world-class-faculty menu__link" data-drupal-link-system-path="node/262">Support World-Class Faculty</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/strengthen-graduate-scholarship" class="menu__link_strengthen-graduate-scholarship menu__link" data-drupal-link-system-path="node/263">Strengthen Graduate Scholarship</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/enhance-arts" class="menu__link_enhance-the-arts menu__link" data-drupal-link-system-path="node/265">Enhance the Arts</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/globalize-curriculum" class="menu__link_globalize-the-curriculum menu__link" data-drupal-link-system-path="node/266">Globalize the Curriculum</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/transform-science-education-and-research" class="menu__link_transform-science-education-and-research menu__link" data-drupal-link-system-path="node/267">Transform Science Education and Research</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/giving/expand-our-understanding-universe" class="menu__link_expand-our-understanding-of-the-universe menu__link" data-drupal-link-system-path="node/268">Expand Our Understanding of the Universe</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+</div>
+  </header>
+
+  <main role="main" class="main">
+
+    <a id="main-content" tabindex="-1"></a>
+    <div class="main-admin">
+        <div>
+    
+
+  </div>
+
+    </div>
+    
+    
+    
+    <div class="main-content">
+        <div>
+    
+  
+<div id="block-stanford-hs-page-title" data-block-plugin-id="page_title_block" class="block block-core block-page_title_block">
+  <div class="block-inner">
+    
+        
+          
+
+
+
+      </div>
+</div>
+
+  
+<div id="block-stanford-hs-content" data-block-plugin-id="system_main_block" class="block block-system block-system_main_block">
+  <div class="block-inner">
+    
+        
+          <article class="node node--type-page node--view-mode-full clearfix">
+  
+    
+
+  <div>
+      <div class="layout layout--onecol">
+    <div class="layout__region layout__region--content">
+      <div class="block-region-content">
+
+
+
+
+    
+
+  <div data-block-plugin-id="block_content:0da5a584-fa85-4624-91e0-3f9069a0a32c" class="block block-block-content hero-title is-bg-color block-block_content block-0da5a584-fa85-4624-91e0-3f9069a0a32c">
+      <div class="hero-title__image">
+      
+
+
+            <div class="field field--name-field-hero-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/stanford-hero.jpg?itok=wPBV3ZOg 1x, /sites/default/files/styles/hero_1170x560_xlarge_2x/public/stanford-hero.jpg?itok=hRM1gn4D 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_large_1x/public/stanford-hero.jpg?itok=BJUh5ZxL 1x, /sites/default/files/styles/hero_1170x560_large_2x/public/stanford-hero.jpg?itok=wxzRwlLB 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_medium_1x/public/stanford-hero.jpg?itok=6UvJ0ESj 1x, /sites/default/files/styles/hero_1170x560_medium_2x/public/stanford-hero.jpg?itok=Fv6NWukg 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_small_1x/public/stanford-hero.jpg?itok=_soeUnxp 1x, /sites/default/files/styles/hero_1170x560_small_2x/public/stanford-hero.jpg?itok=y9ruAD0L 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/stanford-hero.jpg?itok=wPBV3ZOg&amp;h=9ac7a2a6" alt="Stanford Quad by Tamer Shabani" />
+
+  </picture>
+
+</div>
+      
+    </div>
+  
+  <div class="hero-title__inner">
+    <div class="hero__text contextual-region">
+      <div class="hero__text-inner">
+        
+        <h1>Discover academic freedom</h1>
+        
+                  
+                <a href="" class="down-button button">Skip to main content</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+  <div data-block-plugin-id="block_content:71885ccf-3611-415b-a8c2-70adfed4d11e" class="block block-block-content randomizer block-block_content block-71885ccf-3611-415b-a8c2-70adfed4d11e">
+  
+  <div class="randomizer__inner">
+    <div class="randomizer__text">
+      <div class="randomizer__text-inner">
+        <h3>
+
+
+            <div class="field field--name-field-text field--type-text field--label-hidden field__item">Research and learning are the foundations of discovery.</div>
+      </h3>        <a class="button" href="/academics-research">Explore H&S Departments and Programs</a>
+      </div>
+    </div>
+          <ul class="randomizer__images">
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Mathematics">
+              <p>Mathematics</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/Mathematics-web_0.jpg?itok=i0DkQFmf 1x, /sites/default/files/styles/1009/public/Mathematics-web_0.jpg?itok=MioDbXyi 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/Mathematics-web_0.jpg?itok=atsDrwUD 1x, /sites/default/files/styles/square_350x350_large_2x/public/Mathematics-web_0.jpg?itok=xIuTfROe 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/Mathematics-web_0.jpg?itok=ozY7sULg 1x, /sites/default/files/styles/square_350x350_medium_2x/public/Mathematics-web_0.jpg?itok=WjRHrd4Z 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/Mathematics-web_0.jpg?itok=LUvX2hyS 1x, /sites/default/files/styles/square_350x350_small_2x/public/Mathematics-web_0.jpg?itok=dZkM6sgr 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/Mathematics-web_0.jpg?itok=i0DkQFmf" alt="Chalk board shape diagrams" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Native American Studies (CSRE)">
+              <p>Native American Studies (CSRE)</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/NativeAmericanStudies-web.jpg?itok=RtUbFfO2 1x, /sites/default/files/styles/1009/public/NativeAmericanStudies-web.jpg?itok=LEJEU5iT 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/NativeAmericanStudies-web.jpg?itok=vjV7U07Z 1x, /sites/default/files/styles/square_350x350_large_2x/public/NativeAmericanStudies-web.jpg?itok=2BcTjH61 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/NativeAmericanStudies-web.jpg?itok=kdqBrHgO 1x, /sites/default/files/styles/square_350x350_medium_2x/public/NativeAmericanStudies-web.jpg?itok=RbrOVWyH 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/NativeAmericanStudies-web.jpg?itok=_gDIoAph 1x, /sites/default/files/styles/square_350x350_small_2x/public/NativeAmericanStudies-web.jpg?itok=5PIh9hLf 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/NativeAmericanStudies-web.jpg?itok=RtUbFfO2" alt="Totem of a bird" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Science, Technology, and Society">
+              <p>Science, Technology, and Society</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/ScienceTechnologyandSociety-web.jpg?itok=1O62XNme 1x, /sites/default/files/styles/1009/public/ScienceTechnologyandSociety-web.jpg?itok=vgIhOiT- 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/ScienceTechnologyandSociety-web.jpg?itok=GqB2PmZP 1x, /sites/default/files/styles/square_350x350_large_2x/public/ScienceTechnologyandSociety-web.jpg?itok=EDUQc-vG 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/ScienceTechnologyandSociety-web.jpg?itok=ya6hS0fv 1x, /sites/default/files/styles/square_350x350_medium_2x/public/ScienceTechnologyandSociety-web.jpg?itok=RicDLSCN 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/ScienceTechnologyandSociety-web.jpg?itok=rtBX22aB 1x, /sites/default/files/styles/square_350x350_small_2x/public/ScienceTechnologyandSociety-web.jpg?itok=7ruLER2P 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/ScienceTechnologyandSociety-web.jpg?itok=1O62XNme" alt="Computer screens, a hologram of a sphere of text in front of a view of a city lit up at night" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+                  <li class="randomizer__image">
+            <a href="/academics-research?keys=Urban Studies">
+              <p>Urban Studies</p>
+                              
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/Urban-Studies-web_0.jpg?itok=hr0menKH 1x, /sites/default/files/styles/1009/public/Urban-Studies-web_0.jpg?itok=_G7QatY1 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/Urban-Studies-web_0.jpg?itok=c_DLYxrY 1x, /sites/default/files/styles/square_350x350_large_2x/public/Urban-Studies-web_0.jpg?itok=8LE2aEjg 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/Urban-Studies-web_0.jpg?itok=sF0EfSC7 1x, /sites/default/files/styles/square_350x350_medium_2x/public/Urban-Studies-web_0.jpg?itok=5D8KIik- 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/Urban-Studies-web_0.jpg?itok=pFcxTDuH 1x, /sites/default/files/styles/square_350x350_small_2x/public/Urban-Studies-web_0.jpg?itok=j9kTMWfi 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/Urban-Studies-web_0.jpg?itok=hr0menKH" alt="People crossing a street" />
+
+  </picture>
+
+</div>
+      
+                          </a>
+          </li>
+              </ul>
+      </div>
+</div>
+    
+<div data-block-plugin-id="block_content:81b095aa-26ce-4f35-b1b2-3c44e942874c" class="is-bg-color--white block block-block-content block-block_content block-81b095aa-26ce-4f35-b1b2-3c44e942874c">
+  <div class="block-inner">
+    
+        
+          
+
+            <div class="text-long"><h3>The School of Humanities and Sciences is the center of a world-class liberal arts education.</h3></div>
+      
+      </div>
+</div>
+
+
+
+    
+
+
+      <div data-block-plugin-id="block_content:9baf0256-221a-49e0-83a6-668b9b5fb919" class="block block-block-content circle-stats block-block_content block-9baf0256-221a-49e0-83a6-668b9b5fb919">
+      
+    <ul class="circles">
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">46</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Departments and Programs</div>
+              </li>
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">49</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Undergraduate Majors</div>
+              </li>
+                                        <li class="circle-stats--length-3">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">43 </div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Master&#039;s Degrees</div>
+              </li>
+                                        <li class="circle-stats--length-2">
+            <span>
+
+
+            <div class="field field--name-field-cs-number field--type-string field--label-hidden field__item">33</div>
+      </span>            
+
+
+            <div class="field field--name-field-cs-text field--type-string field--label-hidden field__item">Doctoral Degrees</div>
+              </li>
+          </ul>
+  </div>
+
+
+
+    
+
+
+  <div data-block-plugin-id="block_content:60e9259d-7762-4924-8936-c25996fe32a8" class="is-bg-color--beige block block-block-content fifty-fifty fifty-fifty-image- block-block_content block-60e9259d-7762-4924-8936-c25996fe32a8">
+
+  <div class="fifty-fifty__inner">
+
+    
+    
+
+    <div class="fifty-fifty__image">
+                
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/feature_540x270_xlarge_1x/public/Taps314.184_web.jpg?itok=67MWFj-L 1x, /sites/default/files/styles/feature_540x270_xlarge_2x/public/Taps314.184_web.jpg?itok=vw5tzdxC 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_large_1x/public/Taps314.184_web.jpg?itok=Xcok2lko 1x, /sites/default/files/styles/feature_540x270_large_2x/public/Taps314.184_web.jpg?itok=zzJ_yhjc 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_medium_1x/public/Taps314.184_web.jpg?itok=n_6bPpdL 1x, /sites/default/files/styles/feature_540x270_medium_2x/public/Taps314.184_web.jpg?itok=kt9vnVn6 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_540x270_small_1x/public/Taps314.184_web.jpg?itok=eIeyfFyW 1x, /sites/default/files/styles/feature_540x270_small_2x/public/Taps314.184_web.jpg?itok=gIjpuWrV 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/feature_540x270_xlarge_2x/public/Taps314.184_web.jpg?itok=vw5tzdxC" alt="graduate seminar" />
+
+  </picture>
+
+</div>
+      
+          </div>
+
+          <div class="fifty-fifty__text">
+
+        
+          
+          
+
+            <div class="text-long"><h3>All of our professors and students have different backgrounds, perspectives, and dreams. But it’s the ways they work together and the qualities they share that make H&amp;S special. </h3>
+
+<p><a class="link--more" href="/about">Learn More about H&amp;S</a></p></div>
+      
+
+          
+        
+        
+      </div>
+    
+  </div>
+
+</div>
+
+
+
+
+    
+<div class="views-element-container block block-views block-views_block block-latest_news-block_1" data-block-plugin-id="views_block:latest_news-block_1">
+  <div class="block-inner">
+    
+        
+          <div><div class="js-view-dom-id-7fbb52e1a9740d0e2e2789b9091ac2835c22618f46fe19246e91498c8dc7edb0">
+  
+  
+  
+
+  
+  
+  <div class="views-element-container"><div class="js-view-dom-id-8e4326e0f92b852b6da7c79a93884e5c26890a2ad05af7d30a86c86237322f8b">
+  
+  
+  
+
+  
+  
+  
+
+      <div class="views-row">
+    <article role="article">
+
+  <h2 class="heading-2">News</h2>
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/richard-saller-step-down-dean-humanities-sciences" rel="bookmark"><span>Richard Saller to step down as dean of Humanities &amp; Sciences</span>
+</a>
+    </h3>
+    
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/richard-saller-step-down-dean-humanities-sciences">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/feature_560x360_xlarge_1x/public/Saller_teaching.jpg?itok=KqKn9LZS 1x, /sites/default/files/styles/feature_560x360_xlarge_2x/public/Saller_teaching.jpg?itok=R4alN0IN 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_730x375_large_1x/public/Saller_teaching.jpg?itok=lKdgrT7F 1x, /sites/default/files/styles/feature_560x360_large_2x/public/Saller_teaching.jpg?itok=NXy-EvTu 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_560x360_medium_1x/public/Saller_teaching.jpg?itok=4orSYVtl 1x, /sites/default/files/styles/feature_560x360_medium_2x/public/Saller_teaching.jpg?itok=18svAVEq 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/feature_560x360_small_1x/public/Saller_teaching.jpg?itok=ifs-ra9J 1x, /sites/default/files/styles/feature_560x360_small_2x/public/Saller_teaching.jpg?itok=zazyAvyx 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/feature_560x360_xlarge_2x/public/Saller_teaching.jpg?itok=R4alN0IN&amp;h=afc7bdca" alt="" />
+
+  </picture>
+</a>
+</div>
+      
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">October 9, 2017</div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  
+  
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+
+      <div class="views-row">
+    <article role="article">
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/douglas-stanford-wins-breakthrough-new-horizons-prize" rel="bookmark"><span>Douglas Stanford wins Breakthrough New Horizons Prize</span>
+</a>
+    </h2>
+    
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">December 4, 2017</div>
+      
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/douglas-stanford-wins-breakthrough-new-horizons-prize">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=j_2AWUgc 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=VA48ZLwk 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=89n--wV- 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=_gC6iwr2 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=wh_MX-xY 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=Ne_MpBhc 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=JVQQNXr6 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=5OClhEIw 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/Stanford_7418-705x470.jpg?itok=VA48ZLwk" />
+
+  </picture>
+</a>
+</div>
+      
+  </div>
+
+</article>
+
+  </div>
+    <div class="views-row">
+    <article role="article">
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/inspired-class-undergraduates-start-popular-science-publication" rel="bookmark"><span>Inspired by a class, undergraduates start a popular science publication</span>
+</a>
+    </h2>
+    
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">November 30, 2017</div>
+      
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/inspired-class-undergraduates-start-popular-science-publication">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=otZ2jS42 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=M1JjelqJ 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=y-4uW9OP 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=gRqIuY7Q 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=ynfVM3tq 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=S9shEsWz 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=jjvBPVif 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=sUp-eRAF 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/fascinate_4732-705x470.jpg?itok=M1JjelqJ" />
+
+  </picture>
+</a>
+</div>
+      
+  </div>
+
+</article>
+
+  </div>
+    <div class="views-row">
+    <article role="article">
+
+  
+      <h3 class="heading-3">
+      <a href="/stanford-news-post/artificial-intelligence-index-tracks-emerging-field" rel="bookmark"><span>Artificial intelligence index tracks emerging field</span>
+</a>
+    </h2>
+    
+
+  
+  <div>
+    
+
+
+            <div class="field field--name-field-date field--type-datetime field--label-hidden field__item">November 30, 2017</div>
+      
+
+
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <a href="/stanford-news-post/artificial-intelligence-index-tracks-emerging-field">  <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/teaser_350x235_xlarge_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=p_vgYzTt 1x, /sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=DEFuRSqd 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_large_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=LGOw_i8I 1x, /sites/default/files/styles/teaser_350x235_large_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=YXmTbtZo 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_medium_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=gFTE3LnG 1x, /sites/default/files/styles/teaser_350x235_medium_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=H437uHUm 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/teaser_350x235_small_1x/public/stanford_news_rss/AIart-705x470.jpg?itok=EOP5fgVH 1x, /sites/default/files/styles/teaser_350x235_small_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=_8oYtIo0 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/teaser_350x235_xlarge_2x/public/stanford_news_rss/AIart-705x470.jpg?itok=DEFuRSqd" />
+
+  </picture>
+</a>
+</div>
+      
+  </div>
+
+</article>
+
+  </div>
+
+  
+  
+
+  
+  <div class="more-link"><a href="/news">See all news</a></div>
+
+
+  
+  
+</div>
+</div>
+
+      </div>
+</div>
+
+
+    
+
+  <div data-block-plugin-id="block_content:19e763b1-76c7-41cb-9887-055b5632aba8" class="block block-block-content featured-quote block-block_content block-19e763b1-76c7-41cb-9887-055b5632aba8">
+  
+      <div class="featured-quote__image">
+              
+
+
+            <div class="field field--name-field-featured-quote-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/square_350x350_xlarge_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=EIg-jJbr 1x, /sites/default/files/styles/1009/public/miranda-stratton-110817-53-web_0.jpg?itok=sc8G3P1D 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_large_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=4hucLBCY 1x, /sites/default/files/styles/square_350x350_large_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=H1NAI4q8 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_medium_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=Ccn2Y6OO 1x, /sites/default/files/styles/square_350x350_medium_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=vsYvMwaW 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/square_350x350_small_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=U9CJQyKq 1x, /sites/default/files/styles/square_350x350_small_2x/public/miranda-stratton-110817-53-web_0.jpg?itok=2mRBhqeO 2x" media="all and (min-width: 0)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/square_350x350_xlarge_1x/public/miranda-stratton-110817-53-web_0.jpg?itok=EIg-jJbr" alt="Miranda Stratton" />
+
+  </picture>
+
+</div>
+      
+          </div>
+  
+      <div class="featured-quote__text">
+      <blockquote>
+
+
+            <div class="field field--name-field-featured-quote-quote field--type-string-long field--label-hidden field__item">As the first in my family to go to college, I try to share every piece of information that I learn with them, to be a bridge for others to the world of scientific research. As a biologist, I focus a lot on articulating my work. At Stanford, I have found phenomenal mentors who are not only well-rounded academically, but also share my commitment to promoting diversity in the scientific community and conducting research that benefits society.</div>
+      </blockquote>      <span class="featured-quote__byline">
+
+
+            <div class="field field--name-field-featured-quote-source field--type-string field--label-hidden field__item">Miranda Stratton, Doctoral Candidate in Biology, 2017-19 DARE Fellow</div>
+      </span>    </div>
+  
+</div>
+
+
+
+
+    
+
+
+  <div data-block-plugin-id="block_content:40680068-4ea3-41dc-8494-b950f9e51e33" class="block block-block-content video-with-overlay is-bg-color block-block_content block-40680068-4ea3-41dc-8494-b950f9e51e33">
+
+  <div class="inner">
+            
+
+
+            <div class="field field--name-field-vo-video field--type-entity-reference field--label-hidden field__item"><article class="media media-video view-mode-embedded">
+      
+
+
+            <div class="field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field__item"><div class="video-embed-field-responsive-video"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/sdGx99KG-vU?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+</div>
+      
+  </article>
+</div>
+      
+                
+
+
+            <div class="field field--name-field-vo-background-image field--type-image field--label-hidden field__item">    <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=3BNQzxaF 1x, /sites/default/files/styles/hero_1170x560_xlarge_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=hWTTxG4- 2x" media="all and (min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_large_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=W9GF4S9d 1x, /sites/default/files/styles/hero_1170x560_large_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=Xl7I8cnf 2x" media="all and (min-width: 992px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_medium_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=8GyrWdPf 1x, /sites/default/files/styles/hero_1170x560_medium_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=a__K0oc8 2x" media="all and (min-width: 768px)" type="image/jpeg"/>
+              <source srcset="/sites/default/files/styles/hero_1170x560_small_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=99onVYQ- 1x, /sites/default/files/styles/hero_1170x560_small_2x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=G3d_-3s8 2x" media="all and (min-width: 576px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="/sites/default/files/styles/hero_1170x560_xlarge_1x/public/McMurtry%20Courtyard%20%28Sallie%20Stanford_DSR_15-09_7250_update%29.jpeg?itok=3BNQzxaF" alt="" />
+
+  </picture>
+
+</div>
+      
+        <div class="video-with-overlay__text">
+      <div class="inner">
+                  <h2>
+
+
+            <div class="field field--name-field-vo-title field--type-string field--label-hidden field__item">Begin your journey with the School of Humanities and Sciences</div>
+      </h2>
+                          <button class="button button--alt-4">
+
+
+            Watch the Video
+      </button>
+              </div>
+    </div>
+  </div>
+
+</div>
+</div>
+    </div>
+  </div>
+
+  </div>
+</article>
+
+      </div>
+</div>
+
+  </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer__inner">
+              <div class="footer__footer1">
+            <div>
+    
+    
+<div id="block-footerabout" data-block-plugin-id="block_content:55baac1c-9fbb-49a4-8eb6-ae0e25cf9beb" class="is-bg-color--white block block-block-content block-block_content block-55baac1c-9fbb-49a4-8eb6-ae0e25cf9beb">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">About</h2>
+        
+          
+
+            <div class="text-long"><p>The School of Humanities and Sciences is the foundation of a liberal arts education at Stanford. The school encompasses 23 departments and 23 interdisciplinary programs. It is the university's home for fundamental research, where free, open, and critical inquiry is pursued across disciplines.</p>
+
+<p><a href="/about">Learn more about H&amp;S</a></p></div>
+      
+      </div>
+</div>
+
+    
+<div id="block-footersociallinks" data-block-plugin-id="menu_block:footer-social-links" class="block block-menu-block block-menu_block block-footer-social-links">
+  <div class="block-inner">
+    
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="https://www.facebook.com/stanford.humsci" title="School of Humanities and Sciences on Facebook" class="menu__link_facebook menu__link">Facebook</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://twitter.com/stanfordhumsci" title="School of Humanities and Sciences on Twitter" class="menu__link_twitter menu__link">Twitter</a>
+              </li>
+        </ul>
+  
+
+
+      </div>
+</div>
+
+  </div>
+
+        </div>
+      
+              <div class="footer__footer2">
+            <div>
+    
+    
+<div id="block-footerhsresources" data-block-plugin-id="menu_block:footer" class="block block-menu-block block-menu_block block-footer">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">H&amp;S resources</h2>
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="/giving/ways-give" class="menu__link_external-relations menu__link" data-drupal-link-system-path="node/261">External Relations</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://web.stanford.edu/dept/humsci/cgi-bin/facilities/" class="menu__link_facilities-and-capital-planning- menu__link" target="">Facilities and Capital Planning </a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://facultyaffairs-humsci.stanford.edu/" class="menu__link_faculty-affairs menu__link" target="">Faculty Affairs</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://finance-humsci.stanford.edu/" class="menu__link_finance menu__link" target="">Finance</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://gus-humsci.stanford.edu/" class="menu__link_graduate-and-undergraduate-studies menu__link" target="">Graduate and Undergraduate Studies</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://web.stanford.edu/dept/humsci/cgi-bin/hr/" class="menu__link_human-resources menu__link" target="">Human Resources</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://it-humsci.stanford.edu/" class="menu__link_information-technology menu__link" target="">Information Technology</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/planning" class="menu__link_planning menu__link" data-drupal-link-system-path="node/363">Planning</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads" class="menu__link_public-relations menu__link" data-drupal-link-system-path="node/257">Public Relations</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="/about/administrative-leads/research-administration-and-compliance" class="menu__link_research-administration-and-compliance menu__link" data-drupal-link-system-path="node/362">Research Administration and Compliance</a>
+              </li>
+        </ul>
+  
+
+
+      </div>
+</div>
+
+  </div>
+
+        </div>
+      
+              <div class="footer__footer3">
+            <div>
+    
+    
+<div id="block-footercontact" data-block-plugin-id="block_content:e93d367f-8371-441e-aa2b-58711870c8ef" class="is-bg-color--white block block-block-content block-block_content block-e93d367f-8371-441e-aa2b-58711870c8ef">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">Contact Us</h2>
+        
+          
+
+            <div class="text-long"><p>Building 1, Main Quad<br />
+450 Serra Mall<br />
+Stanford, CA 94305-2070</p>
+
+<p>Phone: 650-723-2275<br />
+Fax: 650-723-3235</p></div>
+      
+      </div>
+</div>
+
+    
+<div id="block-footercontactlinks" data-block-plugin-id="menu_block:footer-contact-links" class="block block-menu-block block-menu_block block-footer-contact-links">
+  <div class="block-inner">
+    
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="mailto:hsdeansofc@lists.stanford.edu" class="menu__link_hsdeansofclistsstanfordedu menu__link" target="_blank" title="Email hsdeansofc@lists.stanford.edu">hsdeansofc@lists.stanford.edu</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://campus-map.stanford.edu/?id=01-001&amp;lat=37.42780204&amp;lng=-122.1696657&amp;zoom=17&amp;srch=Building%201" title="View the Campus Map" class="menu__link_campus-map menu__link">Campus Map</a>
+              </li>
+        </ul>
+  
+
+
+      </div>
+</div>
+
+  </div>
+
+        </div>
+      
+              <div class="footer__footer4">
+            <div>
+    
+    
+<div id="block-footeruniversityresources" data-block-plugin-id="menu_block:footer-university-resources" class="block block-menu-block block-menu_block block-footer-university-resources">
+  <div class="block-inner">
+    
+          <h2 class="heading-2">University resources</h2>
+        
+          
+
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="mailto:hs-communications@stanford.edu" class="menu__link_report-a-website-problem menu__link" target="">Report a website problem</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://studentaffairs.stanford.edu/policies" class="menu__link_stanford-non-discrimination-policy menu__link" target="">Stanford Non-Discrimination Policy</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/" class="menu__link_stanford-university menu__link" target="">Stanford University</a>
+              </li>
+        </ul>
+  
+
+
+      </div>
+</div>
+
+  </div>
+
+        </div>
+          </div>
+  </footer>
+
+</div>
+        
+      </div> <!-- #su-content end -->
+    </div> <!-- #su-wrap end -->
+
+    <!-- Global footer snippet start -->
+    <div id="global-footer">
+      <div class="container">
+        <div class="row">
+          <div id="bottom-logo" class="span2">
+            <a href="http://www.stanford.edu">
+              <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+            </a>
+          </div> <!-- #bottom-logo end -->
+          <div id="bottom-text" class="span10">
+              <div>
+    <ul>
+                            
+      <li class="menu__item">
+        <a href="http://www.stanford.edu" class="menu__link_stanford-home menu__link" target="">Stanford Home</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://visit.stanford.edu/plan/maps.html" class="menu__link_maps--directions menu__link" target="">Maps &amp; Directions</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/search" class="menu__link_search-stanford menu__link" target="">Search Stanford</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://emergency.stanford.edu" class="menu__link_emergency-info menu__link" target="">Emergency Info</a>
+              </li>
+        </ul>
+  
+      
+    
+  
+    
+          
+        
+          
+                  <ul>
+                            
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/site/terms.html" class="menu__link_terms-of-use menu__link" target="">Terms of Use</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://www.stanford.edu/site/privacy" class="menu__link_privacy-policy menu__link" target="">Privacy Policy</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="http://www.stanford.edu/site/copyright.html" class="menu__link_copyright-complaints menu__link" target="">Copyright Complaints</a>
+              </li>
+                        
+      <li class="menu__item">
+        <a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="menu__link_trademark-notice menu__link" target="">Trademark Notice</a>
+              </li>
+        </ul>
+  
+      
+    
+  
+    
+        
+          
+            <p>© Stanford University, Stanford, California 94305</p>
+  </div>
+
+          </div> <!-- .bottom-text end -->
+        </div> <!-- .row end -->
+      </div> <!-- .container end -->
+    </div> <!-- global-footer end -->
+    <!-- Global footer snippet end -->
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/40","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","fitvids":{"selectors":".node","custom_vendors":"","ignore_selectors":""},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"ajax":[],"user":{"uid":0,"permissionsHash":"d16e4becac1c26084dd9bc691d2b154c1e6fdd1b79bf7fbead689a74c759f04c"}}</script>
+<script src="/sites/default/files/js/js_sq4vJjauk-KX7vqxhvq-js3COwq9PqZmEy5w88N-DTM.js"></script>
+
+  
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1a8a693eb4","applicationID":"37875605","transactionName":"MQBTYURZWkAFVUUNDAhKcFZCUVtdS3JDERMHCW12WUpRbyJZQwk\/IApDWHRNXV8AU0NJXRQAX1FTSmRfBVVUDAwKAVRHcFdGXiVVRQ0MCA==","queueTime":0,"applicationTime":300,"atts":"HUdQFwxDSU4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>
