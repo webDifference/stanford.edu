@@ -1,0 +1,630 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Stanford Event Calendar">
+      <meta name="description" content="featured events">
+      <title>Stanford Event Calendar: featured events</title>
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="http://events.stanford.edu/xml/rss.xml">
+      
+<!-- CSS -->
+<link rel="stylesheet" href="/v4/assets/cardinal/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" />
+<!--<link rel="stylesheet" href="/v4/responsive-calendar/0.7/css/responsive-calendar.css" type="text/css" /> -->
+<link rel="stylesheet" href="/v4/datepicker/css/datepicker.css" />
+<link rel="stylesheet" href="/v4/assets/cardinal/css/base.min.css?v=0.3" type="text/css" />
+<link rel="stylesheet" href="/v4/assets/cardinal/css/custom.css?v=0.3" type="text/css"/>
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/v4/assets/cardinal/css/ie/ie8.css" />
+    <![endif]-->
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/v4/assets/cardinal/css/ie/ie7.css" />
+    <![endif]-->
+
+<!-- JS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="/v4/assets/cardinal/js/modernizr.custom.17475.js"></script> 
+<script src="/v4/assets/cardinal/js/bootstrap.min.js"></script> 
+<script src="/v4/datepicker/js/datepicker.js"></script>
+<!--<script src="/v4/responsive-calendar/0.7/js/responsive-calendar.js"></script> -->
+<script src="/v4/assets/cardinal/js/base.js?v=0.3"></script>
+<script src="/v4/assets/cardinal/js/custom.js?v=0.3"></script>
+
+<!--[if lt IE 9]>
+    <script src="/v4/assets/cardinal/js/respond.js"></script>
+    <![endif]--> 
+
+<!-- Google Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1860414-5', 'stanford.edu');
+  ga('send', 'pageview');
+
+</script>
+
+
+   </head>
+   <body class="nav-1">
+      <div id="su-wrap">
+         <div id="su-content">
+            <!--=== Load Facebook SDK for Javascript ==-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1517644075158710';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--=== Top ===-->
+<div id="top">
+  <div class="container"> 
+    <!--=== Skip links ===-->
+    <div id="skip"> <a href="#content" onClick="$('#content').focus()">Skip to content</a> </div><!-- /Skip links --> 
+  </div>
+</div><!--/top--> 
+
+<!--=== Header ===-->
+<div id="header" class="clearfix" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> 
+        <!-- Logo -->
+        <div id="logo" class="clearfix"> <a href="http://www.stanford.edu/"><img class="img-responsive" src="/v4/assets/cardinal/images/stanford-white%402x.png"  alt="Stanford University" /></a> </div>
+        <!-- /logo -->
+        <div id="signature">
+          <div id="site-name"> 
+	    <a href="/"><span id="site-name-1">Event Calendar</span></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /Header --> 
+
+
+
+<!-- Menu -->
+<div id="mainmenu" class="clearfix" role="navigation">
+  <div class="container">
+    <div class="navbar navbar-default"> 
+      <!-- main navigation -->
+      <button type="button" class="navbar-toggle btn-navbar" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="menu-text">Menu</span></button>
+      <!-- /nav-collapse -->
+      
+      <div class="navbar-collapse collapse"> 
+        <!--search box-->
+        <div id="nav-search" role="search">
+          <form action="/jse/jsp/search.jsp" method="get" id="search-form" accept-charset="UTF-8">
+            <h2 class="hidden">Search form</h2>
+            <label class="hidden" for="search-field">Search term</label>
+            <input name="oe" type="hidden" value="en" />
+            <input name="qor" type="hidden" value="" />
+            <input title="Search string" class="input-medium" placeholder="Search this site&hellip;" type="text" id="search-field" name="q" value="" size="15" maxlength="128" />
+            <button id="search-btn" type="submit" name="submit"  aria-label="Search" formmethod="get"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div  role="navigation">
+          <div id="primary-nav">
+            <ul class="nav navbar-nav" aria-label="primary navigation">
+              <li id="nav-1"> <a href="/">Featured Events</a></li>
+              <li id="nav-2"> <a href="/today/">Today's Events</a> </li>
+
+              <li id="nav-3">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse by Type <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a  href="/byCategory/2">Lecture / Reading / Talk</a></li>
+		  <li><a  href="/byCategory/3">Conference / Symposium</a></li>
+		  <li><a  href="/byCategory/26">Seminar</a></li>
+		  <li><a  href="/byCategory/19">Class</a></li>
+		  <li><a  href="/byCategory/12">Meeting</a></li>
+		  <li><a  href="/byCategory/27">Information Session</a></li>
+		  <li><a  href="/byCategory/4">Performance</a></li>
+		  <li><a  href="/byCategory/7">Exhibition</a></li>
+                  <li><a  href="/byCategory/31">Screening</a></li>
+		  <li><a  href="/byCategory/15">Tour</a></li>
+		  <li><a  href="/byCategory/10">Recreational Sports</a></li>
+		  <li><a  href="/byCategory/13">Religious</a></li>
+		  <li><a  href="/byCategory/14">Social</a></li>
+		</ul>
+              </li>
+              <li id="nav-4">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse by Subject <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a  style="border-bottom: none;" href="/byCategory/0">All Arts</a></li>
+		  <li><a  style="border-bottom: none;" href="/byCategory/9">&nbsp;&nbsp;&nbsp;Music</a></li>
+		  <li><a  style="border-bottom: none;" href="/byCategory/6">&nbsp;&nbsp;&nbsp;Drama / Theater</a></li>
+		  <li><a  style="border-bottom: none;" href="/byCategory/5">&nbsp;&nbsp;&nbsp;Dance</a></li>
+		  <li><a  style="border-bottom: none;" href="/byCategory/20">&nbsp;&nbsp;&nbsp;Visual Arts</a></li>
+		  <li><a  style="border-bottom: none;" href="/byCategory/8">&nbsp;&nbsp;&nbsp;Film</a></li>
+		  <li><a  href="/byCategory/25">&nbsp;&nbsp;&nbsp;Literary Arts</a></li>
+		  <li><a  href="/byCategory/35">Education</a></li>
+		  <li><a  href="/byCategory/22">Engineering</a></li>
+		  <li><a  href="/byCategory/21">Environment</a></li>
+		  <li><a  href="/byCategory/24">Health / Wellness</a></li>
+		  <li><a  href="/byCategory/23">Humanities</a></li>
+		  <li><a  href="/byCategory/18">International</a></li>
+		  <li><a  href="/byCategory/11">Public Service</a></li>
+         	  <li><a  href="/byCategory/30">Science</a></li>
+		  <li><a  href="/byCategory/28">Careers</a></li>
+		  <li><a  href="/byCategory/17">Ph.D. Orals</a></li>
+		  <li><a  href="/byCategory/1">University Events</a></li>
+		</ul>
+	      </li>
+              <li id="nav-5" class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse by Organization <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a  href="/byOrganization/departmentalOrganizationList.shtml">Departments</a></li>
+		  <li><a  href="/byOrganization/studentOrganizationList.shtml">Student Groups</a></li>
+		</ul>
+	      </li>
+            </ul>
+	    <div class="hidden-md hidden-lg" id="date-jump">
+	      <form role="form">
+		<label for="date-input">Browse by Date:</label>
+		<input class="form-control"  type="text" placeholder="mm/dd/yyyy" id="date-input" name="date-input" value="" maxlength="10" aria-describedby="date-input-help" />
+		<input type="button" value="Go" id="jump-button" class="btn btn-default" />
+		<p class="sr-only" id="date-input-help"> Expected format: M M/D D/Y Y Y Y</p>
+	      </form>
+	    </div> 
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /nav-collapse --> 
+      
+    </div><!-- /navbar -->     
+  </div><!-- /container --> 
+</div><!-- /mainmenu --> 
+<!-- /Menu --> 
+
+
+            <div id="content" class="container" role="main" tabindex="0">
+               <div class="row">
+                  <div id="main-content" class="col-md-8" role="main">
+                     <div class="clearfix">
+                        <h1 class="pull-left">featured events</h1>
+                        <div class="pull-right">
+                           <ul class="list-inline">
+                              <li><a role="button" class="btn btn-default btn-sm" id="rss-icon" href="http://events.stanford.edu/xml/rss.xml"><i class="fa fa-rss"></i><span>RSS</span></a></li>
+                              <li><a role="button" class="btn btn-default btn-sm" id="ical-icon" href="webcal://events.stanford.edu/eventlist.ics"><i class="fa fa-calendar"></i><span>iCal</span></a></li>
+                           </ul>
+                        </div>
+                     </div><a href="/events/729/72957" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/729/72957/72957-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Stanford-Oxford-Peking University Internet Law and Public Policy Conference</h3>
+                              <p><strong>Monday, December 4, 2017.
+                                    	  &nbsp;9:30 AM.</strong><br>Paul Brest Hall, Munger Graduate Residence
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/735/73583" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/735/73583/73583-2.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Human Rights Day Documentary Film: AND THEN THEY CAME FOR US</h3>
+                              <p><strong>Monday, December 4, 2017.
+                                    	  &nbsp;12:00 PM.</strong><br>Bechtel International Center
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/723/72327" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/723/72327/72327-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Energy Seminar: Mason Willrich: Modernizing America's Electricity Infrastructure</h3>
+                              <p><strong>Monday, December 4, 2017.
+                                    	  &nbsp;4:30 PM.</strong><br>NVIDIA Auditorium, Jen-Hsun Huang Engineering Center
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/731/73107" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/731/73107/73107-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>The Ghost Ship Fire. One Year Later</h3>
+                              <p><strong>Monday, December 4, 2017.
+                                    	  &nbsp;5:30 PM.</strong><br>Oshman Hall, McMurtry Building
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/718/71879" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/718/71879/71879-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Apologizing for Genocide: In/Justice, Reconciliation, and Indigenous Peoples in Australia
+                                 (and the United States)
+                              </h3>
+                              <p><strong>Monday, December 4, 2017.
+                                    	  &nbsp;6:30 PM.</strong><br>Building 360, Conference Room
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/706/70621" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/706/70621/70621-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>NEW TIME - Danielle Allen / Cuz: The Life and Times of Michael A.</h3>
+                              <p><strong>Tuesday, December 5, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Stanford Law School 290
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/730/73099" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/730/73099/73099-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Human Cities Expo 2017</h3>
+                              <p><strong>Wednesday, December 6, 2017.
+                                    	  &nbsp;11:00 AM.</strong><br>d.school atrium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/715/71555" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/715/71555/71555-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>NOON CONCERT: SLSQ Emerging String Quartet Program – Tesla Quartet</h3>
+                              <p><strong>Wednesday, December 6, 2017.
+                                    	  &nbsp;12:30 PM.</strong><br>Campbell Recital Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/733/73329" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/733/73329/73329-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Of Cheese and Curds in China</h3>
+                              <p><strong>Wednesday, December 6, 2017.
+                                    	  &nbsp;4:30 PM.</strong><br>East Asia Library, Room 224, 518 Memorial Way
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/736/73641" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/736/73641/73641-2.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>NaNoWriMo Readings at the Stanford Bookstore</h3>
+                              <p><strong>Wednesday, December 6, 2017.
+                                    	  &nbsp;6:45 PM.</strong><br>Stanford Bookstore
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/715/71557" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/715/71557/53325-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Fall Chamber Music Showcase</h3>
+                              <p><strong>Wednesday, December 6, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Campbell Recital Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/735/73573" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/735/73573/73573-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Conservation Oceanography of the North Atlantic Right Whale</h3>
+                              <p><strong>Thursday, December 7, 2017.
+                                    	  &nbsp;3:00 PM.</strong><br>Hopkins Marine Station, Boat Works Lecture Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/736/73623" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/736/73623/73623-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Space Communications Infrastructure and the Sharing Economy</h3>
+                              <p><strong>Thursday, December 7, 2017.
+                                    	  &nbsp;4:30 PM.</strong><br>William R. Hewlett Teaching Center, Auditorium 201, 370 Serra Mall, Stanford, CA 94305
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/714/71495" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/714/71495/71495-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>A Bridge Taken for a Wall, a Wall Taken for a Bridge: On Persian Art, Poetry, and
+                                 Translation
+                              </h3>
+                              <p><strong>Thursday, December 7, 2017.
+                                    	  &nbsp;6:30 PM.</strong><br>Building 320, room 105
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/730/73053" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/730/73053/73053-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Mineral Resources and Their Sustainable Development Symposium</h3>
+                              <p><strong>
+                                    	    Ongoing every day from December 8, 2017 through December 9, 2017.
+                                    	    </strong><br>Paul Brest Hall, Munger Building 4, 555 Salvatierra Walk
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/731/73167" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/731/73167/73167-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>CS 50 (Using Tech for Good) Student Showcase</h3>
+                              <p><strong>Friday, December 8, 2017.
+                                    	  &nbsp;12:00 PM.</strong><br>Black Community Services Center
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/717/71779" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/717/71779/66845-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Open Studios: Fall | 2017</h3>
+                              <p><strong>Friday, December 8, 2017.
+                                    	  &nbsp;3:00 PM.</strong><br>McMurtry Building
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/734/73439" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/734/73439/73439-2.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Maqams: The Roots of Iranian Classical Music</h3>
+                              <p><strong>Friday, December 8, 2017.
+                                    	  &nbsp;6:30 PM.</strong><br>Building 320, room 105
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/710/71077" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/710/71077/61979-3.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>A Festival of Lessons and Carols</h3>
+                              <p><strong>Friday, December 8, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Stanford Memorial Church
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/731/73157" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/731/73157/73157-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Plant on the Dish Hill and along Deer Creek</h3>
+                              <p><strong>
+                                    	    Ongoing every week from December 9, 2017 through December 30, 2017.
+                                    	    &nbsp;9:30 AM.</strong><br>Dish Hill and Deer Creek
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/692/69257" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/692/69257/69257-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>The Hot Sardines' Holiday Stomp</h3>
+                              <p><strong>Saturday, December 9, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Bing Concert Hall - Configuration: End Stage
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/727/72735" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/727/72735/66783-2.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Saxophone Choir Concert</h3>
+                              <p><strong>Sunday, December 10, 2017.
+                                    	  &nbsp;2:30 PM.</strong><br>Dinkelspiel Auditorium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/735/73593" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/735/73593/73593-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Samantha Williams, mezzo-soprano: Senior Voice Recital</h3>
+                              <p><strong>Sunday, December 10, 2017.
+                                    	  &nbsp;2:30 PM.</strong><br>Campbell Recital Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/714/71441" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/714/71441/66731-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Stanford Baroque Soloists: Italy Before Corelli - NEW DATE!</h3>
+                              <p><strong>Monday, December 11, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Memorial Church
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/732/73287" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/732/73287/73287-3.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Meet the Makers Autumn 2017</h3>
+                              <p><strong>Wednesday, December 13, 2017.
+                                    	  &nbsp;9:30 AM.</strong><br>Stanford University, Building 550, Atrium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/733/73359" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/733/73359/73359-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>The Active Citizen in the Digital Age: Getting Political</h3>
+                              <p><strong>Wednesday, December 13, 2017.
+                                    	  &nbsp;5:00 PM.</strong><br>Bechtel Conference Center - Encina Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/692/69263" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/692/69263/69263-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>The Klezmatics</h3>
+                              <p><strong>Thursday, December 14, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Bing Concert Hall
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/734/73479" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/734/73479/73479-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>An Evening with Brandi Carlile</h3>
+                              <p><strong>Friday, December 15, 2017.
+                                    	  &nbsp;7:30 PM.</strong><br>Memorial Auditorium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/733/73395" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/733/73395/73395-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Energy Seminar: Austin Sendek: Building a better battery with machine learning</h3>
+                              <p><strong>Monday, January 8, 2018.
+                                    	  &nbsp;4:30 PM.</strong><br>NVIDIA Auditorium, Jen-Hsun Huang Engineering Center
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/735/73543" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/735/73543/73543-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Dolores Huerta | 13th Annual Anne & Loren Kieve Distinguished Lecture</h3>
+                              <p><strong>Thursday, January 11, 2018.
+                                    	  &nbsp;7:00 PM.</strong><br>CEMEX Auditorium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/732/73211" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/732/73211/73211-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Essays in Sight and Sound</h3>
+                              <p><strong>
+                                    	    Ongoing every day from January 12, 2018 through January 26, 2018.
+                                    	    </strong><br>Gunn Foyer, McMurtry Building
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/706/70629" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/706/70629/70629-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Dorian T. Warren and Mia Birdsong / Basic Income and Racial Justice</h3>
+                              <p><strong>Tuesday, January 16, 2018.
+                                    	  &nbsp;5:30 PM.</strong><br>Cubberley Auditorium
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/734/73407" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/734/73407/73407-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Anne Rademacher, NYU | Building Green: Forging Environmental Futures in Mumbai</h3>
+                              <p><strong>Thursday, January 18, 2018.
+                                    	  &nbsp;12:00 PM.</strong><br>Encina Hall West, Room 219
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix"><a href="/events/736/73653" class="postcard-link">
+                        <div class="postcard-left">
+                           <div class="postcard-image"><img src="/events/736/73653/73653-1.jpg" alt=""></div>
+                           <div class="postcard-text">
+                              <h3>Letters Home from Stanford: 125 Years of Correspondence l A Collaboration with the
+                                 Stanford University Archives
+                              </h3>
+                              <p><strong>Thursday, January 18, 2018.
+                                    	  &nbsp;5:00 PM.</strong><br>Stanford Law School, F.I.R. Hall, Room 190 *Tentative
+                              </p>
+                           </div>
+                        </div></a><hr class="clearfix">
+                  </div>
+                  <!-- Start #sidebar-second -->
+                  <div id="sidebar-second" class="col-md-3 col-md-offset-1">
+                     <div id="responsive-calendar"></div>
+
+<script type="text/javascript">
+     var today = new Date();
+     var lowDate = new Date();
+     var highDate = new Date();
+     lowDate.setFullYear(lowDate.getFullYear(), lowDate.getMonth() - 24);
+     highDate.setFullYear(highDate.getFullYear(), highDate.getMonth() + 24);
+     var metaDate = $('meta[name=application-name]').attr("data-date");
+     if (metaDate != null && metaDate.length == 10) {
+         metaDate = metaDate.replace(/-/g,'');
+     }
+     $("#date-input").val("");
+     
+     datePickerController.createDatePicker({
+     // Associate the text input to a DD/MM/YYYY date format                            
+     formElements: { "date-input": "%m/%d/%Y" },
+     noFadeEffect: true,
+     labelText: "Go to date",
+     cursorDate: metaDate,
+     staticPos: true,
+     fillGrid: false,
+     constrainSelection: false,
+     positioned: "responsive-calendar",
+     callbackFunctions:{"datereturned":[gotoDate]}
+        });
+
+     datePickerController.setRangeLow("date-input", lowDate);
+     datePickerController.setRangeHigh("date-input", highDate);
+
+
+      function gotoDate(argObj) {
+         var url = datePickerController.printFormattedDate(argObj.date, "/%Y/%F/%j", false);
+         window.location = url;
+      }
+</script>
+
+                                   <div class="info-box hidden-print">
+                <div class="icon-container"> <i class="fa fa-envelope-o fa-4x"></i> </div>
+                <div class="text-container">
+                  <h2>Stanford For You</h2>
+		    <p>A <a href="http://foryou.stanford.edu">monthly email newsletter</a> highlighting upcoming campus events.</p>
+                </div>
+              </div>
+
+              <div class="info-box hidden-print">
+                <div class="icon-container"> <i class="fa fa-info-circle fa-4x"></i> </div>
+                <div class="text-container">
+                  <h2>About this site</h2>
+                  <ul style="list-style: none;">
+                    <li><a href="/about">Policies &amp; Procedures</a></li>
+                    <li><a href="/about/rss">RSS &amp; iCal Feeds</a></li>
+                    <li><a href="/about/contact">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+	      <div class="well hidden-print">
+		<h2>Post an event</h2>
+		<p>Campus organizations are invited to add their events to the calendar.</p>
+
+		  <a class="margin-bottom-20 btn btn-default btn-one btn-block" href="/eventadmin/">
+		    <i class="fa fa-key fa-lg"></i>
+		    <span style="text-transform: uppercase; margin-left: 10px;">Login</span>
+		  </a>
+		  <p><strong>New user?</strong>  <em> <a href="/account-request/">Request an account</a></em></p>
+	      </div>
+
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="footer" class="clearfix footer" role="contentinfo">
+  
+  <!-- Global footer snippet start -->
+  <div id="global-footer">
+    <div class="container">
+      <div class="row">
+        <div id="bottom-logo" class="col-xs-6 col-sm-2"> <a href="http://www.stanford.edu"> <img src="/v4/assets/cardinal/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/> </a> </div>
+        <!-- #bottom-logo end -->
+        <div id="bottom-text" class="col-xs-6 col-sm-10">
+          <ul>
+            <li class="home"><a href="http://www.stanford.edu">SU Home</a></li>
+            <li class="maps alt"><a href="http://visit.stanford.edu/plan/maps.html" class="su-link" data-ua-action="visit.stanford.edu/plan/maps" data-ua-label="global-footer">Maps &amp; Directions</a></li>
+            <li class="search-stanford"><a href="http://stanford.edu/search/">Search Stanford</a></li>
+            <li class="terms alt"><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+            <li class="emergency-info"><a href="http://emergency.stanford.edu/" class="su-link" data-ua-label="global-footer">Emergency Info</a></li>
+          </ul>
+        </div>
+        <!-- .bottom-text end -->
+        <div class="clear"></div>
+        <p class="copyright vcard col-sm-10">&copy; <span class="fn org">Stanford University</span>.&nbsp; <span class="adr"> <span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span>.  <span id="termsofuse"><a href="https://uit.stanford.edu/security/copyright-infringement" class="su-link" data-ua-action="copyright-complaints" data-ua-label="global-footer">Copyright Complaints</a>&nbsp;&nbsp;&nbsp;<a href="https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4" class="su-link" data-ua-action="trademark-notice" data-ua-label="global-footer">Trademark Notice</a></span></p>
+      </div>
+      <!-- .row end --> 
+    </div>
+    <!-- .container end --> 
+  </div>
+  <!-- global-footer end --> 
+  <!-- Global footer snippet end --> 
+  
+</div>
+
+   </body>
+</html>
